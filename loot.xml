@@ -412,14 +412,36 @@
 		<item name="qt_sarah" count="1" />
 		<item name="qt_raphael" count="1" />
 	</lootgroup>
-	<lootgroup name="hazmatGear" count="1">
-		<item name="hazmatBoots" />
-		<item name="hazmatPants" />
-		<item name="hazmatShirt" />
-		<item name="hazmatGloves" />
-		<item name="hazmatMask" />
-		<item name="militaryFiber" count="1,5" prob="2" />
+	<lootgroup name="armorHazmatOne">
+		<item name="hazmatBoots"			count="1"		prob="1"/>
+		<item name="hazmatPants"			count="1"		prob="1"/>
+		<item name="hazmatShirt"			count="1"		prob="1"/>
+		<item name="hazmatGloves"			count="1"		prob="1"/>
+		<item name="hazmatMask"				count="1"		prob="1"/>
 	</lootgroup>
+
+	<lootgroup name="armorHazmatRandomSet"			count="all">
+		<item name="hazmatBoots"			count="0,1"/>
+		<item name="hazmatPants"			count="0,1"/>
+		<item name="hazmatShirt"			count="0,1"/>
+		<item name="hazmatGloves"			count="0,1"/>
+		<item name="hazmatMask"				count="0,1"/>
+	</lootgroup>
+
+	<lootgroup name="armorHazmatAll"			count="all">
+		<item name="hazmatBoots"			count="1"/>
+		<item name="hazmatPants"			count="1"/>
+		<item name="hazmatShirt"			count="1"/>
+		<item name="hazmatGloves"			count="1"/>
+		<item name="hazmatMask"				count="1"/>
+	</lootgroup>
+
+	<lootgroup name="armorHazmat">
+		<item group="armorHazmatOne"     		count="1" 		prob="85"/>
+		<item group="armorHazmatRandomSet"     		count="1" 		prob="10"/>
+		<item group="armorHazmatAll"     		count="1" 		prob="5"/>
+	</lootgroup>
+
 	<lootgroup name="rottenFood" count="1">
 		<item name="rottingFlesh" prob="0.25" />
 		<item name="shamSandwich" />
@@ -931,34 +953,126 @@
 		<item name="rawDiamond" count="1,2" prob=".1" />
 		<!-- 1500 -->
 	</lootgroup>
-	<lootgroup name="BikeLoot" count="1">
-		<item name="smallEngine" prob="0.5" />
-		<item name="headlight" prob="0.3" />
-		<item name="minibikeWheels" prob="0.3" />
-		<item name="carBattery" prob="0.5" />
-		<item name="radiator" prob="0.5" />
-		<item name="airFilter" prob="0.5" />
-		<item name="Exhaust" prob="0.3" quality="1,300" />
-		<item name="EngineBlock" prob="0.4" quality="1,300" />
-		<item name="scrapCable" prob="0.5" />
+	
+	<lootgroup name="automotiveHandlebarsOne">
+		<item name="partsHandlebars"	count="1" />
+		<item name="ductTape"			count="2" />
+		<item name="headlight"			count="1" />
+		<item name="electricParts"		count="5" />
+		<item name="shortMetalPipe"		count="2" />
+		<item name="NutAndBolt"			count="6" />
+		<item name="scrapCable"			count="2" />	
 	</lootgroup>
+
+	<lootgroup name="automotiveHandlebarsRandomSet" count="all">
+		<item name="partsHandlebars"	count="0,1" />
+		<item name="ductTape" 			count="0,2" />
+		<item name="headlight" 			count="0,1" />
+		<item name="electricParts" 		count="0,5" />
+		<item name="shortMetalPipe" 	count="0,2" />
+		<item name="NutAndBolt" 		count="0,6" />
+		<item name="scrapCable" 		count="0,2" />	
+	</lootgroup>
+	
+	<lootgroup name="automotiveHandlebarsAll" count="all">
+		<item name="partsHandlebars"	count="1" />
+		<item name="ductTape" 			count="2" />
+		<item name="headlight" 			count="1" />
+		<item name="electricParts" 		count="5" />
+		<item name="shortMetalPipe" 	count="2" />
+		<item name="NutAndBolt" 		count="6" />
+		<item name="scrapCable" 		count="2" />	
+	</lootgroup>
+	
+	<lootgroup name="automotiveHandlebars">	
+		<item group="automotiveHandlebarsOne"  			count="1" 		prob="65"/>
+		<item group="automotiveHandlebarsRandomSet" 	count="1" 		prob="15"/>
+		<item group="automotiveHandlebarsAll"			count="1" 		prob="10"/>
+		<item name="minibikeHandlebars"					count="1"		prob="10"/>
+	</lootgroup>
+	
+	<lootgroup name="automotiveSmallEngineOne">
+		<item name="airFilter" count="1" />
+		<item name="radiator" count="1" />
+		<item name="Exhaust" count="1" />
+		<item name="EngineBlock" count="1" />
+	</lootgroup>
+	
+	<lootgroup name="automotiveSmallEngineRandomSet" count="all">
+		<item name="airFilter" count="0,1" />
+		<item name="radiator" count="0,1" />
+		<item name="Exhaust" count="0,1" />
+		<item name="EngineBlock" count="0,1" />
+	</lootgroup>
+	
+	<lootgroup name="automotiveSmallEngineAll" count="all">
+		<item name="airFilter" count="1" />
+		<item name="radiator" count="1" />
+		<item name="Exhaust" count="1" />
+		<item name="EngineBlock" count="1" />
+	</lootgroup>
+	
+	<lootgroup name="automotiveSmallEngine">	
+		<item group="automotiveSmallEngineOne"  		count="1" 		prob="80"/>
+		<item group="automotiveSmallEngineRandomSet" 	count="1" 		prob="10"/>
+		<item group="automotiveSmallEngineAll"			count="1" 		prob="5"/>
+		<item name="smallEngine"						count="1"		prob="5"/>
+	</lootgroup>
+	
+	<lootgroup name="automotiveMinibikeOne">	
+        <item name="minibikeChassis"  			count="1" 		prob="7.5"/>
+        <item name="minibikeSeat"  				count="1" 		prob="7.5"/>
+        <item name="minibikeWheels"  			count="1" 		prob="7.5"/>
+        <item group="automotiveHandlebars"  	count="1" 		prob="7.5"/>
+        <item name="padlock"  					count="1" 		prob="25"/>
+        <item group="automotiveSmallEngine"		count="1" 		prob="20"/>
+		<item name="carBattery"  				count="1" 		prob="25"/>  
+	</lootgroup>
+
+	<lootgroup name="automotiveMinibikeRandomSet" 	count="all">	
+		<item name="minibikeChassis"  				count="0,1"/>
+		<item name="minibikeSeat"  					count="0,1"/>
+		<item name="minibikeWheels"  				count="0,1"/>
+		<item group="automotiveHandlebars"  		count="0,1"/>
+		<item name="padlock"  						count="0,1"/>
+		<item group="automotiveSmallEngine"			count="0,1"/>
+		<item name="carBattery"  					count="0,1"/>  
+	</lootgroup>
+
+	<lootgroup name="automotiveMinibikeAll" 		count="all">	
+		<item name="minibikeChassis" 	 			count="1"/>
+		<item name="minibikeSeat"  					count="1"/>
+		<item name="minibikeWheels"  				count="1"/>
+		<item name="minibikeHandlebars"  			count="1"/>
+		<item name="padlock"  						count="1"/>
+		<item name="smallEngine"					count="1"/>
+		<item name="carBattery"  					count="1"/>  
+	</lootgroup>
+
+	<lootgroup name="automotiveMinibike">	
+		<item group="automotiveMinibikeOne"  		count="1" 		prob="97.5"/>
+		<item group="automotiveMinibikeRandomSet" 	count="1" 		prob="2"/>
+		<item group="automotiveMinibikeAll"			count="1" 		prob="0.5"/>
+	</lootgroup>
+
+	<lootgroup name="BikeLoot" count="1">
+		<item group="automotiveMinibike" />
+	</lootgroup>
+
 	<lootgroup name="rareAutomotive" count="1">
 		<item name="partsChainsaw_parts" prob="0.5" />
 		<item name="partsAuger_parts" prob="0.5" />
 		<item name="partsChainsaw_blade" prob="0.5" />
 		<item name="smallEngine" prob="0.5" />
 		<item name="partsAuger_blade" prob="0.5" />
-		<item name="partsHandlebars" prob="0.5" />
 		<item name="minibikeWheels" prob="0.5" />
 	</lootgroup>
 	<lootgroup name="automotive" count="1,2">
+		<item group="automotiveSmallEngine" prob="0.3" />
+		<item group="automotiveHandlebars" prob="0.3" />
 		<item name="gasCan" count="50,300" prob="0.4" />
-		<item name="radiator" prob="0.3" />
-		<item name="headlight" prob="0.3" />
 		<item name="scrapCable" prob="0.4" />
 		<item name="hubcap" prob="0.5" />
-		<item name="airFilter" prob="0.5" />
-		<item name="carBattery" prob="0.6" />
 		<item name="Alternator" prob="0.6" />
 		<item name="FanBelt" prob="0.6" />
 		<item name="ductTape" count="1,4" prob="0.5" />
@@ -1184,7 +1298,7 @@
 	<lootgroup name="garbage" count="1">
 		<item group="junk" prob="0.8" />
 		<item group="automotive" prob="0.2" />
-		<item group="BikeLoot" prob="0.1" />
+		<item group="automotiveMinibike" prob="0.1" />
 	</lootgroup>
 	<lootgroup name="metalpipe_scrap" count="1">
 		<item name="scrapIron" prob="1.5" />
@@ -1200,7 +1314,6 @@
 		<item name="partsAuger_parts" prob="0.25"/>
 		<item name="partsAuger_blade" prob="0.25"/>
 		<item name="partsChainsaw_blade" prob="0.5"/>
-		<item group="BikeLoot" prob="0.5" />
 		<item name="CompactDriver" prob="0.2" />
 		<item name="HandDolly" prob="0.1" />
 		<item name="Wielder" prob="0.5" />
@@ -1238,7 +1351,6 @@
 		<item name="AirCompressor" prob="0.1" />
         <item name="smallGenerator" prob="0.3" />
 		<item name="BikeNABox" prob="0.1" />
-		<item group="BikeLoot" prob="0.3" />
 		<item group="nailgun+parts" prob="0.2" />
 		<item name="calipers" prob="0.2" />
 		<item name="Wielder" prob="0.1" />
@@ -1391,7 +1503,7 @@
 		<item name="CircularSaw" prob="0.6" />
 		<item group="rareTools" prob="0.2" />
 		<item name="militaryFiber" count="1,5" prob="0.1" />
-		<item name="fireaxeIron" prob="0.15" />
+		<item name="fireaxeIron" prob="0.05" />
 	</lootgroup>
 	<lootgroup name="DriedLeather" count="all">
 		<item name="leather" count="4" prob="1" />
@@ -1839,7 +1951,7 @@
 		<item group="clothes" prob="0.5" />
 
 		<item group="rottenFood" prob="0.062" />
-		<item group="hazmatGear" count="1" prob="0.008" />
+		<item group="armorHazmat" count="1" prob="0.008" />
 		<item group="questChallenge" count="1" prob="0.0105" />
 		<item group="treasureMaps" count="1" prob="0.0105" />
 		<!-- total 2% for a quest thing -->
@@ -1883,7 +1995,7 @@
 		<item name="canCatfood" prob="0.5" />
 		<item name="canDogfood" prob="0.5" />
 		<item group="tools" prob="0.4" />
-		<item group="BikeLoot" prob="0.5" />
+		<item group="automotiveMinibike" prob="0.5" />
 		<item name="BikeNABox" prob="0.2" />
 		<item group="empty" prob="1" />
 	</lootcontainer>
@@ -1913,7 +2025,7 @@
 		<item group="airdropfood" count="1,2" />
 		<item group="airdropGuns" count="1,2"/>
 		<item group="workingStiffs" prob="0.5" count="1,2"/>
-		<item group="hazmatGear" prob="0.25" count="1,3"/>
+		<item group="armorHazmat" prob="0.25" count="1"/>
 	</lootcontainer>
 	<!-- lootcontainer 35 tree hollowed stump, place where people stash things, -->
 	<lootcontainer id="35" count="0,2" size="4,3" sound_open="UseActions/open_stump" sound_close="UseActions/close_stump" open_time="5">
@@ -1961,7 +2073,7 @@
 		<item name="animalFat" count="1,2" />
 		<item name="painkillers" prob="0.09" />
 		<item group="ammoSmall" prob="0.1" />
-		<item group="hazmatGear" count="1" prob="0.008" />
+		<item group="armorHazmat" count="1" prob="0.008" />
 		<item group="books" prob="0.01" />
 	</lootcontainer>
 	<!-- shotgun messiah -->
@@ -2003,7 +2115,7 @@
 		<item group="trophyGroup" prob="0.5" />
 		<item name="gunPowder" count="1,5" prob="0.25" />
 		<item name="book" count="1,2" prob="0.5" />
-		<item group="hazmatGear" prob="0.02" />
+		<item group="armorHazmat" prob="0.02" />
 	</lootcontainer>
 	<!-- file cabinet -->
 	<lootcontainer id="44" count="1,3" size="4,3" sound_open="UseActions/open_file_cabinet" sound_close="UseActions/close_file_cabinet" open_time="5">
@@ -2072,11 +2184,11 @@
 		<item group="militaryammo" count="2,4" prob="0.3" />
 		<item group="militaryWeaponParts" prob="0.1" />
 		<item group="sportingGoods" prob="0.1" />
-		<item group="handgun+ammo" prob="0.5" />
-		<item group="shotgun+ammo" prob="0.25" />
+		<item group="handgun+ammo" prob="0.25" />
+		<item group="shotgun+ammo" prob="0.15" />
 		<item group="GunBooks" prob="0.09" />
 		<item group="CompoundBow+ammo" count="1" prob="0.1" />
-		<item group="crossbow+ammo" count="1" prob="0.4" />
+		<item group="crossbow+ammo" count="1" prob="0.35" />
 		<item group="ammoSmall" count="1,3" prob="0.9" />
 		<item group="ammoBig" count="1" prob="0.01" />
 		<item name="weaponRepairKit" count="1,3" prob="0.5" />
@@ -2176,7 +2288,7 @@
 	</lootcontainer>
 	<!-- lootcontainer zombieMaleHazmat/zombieFemaleHazmat -->
 	<lootcontainer id="65" count="0,3" size="8,4" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
-		<item group="hazmatGear" count="1" />
+		<item group="armorHazmat" count="1" />
 		<item group="rareMedicine" prob="0.2" />
 		<item name="grainAlcohol" count="1,4" prob=".2" />
 		<item name="scrapPlastics" count="1,5" prob=".3" />
@@ -2193,8 +2305,6 @@
 		<item group="tools" prob="0.6" />
 		<item group="warmClothes" prob="0.7" />
 		<item group="lumberjacks" prob="0.5" />
-		<item name="fireaxeIron" count="1" prob="0.15" />
-		<item group="hazmatGear" count="1" prob="0.01" />
 		<item group="rareOres" prob="0.02" />
 	</lootcontainer>
 	<lootcontainer id="67" count="0,2" size="2,2" sound_open="UseActions/open_toilet" sound_close="UseActions/close_toilet">
@@ -2326,7 +2436,7 @@
 		<item name="huntingKnife" count="1" quality="1,100" prob="0.9" />
 		<item name="machete" prob="0.8" />
 		<item name="firstAidKit" />
-		<item name="smallEngine" prob="0.3" />
+		<item group="automotiveMinibike" prob="0.3" />
 		<item name="facialPiercings" prob="0.2"/>
 		<item name="bandanaBlack"/>
 	</lootcontainer>

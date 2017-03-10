@@ -14,7 +14,6 @@
 		<spawn maxcount="2" respawndelay="1" time="Day" entitygroup="ZombiesAll" />
 		<spawn maxcount="2" respawndelay="1" time="Night" entitygroup="ZombiesNight" />
 		<spawn maxcount="1" respawndelay="7" time="Any" entitygroup="AnimalsSnow" spawnDeadChance="0" />
-		<spawn maxcount="2" respawndelay="3" time="Any" entitygroup="AnimalsCity" spawnDeadChance="0" />
 		<spawn maxcount="1" respawndelay="40" time="Any" entitygroup="StartingSurvivorGroup" />
 	</biome>
 	<!-- Gravestown & Perishton-->
@@ -23,8 +22,6 @@
 		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="ZombiesBoss" />
 		<spawn maxcount="6" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
 		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="RadZoneAnimalGrp" spawnDeadChance="0" />
-		<spawn maxcount="1" respawndelay="3" time="Any" entitygroup="AnimalsCity" spawnDeadChance="0" />
-		<spawn maxcount="1" respawndelay="3" time="Any" entitygroup="Spiders" spawnDeadChance="0" />
         <spawn maxcount="1" respawndelay="20" time="Any" entitygroup="ArmedSurvivorGroup" />
     </biome>
 	<!-- Random gen city-->

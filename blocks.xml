@@ -3225,7 +3225,6 @@ then add recipes for those white/red/green metals
 		<property name="Material" value="Mmetal_thin" />
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
-		<property name="MaxDamage" value="100" />
 		<property name="Model" value="Appliances/ac_unit" param1="main_mesh" />
 		<drop event="Harvest" name="electricParts" count="4" prob="1" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
@@ -3337,13 +3336,13 @@ then add recipes for those white/red/green metals
 			<!-- which prefab/particle is used -->
 			<property name="RadiusBlocks" value="4" />
 			<!-- damage radius for blocks -->
-			<property name="BlockDamage" value="200" />
+			<property name="BlockDamage" value="2000" />
 			<!-- damage for blocks in the center of the explosion -->
 			<property name="RadiusEntities" value="7" />
 			<!-- damage radius for entities -->
 			<property name="EntityDamage" value="200" />
 			<!-- damage for entities in the center of the explosion -->
-			<property name="DamageBonus.earth" value="0.5" />
+			<property name="DamageBonus.earth" value="0.1" />
 			<property name="DamageBonus.organic" value="10" />
 		</property>
 		<drop event="Destroy" count="0" prob="1" />
@@ -6236,8 +6235,8 @@ kind of free
 		<property name="CanPlayersSpawnOn" value="false" />
 		<drop event="Harvest" name="PlantFibers" count="5" />
 		<property name="MaxDamage" value="500" />
-		<drop event="Harvest" name="foodYuccaFruit" count="0" prob="1" />
-		<drop event="Destroy" name="foodYuccaFruit" count="0" prob="1" />
+		<drop event="Harvest" name="foodYuccaFruit" count="1" prob="0.5" />
+		<drop event="Destroy" name="foodYuccaFruit" count="1" prob="1" />
 	</block>
 	<block id="672" name="treeCactus05">
 		<property name="Extends" value="treeCactus04" />
@@ -11027,7 +11026,7 @@ kind of free
 	<!-- Free -->
 	<block id="1339" name="cashRegisterEmpty">
 		<property name="Material" value="MmetalNoGlue" />
-		<property name="MaxDamage" value="150" />
+		<property name="MaxDamage" value="250" />
 		<property name="StabilitySupport" value="false" />
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
@@ -11048,7 +11047,7 @@ kind of free
 	<block id="1340" name="cntCashRegister">
 		<property name="Class" value="Loot" />
 		<property name="Material" value="MmetalNoGlue" />
-		<property name="MaxDamage" value="150" />
+		<property name="MaxDamage" value="250" />
 		<property name="StabilitySupport" value="false" />
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />

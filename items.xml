@@ -1620,7 +1620,7 @@ Mesh files no longer used:
 			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Attributes">
-			<property name="EntityDamage" value="6,15" />
+			<property name="EntityDamage" value="10,25" />
 			<property name="BlockDamage" value="5,30" />
 			<property name="DegradationMax" value="200,1000" />
 			<property name="DegradationRate" value="5,1" />
