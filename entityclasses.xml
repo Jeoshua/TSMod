@@ -710,7 +710,7 @@
 		<property name="CanClimbLadders" value="false" />
 		<!-- General entity properties -->
 		<property name="MaxHealth" value="200" />
-		<property name="MaxViewAngle" value="320" />
+		<property name="MaxViewAngle" value="310" />
 		<property name="WanderSpeed" value="0.7" />
 		<property name="PanicSpeed" value="2.2" />
 		<!-- This decides on the particle effect played on hit -->
@@ -3139,7 +3139,7 @@
 		<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityZombie" />
 		<property name="CanClimbLadders" value="false" />
 		<!-- General entity properties -->
-		<property name="MaxHealth" value="500" />
+		<property name="MaxHealth" value="2000" />
 		<property name="MaxViewAngle" value="160" />
 		<property name="WanderSpeed" value="0.25" />
 		<property name="PanicSpeed" value="2.0" />
@@ -3415,7 +3415,7 @@
 	<!-- JZMOD BABY ZOMBIE-->
 	<entity_class name="ZombieBaby" extends="zombieUMA">
 		<property name="Archetype" value="ZombieBaby" />
-		<property name="MaxHealth" value="80" />
+		<property name="MaxHealth" value="800" />
 		<property name="HandItem" value="handZombie02" />
 		<property name="Class" value="EntityZombie" />
 		<property name="WalkType" value="8" />

@@ -2033,7 +2033,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="Apple" count="6" />
 		<ingredient name="emptyJar" count="1" />
 	</recipe>
-	
 	<recipe name="ApplePie" count="1" craft_area="workStove" craft_tool="cookingGrill" craft_time="20" craft_exp_gain="0">
 		<ingredient name="Flour" count="1" />
 		<ingredient name="egg" count="1" />

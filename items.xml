@@ -6317,6 +6317,7 @@ Mesh files no longer used:
 		</property>
 		<property name="ActionSkillGroup" value="Medicine" />
 		<property name="CraftingSkillGroup" value="Medicine" />
+        <property name="DescriptionKey" value="antibioticsDesc" />
 		<property name="Group" value="Medicine" />
 		<property name="ActionExp" value="20" />
 	</item>
@@ -13086,7 +13087,7 @@ Mesh files no longer used:
 	<item id="1710" name="Home Brewing">
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
-			<property name="Recipes_to_learn" value="beer,workFermentationBarrel,workStill" />
+			<property name="Recipes_to_learn" value="beer,workFermentationBarrel" />
 		</property>
 		<property name="DescriptionKey" value="SkillBookDesc" />
 		<property name="Group" value="Books" />
@@ -13527,8 +13528,7 @@ Mesh files no longer used:
 		<property name="Weight" value="5" />
 		<property name="FuelValue" value="5" />
 		<property name="Stacknumber" value="50" />
-		<property name="EconomicBundleSize" value="4" />
-		<property name="EconomicValue" value="1000" />
+		<property name="EconomicValue" value="100" />
 		<property name="CraftingSkillGroup" value="Primitive Crafting" />
 		<property name="CustomIcon" value="theEnforcerMagazine" />
 		<property name="DescriptionKey" value="SkillMagazineDesc" />
@@ -13540,8 +13540,7 @@ Mesh files no longer used:
 		<property name="Weight" value="5" />
 		<property name="FuelValue" value="5" />
 		<property name="Stacknumber" value="50" />
-		<property name="EconomicBundleSize" value="12" />
-		<property name="EconomicValue" value="12000" />
+		<property name="EconomicValue" value="100" />
 		<property name="CraftingSkillGroup" value="Primitive Crafting" />
 		<property name="CustomIcon" value="theEnforcerMagazine" />
 		<property name="DescriptionKey" value="SkillMagazineDesc" />

@@ -1258,9 +1258,9 @@
 		<item name="MixedChemicals" prob="0.5" />
 	</lootgroup>
 	<lootgroup name="medicine" count="1">
-		<item name="painkillers" prob="0.3" />
-		<item name="firstAidBandage" prob="0.3" />
-		<item name="bandage" prob="0.4" />
+		<item name="painkillers" prob="0.2" />
+		<item name="firstAidBandage" prob="0.2" />
+		<item name="bandage" prob="0.3" />
 		<item name="AntiVenom" prob="0.1" />
 		<item name="vitamins" prob="0.2" />
 		<item name="grainAlcohol" prob="0.15" />
@@ -1823,7 +1823,7 @@
 		<item name="book" prob="0.5" />
 		<item group="books" prob="0.1" />
 		<item name="pipeBomb" count="1,2" prob="0.1" />
-		<item group="periodicals" prob="0.3" />
+		<item group="periodicals" prob="0.2" />
 	</lootcontainer>
 	<!-- lootcontainer 15 generic zombie loot-->
 	<lootcontainer id="15" count="1,2" size="4,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" destroy_on_close="false">
@@ -2006,7 +2006,7 @@
 		<item name="painkillers" prob="0.1" />
 		<item name="book" count="1,4" prob="0.5" />
 		<item group="ammoSmall" prob="0.4" />
-		<item group="empty" prob="0.5" />
+		<item group="empty" prob="1" />
 	</lootcontainer>
 	<!-- cooler loot -->
 	<lootcontainer id="45" count="0,2" size="4,3" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" open_time="5">
@@ -2050,13 +2050,14 @@
 		<item group="cannedfood" />
 		<item name="bottledWater" />
 		<item group="drugs" prob="0.3" />
-		<item group="handgun+ammo" prob="0.1" />
-		<item name="oldCash" count="1,20" prob="0.2" />
+		<item group="handgun+ammo" prob="0.05" />
+		<item name="oldCash" count="1,20" prob="0.3" />
 	</lootcontainer>
 	<!-- bookcase -->
 	<lootcontainer id="49" count="0,2" size="4,3" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" open_time="3">
 		<item group="books" prob="0.25" />
 		<item name="book" count="1,2" prob="0.75" />
+		<item group="empty" />
 	</lootcontainer>
 	<!-- shotgun Messiah -->
 	<lootcontainer id="50" count="1,3" size="4,4" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate" open_time="10">
@@ -2079,9 +2080,8 @@
 	<!-- pop n pills -->
 	<lootcontainer id="51" count="0,4" size="4,4" sound_open="UseActions/open_pill_case" sound_close="UseActions/close_pill_case" open_time="5">
 		<item group="medicine" count="1,2" />
-		<item group="empty" />
-		<item group="rareMedicine" prob="0.2"/>
 		<item name="scrapPlastics" count="1,8" prob=".15" />
+		<item group="empty" />
 	</lootcontainer>
 	<!-- beer cooler -->
 	<lootcontainer id="52" count="0,1" size="4,4" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" open_time="5">

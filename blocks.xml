@@ -3325,11 +3325,11 @@ then add recipes for those white/red/green metals
 		<property class="Explosion">
 			<property name="ParticleIndex" value="4" />
 			<!-- which prefab/particle is used -->
-			<property name="RadiusBlocks" value="3" />
+			<property name="RadiusBlocks" value="4" />
 			<!-- damage radius for blocks -->
 			<property name="BlockDamage" value="200" />
 			<!-- damage for blocks in the center of the explosion -->
-			<property name="RadiusEntities" value="6" />
+			<property name="RadiusEntities" value="7" />
 			<!-- damage radius for entities -->
 			<property name="EntityDamage" value="200" />
 			<!-- damage for entities in the center of the explosion -->
@@ -3414,12 +3414,6 @@ then add recipes for those white/red/green metals
 			<property name="RadiusEntities" value="5" />
 			<!-- damage radius for entities -->
 			<property name="EntityDamage" value="300" />
-			<property name="DamageBonus.earth" value="0.5" />
-			<property name="DamageBonus.stone" value="0.25" />
-			<property name="DamageBonus.hardStone" value="0.1" />
-			<property name="DamageBonus.metal" value="0.25" />
-			<property name="DamageBonus.steel" value="0.25" />
-			<property name="DamageBonus.organic" value="10" />
 			<!-- damage for entities in the center of the explosion -->
 		</property>
 		<property name="LPHardnessScale" value="0" />
@@ -3936,20 +3930,18 @@ then add recipes for those white/red/green metals
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="Stacknumber" value="40" />
 		<!-- STK explosives -->
-		<property class="Explosion">
-			<property name="ParticleIndex" value="1" />
-			<property name="RadiusBlocks" value="2" />
-			<property name="RadiusEntities" value="3" />
-			<property name="BlockDamage" value="10" />
-			<property name="EntityDamage" value="45" />
+		<property name="Explosion.ParticleIndex" value="1" />
+		<property name="Explosion.RadiusBlocks" value="2" />
+		<property name="Explosion.RadiusEntities" value="3" />
+		<property name="Explosion.BlockDamage" value="10" />
+		<property name="Explosion.EntityDamage" value="45" />
 			<!-- Explosions do roughly 1.4 times this value in actual entity damage -->
-			<property name="DamageBonus.stone" value="0" />
-			<property name="DamageBonus.metal" value="0" />
-			<property name="DamageBonus.earth" value="0" />
-			<property name="DamageBonus.wood" value="0" />
-			<property name="DamageBonus.water" value="0" />
-			<property name="DamageBonus.organic" value="10" />
-		</property>
+		<property name="Explosion.DamageBonus.stone" value="0" />
+		<property name="Explosion.DamageBonus.metal" value="0" />
+		<property name="Explosion.DamageBonus.earth" value="0" />
+		<property name="Explosion.DamageBonus.wood" value="0" />
+		<property name="Explosion.DamageBonus.water" value="0" />
+		<property name="Explosion.DamageBonus.organic" value="10" />
 		<property name="CanPickup" value="false" />
 		<property name="DropScale" value="3" />
 		<drop event="Destroy" count="0" />
@@ -3962,13 +3954,11 @@ then add recipes for those white/red/green metals
 		<property name="Model" value="Traps/trap_mine_hubcap" param1="main_mesh" />
 		<property name="Stacknumber" value="20" />
 		<!-- STK explosives -->
-		<property class="Explosion">
-			<property name="RadiusBlocks" value="3" />
-			<property name="RadiusEntities" value="5" />
-			<property name="BlockDamage" value="15" />
-			<property name="EntityDamage" value="85" />
-			<property name="DamageBonus.organic" value="10" />
-		</property>
+		<property name="Explosion.RadiusBlocks" value="3" />
+		<property name="Explosion.RadiusEntities" value="5" />
+		<property name="Explosion.BlockDamage" value="15" />
+		<property name="Explosion.EntityDamage" value="85" />
+		<property name="Explosion.DamageBonus.organic" value="10" />
 		<property name="EconomicValue" value="146" />
 	</block>
 	<block id="433" name="mineAirFilter">
@@ -3976,13 +3966,11 @@ then add recipes for those white/red/green metals
 		<property name="Model" value="Traps/trap_mine_filter" param1="main_mesh" />
 		<property name="Stacknumber" value="20" />
 		<!-- STK explosives -->
-		<property class="Explosion">
-			<property name="RadiusBlocks" value="4" />
-			<property name="RadiusEntities" value="5" />
-			<property name="BlockDamage" value="20" />
-			<property name="EntityDamage" value="125" />
-			<property name="DamageBonus.organic" value="10" />
-		</property>
+		<property name="Explosion.RadiusBlocks" value="4" />
+		<property name="Explosion.RadiusEntities" value="5" />
+		<property name="Explosion.BlockDamage" value="20" />
+		<property name="Explosion.EntityDamage" value="125" />
+		<property name="Explosion.DamageBonus.organic" value="10" />
 		<property name="EconomicValue" value="182" />
 	</block>
 	<block id="434" name="cntToilet01">
@@ -4666,13 +4654,11 @@ kind of free
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
 		<property name="Stacknumber" value="40" />
 		<!-- STK explosives -->
-		<property class="Explosion">
-			<property name="RadiusBlocks" value="2" />
-			<property name="RadiusEntities" value="3" />
-			<property name="BlockDamage" value="10" />
-			<property name="EntityDamage" value="65" />
-			<property name="DamageBonus.organic" value="10" />	
-		</property>
+		<property name="Explosion.RadiusBlocks" value="2" />
+		<property name="Explosion.RadiusEntities" value="3" />
+		<property name="Explosion.BlockDamage" value="10" />
+		<property name="Explosion.EntityDamage" value="65" />
+		<property name="Explosion.DamageBonus.organic" value="10" />
 		<property name="EconomicValue" value="120" />
 	</block>
 	<block id="527" name="plantedHop1">
@@ -5658,9 +5644,7 @@ kind of free
 		<property name="Weight" value="72" />
 		<property name="LootList" value="44" />
 		<property name="Model" value="Entities/LootContainers/file_cabinetPrefab" />
-		<property class="RepairItems">
-			<property name="scrapIron" value="10" />
-		</property>
+		<property class="RepairItems"> <property name="scrapIron" value="10" /> </property>
 		<drop event="Harvest" name="mechanicalParts" count="1" prob=".7" tool_category="Disassemble" />
 		<drop event="Harvest" name="mechanicalParts" count="1" prob=".3" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
@@ -6214,8 +6198,6 @@ kind of free
 		<property name="IsPlant" value="true" />
 		<property name="CanPlayersSpawnOn" value="false" />
 		<drop event="Harvest" name="PlantFibers" count="5" />
-		<!--<drop event="Harvest" name="foodYuccaFruit" count="1,2" prob="1" />
-		<drop event="Destroy" name="foodYuccaFruit" count="1,2" prob="1" />-->
 		<drop event="Destroy" name="wood" count="1,2" prob="1" />
 		<drop event="Destroy" name="PlantFibers" count="5" />
 	</block>
@@ -6223,38 +6205,37 @@ kind of free
 		<property name="Extends" value="treeCactus01" />
 		<property name="Model" value="Entities/Trees/Saguaro_Cactus_16Prefab" />
 		<property name="MultiBlockDim" value="1,4,1" />
-		<!--<drop event="Destroy" name="foodYuccaFruit" count="3" prob="1" />-->
 	</block>
 	<block id="670" name="treeCactus03">
 		<property name="Extends" value="treeCactus01" />
 		<property name="Model" value="Entities/Trees/Saguaro_Cactus_13Prefab" />
 		<property name="MultiBlockDim" value="1,3,1" />
-		<!--<drop event="Destroy" name="foodYuccaFruit" count="2" prob="1" />-->
 	</block>
 	<block id="671" name="treeCactus04">
-		<property name="Extends" value="treeCactus01" />
-		<property name="StabilitySupport" value="false" />
+		<property name="Class" value="Cactus" />
+		<property name="Material" value="Mcactus" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Texture" value="390" />
 		<property name="Model" value="Entities/Plants/cactus04Prefab" />
-		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="BigDecorationRadius" value="1" />
+		<property name="RotationAllowed" value="pivotOnFloor" />
+		<property name="Tag" value="TreeTrunk" />
+		<property name="Damage" value="3" />
+		<property name="IsPlant" value="true" />
+		<property name="StabilitySupport" value="false" />
+		<property name="CanPlayersSpawnOn" value="false" />
+		<drop event="Harvest" name="PlantFibers" count="5" />
 		<property name="MaxDamage" value="500" />
 		<drop event="Harvest" name="foodYuccaFruit" count="0" prob="1" />
 		<drop event="Destroy" name="foodYuccaFruit" count="0" prob="1" />
 	</block>
 	<block id="672" name="treeCactus05">
-		<property name="Extends" value="treeCactus01" />
+		<property name="Extends" value="treeCactus04" />
 		<property name="Model" value="Entities/Plants/cactus05Prefab" />
-		<property name="MultiBlockDim" value="1,1,1" />
-		<property name="MaxDamage" value="500" />
-		<drop event="Destroy" name="foodYuccaFruit" count="0,1" prob="1" />
-		<drop event="Harvest" name="foodYuccaFruit" count="0" prob="1" />
 	</block>
 	<block id="673" name="treeCactus06">
-		<property name="Extends" value="treeCactus01" />
+		<property name="Extends" value="treeCactus04" />
 		<property name="Model" value="Entities/Plants/cactus06Prefab" />
-		<property name="MultiBlockDim" value="1,1,1" />
-		<property name="MaxDamage" value="500" />
-		<drop event="Harvest" name="foodYuccaFruit" count="0,1" prob="1" />
-		<drop event="Destroy" name="foodYuccaFruit" count="0,1" prob="1" />
 	</block>
 	<block id="674" name="treePlantedMountainPine1m">
 		<property name="Extends" value="treeMasterGrowing" />
@@ -6677,7 +6658,7 @@ kind of free
 		<property name="Extends" value="cropsHarvestableMaster" />
 		<property name="CustomIcon" value="plantedCotton3Harvest" />
 		<property name="Texture" value="363" />
-		<drop event="Harvest" name="cottonPlant" count="1,2" />
+		<drop event="Harvest" name="cottonPlant" count="1,3" />
 		<property name="CropsGrown.BonusHarvestDivisor" value="8" />
 	</block>
 	<block id="715" name="wallPlasterBaseboard2Block">
@@ -11143,26 +11124,24 @@ kind of free
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	</block>
 	<block id="1348" name="shoppingBasketEmpty">
-		<property name="Material" value="Mmetal_weak" />
+		<property name="Material" value="Mplastics" />
 		<property name="StabilitySupport" value="false" />
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
 		<property name="Model" value="LootContainers/shopping_basket_empty" param1="main_mesh" />
 		<property name="CanPickup" value="true" />
 		<property name="PickupTarget" value="shoppingBasketItem" />
-		<property name="MaxDamage" value="250" />
 		<drop event="Destroy" name="scrapIron" count="5" />
 	</block>
 	<block id="1349" name="cntShoppingBasket">
 		<property name="Class" value="Loot" />
-		<property name="Material" value="Mmetal_weak" />
+		<property name="Material" value="Mplastics" />
 		<property name="StabilitySupport" value="false" />
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
 		<property name="Model" value="LootContainers/shopping_basket" param1="main_mesh" />
 		<property name="CustomIcon" value="shoppingBasketEmpty" />
 		<property name="LootList" value="58" />
-		<property name="MaxDamage" value="250" />
 		<drop event="Destroy" count="0" />
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="shoppingBasketItem" count="1" prob="1" tool_category="Disassemble" />
@@ -15890,7 +15869,7 @@ kind of free
 		<property name="ModelOffset" value="0,-0.12,0" />
 		<property name="Class" value="MortePlantGrowing, Mods" />
 		<property name="MeshScale" value="1.5,1.5" />
-		<drop event="Harvest" name="sugarcanePlant" count="1,3" />
+		<drop event="Harvest" name="sugarcanePlant" count="1,2" />
 	</block>
 	<block id="1954" name="plantedSunflower">
 		<property name="Extends" value="plantedTomato" />
@@ -16035,7 +16014,7 @@ kind of free
 			<property name="BlockDamage" value="5000" />
 			<property name="RadiusEntities" value="5" />
 			<property name="EntityDamage" value="70" />
-			<property name="DamageBonus.explosions" value="10" />
+			<property name="DamageBonus.organic" value="10" />
 		</property>
 	</block>
 	<block id="1704" name="TankSecure">
@@ -16158,6 +16137,7 @@ kind of free
 		<property name="Extends" value="cntCar03Blue" />
 		<property name="Model" value="#ambulancia?ambulanciaD0" />
 		<property name="DowngradeBlock" value="AmbulanceDamaged" />
+		<property name="LootList" value="114" />
         <property name="CustomIcon" value="cntCar03Damage2" />
 	</block>
 	<block id="1978" name="AmbulanceDamaged">
@@ -17119,7 +17099,9 @@ kind of free
 		<property name="MultiBlockDim" value="1,2,1" />
 		<property name="Class" value="Campfire" />
 		<property name="Stacknumber" value="1" />
-		<property name="Workstation.Modules" value="output" />
+		<property class="Workstation">
+			<property name="Modules" value="output" />
+		</property>
 		<property name="DescriptionKey" value="workFermentationBarrelDesc" />
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="Plank" count="3,10" tool_category="Disassemble" />
@@ -17222,7 +17204,7 @@ kind of free
 		<property name="CraftingSkillGroup" value="Engineering" />
 	</block>
 	
-	<!--<block id="2100" name="kitchenWorkbench">
+	<block id="2100" name="kitchenWorkbench">
 		<property name="Material" value="metal" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#cooking?KitchenWorkbench" />
@@ -17251,7 +17233,7 @@ kind of free
 		<property class="Workstation">
 			<property name="Modules" value="tools,output,fuel" />
 		</property>
-	</block>-->
+	</block>
 	<block id="2102" name="breadLoafPan">
 		<property name="Material" value="Mmetal_weak" />
 		<property name="Shape" value="ModelEntity" />

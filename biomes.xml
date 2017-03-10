@@ -413,15 +413,14 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="block" blockname="plantedChrysanthemum3Harvest" prob="0.0002" />
 					<decoration type="block" blockname="mushroom01" prob="0.0002" rotatemax="7" />
 					<decoration type="block" blockname="mushroom02" prob="0.0002" rotatemax="7" />
-					<decoration type="block" blockname="treeBirch10m" prob="0.0049" rotatemax="7" />
-					<decoration type="block" blockname="treeBirch12m" prob="0.0069" rotatemax="7" />
-					<decoration type="block" blockname="treeBirch15m" prob="0.0089" rotatemax="7" />
-					<decoration type="block" blockname="treeMaple6m" prob="0.0089" rotatemax="7" />
-					<decoration type="block" blockname="treeMaple13m" prob="0.0089" rotatemax="7" />
-					<decoration type="block" blockname="treeMaple15m" prob="0.0108" rotatemax="7" />
-					<decoration type="block" blockname="treeMaple16m" prob="0.0126" rotatemax="7" />
-					<decoration type="block" blockname="treeMaple17m" prob="0.0129" rotatemax="7" />
-					<decoration type="block" blockname="appleTree" prob="0.0018" rotatemax="7" />
+					<decoration type="block" blockname="treeBirch10m" prob="0.0029" rotatemax="7" />
+					<decoration type="block" blockname="treeBirch12m" prob="0.0039" rotatemax="7" />
+					<decoration type="block" blockname="treeBirch15m" prob="0.0049" rotatemax="7" />
+					<decoration type="block" blockname="treeMaple6m" prob="0.0049" rotatemax="7" />
+					<decoration type="block" blockname="treeMaple13m" prob="0.0049" rotatemax="7" />
+					<decoration type="block" blockname="treeMaple15m" prob="0.0058" rotatemax="7" />
+					<decoration type="block" blockname="treeMaple16m" prob="0.0066" rotatemax="7" />
+					<decoration type="block" blockname="treeMaple17m" prob="0.0069" rotatemax="7" />
 					<decoration type="block" blockname="snowberry3Harvest" prob="0.00001" />
 					<decoration type="block" blockname="plantedBlueberry3Harvest" prob=".0005" />
 					<decoration type="block" blockname="forestFlower" prob="0.004" />
@@ -476,7 +475,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="rock04" prob=".005" />
 				<decoration type="block" blockname="treeDeadShrub" prob="0.0005" />
 				<decoration type="block" blockname="rockResource02" prob=".0005" rotatemax="3" />
-				<decoration type="block" blockname="cntBirdnest" prob="0.001" />
+				<decoration type="block" blockname="cntBirdnest" prob="0.002" />
 				<decoration type="block" blockname="plantedChrysanthemum3Harvest" prob="0.002" />
 				<decoration type="block" blockname="treeAzalea" prob="0.015" />
 				<decoration type="block" blockname="treeBirch10m" prob="0.004" rotatemax="7" />
@@ -661,7 +660,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="rock04" prob=".001" />
 				<decoration type="block" blockname="rockResource" prob=".00007" rotatemax="3" />
 				<decoration type="block" blockname="rockResource02" prob=".00007" rotatemax="3" />
-				<decoration type="block" blockname="cntBirdnest" prob="0.001" />
+				<decoration type="block" blockname="cntBirdnest" prob="0.002" />
 				<decoration type="block" blockname="treeDeadShrub" prob="0.0001" rotatemax="7" />
 				<decoration type="block" blockname="treeJuniper6m" prob="0.0025" rotatemax="7" />
 				<decoration type="block" blockname="treeMountainPine8m" prob="0.01" rotatemax="7" />
@@ -741,11 +740,11 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="block" blockname="rockResource" prob="0.025" rotatemax="3" />
 					<decoration type="block" blockname="rockResource02" prob="0.025" rotatemax="3" />
 					<decoration type="block" blockname="forestFlower" prob="0.2" />
-					<decoration type="block" blockname="strawberryPlant" prob="0.02" />
+					<decoration type="block" blockname="strawberryPlant" prob="0.08" />
 					<decoration type="block" blockname="treePlainsGrassDiagonal" prob="0.07" />
 					<decoration type="block" blockname="treeForestGrassDiagonal" prob="0.65" />
 					<decoration type="block" blockname="lootPlains" prob="0.00025" />
-					<decoration type="block" blockname="cntBirdnest" prob="0.005" />
+					<decoration type="block" blockname="cntBirdnest" prob="0.007" />
 				</decorations>
 			</subbiome>
 			<!-- Plains Sub Biome Thick Grass -->
@@ -798,7 +797,7 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="block" blockname="plantedCorn3Harvest" prob="0.0002" />
 					<decoration type="block" blockname="treeDesertShrub" prob="0.007" />
 					<decoration type="block" blockname="treeDeadShrub" prob="0.0005" />
-					<decoration type="block" blockname="cntBirdnest" prob="0.0005" />
+					<decoration type="block" blockname="cntBirdnest" prob="0.0009" />
 					<decoration type="block" blockname="treeCactus04" prob="0.0025" rotatemax="3" />
 					<decoration type="block" blockname="treeCactus05" prob="0.0025" rotatemax="3" />
 					<decoration type="block" blockname="treeCactus06" prob="0.0025" rotatemax="3" />
@@ -922,7 +921,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="treeMaple15m" prob="0.00014" rotatemax="7" />
 				<decoration type="block" blockname="treeMaple16m" prob="0.00014" rotatemax="7" />
 				<decoration type="block" blockname="treeMaple17m" prob="0.00014" rotatemax="7" />
-				<decoration type="block" blockname="strawberryPlant" prob="0.001" />
+				<decoration type="block" blockname="strawberryPlant" prob="0.002" />
 				<decoration type="block" blockname="forestFlower" prob="0.0006" />
 				<decoration type="block" blockname="treeForestGrassDiagonal" prob="0.2" />
 				<decoration type="block" blockname="treePlainsGrassDiagonal" prob="0.3" />
@@ -1188,7 +1187,7 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="block" blockname="cntBirdnest" prob="0.0009" />
 					<decoration type="block" blockname="driftwood" prob="0.0019" rotatemax="3" />
 					<decoration type="block" blockname="driftwood2" prob="0.0019" rotatemax="3" />
-					<decoration type="block" blockname="smallSugarcanePlant" prob="0.02" rotatemax="3" />
+					<decoration type="block" blockname="smallSugarcanePlant" prob="0.04" rotatemax="3" />
 					<decoration type="block" blockname="plantedBamboo3Harvest" prob="0.009" rotatemax="3" />
 					<decoration type="block" blockname="waterPlant" prob="0.08" rotatemax="3" />
 					<decoration type="block" blockname="sugarcanePlant" prob="0.03" rotatemax="3" />
@@ -1239,13 +1238,13 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="block" blockname="rockResource" prob=".025" rotatemax="3" />
 					<decoration type="block" blockname="driftwood" prob="0.0019" rotatemax="3" />
 					<decoration type="block" blockname="driftwood2" prob="0.0019" rotatemax="3" />
-					<decoration type="block" blockname="smallSugarcanePlant" prob="0.01" rotatemax="3" />
+					<decoration type="block" blockname="smallSugarcanePlant" prob="0.02" rotatemax="3" />
 					<decoration type="block" blockname="plantedBamboo3Harvest" prob="0.2" rotatemax="3" />
 					<decoration type="block" blockname="coconutPalm" prob="0.04" rotatemax="3" />
 					<decoration type="block" blockname="Palm" prob="0.04" rotatemax="3" />
 					<decoration type="block" blockname="waterPlant" prob="0.06" rotatemax="3" />
 					<decoration type="block" blockname="BlossomPalm" prob="0.04" rotatemax="3" />
-					<decoration type="block" blockname="sugarcanePlant" prob="0.03" rotatemax="3" />
+					<decoration type="block" blockname="sugarcanePlant" prob="0.04" rotatemax="3" />
 					<decoration type="block" blockname="treeTallGrassDiagonal" prob="0.50" />
 				</decorations>
 			</subbiome>
@@ -1306,7 +1305,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="coconutPalm" prob="0.004" rotatemax="3" />
 				<decoration type="block" blockname="Palm" prob="0.004" rotatemax="3" />
 				<decoration type="block" blockname="BlossomPalm" prob="0.004" rotatemax="3" />
-				<decoration type="block" blockname="sugarcanePlant" prob="0.02" rotatemax="3" />
+				<decoration type="block" blockname="sugarcanePlant" prob="0.03" rotatemax="3" />
 				<decoration type="block" blockname="waterPlant" prob="0.05" rotatemax="3" />
 				<decoration type="block" blockname="cinderBlocks01" prob=".0002" rotatemax="7" />
 				<decoration type="block" blockname="treeMountainPineDry" prob="0.005" rotatemax="7" />
@@ -1944,7 +1943,7 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="block" blockname="cinderBlocks01" prob="0.0005" rotatemax="7" />
 					<decoration type="block" blockname="cinderBlocks02" prob="0.0005" rotatemax="7" />
 					<decoration type="block" blockname="cinderBlocks03" prob="0.0005" rotatemax="7" />
-					<decoration type="block" blockname="cntCar03Damage2" prob="0.0025" rotatemax="3" />
+					<decoration type="block" blockname="cntCar03Damage2" prob="0.005" rotatemax="3" />
 					<decoration type="prefab" name="houseburnt_deco1" prob="0.07" />
 					<decoration type="prefab" name="houseburnt_deco2" prob="0.07" />
 					<decoration type="prefab" name="waste_rubble_bldg_01" prob="0.02" />
@@ -2213,7 +2212,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="rock04" prob=".01" rotatemax="3" />
 				<decoration type="block" blockname="rockResource" prob=".0005" rotatemax="3" />
 				<decoration type="block" blockname="rockResource02" prob=".0005" rotatemax="3" />
-				<decoration type="block" blockname="cntBirdnest" prob="0.002" />
+				<decoration type="block" blockname="cntBirdnest" prob="0.0002" />
 				<decoration type="block" blockname="RadTree" prob=".0006" rotatemax="3" />
 				<decoration type="block" blockname="treeBurntPine01" prob="0.003" rotatemax="7" />
 				<decoration type="block" blockname="treeBurntPine02" prob="0.003" rotatemax="7" />
