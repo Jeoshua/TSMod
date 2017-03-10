@@ -1925,11 +1925,10 @@
 		<property name="AITask-7" value="ApproachAndAttackTarget" param1="EntityZombieCop" />
 		<property name="AITask-8" value="ApproachAndAttackTarget" param1="EntityHornet" />
 		<property name="AITask-9" value="ApproachAndAttackTarget" param1="EntityAnimalBear" />
-		<property name="AITask-10" value="ApproachAndAttackTarget" param1="EntityAnimalHal" />
-		<property name="AITask-11" value="Territorial" param1="10" />
-		<property name="AITask-12" value="Wander" />
+		<property name="AITask-10" value="Territorial" param1="10" />
+		<property name="AITask-11" value="Wander" />
 		<!-- give up time -->		
-		<property name="AITask-13" value="ApproachSpot" />		
+		<property name="AITask-12" value="ApproachSpot" />		
 		<property name="AITarget-1" value="SetAsTargetIfHurt" />
 		<property name="AITarget-2" value="BlockingTargetTask" />	
      	<property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntityEnemy" />
@@ -1940,17 +1939,15 @@
 		<property name="AITarget-8" value="SetAsTargetIfHurt" param1="EntityZombieCop" />
 		<property name="AITarget-9" value="SetAsTargetIfHurt" param1="EntityHornet" />
 		<property name="AITarget-10" value="SetAsTargetIfHurt" param1="EntityAnimalBear" />
-		<property name="AITarget-11" value="SetAsTargetIfHurt" param1="EntityAnimalHal" />
-		<property name="AITarget-12" value="BlockingTargetTask" />
-		<property name="AITarget-13" value="SetNearestEntityAsTarget" param1="EntityEnemy" />
-		<property name="AITarget-14" value="SetNearestEntityAsTarget" param1="EntityBandit" />
-		<property name="AITarget-15" value="SetNearestEntityAsTarget" param1="EntityZombieCrawl" />
-		<property name="AITarget-16" value="SetNearestEntityAsTarget" param1="EntityZombie" />
-		<property name="AITarget-17" value="SetNearestEntityAsTarget" param1="EntityZombieDog" />
-		<property name="AITarget-18" value="SetNearestEntityAsTarget" param1="EntityZombieCop" />
-		<property name="AITarget-19" value="SetNearestEntityAsTarget" param1="EntityHornet" />
-		<property name="AITarget-20" value="SetNearestEntityAsTarget" param1="EntityAnimalBear" />
-		<property name="AITarget-21" value="SetNearestEntityAsTarget" param1="EntityAnimalHal" />
+		<property name="AITarget-11" value="BlockingTargetTask" />
+		<property name="AITarget-12" value="SetNearestEntityAsTarget" param1="EntityEnemy" />
+		<property name="AITarget-13" value="SetNearestEntityAsTarget" param1="EntityBandit" />
+		<property name="AITarget-14" value="SetNearestEntityAsTarget" param1="EntityZombieCrawl" />
+		<property name="AITarget-15" value="SetNearestEntityAsTarget" param1="EntityZombie" />
+		<property name="AITarget-16" value="SetNearestEntityAsTarget" param1="EntityZombieDog" />
+		<property name="AITarget-17" value="SetNearestEntityAsTarget" param1="EntityZombieCop" />
+		<property name="AITarget-18" value="SetNearestEntityAsTarget" param1="EntityHornet" />
+		<property name="AITarget-19" value="SetNearestEntityAsTarget" param1="EntityAnimalBear" />
 		<property name="HandItem" value="NPCmachete" />
 		<property name="MaxHealth" value="550" />
 		<property name="MaxViewAngle" value="320" />
@@ -2019,11 +2016,10 @@
 		<property name="AITask-7" value="ApproachAndAttackTarget" param1="EntityZombieCop" />
 		<property name="AITask-8" value="ApproachAndAttackTarget" param1="EntityHornet" />
 		<property name="AITask-9" value="ApproachAndAttackTarget" param1="EntityAnimalBear" />
-		<property name="AITask-10" value="ApproachAndAttackTarget" param1="EntityAnimalHal" />
-		<property name="AITask-11" value="Territorial" param1="10" />
-		<property name="AITask-12" value="Wander" />
+		<property name="AITask-10" value="Territorial" param1="10" />
+		<property name="AITask-11" value="Wander" />
 		<!-- give up time -->		
-		<property name="AITask-13" value="ApproachSpot" />		
+		<property name="AITask-12" value="ApproachSpot" />		
      	<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityEnemy" />
 		<property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntitySurvivor" />
 		<property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntityZombieCrawl" />
@@ -2032,17 +2028,15 @@
 		<property name="AITarget-6" value="SetAsTargetIfHurt" param1="EntityZombieCop" />
 		<property name="AITarget-7" value="SetAsTargetIfHurt" param1="EntityHornet" />
 		<property name="AITarget-8" value="SetAsTargetIfHurt" param1="EntityAnimalBear" />
-		<property name="AITarget-9" value="SetAsTargetIfHurt" param1="EntityAnimalHal" />
-		<property name="AITarget-10" value="BlockingTargetTask" />
-		<property name="AITarget-11" value="SetNearestEntityAsTarget" param1="EntityEnemy" />
-		<property name="AITarget-12" value="SetNearestEntityAsTarget" param1="EntityBandit" />
-		<property name="AITarget-13" value="SetNearestEntityAsTarget" param1="EntityZombieCrawl" />
-		<property name="AITarget-14" value="SetNearestEntityAsTarget" param1="EntityZombie" />
-		<property name="AITarget-15" value="SetNearestEntityAsTarget" param1="EntityZombieDog" />
-		<property name="AITarget-16" value="SetNearestEntityAsTarget" param1="EntityZombieCop" />
-		<property name="AITarget-17" value="SetNearestEntityAsTarget" param1="EntityHornet" />
-		<property name="AITarget-18" value="SetNearestEntityAsTarget" param1="EntityAnimalBear" />
-		<property name="AITarget-19" value="SetNearestEntityAsTarget" param1="EntityAnimalHal" />
+		<property name="AITarget-9" value="BlockingTargetTask" />
+		<property name="AITarget-10" value="SetNearestEntityAsTarget" param1="EntityEnemy" />
+		<property name="AITarget-11" value="SetNearestEntityAsTarget" param1="EntityBandit" />
+		<property name="AITarget-12" value="SetNearestEntityAsTarget" param1="EntityZombieCrawl" />
+		<property name="AITarget-13" value="SetNearestEntityAsTarget" param1="EntityZombie" />
+		<property name="AITarget-14" value="SetNearestEntityAsTarget" param1="EntityZombieDog" />
+		<property name="AITarget-15" value="SetNearestEntityAsTarget" param1="EntityZombieCop" />
+		<property name="AITarget-16" value="SetNearestEntityAsTarget" param1="EntityHornet" />
+		<property name="AITarget-17" value="SetNearestEntityAsTarget" param1="EntityAnimalBear" />
 		<property name="HandItem" value="NPCClubSpiked" />
         <property name="MaxHealth" value="550" />
 		<property name="MaxViewAngle" value="320" />
@@ -2092,11 +2086,10 @@
 		<property name="AITask-7" value="ApproachAndAttackTarget" param1="EntityZombieCop" />
 		<property name="AITask-8" value="ApproachAndAttackTarget" param1="EntityHornet" />
 		<property name="AITask-9" value="ApproachAndAttackTarget" param1="EntityAnimalBear" />
-		<property name="AITask-10" value="ApproachAndAttackTarget" param1="EntityAnimalHal" />
-		<property name="AITask-11" value="Territorial" param1="10" />
-		<property name="AITask-12" value="Wander" />
+		<property name="AITask-10" value="Territorial" param1="10" />
+		<property name="AITask-11" value="Wander" />
 		<!-- give up time -->		
-		<property name="AITask-13" value="ApproachSpot" />			
+		<property name="AITask-12" value="ApproachSpot" />			
      	<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityEnemy" />
 		<property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntitySurvivor" />
 		<property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntityZombieCrawl" />
@@ -2105,17 +2098,15 @@
 		<property name="AITarget-6" value="SetAsTargetIfHurt" param1="EntityZombieCop" />
 		<property name="AITarget-7" value="SetAsTargetIfHurt" param1="EntityHornet" />
 		<property name="AITarget-8" value="SetAsTargetIfHurt" param1="EntityAnimalBear" />
-		<property name="AITarget-9" value="SetAsTargetIfHurt" param1="EntityAnimalHal" />
-		<property name="AITarget-10" value="BlockingTargetTask" />
-		<property name="AITarget-11" value="SetNearestEntityAsTarget" param1="EntityEnemy" />
-		<property name="AITarget-12" value="SetNearestEntityAsTarget" param1="EntityBandit" />
-		<property name="AITarget-13" value="SetNearestEntityAsTarget" param1="EntityZombieCrawl" />
-		<property name="AITarget-14" value="SetNearestEntityAsTarget" param1="EntityZombie" />
-		<property name="AITarget-15" value="SetNearestEntityAsTarget" param1="EntityZombieDog" />
-		<property name="AITarget-16" value="SetNearestEntityAsTarget" param1="EntityZombieCop" />
-		<property name="AITarget-17" value="SetNearestEntityAsTarget" param1="EntityHornet" />
-		<property name="AITarget-18" value="SetNearestEntityAsTarget" param1="EntityAnimalBear" />
-		<property name="AITarget-19" value="SetNearestEntityAsTarget" param1="EntityAnimalHal" />
+		<property name="AITarget-9" value="BlockingTargetTask" />
+		<property name="AITarget-10" value="SetNearestEntityAsTarget" param1="EntityEnemy" />
+		<property name="AITarget-11" value="SetNearestEntityAsTarget" param1="EntityBandit" />
+		<property name="AITarget-12" value="SetNearestEntityAsTarget" param1="EntityZombieCrawl" />
+		<property name="AITarget-13" value="SetNearestEntityAsTarget" param1="EntityZombie" />
+		<property name="AITarget-14" value="SetNearestEntityAsTarget" param1="EntityZombieDog" />
+		<property name="AITarget-15" value="SetNearestEntityAsTarget" param1="EntityZombieCop" />
+		<property name="AITarget-16" value="SetNearestEntityAsTarget" param1="EntityHornet" />
+		<property name="AITarget-17" value="SetNearestEntityAsTarget" param1="EntityAnimalBear" />
 		<property name="HandItem" value="NPCSawedOffPumpShotgun" />
         <property name="MaxHealth" value="550" />
 		<property name="MaxViewAngle" value="320" />

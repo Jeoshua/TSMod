@@ -2725,6 +2725,7 @@ then add recipes for those white/red/green metals
 		<!-- HV: mounted lamp -->
 		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="3" prob=".3" tool_category="Disassemble" />
+		<drop event="Harvest" name="lightBulb" count="1" prob=".3" tool_category="Disassemble" />
 	</block>
 	<block id="318" name="porchLight04Brass">
 		<property name="Extends" value="porchLight01" />
@@ -2733,6 +2734,7 @@ then add recipes for those white/red/green metals
 		<!-- HV: mounted lamp -->
 		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="3" prob=".3" tool_category="Disassemble" />
+		<drop event="Harvest" name="lightBulb" count="1" prob=".3" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapBrass" count="10,30" prob="1" />
 	</block>
 	<block id="319" name="ceilingLight01">
@@ -2744,6 +2746,7 @@ then add recipes for those white/red/green metals
 		<!-- HV: mounted lamp -->
 		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="3" prob=".3" tool_category="Disassemble" />
+		<drop event="Harvest" name="lightBulb" count="1" prob=".3" tool_category="Disassemble" />
 		<drop event="Destroy" count="0" />
 	</block>
 	<block id="320" name="ceilingLight02">
@@ -2753,6 +2756,7 @@ then add recipes for those white/red/green metals
 		<!-- HV: mounted lamp -->
 		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="3" prob=".3" tool_category="Disassemble" />
+		<drop event="Harvest" name="lightBulb" count="1" prob=".3" tool_category="Disassemble" />
 	</block>
 	<block id="321" name="ceilingLight02Brass">
 		<property name="Extends" value="porchLight04Brass" />
@@ -2761,6 +2765,7 @@ then add recipes for those white/red/green metals
 		<!-- HV: mounted lamp -->
 		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="3" prob=".3" tool_category="Disassemble" />
+		<drop event="Harvest" name="lightBulb" count="1" prob=".3" tool_category="Disassemble" />
 	</block>
 	<block id="322" name="ceilingLight04">
 		<property name="Extends" value="porchLight01" />
@@ -2769,6 +2774,7 @@ then add recipes for those white/red/green metals
 		<!-- HV: mounted lamp -->
 		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="3" prob=".3" tool_category="Disassemble" />
+		<drop event="Harvest" name="lightBulb" count="1" prob=".3" tool_category="Disassemble" />
 	</block>
 	<block id="323" name="ceilingLight05">
 		<property name="Extends" value="porchLight01" />
@@ -2777,6 +2783,7 @@ then add recipes for those white/red/green metals
 		<!-- HV: mounted lamp -->
 		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="3" prob=".3" tool_category="Disassemble" />
+		<drop event="Harvest" name="lightBulb" count="1" prob=".3" tool_category="Disassemble" />
 	</block>
 	<block id="324" name="ceilingLight05Brass">
 		<property name="Extends" value="porchLight04Brass" />
@@ -2785,6 +2792,7 @@ then add recipes for those white/red/green metals
 		<!-- HV: mounted lamp -->
 		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="3" prob=".3" tool_category="Disassemble" />
+		<drop event="Harvest" name="lightBulb" count="1" prob=".3" tool_category="Disassemble" />
 	</block>
 	<block id="325" name="wallLight01">
 		<property name="Extends" value="porchLight01" />
@@ -2803,6 +2811,7 @@ then add recipes for those white/red/green metals
 		<drop event="Harvest" name="electronicParts" count="3" prob=".2" tool_category="Disassemble" />
 		<drop event="Harvest" name="scrapPlastics" count="1" prob="1" tool_category="Disassemble" />
 		<drop event="Harvest" name="scrapPlastics" count="1" prob=".5" tool_category="Disassemble" />
+		<drop event="Harvest" name="lightBulb" count="1" prob=".3" tool_category="Disassemble" />
 		<property name="Model" value="Entities/Lighting/ceilingLight07" />
 	</block>
 	<block id="327" name="cntMailbox">
@@ -3207,6 +3216,7 @@ then add recipes for those white/red/green metals
 		<drop event="Harvest" name="electricParts" count="3" prob=".35" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="5" prob=".3" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapIron" count="1,15" prob="1" />
+		<drop event="Harvest" name="lightBulb" count="1" prob=".3" tool_category="Disassemble" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 		<property name="Group" value="Building" />
 		<property name="CraftingSkillGroup" value="Engineering" />
@@ -12791,6 +12801,7 @@ kind of free
 		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
 		<drop event="Harvest" name="electronicParts" count="2" prob=".3" tool_category="Disassemble" />
 		<drop event="Harvest" name="electronicParts" count="3" prob=".2" tool_category="Disassemble" />
+		<drop event="Harvest" name="lightBulb" count="1" prob=".3" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapIron" count="5" prob="1" />
 		<property name="CraftingSkillGroup" value="Engineering"/>
 	</block>
@@ -17220,7 +17231,7 @@ kind of free
 			<property name="Modules" value="tools,output" />
 		</property>
 	</block>
-	<block id="2101" name="bigOven">
+	<!--<block id="2101" name="bigOven">
 		<property name="Extends" value="kitchenWorkbench" />
 		<property name="Model" value="#cooking?SteelCookerPrefab" />
 		<property name="Class" value="MorteToolForge, Mods" />
@@ -17233,7 +17244,7 @@ kind of free
 		<property class="Workstation">
 			<property name="Modules" value="tools,output,fuel" />
 		</property>
-	</block>
+	</block>-->
 	<block id="2102" name="breadLoafPan">
 		<property name="Material" value="Mmetal_weak" />
 		<property name="Shape" value="ModelEntity" />

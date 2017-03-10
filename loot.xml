@@ -169,6 +169,10 @@
 			<block name="cntCar03RedDamage1" prob="0.08" />
 			<block name="cntCar03YellowDamage1" prob="0.08" />
 			<block name="cntCar03WhiteDamage1" prob="0.08" />
+			<block name="cntCar03Red" prob="0.05"/>
+			<block name="cntCar03Yellow" prob="0.05"/>
+			<block name="cntCar03White" prob="0.05"/>
+
 			<block name="ContainerSecure" prob="0.01" />
 			<block name="Skylark" prob="0.04" />
 			<block name="Lanos" prob="0.04" />
@@ -435,7 +439,7 @@
 		<item name="DemoRocket" count="1,3" prob="0.2" />
 	</lootgroup>
 	<lootgroup name="ammoSmall" count="1">
-		<item name="10mmFireBullet" count="5,25" prob="0.3" />
+		<item name="10mmFireBullet" count="5,25" prob="0.2" />
 		<item name="9mmFireBullet" count="5,25" prob="0.3" />
 		<item name="shotgunFireShell" count="5,15" prob="0.8" />
 		<item name="shotgunSlug" count="5,15" prob="0.4" />
@@ -444,7 +448,7 @@
 		<item name="steelCrossbowBolt" count="3,12" prob="0.5" />
 		<item name="shotgunShell" count="5,15" prob="0.8" />
 		<item name="9mmBullet" count="5,25" prob="0.8" />
-		<item name="10mmBullet" count="5,25" prob="0.5" />
+		<item name="10mmBullet" count="5,25" prob="0.4" />
 		<item name="762mmBullet" count="5,15" prob="0.5" />
 		<item name="44MagBullet" count="5,25" prob="0.6" />
 		<item name="steelArrow" count="3,12" prob="0.4" />
@@ -595,17 +599,20 @@
 	</lootgroup>
 	<lootgroup name="clubs" quality="1,100">
 		<item name="clubWood" />
-		<item name="clubIron" prob="0.5" />
-		<item name="clubBarbed" prob="0.25" />
-		<item name="clubSpiked" prob="0.01" />
+		<item name="clubIron" prob="0.25" />
+		<item name="clubBarbed" prob="0.1" />
+		<item name="clubSpiked" prob="0.05" />
 	</lootgroup>
 	<lootgroup name="bats" quality="1,100">
 		<item name="bat" />
-		<item name="nailedBat" prob="0.1" />	
+		<item name="TPXBat" prob="0.25" />
+		<item name="GoodNight" prob="0.1" />
+		<item name="nailedBat" prob="0.05" />	
+		<item name="lucille" prob="0.01" />
 	</lootgroup>
 	<lootgroup name="bluntmelee">
 		<item group="clubs"/>
-		<item group="bats" prob="0.5"/>
+		<item group="bats" prob="0.25"/>
 	</lootgroup>
 	
 	<lootgroup name="knives" quality="1,100">
@@ -908,6 +915,7 @@
 		<item name="Bread" count="1,2" prob="0.15" />
 		<item name="Flour" count="1,2" prob="0.2" />
 		<item name="electricParts" count="1,2" prob="0.05"/>
+		<item name="lightBulb" prob="0.01" />
 		<item name="blender" count="1" prob="0.05"/>
 		<item name="mixer" count="1" prob="0.05"/>
 		<item name="meatGrinder" count="1" prob="0.05"/>
@@ -1642,8 +1650,8 @@
 		<item name="shotgunShell" count="1,12" prob="0.8" />
 	</lootgroup>
 	<lootgroup name="banditsMP5" count="1">
-		<item name="10mmFireBullet" count="1,20" prob="0.3" />
-		<item name="10mmBullet" count="1,20" prob="0.5" />
+		<item name="9mmFireBullet" count="1,20" prob="0.3" />
+		<item name="9mmBullet" count="1,20" prob="0.5" />
 	</lootgroup>
 	<lootgroup name="banditsAK47" count="all">
 		<item name="556mmBullet" count="1,20" />

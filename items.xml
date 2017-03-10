@@ -807,7 +807,7 @@ Mesh files no longer used:
 			<property name="Crosshair_min_distance" value="5" />
 			<property name="Crosshair_max_distance" value="30" />
 			<property name="Magazine_size" value="30" />
-			<property name="Magazine_items" value="10mmBullet, 10mmFireBullet" />
+			<property name="Magazine_items" value="9mmBullet, 9mmFireBullet" />
 			<property name="Magazine_item_ray_counts" value="1, 1" />
 			<property name="Magazine_item_ray_spreads" value="0, 0" />
 			<property name="Reload_time" value="4.1" />
@@ -16782,7 +16782,7 @@ Mesh files no longer used:
 		<property name="DegradationBreaksAfter" value="false" />
 		<property name="Degradation" value="99999" param1="true" />
 		<property class="Action0">
-			<property name="Magazine_items" value="10mmNPCBullet" />
+			<property name="Magazine_items" value="9mmNPCBullet" />
 			<property name="Infinite_ammo" value="true" />
 		</property>
 		<property class="Attributes">
