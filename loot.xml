@@ -146,9 +146,9 @@
 			<block name="cntSportsBag01" prob="0.03" />
 			<block name="cntSportsBag02" prob="0.03" />
 			<block name="cntPurse01" prob="0.03" />
-			<block name="smallLimeTree" prob="0.05" />
-			<block name="smallPlainsTree" prob="0.05" />
-			<block name="smallCherryTree" prob="0.05" />
+			<block name="smallLimeTree" prob="0.01" />
+			<block name="smallPlainsTree" prob="0.01" />
+			<!--<block name="smallCherryTree" prob="0.05" />-->
 			<block name="appleTree" prob="0.02" />
 			<block name="tomatoPlant" prob="0.01" />
 			<block name="strawberryPlant" prob="0.01" />
@@ -1259,7 +1259,7 @@
 		<item name="candyTin" prob="0.2" />
 		<item name="emptyJar" count="1,3" prob="0.3" />
 		<item name="canEmpty" count="1,3" prob="0.4" />
-		<item name="painkillers" prob="0.3" />
+		<item name="painkillers" prob="0.25" />
 		<item name="ductTape" count="1,5" prob="0.3" />
 		<item name="paper" count="1,6" prob="0.5" />
 		<item name="cloth" count="1,4" prob="0.5" />
@@ -1508,7 +1508,7 @@
 	<lootgroup name="DriedLeather" count="all">
 		<item name="leather" count="4" prob="1" />
 	</lootgroup>
-	<!--JZMOD Proffesions-->
+	<!--JZMOD Professions-->
 	<lootgroup name="Soldier" count="all">
 		<item name="canBeef" />
 		<item name="bottledWater" />
@@ -1898,8 +1898,9 @@
 		<item group="handgun+ammo" prob="0.018" />
 	</lootcontainer>
 	<!-- lootcontainer 7 medicine cabinets -->
-	<lootcontainer id="7" count="0,2" size="4,2" sound_open="UseActions/open_medicine_cabinet" sound_close="UseActions/close_medicine_cabinet" open_time="5">
+	<lootcontainer id="7" count="1,2" size="4,2" sound_open="UseActions/open_medicine_cabinet" sound_close="UseActions/close_medicine_cabinet" open_time="5">
 		<item group="medicine" />
+		<item group="empty" prob="0.25" />
 	</lootcontainer>
 	<!-- lootcontainer 8 kitchen cupboards (lower), cleaning chemicals, plates, silverware, pots and pans -->
 	<lootcontainer id="8" count="0,2" size="4,3" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard" open_time="5">
@@ -2123,7 +2124,7 @@
 		<item group="periodicals" prob="0.05" />
 		<item group="TierOneBooks" prob="0.1" />
 		<item name="paper" count="5,10" prob="0.75" />
-		<item name="painkillers" prob="0.1" />
+		<item name="painkillers" prob="0.08" />
 		<item name="book" count="1,4" prob="0.5" />
 		<item group="ammoSmall" prob="0.4" />
 		<item group="empty" prob="1" />
@@ -2177,7 +2178,7 @@
 	<lootcontainer id="49" count="1,2" size="4,3" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" open_time="3">
 		<item group="books" prob="0.25" />
 		<item name="book" count="1,2" prob="0.75" />
-		<item group="empty" prob="1.5" />
+		<item group="empty" prob="1" />
 	</lootcontainer>
 	<!-- shotgun Messiah -->
 	<lootcontainer id="50" count="1,3" size="4,4" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate" open_time="10">
@@ -2259,8 +2260,8 @@
 	</lootcontainer>
 	<!-- Bookstore bookcase -->
 	<lootcontainer id="60" count="1,3" size="4,2" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" open_time="3">
-		<item name="book" count="1,2" prob="0.8" />
-		<item group="books" prob="0.3" />
+		<item name="book" count="1,2" prob="0.65" />
+		<item group="books" prob="0.35" />
 	</lootcontainer>
 	<!-- feral loot -->
 	<lootcontainer id="61" count="1,3" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">

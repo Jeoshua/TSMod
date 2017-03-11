@@ -1399,8 +1399,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="mushrooms" count="1" />
 		<ingredient name="dirtFragment" count="1" />
 	</recipe>
-	<recipe name="nail" count="1" craft_area="workforge" craft_tool="workAnvil" material_based="true" craft_time="1" craft_exp_gain="1">
-		<ingredient name="unit_iron" count="1" />
+	<recipe name="nail" count="10" craft_area="workforge" material_based="true" craft_time="10" craft_exp_gain="5">
+		<ingredient name="unit_iron" count="5" />
 		<ingredient name="unit_clay" count="1" />
 	</recipe>
 	<recipe name="nailgun" count="1" craft_area="assembly">

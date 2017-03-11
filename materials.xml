@@ -75,7 +75,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="stepsound" value="wood" />
 		<property name="stability_glue" value="10" />
 		<property name="Mass" type="int" value="1" />
-		<property name="MaxDamage" value="150" />
+		<property name="MaxDamage" value="100" />
 		<property name="movement_factor" value="0.1" />
 	</material>
 	<material id="water">
@@ -857,7 +857,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="stability_glue" value="10" />
 		<property name="movement_factor" value="0.04" />
 		<property name="Mass" type="int" value="1" />
-		<property name="MaxDamage" value="1000" />
+		<property name="MaxDamage" value="500" />
 		<property name="StabilitySupport" value="false" />
 	</material>
 	<material id="MSWorkStation">

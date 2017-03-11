@@ -7399,13 +7399,13 @@
 	</SoundDataNode>
 	<SoundDataNode name="carAlarm">
 		<AudioSource name="Sounds/AudioSource_UseAction" />
-		<Noise range="200" prio="1" time="1" muffled_when_crouched="1.0" />
+		<Noise range="100" prio="1" time="5" />
 		<AudioClip ClipName="#carAlarms?alarm1" />
 		<AudioClip ClipName="#carAlarms?alarm2" />
 		<AudioClip ClipName="#carAlarms?alarm3" />
-		<LocalCrouchVolumeScale name="1.0" />
-		<CrouchNoiseScale name="1.0" />
-		<NoiseScale name="1" />
+		<LocalCrouchVolumeScale name="5.0" />
+		<CrouchNoiseScale name="5.0" />
+		<NoiseScale name="5" />
 		<MaxVoices name="1" />
 		<MaxEntities name="30" />
 		<MaxRepeatRate name="0.01" />
