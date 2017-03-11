@@ -2047,10 +2047,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="foodYuccaFruit" count="1" />
 		<ingredient name="rawMeat" count="1" />
 	</recipe>
-	<recipe name="ArmorSmithing1" count="1" craft_time="5" craft_exp_gain="100">
+	<recipe name="ArmorSmithing1" count="1" craft_time="5" craft_exp_gain="200">
 		<ingredient name="Armor Smithing Weekly" count="1" />
 	</recipe>
-	<recipe name="ArmorSmithing2" count="1" craft_time="10" craft_exp_gain="500">
+	<recipe name="ArmorSmithing2" count="1" craft_time="10" craft_exp_gain="1000">
 		<ingredient name="Armor Smithing Monthly" count="1" />
 	</recipe>
 	<recipe name="armyPants" count="1" craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
@@ -2635,10 +2635,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="unit_iron" count="700" />
 		<ingredient name="unit_clay" count="50" />
 	</recipe>
-	<recipe name="Engineering1" count="1" craft_time="5" craft_exp_gain="100">
+	<recipe name="Engineering1" count="1" craft_time="5" craft_exp_gain="200">
 		<ingredient name="Engineering Weekly" count="1" />
 	</recipe>
-	<recipe name="Engineering2" count="1" craft_time="10" craft_exp_gain="500">
+	<recipe name="Engineering2" count="1" craft_time="10" craft_exp_gain="1000">
 		<ingredient name="Engineering Monthly" count="1" />
 	</recipe>
 	<recipe name="Exhaust" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="30" craft_exp_gain="10">
@@ -2890,10 +2890,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="Revolver_parts" count="1" />
 		<ingredient name="Revolver_frame" count="1" />
 	</recipe>
-	<recipe name="GunSmithing1" count="1" craft_time="5" craft_exp_gain="100">
+	<recipe name="GunSmithing1" count="1" craft_time="5" craft_exp_gain="200">
 		<ingredient name="Gun Smithing Weekly" count="1" />
 	</recipe>
-	<recipe name="GunSmithing2" count="1" craft_time="10" craft_exp_gain="500">
+	<recipe name="GunSmithing2" count="1" craft_time="10" craft_exp_gain="1000">
 		<ingredient name="Gun Smithing Monthly" count="1" />
 	</recipe>
 	<recipe name="HammerHead" count="1" craft_area="workforge" material_based="true" craft_time="5" craft_exp_gain="2">
@@ -2964,10 +2964,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="hook" count="1" craft_area="workAnvil" craft_tool="clawHammer" craft_time="5" craft_exp_gain="5">
 		<ingredient name="scrapLead" count="5" />
 	</recipe>
-	<recipe name="Hunting1" count="1" craft_time="5" craft_exp_gain="100">
+	<recipe name="Hunting1" count="1" craft_time="5" craft_exp_gain="200">
 		<ingredient name="Hunting Weekly" count="1" />
 	</recipe>
-	<recipe name="Hunting2" count="1" craft_time="10" craft_exp_gain="500">
+	<recipe name="Hunting2" count="1" craft_time="10" craft_exp_gain="1000">
 		<ingredient name="Hunting Monthly" count="1" />
 	</recipe>
 	<recipe name="huntingKnife" count="1" craft_area="workAnvil" craft_tool="clawHammer" craft_time="30" craft_exp_gain="5">
@@ -3132,10 +3132,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="shortMetalPipe" count="1" />
 		<ingredient name="glue" count="1" />
 	</recipe>
-	<recipe name="LeatherWorking1" count="1" craft_time="5" craft_exp_gain="100">
+	<recipe name="LeatherWorking1" count="1" craft_time="5" craft_exp_gain="200">
 		<ingredient name="Leather Working Weekly" count="1" />
 	</recipe>
-	<recipe name="LeatherWorking2" count="1" craft_time="10" craft_exp_gain="500">
+	<recipe name="LeatherWorking2" count="1" craft_time="10" craft_exp_gain="1000">
 		<ingredient name="Leather Working Monthly" count="1" />
 	</recipe>
 	<recipe name="LockPick" count="1" craft_area="workAnvil" craft_tool="clawHammer" craft_time="10" craft_exp_gain="5">
@@ -3266,10 +3266,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="MechanicProfession" count="1" craft_area="workResearchDesk" craft_time="30" craft_exp_gain="1000">
 		<ingredient name="ProfessionPage" count="20" />
 	</recipe>
-	<recipe name="Medicine1" count="1" craft_time="5" craft_exp_gain="100">
+	<recipe name="Medicine1" count="1" craft_time="5" craft_exp_gain="200">
 		<ingredient name="Medicine Weekly" count="1" />
 	</recipe>
-	<recipe name="Medicine2" count="1" craft_time="10" craft_exp_gain="500">
+	<recipe name="Medicine2" count="1" craft_time="10" craft_exp_gain="1000">
 		<ingredient name="Medicine Monthly" count="1" />
 	</recipe>
 	<recipe name="MeltedRubber" count="2" craft_area="workcampfire" craft_tool="stick" craft_time="15" craft_exp_gain="0">
@@ -3338,10 +3338,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="mechanicalParts" count="2" />
 		<ingredient name="NutAndBolt" count="10" />
 	</recipe>
-	<recipe name="Miscellaneous1" count="1" craft_time="5" craft_exp_gain="100">
+	<recipe name="Miscellaneous1" count="1" craft_time="5" craft_exp_gain="200">
 		<ingredient name="Miscellaneous Weekly" count="1" />
 	</recipe>
-	<recipe name="Miscellaneous2" count="1" craft_time="10" craft_exp_gain="500">
+	<recipe name="Miscellaneous2" count="1" craft_time="10" craft_exp_gain="1000">
 		<ingredient name="Miscellaneous Monthly" count="1" />
 	</recipe>
 	<recipe name="MixedChemicals" count="2" craft_area="workMortarAndPestle" craft_time="20" craft_exp_gain="20">
@@ -3649,10 +3649,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="unit_iron" count="5" />
 		<ingredient name="unit_coal" count="5" />
 	</recipe>
-	<recipe name="Scavenging1" count="1" craft_time="5" craft_exp_gain="100">
+	<recipe name="Scavenging1" count="1" craft_time="5" craft_exp_gain="200">
 		<ingredient name="Scavenging Weekly" count="1" />
 	</recipe>
-	<recipe name="Scavenging2" count="1" craft_time="10" craft_exp_gain="500">
+	<recipe name="Scavenging2" count="1" craft_time="10" craft_exp_gain="1000">
 		<ingredient name="Scavenging Monthly" count="1" />
 	</recipe>
 	<recipe name="ScubaTankFull" count="1" craft_area="workBatteryPack" craft_tool="AirCompressor" craft_time="900" craft_exp_gain="0">
@@ -4049,10 +4049,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="unit_steel" count="1000" />
         <ingredient name="unit_clay" count="50" />
 	</recipe>
-	<recipe name="Tailoring1" count="1" craft_time="5" craft_exp_gain="100">
+	<recipe name="Tailoring1" count="1" craft_time="5" craft_exp_gain="200">
 		<ingredient name="Tailoring Weekly" count="1" />
 	</recipe>
-	<recipe name="Tailoring2" count="1" craft_time="10" craft_exp_gain="500">
+	<recipe name="Tailoring2" count="1" craft_time="10" craft_exp_gain="1000">
 		<ingredient name="Tailoring Monthly" count="1" />
 	</recipe>
 	<recipe name="tankTopWhite" count="1" craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
@@ -4358,7 +4358,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <recipe name="workMortarAndPestle" count="1" craft_area="workforge" material_based="true" craft_time="300" craft_exp_gain="25">
 		<ingredient name="unit_lead" count="10" />
 		<ingredient name="unit_clay" count="25" />
-		<ingredient name="unit_stone" count="100" />
+		<ingredient name="unit_stone" count="25" />
 	</recipe>
 	<recipe name="workOilRefinery" count="1" craft_area="workworkbench" craft_tool="wrench" craft_time="300" craft_exp_gain="100">
 		<ingredient name="forgedIron" count="20" />

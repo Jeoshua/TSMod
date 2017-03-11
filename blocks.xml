@@ -2629,7 +2629,7 @@ then add recipes for those white/red/green metals
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
 		<property name="Group" value="Food/Cooking" />
-		<property name="EconomicValue" value="12" />
+		<property name="EconomicValue" value="50" />
 	</block>
 	<block id="311" name="cntOven">
 		<property name="Class" value="Loot" />
@@ -3050,7 +3050,6 @@ then add recipes for those white/red/green metals
 		<property name="Shape" value="ModelEntity" />
 		<property name="Texture" value="282" />
 		<property name="LootList" value="4" />
-		<property name="MaxDamage" value="150" />
 		<property name="Model" value="Entities/LootContainers/fridgePrefab" />
 		<property name="DescriptionKey" value="refrigeratorGroupDesc" />
 		<property class="RepairItems">
@@ -4185,7 +4184,6 @@ kind of free
 		<property name="Mesh" value="models" />
 		<property name="Model" value="Furniture/bed01_frame" param1="main_mesh" />
 		<property name="MultiBlockDim" value="1,1,2" />
-		<property name="MaxDamage" value="150" />
 		<drop event="Harvest" name="shortMetalPipe" count="2" tool_category="Disassemble" />
 		<drop event="Harvest" name="scrapIron" count="2" tool_category="Disassemble" />
 		<drop event="Harvest" name="scrapIron" count="1" />
@@ -4596,7 +4594,6 @@ kind of free
 		<property name="Model" value="Furniture/desk02" param1="main_mesh" />
 		<property name="MultiBlockDim" value="2,1,1" />
 		<property name="LootList" value="6" />
-		<property name="MaxDamage" value="150" />
 		<property name="DescriptionKey" value="furnitureGroupDesc" />
 		<drop event="Harvest" name="shortMetalPipe" count="4" tool_category="Disassemble" />
 		<drop event="Harvest" name="scrapIron" count="25" tool_category="Disassemble" />
@@ -4924,7 +4921,6 @@ kind of free
 		<property name="Model" value="Furniture/tv" param1="main_mesh" />
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
 		<property name="Weight" value="7" />
-		<property name="MaxDamage" value="25" />
 		<property class="RepairItems">
 			<property name="scrapIron" value="10" />
 		</property>
@@ -7633,7 +7629,6 @@ kind of free
 		<property name="Texture" value="267,267,265,267,265,267" />
 		<property name="Model" value="Entities/LootContainers/fridgePrefab" />
 		<property name="LootList" value="4" />
-		<property name="MaxDamage" value="150" />
 		<property name="DescriptionKey" value="refrigeratorGroupDesc" />
 		<property class="RepairItems">
 			<property name="forgedIron" value="4" />
@@ -8458,7 +8453,7 @@ kind of free
 		<property name="Texture" value="374,84,79,82,82,82" />
 		<!-- 80=sink, 82=cabinetWood -->
 		<property name="LootList" value="8" />
-		<property name="MaxDamage" value="150" />
+
 		<drop event="Destroy" name="scrapIron" count="5" prob="1" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 		<drop event="Harvest" name="shortMetalPipe" count="4" tool_category="Disassemble" />
@@ -9226,7 +9221,6 @@ kind of free
 		<property name="Material" value="Mmetal_thin" />
 		<property name="Texture" value="346,345,341,345,262,345" />
 		<property name="LootList" value="3" />
-		<property name="MaxDamage" value="150" />
 		<drop event="Harvest" name="scrapCable" count="1" tool_category="Disassemble" />
 		<drop event="Harvest" name="shortMetalPipe" count="2" tool_category="Disassemble" />
 		<drop event="Harvest" name="scrapIron" count="25,50" tool_category="Disassemble" />
@@ -12874,7 +12868,7 @@ kind of free
 		<property name="Class" value="Workstation" />
 		<property name="Material" value="MMWorkStation" />
 		<property name="StabilitySupport" value="false" />
-		<property name="MaxDamage" value="250" />
+		<property name="MaxDamage" value="2500" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="Entities/Crafting/cement_mixerPrefab" />
 		<property name="MultiBlockDim" value="1,2,1" />
@@ -14709,7 +14703,7 @@ kind of free
 		<property name="Stacknumber" value="1" />
 		<property name="HeatMapStrength" value="2" />
 		<property name="HeatMapTime" value="1200" />
-		<property name="MaxDamage" value="100" />
+		<property name="MaxDamage" value="1000" />
 		<property class="Workstation">
 			<property name="Modules" value="output,input" />
 		</property>
@@ -14741,7 +14735,7 @@ kind of free
 		<property name="HeatMapStrength" value="2" />
 		<property name="HeatMapTime" value="1200" />
 		<property name="HeatMapFrequency" value="25" />
-		<property name="MaxDamage" value="100" />
+		<property name="MaxDamage" value="1000" />
 		<property name="BuffsWhenWalkedOn" value="blockBurn3Trigger" />
 		<property name="ActiveRadiusEffects" value="+heatSource(3)" />
 		<property class="Workstation">

@@ -1155,6 +1155,7 @@
 			<recipe name="cobblestoneFrameBlock" unlock_level="1" />
 			<recipe name="cobblestoneFrameRamp" unlock_level="1" />
 			<recipe name="cobblestoneStairs25" unlock_level="1" />
+			<recipe name="cobblestoneFrameStairs25" unlock_level="1" />
 			<recipe name="cobblestoneArrowSlitHalf" unlock_level="1" />
 			<recipe name="cobblestoneFrameWedge" unlock_level="1" />
 			<recipe name="cobblestoneFrameWedgeTip" unlock_level="1" />
