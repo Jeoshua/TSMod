@@ -1971,7 +1971,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.wrench" value="99" />
 			<property name="ToolCategory.Disassemble" value="1" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="2" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Action1">
 			<!-- UseAction -->

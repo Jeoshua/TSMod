@@ -2027,7 +2027,7 @@
 			</grid>
 		</rect>
 	</window>
-	<window name="windowToolsBigOven" width="228" height="121" panel="Right">
+	<!--<window name="windowToolsBigOven" width="228" height="121" panel="Right">
 		<panel style="header.panel">
 			<sprite style="header.icon" sprite="ui_game_symbol_lightbulb" />
 			<label style="header.name" text="TOOLS" text_key="xuiTools" />
@@ -2048,5 +2048,5 @@
 				</rect>
 			</grid>
 		</rect>
-	</window>
+	</window>-->
 </windows>

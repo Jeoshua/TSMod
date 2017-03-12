@@ -2711,7 +2711,7 @@ then add recipes for those white/red/green metals
 		<property name="Shape" value="ModelEntity" />
 		<property name="Texture" value="241" />
 		<property name="Light" value="0.5" />
-        <property name="MaxDamage" value="150" />
+        <property name="MaxDamage" value="250" />
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
 		<property name="Model" value="Entities/Lighting/porchLight01Prefab" />
 		<drop event="Harvest" name="electricParts" count="2" prob="1" tool_category="Disassemble" />
@@ -2727,7 +2727,7 @@ then add recipes for those white/red/green metals
 	</block>
 	<block id="317" name="porchLight04">
 		<property name="Extends" value="porchLight01" />
-		<property name="Model" value="Entities/Lighting/porchLight04" />
+		<property name="Model" value="Entities/Lighting/porchLight04Prefab" />
 		<drop event="Harvest" name="electricParts" count="2" prob="1" tool_category="Disassemble" />
 		<!-- HV: mounted lamp -->
 		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
@@ -2736,7 +2736,7 @@ then add recipes for those white/red/green metals
 	</block>
 	<block id="318" name="porchLight04Brass">
 		<property name="Extends" value="porchLight01" />
-		<property name="Model" value="Entities/Lighting/porchLight04Brass" />
+		<property name="Model" value="Entities/Lighting/porchLight04BrassPrefab" />
 		<drop event="Harvest" name="electricParts" count="2" prob="1" tool_category="Disassemble" />
 		<!-- HV: mounted lamp -->
 		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
@@ -2748,7 +2748,7 @@ then add recipes for those white/red/green metals
 		<property name="Extends" value="porchLight01" />
 		<property name="Material" value="glass" />
 		<property name="StabilitySupport" value="false" />
-		<property name="Model" value="Entities/Lighting/ceilingLight01" />
+		<property name="Model" value="Entities/Lighting/ceilingLight01Prefab" />
 		<drop event="Harvest" name="electricParts" count="2" prob="1" tool_category="Disassemble" />
 		<!-- HV: mounted lamp -->
 		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
@@ -2758,7 +2758,7 @@ then add recipes for those white/red/green metals
 	</block>
 	<block id="320" name="ceilingLight02">
 		<property name="Extends" value="porchLight01" />
-		<property name="Model" value="Entities/Lighting/ceilingLight02" />
+		<property name="Model" value="Entities/Lighting/ceilingLight02Prefab" />
 		<drop event="Harvest" name="electricParts" count="2" prob="1" tool_category="Disassemble" />
 		<!-- HV: mounted lamp -->
 		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
@@ -2767,7 +2767,7 @@ then add recipes for those white/red/green metals
 	</block>
 	<block id="321" name="ceilingLight02Brass">
 		<property name="Extends" value="porchLight04Brass" />
-		<property name="Model" value="Entities/Lighting/ceilingLight02Brass" />
+		<property name="Model" value="Entities/Lighting/ceilingLight02BrassPrefab" />
 		<drop event="Harvest" name="electricParts" count="2" prob="1" tool_category="Disassemble" />
 		<!-- HV: mounted lamp -->
 		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
@@ -2776,7 +2776,7 @@ then add recipes for those white/red/green metals
 	</block>
 	<block id="322" name="ceilingLight04">
 		<property name="Extends" value="porchLight01" />
-		<property name="Model" value="Entities/Lighting/ceilingLight04" />
+		<property name="Model" value="Entities/Lighting/ceilingLight04Prefab" />
 		<drop event="Harvest" name="electricParts" count="2" prob="1" tool_category="Disassemble" />
 		<!-- HV: mounted lamp -->
 		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
@@ -2785,7 +2785,7 @@ then add recipes for those white/red/green metals
 	</block>
 	<block id="323" name="ceilingLight05">
 		<property name="Extends" value="porchLight01" />
-		<property name="Model" value="Entities/Lighting/ceilingLight05" />
+		<property name="Model" value="Entities/Lighting/ceilingLight05Prefab" />
 		<drop event="Harvest" name="electricParts" count="2" prob="1" tool_category="Disassemble" />
 		<!-- HV: mounted lamp -->
 		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
@@ -2794,7 +2794,7 @@ then add recipes for those white/red/green metals
 	</block>
 	<block id="324" name="ceilingLight05Brass">
 		<property name="Extends" value="porchLight04Brass" />
-		<property name="Model" value="Entities/Lighting/ceilingLight05Brass" />
+		<property name="Model" value="Entities/Lighting/ceilingLight05BrassPrefab" />
 		<drop event="Harvest" name="electricParts" count="2" prob="1" tool_category="Disassemble" />
 		<!-- HV: mounted lamp -->
 		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
@@ -2803,7 +2803,7 @@ then add recipes for those white/red/green metals
 	</block>
 	<block id="325" name="wallLight01">
 		<property name="Extends" value="porchLight01" />
-		<property name="Model" value="Entities/Lighting/wall_light01" />
+		<property name="Model" value="Entities/Lighting/wall_light01Prefab" />
 		<drop event="Harvest" name="electricParts" count="2" prob="1" tool_category="Disassemble" />
 		<!-- HV: mounted lamp -->
 		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
@@ -2819,7 +2819,7 @@ then add recipes for those white/red/green metals
 		<drop event="Harvest" name="scrapPlastics" count="1" prob="1" tool_category="Disassemble" />
 		<drop event="Harvest" name="scrapPlastics" count="1" prob=".5" tool_category="Disassemble" />
 		<drop event="Harvest" name="lightBulb" count="1" prob=".3" tool_category="Disassemble" />
-		<property name="Model" value="Entities/Lighting/ceilingLight07" />
+		<property name="Model" value="Entities/Lighting/ceilingLight07Prefab" />
 	</block>
 	<block id="327" name="cntMailbox">
 		<property name="Class" value="Loot" />
@@ -3053,7 +3053,8 @@ then add recipes for those white/red/green metals
 	</block>
 	<block id="349" name="cntFridge">
 		<property name="Class" value="Loot" />
-		<property name="Material" value="metal" />
+		<property name="Material" value="Mmetal_weak" />
+		<property name="MaxDamage" value="2500" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Texture" value="282" />
 		<property name="LootList" value="4" />
@@ -3215,9 +3216,9 @@ then add recipes for those white/red/green metals
 		<property name="StabilitySupport" value="false" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Texture" value="241" />
-        <property name="MaxDamage" value="200" />
+        <property name="MaxDamage" value="500" />
 		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
-		<property name="Model" value="Entities/Lighting/street_light01" />
+		<property name="Model" value="Entities/Lighting/street_light01Prefab" />
 		<drop event="Harvest" name="electricParts" count="4" prob="1" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="3" prob=".35" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="5" prob=".3" tool_category="Disassemble" />
@@ -7633,7 +7634,7 @@ kind of free
 	</block>
 	<block id="840" name="cntFridgeTop">
 		<property name="Class" value="Loot" />
-		<property name="Material" value="Mmetal_thin" />
+		<property name="Material" value="Mmetal_weak" />
 		<property name="Texture" value="267,267,265,267,265,267" />
 		<property name="Model" value="Entities/LootContainers/fridgePrefab" />
 		<property name="LootList" value="4" />
@@ -12848,13 +12849,14 @@ kind of free
 	<block id="1556" name="conduit01">
 		<property name="Extends" value="metalNoUpgradeMaster" />
 		<property name="Material" value="Mmetal_weak" />
+		<property name="MaxDamage" value="500" />
 		<property name="Shape" value="New" />
 		<property name="Mesh" value="cutout" />
 		<property name="Model" value="decal" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="Texture" value="526" />
 		<drop event="Harvest" name="electricParts" count="3" prob=".7" tool_category="Disassemble" />
-		<drop event="Destroy" name="shortMetalPipe" count="3" prob=".7" tool_category="Disassemble" />
+		<drop event="Destroy" name="shortMetalPipe" count="2,5" prob="1" tool_category="Disassemble" />
 	</block>
 	<block id="1557" name="conduit01Curve">
 		<property name="Extends" value="conduit01" />

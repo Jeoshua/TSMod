@@ -460,7 +460,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="stability_glue" value="320" />
 		<property name="Mass" type="int" value="20" />
 		<property name="explosionresistance" value=".65" />
-		<property name="MaxDamage" value="7500" />
+		<property name="MaxDamage" value="10000" />
 	</material>
 	<material id="MstainlessSteel">
 		<property name="damage_category" value="steel" />
@@ -473,7 +473,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="stability_glue" value="320" />
 		<property name="Mass" type="int" value="20" />
 		<property name="explosionresistance" value=".85" />
-		<property name="MaxDamage" value="10000" />
+		<property name="MaxDamage" value="15000" />
 	</material>
 	<material id="sand">
 		<property name="damage_category" value="earth" />

@@ -627,6 +627,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="minibikeHandlebars" />
 			<item name="smallEngine" prob=".3" />
 			<item name="shoppingBasketItem" prob=".3" />
+			<item name="BikeNABox" prob="0.05" />
 		</trader_item_group>
 		<trader_item_group name="workstations" count="1">
 			<item name="workforge" />
@@ -686,7 +687,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item group="gunsCommon" count="1" prob="0.1" />
 			<item name="flashlight02" />
 			<item group="books" count="1,2" prob="0.6" />
-			<item group="ammo" count="2,5" />
+			<item group="ammo" count="2,5" prob="1.25" />
 			<item group="ammoSupplies" count="2,5" />
 			<item group="seeds" count="1,4" />
 			<item group="cannedfood" count="1,3" />

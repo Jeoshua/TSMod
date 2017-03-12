@@ -1997,7 +1997,7 @@
 		<item name="canDogfood" prob="0.5" />
 		<item group="tools" prob="0.4" />
 		<item group="automotiveMinibike" prob="0.5" />
-		<item name="BikeNABox" prob="0.2" />
+		<item name="BikeNABox" prob="0.05" />
 		<item group="empty" prob="1" />
 	</lootcontainer>
 	<!-- 23 see below !!! -->
