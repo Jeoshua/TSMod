@@ -891,7 +891,7 @@ Mesh files no longer used:
 			<property name="Particles_muzzle_fire" value="nozzleflash_ak" />
 			<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
 			<property name="DamageBonus.head" value="6" />
-			<property name="DamageBonus.wood" value="1" />
+			<property name="DamageBonus.wood" value="5" />
 			<property name="DamageBonus.cloth" value="25" />
 			<property name="DamageBonus.stone" value="1" />
 			<property name="DamageBonus.metal" value="1" />
@@ -958,7 +958,7 @@ Mesh files no longer used:
 			<property name="Particles_muzzle_fire" value="nozzleflashuzi" />
 			<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
 			<property name="DamageBonus.head" value="6" />
-			<property name="DamageBonus.wood" value="1" />
+			<property name="DamageBonus.wood" value="2" />
 			<property name="DamageBonus.cloth" value="25" />
 			<property name="DamageBonus.metal" value="1" />
 			<property name="DamageBonus.stone" value="1" />
@@ -1124,9 +1124,9 @@ Mesh files no longer used:
 			<property name="Particles_muzzle_fire" value="nozzleflash_shotgun" />
 			<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
 			<property name="DamageBonus.head" value="3" />
-			<property name="DamageBonus.wood" value="0" />
+			<property name="DamageBonus.wood" value="5" />
 			<property name="DamageBonus.cloth" value="25" />
-			<property name="DamageBonus.stone" value="0" />
+			<property name="DamageBonus.stone" value="1" />
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.earth" value=".25" />
 			<property name="DamageBonus.glass" value="25" />
@@ -10599,7 +10599,7 @@ Mesh files no longer used:
 		<property name="CustomIcon" value="partsPistol_barrel" />
 		<property name="DescriptionKey" value="partsAK47GroupDesc" />
 		<property class="Attributes">
-			<property name="DismembermentBaseChance" value="0.1,0.3" />
+			<property name="DismembermentBaseChance" value="0.05,0.15" />
 			<property name="DismembermentBonus" value="0,0.002" />
 			<property name="EntityDamage" value="25,55" />
 		</property>
@@ -16939,6 +16939,8 @@ Mesh files no longer used:
 		<property name="BlockDamage" value="11.8,29.5" />
 		<property name="SellableToTrader" value="false" />
 		<property name="Candrop" value="false" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="Degradation" value="99999" param1="true" />
 		<property name="IsDeveloper" value="true" />
 		<property class="Action0">
 			<property name="Delay" value="1" />
@@ -16950,6 +16952,8 @@ Mesh files no longer used:
         <property name="CustomIcon" value="unused" />
 		<property name="SellableToTrader" value="false" />
 		<property name="Candrop" value="false" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="Degradation" value="99999" param1="true" />
 		<property name="IsDeveloper" value="true" />
 	</item>
 	<item id="2076" name="NPCfireaxeSteel">
@@ -16957,6 +16961,8 @@ Mesh files no longer used:
         <property name="CustomIcon" value="unused" />
 		<property name="SellableToTrader" value="false" />
 		<property name="Candrop" value="false" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="Degradation" value="99999" param1="true" />
 		<property name="IsDeveloper" value="true" />
 	</item>
 	<item id="2077" name="NPCmachete">
@@ -16968,6 +16974,8 @@ Mesh files no longer used:
 		</property>
 		<property name="SellableToTrader" value="false" />
 		<property name="Candrop" value="false" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="Degradation" value="99999" param1="true" />
 		<property name="IsDeveloper" value="true" />
 	</item>
 	<item id="2078" name="NPChuntingKnife">
@@ -16979,6 +16987,8 @@ Mesh files no longer used:
 		</property>
 		<property name="SellableToTrader" value="false" />
 		<property name="Candrop" value="false" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="Degradation" value="99999" param1="true" />
 		<property name="IsDeveloper" value="true" />
 	</item>
 	<!--JZMOD HAND DOLLY AND WORKSTATIONS-->

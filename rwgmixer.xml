@@ -2,11 +2,11 @@
 	<world ruleset="vanilla" />
 	<!-- rwgmixer for COMPOPACK 24 (by Magoli)  - Current Alpha: A15 stable   -->
 	<rulesets>
-		<ruleset name="vanilla" cell_cache_size="8" cell_size="2250" cell_offset="0.3" generation_distance="5750" terrain_generator="vanilla">
-			<cell_rule name="projectSlaanhatten" position="0,1" prob="1"/>
-			<cell_rule name="wastelandHub" position="0,0" prob="1" />
-			<cell_rule name="ColtTownCell" position="-2,0" prob="1" />
-			<cell_rule name="CoronadoCityCell" position="1,-1" prob="1" />
+		<ruleset name="vanilla" cell_cache_size="8" cell_size="2250" cell_offset="0.3" generation_distance="2600" terrain_generator="vanilla">
+			<cell_rule name="projectSlaanhatten" position="0,0" prob="1"/>
+			<cell_rule name="empty" prosition="1,0" prob="1" />
+			<cell_rule name="wastelandHub" position="0,-1" prob="1" />
+			<cell_rule name="ColtTownCell" position="-1,0" prob="1" />
 			<cell_rule name="highDensity" prob="0.5" />
 			<cell_rule name="lowDensity" prob="0.3" />
 			<cell_rule name="empty" prob="0.1" />
@@ -32,6 +32,7 @@
 			<hub_rule name="Hospital_Hub" prob="0.3" />
 			<hub_rule name="SlumsHub" prob="0.2" />
 			<hub_rule name="RaceTrackStadiumHub" prob="0.3" />
+			<cell_rule name="CoronadoCityCell" prob="0.3" />
 			<hub_rule name="Lim_PrisonHub" prob="0.3" />
 			<hub_rule name="IndustrialHub" prob="0.3" />
 			<hub_rule name="TWD_PrisonHub" prob="0.2" />
