@@ -2005,48 +2005,4 @@
 			</grid>
 		</rect>
 	</window>
-	<window name="windowToolsKitchenWorkbench" width="228" height="121" panel="Right">
-		<panel style="header.panel">
-			<sprite style="header.icon" sprite="ui_game_symbol_cookware" />
-			<label style="header.name" text="TOOLS" text_key="xuiTools" />
-		</panel>
-		<rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true" on_press="true">				
-			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="mixer,blender,meatGrinder" required_tools_only="true">
-				<required_item_stack name="0" />
-			</grid>
-			<grid name="slot_preview" depth="1" rows="1" cols="4" pos="3,-2" cell_width="75" cell_height="75" controller="SlotPreview">
-				<rect>
-					<sprite name="slot" depth="2" width="70" height="50" color="[white_quarter_alpha]" sprite="mixer" atlas="ItemIconAtlasGreyscale" pos="35,-30" pivot="center" foregroundlayer="true" />
-				</rect>
-				<rect>
-					<sprite name="slot" depth="2" width="70" height="50" color="[white_quarter_alpha]" sprite="blender" atlas="ItemIconAtlasGreyscale" pos="35,-30" pivot="center" foregroundlayer="true" />
-				</rect>
-				<rect>
-					<sprite name="slot" depth="2" width="70" height="50" color="[white_quarter_alpha]" sprite="meatGrinder" atlas="ItemIconAtlasGreyscale" pos="35,-30" pivot="center" foregroundlayer="true" />
-				</rect>
-			</grid>
-		</rect>
-	</window>
-	<!--<window name="windowToolsBigOven" width="228" height="121" panel="Right">
-		<panel style="header.panel">
-			<sprite style="header.icon" sprite="ui_game_symbol_lightbulb" />
-			<label style="header.name" text="TOOLS" text_key="xuiTools" />
-		</panel>
-		<rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true" on_press="true">
-			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="cookingWare,kettle,breadLoafPan" required_tools_only="true">
-				<required_item_stack name="0" />
-			</grid>
-			<grid name="slot_preview" depth="1" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="SlotPreview">
-				<rect>
-					<sprite name="slot" depth="2" width="70" height="50" color="[white_quarter_alpha]" sprite="cookingWare" atlas="ItemIconAtlasGreyscale" pos="35,-30" pivot="center" foregroundlayer="true" />
-				</rect>
-				<rect>
-					<sprite name="slot" depth="2" width="70" height="50" color="[white_quarter_alpha]" sprite="kettle" atlas="ItemIconAtlasGreyscale" pos="35,-30" pivot="center" foregroundlayer="true" />
-				</rect>
-				<rect>
-					<sprite name="slot" depth="2" width="70" height="50" color="[white_quarter_alpha]" sprite="breadLoafPan" atlas="ItemIconAtlasGreyscale" pos="35,-30" pivot="center" foregroundlayer="true" />
-				</rect>
-			</grid>
-		</rect>
-	</window>-->
 </windows>

@@ -17246,49 +17246,6 @@ kind of free
 		<property name="CraftingSkillGroup" value="Engineering" />
 	</block>
 	
-	<block id="2100" name="kitchenWorkbench">
-		<property name="Material" value="metal" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#cooking?KitchenWorkbench" />
-		<property name="Class" value="MorteToolWorkstation, Mods" />
-		<property name="TickRate" value="1000" />
-		<property name="Stacknumber" value="1" />
-		<property class="RepairItems">
-			<property name="forgedIron" value="10" />
-		</property>
-		<drop event="Destroy" name="kitchenWorkbench" count="1" prob="1" />
-		<property name="Group" value="Building" />
-		<property class="Workstation">
-			<property name="Modules" value="tools,output" />
-		</property>
-	</block>
-	<!--<block id="2101" name="bigOven">
-		<property name="Extends" value="kitchenWorkbench" />
-		<property name="Model" value="#cooking?SteelCookerPrefab" />
-		<property name="Class" value="MorteToolForge, Mods" />
-		<property class="RepairItems">
-			<property name="wood" value="5" />
-			<property name="forgedIron" value="5" />
-		</property>
-		<property name="BigDecorationRadius" value="2" />
-		<drop event="Destroy" name="bigOven" count="1" prob="1" />
-		<property class="Workstation">
-			<property name="Modules" value="tools,output,fuel" />
-		</property>
-	</block>-->
-	<block id="2102" name="breadLoafPan">
-		<property name="Material" value="Mmetal_weak" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#BreadLoafPan1?BreadLoafPan1Prefab" />
-		<property name="Collide" value="movement,rocket,melee,bullet" />
-		<property name="Stacknumber" value="1" />
-		<property name="CanPickup" value="true" />
-		<property name="Group" value="Food/Cooking" />
-		<property name="DropScale" value="3" />
-		<drop event="Destroy" name="scrapIron" count="1" prob="1.0" />
-		<drop event="Fall" name="scrapIron" count="1" prob="1.0" />
-	</block>
-	
 	<block id="3000" name="SpiderNest">
 		<property name="Class" value="Spawner, Mods" />
 		<property name="Material" value="wood" />

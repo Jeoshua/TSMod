@@ -937,11 +937,6 @@
 		<item name="Flour" count="1,2" prob="0.2" />
 		<item name="electricParts" count="1,2" prob="0.05"/>
 		<item name="lightBulb" prob="0.01" />
-		<item name="blender" count="1" prob="0.05"/>
-		<item name="mixer" count="1" prob="0.05"/>
-		<item name="meatGrinder" count="1" prob="0.05"/>
-		<item name="kettle" count="1" prob="0.05"/>
-		<item name="breadLoafPan" count="1" prob="0.05"/>
 	</lootgroup>
 	<lootgroup name="rareOres">
 		<!-- 907 average -->

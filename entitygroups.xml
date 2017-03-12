@@ -927,13 +927,10 @@
 	  <entity name="SpiderSmall" prob="0.001"/>
 	  <entity name="animalPig" prob="0.01" />
 	</entitygroup>
-	  <entity name="DogAlbino" prob="0.0015"/>
 	<entitygroup name="AnimalsAllDesert">
 		<entity name="animalRabbit" prob="0.48"/>
 		<entity name="animalChicken" prob="0.48"/>		
 		<entity name="animalPig" prob="0.01" />
-		<entity name="dogFemale" prob="0.005" />
-		<entity name="dogMale" prob="0.001" />
 	</entitygroup>
 	<entitygroup name="AnimalsSmall">
 		<entity name="animalRabbit" />
@@ -959,7 +956,6 @@
 		<entity name="Bobcat" prob="0.2" />
 		<entity name="animalBear" prob="0.3" />
 		<entity name="zombieBear" prob="0.2" />
-		<entity name="DogAlbino" prob="0.0015"/>
 	</entitygroup>
 	<entitygroup name="AnimalsAll">
 		<entity name="animalRabbit" />
@@ -970,8 +966,6 @@
 		<entity name="animalPig" />
 		<entity name="animalBear" prob="0.04" />
 		<entity name="zombieBear" prob="0.02" />
-		<entity name="dogFemale" prob="0.03" />
-		<entity name="dogMale" prob="0.04" />
 		<entity name="SpiderSmall" prob="0.0001" />
 	</entitygroup>
 	<entitygroup name="HornetGroup">

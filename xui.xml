@@ -358,22 +358,5 @@
 			<window name="windowFuel" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
-		<window_group name="workstation_kitchenWorkbench" controller="XUiC_WorkstationWindowGroup">		
-			<window name="windowCraftingList" />
-			<window name="craftingInfoPanel" />
-			<window name="windowCraftingQueue" />
-			<window name="windowToolsKitchenWorkbench" />
-			<window name="windowOutput" />
-			<window name="windowNonPagingHeader" />
-		</window_group>
-		<!--<window_group name="workstation_bigOven" controller="XUiC_WorkstationWindowGroup">		
-			<window name="windowCraftingList" />		
-			<window name="craftingInfoPanel" />
-			<window name="windowCraftingQueue" />			
-			<window name="windowOutput" />
-			<window name="windowToolsBigOven" />
-			<window name="windowFuel" />
-			<window name="windowNonPagingHeader" />
-		</window_group>-->
 	</ruleset>
 </xui>

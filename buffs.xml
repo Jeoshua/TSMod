@@ -769,8 +769,5 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<buff id="zombieSlow" mutex="isPlayer" duration="2" type="speedmodifier" stack="reset">
 		<modify id="1" stat="speedmodifier" mulValue="0.6" />
 	</buff>
-	
-	<buff id="critMyDog" duration="5" castsound="Buffs/critical_blunt" >
-		<modify id="1" stat="health" amount="-10" rate="1" />
-	</buff>
+
 </buffs>

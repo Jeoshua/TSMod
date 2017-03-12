@@ -614,11 +614,6 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="forgedIron" count="2,8" prob="0.21" />
 			<item name="forgedSteel" count="2,8" prob="0.12" />
 			<item name="fertilizer" count="1,3" prob="0.5" />
-			<item name="blender" count="1" prob="0.5"/>
-			<item name="mixer" count="1" prob="0.5"/>
-			<item name="meatGrinder" count="1" prob="0.5"/>
-			<item name="kettle" count="1" prob="0.5"/>
-			<item name="breadLoafPan" count="1" prob="0.5"/>
 		</trader_item_group>
 		<trader_item_group name="minibikeParts" count="1">
 			<item name="minibikeWheels" />
