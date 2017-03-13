@@ -1,8 +1,15 @@
 <rwgmixer>
-	<world ruleset="vanilla" />
+	<!-- <world ruleset="vanilla" />-->
 	<!-- rwgmixer for COMPOPACK 24 (by Magoli)  - Current Alpha: A15 stable   -->
 	<rulesets>
 		<ruleset name="vanilla" cell_cache_size="8" cell_size="2250" cell_offset="0.3" generation_distance="2600" terrain_generator="vanilla">
+			<cell_rule name="wastelandHub" position="0,0" prob="1" />
+			<cell_rule name="ColtTownCell" position="-1,0" prob="1" />
+			<cell_rule name="highDensity" prob="0.5" />
+			<cell_rule name="lowDensity" prob="0.3" />
+			<cell_rule name="empty" prob="0.1" />
+		</ruleset>
+		<ruleset name="megacity" cell_cache_size="8" cell_size="2250" cell_offset="0.3" generation_distance="2500" terrain_generator="vanilla">
 			<cell_rule name="projectSlaanhatten" position="0,0" prob="1"/>
 			<cell_rule name="empty" prosition="1,0" prob="1" />
 			<cell_rule name="wastelandHub" position="0,-1" prob="1" />
@@ -32,23 +39,24 @@
 			<hub_rule name="Hospital_Hub" prob="0.3" />
 			<hub_rule name="SlumsHub" prob="0.2" />
 			<hub_rule name="RaceTrackStadiumHub" prob="0.3" />
-			<cell_rule name="CoronadoCityCell" prob="0.3" />
+			<hub_rule name="CoronadoCity" prob="0.3" />
 			<hub_rule name="Lim_PrisonHub" prob="0.3" />
 			<hub_rule name="IndustrialHub" prob="0.3" />
 			<hub_rule name="TWD_PrisonHub" prob="0.2" />
 			<hub_rule name="citySmall" prob="0.2" />
-			<wilderness_rule name="wildernessDefault" prob="1" />
+			<wilderness_rule name="wildernessHigh" prob="1" />
 		</cell_rule>
 		<cell_rule name="wastelandHub">
 			<cave_count value="5,9" />
 			<path_material value="asphalt" />
 			<path_radius value="9" />
 			<hub_rule name="citySmall" />
-			<wilderness_rule name="wildernessDefault" prob="1" />
+			<wilderness_rule name="wildernessHub" prob="1" />
 		</cell_rule>
 		<cell_rule name="empty">
 			<cave_count value="9,12" />
 			<hub_rule name="none" />
+			<wilderness_rule name="wildernessEmpty" prob="1" />
 		</cell_rule>
 
 		<!-- Custom-Hubs : -->
@@ -242,15 +250,25 @@
 		</hub_rule>
 	</hub_rules>
 	<wilderness_rules>
-		<wilderness_rule name="wildernessDefault" spawn_min_max="175,350">
+		<wilderness_rule name="wildernessEmpty" spawn_min_max="0,0">
+			<path_material value="gravel" />
+			<path_radius value="3" />
+			<prefab_rule name="none" prob="1" />
+		</wilderness_rule>
+		<wilderness_rule name="wildernessDefault" spawn_min_max="50,100">
 			<path_material value="asphalt" />
 			<path_radius value="5" />
 			<prefab_rule name="wildernessPOIs" prob="1" />
 		</wilderness_rule>
-		<wilderness_rule name="wildernessEmpty" spawn_min_max="0,0">
+		<wilderness_rule name="wildernessHigh" spawn_min_max="100,150">
 			<path_material value="asphalt" />
 			<path_radius value="5" />
-			<prefab_rule name="none" prob="1" />
+			<prefab_rule name="wildernessPOIs" prob="1" />
+		</wilderness_rule>
+		<wilderness_rule name="wildernessHub" spawn_min_max="150,250">
+			<path_material value="asphalt" />
+			<path_radius value="7" />
+			<prefab_rule name="wildernessPOIs" prob="1" />
 		</wilderness_rule>
 	</wilderness_rules>
 	<prefab_rules>
@@ -282,7 +300,7 @@
 			<prefab name="xcostum_CityCombo14(by_Stallionsden)" max_count="1" />
 			<prefab name="xcostum_CityCombo15(by_Stallionsden)" max_count="1" />
 			<prefab name="xcostum_CityCombo16(by_Stallionsden)" max_count="1" />
-			<!--  <prefab name="xcostum_CityCombo17(by_Stallionsden)" max_count="1" />  (skyscraper)-->
+			<prefab name="xcostum_CityCombo17(by_Stallionsden)" max_count="1" />
 			<prefab name="xcostum_CityCombo18(by_Stallionsden)" max_count="1" />
 			<prefab name="xcostum_Utility_Combo(by_LuckyStar)" min_count="1" max_count="1" />
 			<prefab name="xcostum_Dark_Mausoleum(by_LuckyStar)" min_count="1" max_count="1" />
@@ -1936,7 +1954,7 @@
 			<module name="mountains" type="FastTurbulence">
 				<property name="sourceModule" value="mountainsScaled"/>
 				<property name="power" value="95"/>
-				<property name="frequency" value="0.5"/>
+				<property name="frequency" value="0.32"/>
 				<property name="roughness" value="5" />
 			</module>
 			<module name="landFilter" type="FastNoise" seed_additive="1">
@@ -1987,6 +2005,7 @@
 			<module name="biomeBase" type="FastNoise" >
 				<property name="frequency" value="0.0007375" /> <!-- lower for larger & fewer biomes, higher for smaller & more biomes -->
 			</module>
+			
 			<module name="biomeDither" type="FastTurbulence">
 				<property name="sourceModule" value="biomeBase" />
 				<property name="frequency" value="0.32" />
@@ -1994,11 +2013,12 @@
 				<property name="roughness" value="6" />
 			</module>
 
-		<module name="biomeOutput" type="ScaleBiasOutput" >
+			<module name="biomeOutput" type="ScaleBiasOutput" >
 				<property name="sourceModule" value="biomeDither" />
-			<property name="scale" value="0.45" /> <!-- raise this for more contrasted biomes, lower for more "temperate" biomes-->
-			<property name="bias" value="0.4375" /> <!-- raise this for more "hot" biomes, lower for more "cold" biomes -->
+				<property name="scale" value="0.45" /> <!-- raise this for more contrasted biomes, lower for more "temperate" biomes-->
+				<property name="bias" value="0.4475" /> <!-- raise this for more "hot" biomes, lower for more "cold" biomes -->
 			</module>
+
 			<module name="clampOutput" type="ClampOutput">
 			<property name="sourceModule" value="biomeOutput" />
 				<property name="bounds" value="0,1" />
@@ -2014,10 +2034,10 @@
 		
 		<!-- 0,0.05 snow -->
 		
-		<!-- 0.05,0.75 city (snow forest) -->
+		<!-- 0.05,0.125 city (snow forest) -->
 		
 		<biome_spawn_rule name="pine_forest">
-			<biome_generator range="0.125,0.25"/>
+			<biome_generator range="0.1,0.25"/>
 		</biome_spawn_rule>
 		
 		<biome_spawn_rule name="forest">
@@ -2037,7 +2057,7 @@
 		
 		<!-- terrain_generator range in game elevation appears to be x - 28 -->
 		<biome_spawn_rule name="pine_forest">
-			<terrain_generator range="127,136" />
+			<terrain_generator range="120,134" />
 		</biome_spawn_rule>
 		
 		<biome_spawn_rule name="water">
@@ -2045,20 +2065,20 @@
 		</biome_spawn_rule>
 		
 		<biome_spawn_rule name="city">
-			<biome_generator range="0.08,0.125"/>
+			<biome_generator range="0.05,0.1"/>
 		</biome_spawn_rule>
 
 		<biome_spawn_rule name="wasteland_hub">
-			<biome_generator range="0.925,1.0"/>
-		</biome_spawn_rule>		
-		
-		<biome_spawn_rule name="city">
-			<terrain_generator range="136,156" />
+			<biome_generator range="0.95,0.99"/>
 		</biome_spawn_rule>		
 
 		<biome_spawn_rule name="snow">
-			<biome_generator range="0,0.08"/>
+			<biome_generator range="0,0.05"/>
 		</biome_spawn_rule>
+
+		<biome_spawn_rule name="city">
+			<terrain_generator range="134,150" />
+		</biome_spawn_rule>		
 		
 		<biome_spawn_rule name="wasteland">
 			<distance_from_center range="4250,5250" />
@@ -2068,16 +2088,21 @@
 			<distance_from_center range="5250,6000" />
 		</biome_spawn_rule>
 		
-		<biome_spawn_rule name="wasteland">
-			<biome_generator range="0.75,0.925"/>
-		</biome_spawn_rule>
 
 		<biome_spawn_rule name="desert">
 			<biome_generator range="0.575,0.75"/>
 		</biome_spawn_rule>
 		
+		<biome_spawn_rule name="wasteland">
+			<biome_generator range="0.75,0.925"/>
+		</biome_spawn_rule>
+		
+		<biome_spawn_rule name="radiated">
+			<biome_generator range="0.99,1" />
+		</biome_spawn_rule>
+		
 		<biome_spawn_rule name="snow">
-			<terrain_generator range="156,255" />
+			<terrain_generator range="150,255" />
 		</biome_spawn_rule>
 		
 	</biome_spawn_rules>

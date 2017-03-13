@@ -4717,6 +4717,7 @@ Mesh files no longer used:
 		<property name="Encumbrance" value="0" />
 		<property name="Weight" value="5" />
 		<property name="EconomicValue" value="150" />
+		<property name="Insulation" value="-5" />
 		<property class="Attributes">
 			<!-- clothGeneric -->
 			<property name="ConcussiveProtection" value="0.065,0.13" />
@@ -4795,6 +4796,7 @@ Mesh files no longer used:
 	</item>
 	<item id="476" name="eyeglasses">
 		<property name="Extends" value="shades" />
+		<property name="Insulation" value="0" />
 		<property class="UMA">
 			<property name="Mesh" value="unisex_specs" />
 			<property name="Overlay0" value="unisex_specs" />
@@ -4841,6 +4843,7 @@ Mesh files no longer used:
 	</item>
 	<item id="479" name="nerdGlasses">
 		<property name="Extends" value="shades" />
+		<property name="Insulation" value="0" />
 		<property class="UMA">
 			<property name="Mesh" value="specs" />
 			<property name="Overlay0" value="specs" />

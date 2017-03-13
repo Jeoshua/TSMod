@@ -1646,7 +1646,7 @@
 			<recipe name="tnt" unlock_level="1" />
 		</perk>
 		<perk name="Grain Alcohol" icon="grainAlcohol" description_key="Learn to distill Grain Alcohol in the still" title_key="Grain Alcohol" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="health">
-			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="10" />
+			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="5" />
 			<recipe name="workStill" unlock_level="1" />
             <recipe name="grainAlcohol" unlock_level="1" />
 		</perk>

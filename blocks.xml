@@ -12802,7 +12802,7 @@ kind of free
 		<drop event="Harvest" name="electronicParts" count="3" prob=".2" tool_category="Disassemble" />
 		<drop event="Harvest" name="lightBulb" count="1" prob=".3" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapIron" count="5" prob="1" />
-		<property name="CraftingSkillGroup" value="Engineering"/>
+		<property name="CraftingSkillGroup" value="Engineering" />
 	</block>
 	<block id="1552" name="metalPipeValve">
 		<property name="Extends" value="metalNoUpgradeMaster" />
@@ -13863,7 +13863,7 @@ kind of free
 		<property name="Extends" value="cntVendingMachine" />
 		<property name="Model" value="Entities/LootContainers/vending_machine_traderPrefab" />
 		<property name="LightOpacity" value="0" />
-		<!--<property name="TraderID" value="5" />-->
+		<property name="TraderID" value="5" />
 	</block>
 	<block id="1927" name="signShopOpen">
 		<property name="Class" value="Light" />
@@ -15768,7 +15768,7 @@ kind of free
         <property name="MaxDamage" value="20000" />
 		<property name="Model" value="#avocado?AvocadoTree" />
 	</block>
-	<block id="1672" name="Palm">
+	<!--<block id="1672" name="Palm">
 		<property name="Extends" value="fruitTreeMaster" />
 		<property name="Model" value="#smallpalm?Palm" />
 		<property name="MeshScale" value="2,2" />
@@ -15785,7 +15785,7 @@ kind of free
 		<property name="Model" value="#palm?PalmCoco" />
 		<property name="MeshScale" value="2,2" />
         <property name="MaxDamage" value="8000" />
-	</block>
+	</block>-->
 	<block id="1675" name="PlantedRedwoodTree">
 		<property name="Extends" value="plantedAppleTree" />
 		<property name="PlantGrowing.Next" value="redwoodTree" />
