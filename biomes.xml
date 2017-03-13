@@ -703,13 +703,13 @@ If you do not declare them, the decorations of the main biome are used.
 						<resource blockname="gravel" cluster="1" prob="0.811" rwgGenerationType="all" />
 					</layer>
 					<layer depth="6" blockname="stone">
-						<resource blockname="coalOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
+						<resource blockname="ironOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
 						<resource blockname="gravel" cluster="1" prob="0.8130" rwgGenerationType="all" />
 						<resource blockname="silverOre" cluster="1" prob="0.00020" rwgGenerationType="all" />
 						<resource blockname="diamondOre" cluster="1" prob="0.00005" rwgGenerationType="all" />
 					</layer>
 					<layer depth="*" blockname="hardStone">
-						<resource blockname="coalOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
+						<resource blockname="ironOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
 						<resource blockname="gravel" cluster="1" prob="0.8130" rwgGenerationType="all" />
 						<resource blockname="silverOre" cluster="1" prob="0.00020" rwgGenerationType="all" />
 						<resource blockname="diamondOre" cluster="1" prob="0.00005" rwgGenerationType="all" />
@@ -756,13 +756,13 @@ If you do not declare them, the decorations of the main biome are used.
 						<resource blockname="gravel" cluster="1" prob="0.811" rwgGenerationType="all" />
 					</layer>
 					<layer depth="6" blockname="stone">
-						<resource blockname="coalOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
+						<resource blockname="ironOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
 						<resource blockname="gravel" cluster="1" prob="0.8130" rwgGenerationType="all" />
 						<resource blockname="silverOre" cluster="1" prob="0.00020" rwgGenerationType="all" />
 						<resource blockname="diamondOre" cluster="1" prob="0.00005" rwgGenerationType="all" />
 					</layer>
 					<layer depth="*" blockname="hardStone">
-						<resource blockname="coalOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
+						<resource blockname="ironOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
 						<resource blockname="gravel" cluster="1" prob="0.8130" rwgGenerationType="all" />
 						<resource blockname="silverOre" cluster="1" prob="0.00020" rwgGenerationType="all" />
 						<resource blockname="diamondOre" cluster="1" prob="0.00005" rwgGenerationType="all" />
@@ -813,13 +813,13 @@ If you do not declare them, the decorations of the main biome are used.
 					</layer>
 					<layer depth="5" blockname="dirt" />
 					<layer depth="6" blockname="stone">
-						<resource blockname="coalOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
+						<resource blockname="ironOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
 						<resource blockname="gravel" cluster="1" prob="0.8130" rwgGenerationType="all" />
 						<resource blockname="silverOre" cluster="1" prob="0.00020" rwgGenerationType="all" />
 						<resource blockname="diamondOre" cluster="1" prob="0.00005" rwgGenerationType="all" />
 					</layer>
 					<layer depth="*" blockname="hardStone">
-						<resource blockname="coalOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
+						<resource blockname="ironOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
 						<resource blockname="gravel" cluster="1" prob="0.8130" rwgGenerationType="all" />
 						<resource blockname="silverOre" cluster="1" prob="0.00020" rwgGenerationType="all" />
 						<resource blockname="diamondOre" cluster="1" prob="0.00005" rwgGenerationType="all" />
@@ -870,13 +870,13 @@ If you do not declare them, the decorations of the main biome are used.
 					<resource blockname="gravel" cluster="1" prob="0.811" rwgGenerationType="all" />
 				</layer>
 				<layer depth="6" blockname="stone">
-					<resource blockname="coalOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
+					<resource blockname="ironOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
 					<resource blockname="gravel" cluster="1" prob="0.8130" rwgGenerationType="all" />
 					<resource blockname="silverOre" cluster="1" prob="0.00020" rwgGenerationType="all" />
 					<resource blockname="diamondOre" cluster="1" prob="0.00005" rwgGenerationType="all" />
 				</layer>
 				<layer depth="*" blockname="hardStone">
-					<resource blockname="coalOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
+					<resource blockname="ironOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
 					<resource blockname="gravel" cluster="1" prob="0.8130" rwgGenerationType="all" />
 					<resource blockname="silverOre" cluster="1" prob="0.00020" rwgGenerationType="all" />
 					<resource blockname="diamondOre" cluster="1" prob="0.00005" rwgGenerationType="all" />
@@ -2938,7 +2938,7 @@ If you do not declare them, the decorations of the main biome are used.
 						<resource blockname="dirt" cluster="0" prob="0.60" rwgGenerationType="all" />
 					</layer>
 					<layer depth="6" blockname="stone">
-						<resource blockname="coalOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
+						<resource blockname="ironOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
 						<resource blockname="gravel" cluster="1" prob="0.8130" rwgGenerationType="all" />
 						<resource blockname="silverOre" cluster="1" prob="0.00020" rwgGenerationType="all" />
 						<resource blockname="diamondOre" cluster="1" prob="0.00005" rwgGenerationType="all" />
@@ -2953,7 +2953,7 @@ If you do not declare them, the decorations of the main biome are used.
 						<resource blockname="gravel" cluster="1" prob="0.8130" rwgGenerationType="all" />
 					</layer>
 					<layer depth="10" blockname="hardStone">
-						<resource blockname="ironOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
+						<resource blockname="coalOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
 						<resource blockname="gravel" cluster="1" prob="0.8130" rwgGenerationType="all" />
 						<resource blockname="goldOre" cluster="1" prob="0.00010" rwgGenerationType="all" />
 						<resource blockname="diamondOre" cluster="1" prob="0.00005" rwgGenerationType="all" />
@@ -3081,7 +3081,7 @@ If you do not declare them, the decorations of the main biome are used.
 						<resource blockname="gravel" cluster="1" prob="0.811" rwgGenerationType="all" />
 					</layer>
 					<layer depth="6" blockname="stone">
-						<resource blockname="coalOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
+						<resource blockname="ironOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
 						<resource blockname="gravel" cluster="1" prob="0.8130" rwgGenerationType="all" />
 						<resource blockname="silverOre" cluster="1" prob="0.00020" rwgGenerationType="all" />
 						<resource blockname="diamondOre" cluster="1" prob="0.00005" rwgGenerationType="all" />
@@ -3096,7 +3096,7 @@ If you do not declare them, the decorations of the main biome are used.
 						<resource blockname="gravel" cluster="1" prob="0.8130" rwgGenerationType="all" />
 					</layer>
 					<layer depth="10" blockname="hardStone">
-						<resource blockname="ironOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
+						<resource blockname="coalOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
 						<resource blockname="gravel" cluster="1" prob="0.8130" rwgGenerationType="all" />
 						<resource blockname="goldOre" cluster="1" prob="0.00010" rwgGenerationType="all" />
 						<resource blockname="diamondOre" cluster="1" prob="0.00005" rwgGenerationType="all" />
@@ -3153,7 +3153,7 @@ If you do not declare them, the decorations of the main biome are used.
 						<resource blockname="clay" cluster="1" prob="0.08" rwgGenerationType="all" />
 					</layer>
 					<layer depth="6" blockname="stone">
-						<resource blockname="coalOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
+						<resource blockname="ironOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
 						<resource blockname="gravel" cluster="1" prob="0.8130" rwgGenerationType="all" />
 						<resource blockname="silverOre" cluster="1" prob="0.00020" rwgGenerationType="all" />
 						<resource blockname="diamondOre" cluster="1" prob="0.00005" rwgGenerationType="all" />
@@ -3168,7 +3168,7 @@ If you do not declare them, the decorations of the main biome are used.
 						<resource blockname="gravel" cluster="1" prob="0.8130" rwgGenerationType="all" />
 					</layer>
 					<layer depth="10" blockname="hardStone">
-						<resource blockname="ironOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
+						<resource blockname="coalOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
 						<resource blockname="gravel" cluster="1" prob="0.8130" rwgGenerationType="all" />
 						<resource blockname="goldOre" cluster="1" prob="0.00010" rwgGenerationType="all" />
 						<resource blockname="diamondOre" cluster="1" prob="0.00005" rwgGenerationType="all" />
@@ -3208,7 +3208,7 @@ If you do not declare them, the decorations of the main biome are used.
 						<resource blockname="clay" cluster="1" prob="0.08" rwgGenerationType="all" />
 					</layer>
 					<layer depth="6" blockname="stone">
-						<resource blockname="coalOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
+						<resource blockname="ironOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
 						<resource blockname="gravel" cluster="1" prob="0.8130" rwgGenerationType="all" />
 						<resource blockname="silverOre" cluster="1" prob="0.00020" rwgGenerationType="all" />
 						<resource blockname="diamondOre" cluster="1" prob="0.00005" rwgGenerationType="all" />
@@ -3223,7 +3223,7 @@ If you do not declare them, the decorations of the main biome are used.
 						<resource blockname="gravel" cluster="1" prob="0.8130" rwgGenerationType="all" />
 					</layer>
 					<layer depth="10" blockname="hardStone">
-						<resource blockname="ironOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
+						<resource blockname="coalOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
 						<resource blockname="gravel" cluster="1" prob="0.8130" rwgGenerationType="all" />
 						<resource blockname="goldOre" cluster="1" prob="0.00010" rwgGenerationType="all" />
 						<resource blockname="diamondOre" cluster="1" prob="0.00005" rwgGenerationType="all" />
@@ -3267,7 +3267,7 @@ If you do not declare them, the decorations of the main biome are used.
 					<resource blockname="gravel" cluster="1" prob="0.811" rwgGenerationType="all" />
 				</layer>
 				<layer depth="6" blockname="stone">
-					<resource blockname="coalOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
+					<resource blockname="ironOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
 					<resource blockname="gravel" cluster="1" prob="0.8130" rwgGenerationType="all" />
 					<resource blockname="silverOre" cluster="1" prob="0.00020" rwgGenerationType="all" />
 					<resource blockname="diamondOre" cluster="1" prob="0.00005" rwgGenerationType="all" />
@@ -3282,7 +3282,7 @@ If you do not declare them, the decorations of the main biome are used.
 					<resource blockname="gravel" cluster="1" prob="0.8130" rwgGenerationType="all" />
 				</layer>
 				<layer depth="10" blockname="hardStone">
-					<resource blockname="ironOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
+					<resource blockname="coalOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
 					<resource blockname="gravel" cluster="1" prob="0.8130" rwgGenerationType="all" />
 					<resource blockname="goldOre" cluster="1" prob="0.00010" rwgGenerationType="all" />
 					<resource blockname="diamondOre" cluster="1" prob="0.00005" rwgGenerationType="all" />

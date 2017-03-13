@@ -61,6 +61,7 @@
 		</window_group>
 		<window_group name="creative" controller="XUiC_CreativeWindowGroup">
 			<window name="windowCreative" />
+			<window name="windowCombine" />
 		</window_group>
 		<window_group name="backpack">
 			<window name="itemInfoPanel" />
