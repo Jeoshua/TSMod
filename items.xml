@@ -12519,6 +12519,7 @@ Mesh files no longer used:
 	<item id="1671" name="AdminPick">
 		<property name="Extends" value="pickaxeIron" />
 		<property name="RepairTools" value="NoRepair" />
+		<property name="Degradation" value="999999" />
 		<property class="Action0">
 			<property name="Stamina_usage" value="1" />
 			<property name="Range" value="4" />
@@ -12532,6 +12533,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="1000" />
 			<property name="DamageBonus.wood" value="1000" />
 			<property name="DamageBonus.earth" value="1000" />
+			<property name="DamageBonus.workstation" value="1000" />
 		</property>
 		<property class="Action1">
 			<property name="Stamina_usage" value="1" />
@@ -12546,6 +12548,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="1000" />
 			<property name="DamageBonus.wood" value="1000" />
 			<property name="DamageBonus.earth" value="1000" />
+			<property name="DamageBonus.workstation" value="1000" />
 		</property>
 	</item>
     <item id="1672" name="StoneHoe">

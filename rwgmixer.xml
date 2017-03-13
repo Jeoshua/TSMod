@@ -59,7 +59,7 @@
 			
 			<hub_rule name="largeCity"/>
 			
-			<wilderness_rule name="wildernessSlaanhatten"/>
+			<wilderness_rule name="wildernessEmpty"/>
 		</cell_rule>
 		<cell_rule name="CoronadoCityCell">
 			<cave_count value="5,9" />
@@ -246,6 +246,11 @@
 			<path_material value="asphalt" />
 			<path_radius value="5" />
 			<prefab_rule name="wildernessPOIs" prob="1" />
+		</wilderness_rule>
+		<wilderness_rule name="wildernessEmpty" spawn_min_max="0,0">
+			<path_material value="asphalt" />
+			<path_radius value="5" />
+			<prefab_rule name="none" prob="1" />
 		</wilderness_rule>
 	</wilderness_rules>
 	<prefab_rules>
@@ -2022,6 +2027,7 @@
 		<biome_spawn_rule name="plains">
 			<biome_generator range="0.45,0.575"/>
 		</biome_spawn_rule>
+
 		
 		<!-- 0.575,0.75 desert -->
 		
@@ -2038,11 +2044,13 @@
 			<terrain_generator range="-31,1"/>
 		</biome_spawn_rule>
 		
-
-		
 		<biome_spawn_rule name="city">
 			<biome_generator range="0.08,0.125"/>
 		</biome_spawn_rule>
+
+		<biome_spawn_rule name="wasteland_hub">
+			<biome_generator range="0.925,1.0"/>
+		</biome_spawn_rule>		
 		
 		<biome_spawn_rule name="city">
 			<terrain_generator range="136,156" />
@@ -2056,20 +2064,10 @@
 			<distance_from_center range="4250,5250" />
 		</biome_spawn_rule>
 		
-
 		<biome_spawn_rule name="radiated">
 			<distance_from_center range="5250,6000" />
 		</biome_spawn_rule>
 		
-		<biome_spawn_rule name="wasteland_hub">
-			<distance_from_center range="0,750" />
-		</biome_spawn_rule>
-
-		<biome_spawn_rule name="burnt_forest">
-			<biome_generator range="0.925,1.0"/>
-		</biome_spawn_rule>
-		
-
 		<biome_spawn_rule name="wasteland">
 			<biome_generator range="0.75,0.925"/>
 		</biome_spawn_rule>
@@ -2081,7 +2079,6 @@
 		<biome_spawn_rule name="snow">
 			<terrain_generator range="156,255" />
 		</biome_spawn_rule>
-	
 		
 	</biome_spawn_rules>
 </rwgmixer>

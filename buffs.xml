@@ -182,9 +182,9 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 		<modify id="0" stat="speedmodifier" setValue="0.40" />
 	</buff>
 	<!-- todo ideally this buff is only applied on a critical hit to the heart region and not applied to zombies. Armor would limit this too -->
-	<buff id="arrowCriticalBleedout" duration="50" causes="arrow,ironArrow,steelArrow,crossbowBolt,ironCrossbowBolt,steelCrossbowBolt,explodingCrossbowBolt" type="bleeding" icon="ui_game_symbol_critical" name_key="arrowCriticalBleedout" description_key="arrowCriticalBleedoutDesc" tooltip_key="arrowCriticalBleedoutTooltip">
+	<buff id="arrowCriticalBleedout" stack="reset" duration="50" causes="arrow,ironArrow,steelArrow,crossbowBolt,ironCrossbowBolt,steelCrossbowBolt,explodingCrossbowBolt" type="bleeding" icon="ui_game_symbol_critical" name_key="arrowCriticalBleedout" description_key="arrowCriticalBleedoutDesc" tooltip_key="arrowCriticalBleedoutTooltip">
 		<modify id="0" stat="stamina" amount="-1" rate="1" type="bleeding" />
-		<modify id="1" stat="health" amount="-1" rate="1" type="bleeding" />
+		<modify id="1" stat="health" amount="-2" rate="1" type="bleeding" />
 	</buff>
 	<buff id="CoffeeStaminaBoost" duration="120t" stack="extend" type="staminaup" icon="ui_game_symbol_coffee" name_key="caffeineBuzz" description_key="caffeineBuzzDesc" tooltip_key="caffeineBuzzTooltip" causes="coffee">
 		<modify id="0" stat="stamina" amount="2" rate="1" />
@@ -362,10 +362,10 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
     </buff>
     -->
 	<buff id="critGunMP5" duration="1" castsound="Buffs/critical_blunt">
-		<modify id="1" stat="health" amount="-100" rate="1" />
+		<modify id="1" stat="health" amount="-10" rate="1" />
 	</buff>
 	<buff id="critGunAK47" duration="1" castsound="Buffs/critical_blunt">
-		<modify id="1" stat="health" amount="-150" rate="1" />
+		<modify id="1" stat="health" amount="-25" rate="1" />
 	</buff>
 	<buff id="radiation" type="sickness" buffif="radiation greater 0" debuffif="radiation equals 0" icon="ui_game_symbol_radiation" name_key="radiation" description_key="radiationDesc" tooltip_key="radiationTooltip"></buff>
 	<buff id="bloodDrawTrigger" duration="1" actions="increment(BDKbloodLoss, 100t, 1, 0, 0)" />
@@ -697,7 +697,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<buff id="internalBleeding1" duration="50" name="Internal Bleeding1" ffcheck="true" description="You are bleeding internally." actions="damage(45,1,0,0)" icon="buff_icon_critical_hit">
 		<modify id="0" stat="health" amount="-25" rate="1" />
 	</buff>
-	<buff id="internalBleeding2" duration="50" name="Cutted off" ffcheck="true" description="You lost some parts of your Body" icon="buff_icon_critical_hit">
+	<buff id="internalBleeding2" duration="50" name="Cut off" ffcheck="true" description="You lost some parts of your body" icon="buff_icon_critical_hit">
 		<modify id="0" stat="stamina" amount="-25" rate="1" />
 		<modify id="1" stat="health" amount="-15" rate="2" />
 	</buff>
