@@ -12102,11 +12102,11 @@ kind of free
 		<property name="Model" value="Entities/Vehicles/car03_blue_dmg0_Prefab" />
 		<property name="MultiBlockDim" value="2,2,6" />
 		<property name="ShowModelOnFall" value="false" />
-		<drop event="Harvest" name="scrapIron" count="75,100" tool_category="Disassemble" />
+		<drop event="Harvest" name="scrapIron" count="75,100"/>
 		<drop event="Harvest" name="EngineBlock" count="1" prob="0.2" tool_category="Disassemble" />
 		<drop event="Harvest" name="airFilter" count="1" prob="0.2" tool_category="Disassemble" />
 		<drop event="Harvest" name="carBattery" count="1" prob="0.2" tool_category="Disassemble" />
-		<drop event="Harvest" name="gasCan" count="1" prob="0.5" />
+		<drop event="Harvest" name="gasCan" count="50" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="cloth" count="5" prob="0.5" />
 		<drop event="Harvest" name="mechanicalParts" count="1,5" prob=".25" tool_category="Disassemble" />
@@ -12114,7 +12114,6 @@ kind of free
 		<drop event="Harvest" name="electronicParts" count="1" prob=".1" tool_category="Disassemble" />
 		<drop event="Harvest" name="NutAndBolt" count="2,4" prob=".6" tool_category="Disassemble" />
 		<drop event="Harvest" name="leather" count="5" prob=".5" />
-		<drop event="Harvest" name="scrapIron" count="15" prob="0.5" />
 		<drop event="Destroy" name="scrapIron" count="10" prob="1" />
 		<property name="DowngradeBlock" value="cntCar03BlueDamage1" />
 		<property name="BigDecorationRadius" value="5" />
@@ -12147,9 +12146,9 @@ kind of free
 		<property name="Model" value="Entities/Vehicles/car03_blue_dmg1_Prefab" />
 		<property name="MultiBlockDim" value="2,2,6" />
 		<property name="ShowModelOnFall" value="false" />
-		<drop event="Harvest" name="scrapIron" count="75,100" tool_category="Disassemble" />
+		<drop event="Harvest" name="scrapIron" count="75,100"/>
 		<drop event="Harvest" name="radiator" count="1" prob="0.5" tool_category="Disassemble" />
-		<drop event="Harvest" name="oil" count="2" prob="0.5" tool_category="Disassemble" />
+		<drop event="Harvest" name="oil" count="5" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="cloth" count="5" />
 		<drop event="Harvest" name="spring" count="5" tool_category="Disassemble" />
 		<drop event="Harvest" name="FanBelt" count="1" tool_category="Disassemble" />
@@ -12158,8 +12157,8 @@ kind of free
 		<drop event="Harvest" name="electronicParts" count="2" prob=".2" tool_category="Disassemble" />
 		<drop event="Harvest" name="headlight" count="1" prob="0.45" tool_category="Disassemble" />
 		<drop event="Harvest" name="NutAndBolt" count="2,4" prob=".6" tool_category="Disassemble" />
-		<drop event="Destroy" name="scrapIron" count="5,15" prob="1" />
-		<!-- <drop event="Fall" name="cntCar03Damage2" count="1" prob="1.0" stick_chance="0.95" /> -->
+		<drop event="Fall" name="cntCar03Damage2" count="1" prob="0.75" stick_chance="0.95" />
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.25" stick_chance="0.95" />
 		<property name="DowngradeBlock" value="cntCar03Damage2" />
 		<property name="BigDecorationRadius" value="5" />
 		<property name="CanDecorateOnSlopes" value="false" />
@@ -12188,18 +12187,16 @@ kind of free
 		<property name="MultiBlockDim" value="2,2,6" />
 		<property name="ShowModelOnFall" value="false" />
 		<property name="MaxDamage" value="1000" />
-		<drop event="Harvest" name="scrapIron" count="25,75" tool_category="Disassemble" />
-		<drop event="Harvest" name="shortMetalPipe" count="5" prob="0.5" tool_category="Disassemble" />
-		<drop event="Harvest" name="gasCan" count="20" prob="0.3" />
+		<drop event="Harvest" name="scrapIron" count="25,75"/>
+		<drop event="Harvest" name="shortMetalPipe" count="5,10" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
-		<drop event="Harvest" name="scrapIron" count="15" prob="1" tool_category="Disassemble" />
-		<drop event="Destroy" name="scrapIron" count="5,15" prob="1" />
 		<drop event="Harvest" name="Alternator" count="1" prob="0.3" tool_category="Disassemble" />
 		<drop event="Harvest" name="mechanicalParts" count="1" prob=".5" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="1" prob=".15" tool_category="Disassemble" />
 		<drop event="Harvest" name="Exhaust" count="1" prob="0.3" tool_category="Disassemble" />
 		<drop event="Harvest" name="NutAndBolt" count="2,4" prob=".6" tool_category="Disassemble" />
-		<drop event="Fall" name="scrapMetalPile" count="1" prob="1" stick_chance="0.95" />
+		<drop event="Destroy" name="scrapIron" count="5,15"/>
+		<drop event="Fall" name="scrapMetalPile" count="2" prob="1" stick_chance="0.95" />
 		<property name="BigDecorationRadius" value="5" />
 		<property name="CanDecorateOnSlopes" value="false" />
 		<property class="Explosion">

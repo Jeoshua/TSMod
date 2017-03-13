@@ -267,7 +267,7 @@
 		<entity name="hornet" />
 		<entity name="zombiedog" />
 		<entity name="zombieSteveCrawler" />
-		<entity name="ZombieBrute" />
+		<!--<entity name="ZombieBrute" />-->
 		<entity name="fatzombiecop" />
 		<entity name="burntzombie" />
 		<entity name="ZombieCharred" />
@@ -360,7 +360,7 @@
 		<entity name="hornet" />
 		<entity name="zombiedog" />
 		<entity name="zombieSteveCrawler" />
-		<entity name="ZombieBrute" />
+		<!--<entity name="ZombieBrute" />-->
 		<entity name="fatzombiecop" />
 		<entity name="burntzombie" />
 		<entity name="ZombieCharred" />
@@ -465,7 +465,7 @@
 		<entity name="hornet" />
 		<entity name="zombiedog" />
 		<entity name="zombieSteveCrawler" />
-		<entity name="ZombieBrute" />
+		<!--<entity name="ZombieBrute" />-->
 		<entity name="fatzombiecop" />
 		<entity name="burntzombie" />
 		<entity name="ZombieCharred" />
@@ -565,7 +565,7 @@
 		<entity name="hornet" prob="0.15" />
 		<entity name="zombiedog" prob="0.15" />
 		<entity name="zombieSteveCrawler" prob="0.05" />
-		<entity name="ZombieBrute" prob="0.15" />
+		<!--<entity name="ZombieBrute" prob="0.15" />-->
 		<entity name="fatzombiecop" prob="0.15" />
 		<entity name="burntzombie" prob="0.07" />
 		<entity name="ZombieCharred" prob="0.07" />
@@ -670,7 +670,7 @@
 		<entity name="hornet" prob="0.15" />
 		<entity name="zombiedog" prob="0.15" />
 		<entity name="zombieSteveCrawler" prob="0.05" />
-		<entity name="ZombieBrute" prob="0.15" />
+		<!--<entity name="ZombieBrute" prob="0.15" />-->
 		<entity name="fatzombiecop" prob="0.15" />
 		<entity name="burntzombie" prob="0.07" />
 		<entity name="ZombieCharred" prob="0.07" />
@@ -994,8 +994,8 @@
 		<entity name="Dummy" prob="0.33" />
 	</entitygroup>
 	<entitygroup name="Zombie7thDayHorde">
-		<entity name="GorillaZombie" prob="0.3" />
-		<entity name="ZombieBrute" prob="0.3" />
+		<entity name="GorillaZombie" prob="0.1" />
+		<entity name="ZombieBrute" prob="0.1" />
 		<entity name="Boe8" prob="0.3" />
 		<entity name="Joe8" prob="0.3" />
 		<entity name="Moe8" prob="0.3" />

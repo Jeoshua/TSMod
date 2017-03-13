@@ -100,7 +100,7 @@
 		<property name="Immunity" value="sickness;disease;bleeding;wellness" />
 		<property name="WanderSpeed" value="0.08" />
 		<property name="ApproachSpeed" value="0.3" />
-		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightWanderSpeed" value="0.1" />
 		<property name="NightApproachSpeed" value="0.42" />
 		<property name="PanicSpeed" value="0.55" />
 		<property name="CanClimbLadders" value="true" />
@@ -169,8 +169,8 @@
 		<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep" />
 		<property name="WalkType" value="2" />
 		<property name="HandItem" value="handCopZombie" />
-		<property name="MaxHealth" value="800" />
-		<property name="NightApproachSpeed" value="1.0" />
+		<property name="MaxHealth" value="1500" />
+		<property name="NightApproachSpeed" value="1.2" />
 		<property name="ApproachSpeed" value="0.67" />
 		<property name="PanicSpeed" value="1.4" />
 		<property name="Immunity" value="armordown;sickness;disease;bleeding;wellness" />
@@ -2292,7 +2292,7 @@
 		<property name="ApproachSpeed" value="0.3" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="0.48" />
-		<property name="PanicSpeed" value="0.8" />
+		<property name="PanicSpeed" value="0.68" />
 	</entity_class>
 	<entity_class name="Marlene2" extends="zombieMarlene">
 		<property name="WalkType" value="2" />
@@ -2308,7 +2308,7 @@
 		<property name="ApproachSpeed" value="0.1" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="0.42" />
-		<property name="PanicSpeed" value="0.85" />
+		<property name="PanicSpeed" value="0.65" />
 	</entity_class>
 	<entity_class name="spider2" extends="spiderzombie">
 		<property name="CanClimbVertical" value="false" />
@@ -2791,42 +2791,42 @@
 	<entity_class name="feral1" extends="zombieferal">
 		<property name="WalkType" value="1" />
 		<property name="WanderSpeed" value="0.2" />
-		<property name="NightApproachSpeed" value="1.75" />
+		<property name="NightApproachSpeed" value="1.42" />
 		<property name="ApproachSpeed" value="0.88" />
 		<property name="PanicSpeed" value="1.4" />
 	</entity_class>
 	<entity_class name="feral3" extends="zombieferal">
 		<property name="WalkType" value="3" />
 		<property name="WanderSpeed" value="0.2" />
-		<property name="NightApproachSpeed" value="1.7" />
+		<property name="NightApproachSpeed" value="1.44" />
 		<property name="ApproachSpeed" value="0.89" />
 		<property name="PanicSpeed" value="1.4" />
 	</entity_class>
 	<entity_class name="feral5" extends="zombieferal">
 		<property name="WalkType" value="5" />
 		<property name="WanderSpeed" value="0.2" />
-		<property name="NightApproachSpeed" value="1.75" />
+		<property name="NightApproachSpeed" value="1.44" />
 		<property name="ApproachSpeed" value="0.89" />
 		<property name="PanicSpeed" value="1.4" />
 	</entity_class>
 	<entity_class name="feral6" extends="zombieferal">
 		<property name="WalkType" value="6" />
 		<property name="WanderSpeed" value="0.2" />
-		<property name="NightApproachSpeed" value="1.8" />
+		<property name="NightApproachSpeed" value="1.27" />
 		<property name="ApproachSpeed" value="0.79" />
 		<property name="PanicSpeed" value="1.4" />
 	</entity_class>
 	<entity_class name="feral7" extends="zombieferal">
 		<property name="WalkType" value="7" />
 		<property name="WanderSpeed" value="0.2" />
-		<property name="NightApproachSpeed" value="1.6" />
+		<property name="NightApproachSpeed" value="1.26" />
 		<property name="ApproachSpeed" value="0.78" />
 		<property name="PanicSpeed" value="1.4" />
 	</entity_class>
 	<entity_class name="feral8" extends="zombieferal">
 		<property name="WalkType" value="8" />
 		<property name="WanderSpeed" value="0.2" />
-		<property name="NightApproachSpeed" value="1.8" />
+		<property name="NightApproachSpeed" value="1.36" />
 		<property name="ApproachSpeed" value="0.84" />
 		<property name="PanicSpeed" value="1.4" />
 	</entity_class>
@@ -2976,6 +2976,7 @@
 		<property name="IsEntityAnimal" value="true" />
 		<property name="PhysicsBody" value="Stag" />
 		<property name="HandItem" value="SpiderBite" />
+		<property name="IsEnemyEntity" value="true" />
 		<!-- AI properties -->
 		<property name="AITask-1" value="BreakDoor" />
 		<property name="AITask-2" value="BreakBlock" />
@@ -3231,7 +3232,7 @@
 		<property name="Prefab" value="Backpack" />
 		<property name="Class" value="EntityBackpack" />
 		<property name="Parent" value="Backpack" />
-		<property name="TimeStayAfterDeath" value="0" />
+		<property name="TimeStayAfterDeath" value="3600" />
 		<!-- player death backpacks will go poof after this many seconds. 0 means 0, not infinite. -->
 		<property name="IsEnemyEntity" value="false" />
 		<property name="LootListOnDeath" value="41" />
