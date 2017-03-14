@@ -1,21 +1,12 @@
 <rwgmixer>
-	<!-- <world ruleset="vanilla" />-->
+	<world ruleset="vanilla" />
 	<!-- rwgmixer for COMPOPACK 24 (by Magoli)  - Current Alpha: A15 stable   -->
 	<rulesets>
-		<ruleset name="vanilla" cell_cache_size="8" cell_size="2250" cell_offset="0.3" generation_distance="2600" terrain_generator="vanilla">
+		<ruleset name="vanilla" cell_cache_size="8" cell_size="2000" cell_offset="0.3" generation_distance="2800" terrain_generator="vanilla">
 			<cell_rule name="wastelandHub" position="0,0" prob="1" />
-			<cell_rule name="ColtTownCell" position="-1,0" prob="1" />
-			<cell_rule name="highDensity" prob="0.5" />
 			<cell_rule name="lowDensity" prob="0.3" />
-			<cell_rule name="empty" prob="0.1" />
-		</ruleset>
-		<ruleset name="megacity" cell_cache_size="8" cell_size="2250" cell_offset="0.3" generation_distance="2500" terrain_generator="vanilla">
-			<cell_rule name="projectSlaanhatten" position="0,0" prob="1"/>
-			<cell_rule name="empty" prosition="1,0" prob="1" />
-			<cell_rule name="wastelandHub" position="0,-1" prob="1" />
-			<cell_rule name="ColtTownCell" position="-1,0" prob="1" />
 			<cell_rule name="highDensity" prob="0.5" />
-			<cell_rule name="lowDensity" prob="0.3" />
+			<cell_rule name="wastelandCity" prob="0.2"/>
 			<cell_rule name="empty" prob="0.1" />
 		</ruleset>
 	</rulesets>
@@ -29,28 +20,35 @@
 			<hub_rule name="townLarge" prob="0.3" />
 			<hub_rule name="Custom_Town01_Hub" prob="0.3" />
 			<hub_rule name="wastyTownHub" prob="0.2" />
+			<hub_rule name="CoronadoCity" prob="0.3" />
 			<wilderness_rule name="wildernessDefault" />
 		</cell_rule>
 		<cell_rule name="highDensity">
 			<cave_count value="5,9" />
 			<path_material value="asphalt" />
 			<path_radius value="7" />
+			<hub_rule name="ColtTownHub" prob="0.3" />
 			<hub_rule name="wastycity" prob="0.2" />
 			<hub_rule name="Hospital_Hub" prob="0.3" />
 			<hub_rule name="SlumsHub" prob="0.2" />
 			<hub_rule name="RaceTrackStadiumHub" prob="0.3" />
-			<hub_rule name="CoronadoCity" prob="0.3" />
 			<hub_rule name="Lim_PrisonHub" prob="0.3" />
 			<hub_rule name="IndustrialHub" prob="0.3" />
 			<hub_rule name="TWD_PrisonHub" prob="0.2" />
-			<hub_rule name="citySmall" prob="0.2" />
 			<wilderness_rule name="wildernessHigh" prob="1" />
+		</cell_rule>
+		<cell_rule name="wastelandCity">
+			<cave_count value="5,9" />
+			<path_material value="asphalt" />
+			<path_radius value="7" />
+			<hub_rule name="citySmall" />
+			<wilderness_rule name="wildernessHub" prob="1" />
 		</cell_rule>
 		<cell_rule name="wastelandHub">
 			<cave_count value="5,9" />
 			<path_material value="asphalt" />
 			<path_radius value="9" />
-			<hub_rule name="citySmall" />
+			<hub_rule name="cityLarge" />
 			<wilderness_rule name="wildernessHub" prob="1" />
 		</cell_rule>
 		<cell_rule name="empty">
@@ -60,15 +58,7 @@
 		</cell_rule>
 
 		<!-- Custom-Hubs : -->
-		<cell_rule name="projectSlaanhatten">
-			<cave_count value="2,4"/>
-			<path_material value="asphalt" /> 
-			<path_radius value="9" />
-			
-			<hub_rule name="largeCity"/>
-			
-			<wilderness_rule name="wildernessEmpty"/>
-		</cell_rule>
+
 		<cell_rule name="CoronadoCityCell">
 			<cave_count value="5,9" />
 			<path_material value="asphalt" />
@@ -130,7 +120,7 @@
 			<path_material value="asphalt" />
 			<path_radius value="7" />
 			<hub_rule name="TWD_PrisonHub" />
-			<wilderness_rule name="wildernessDefault" />
+			<wilderness_rule name="wildernessEmpty" />
 		</cell_rule>
 	</cell_rules>
 	<hub_rules>
@@ -171,12 +161,12 @@
 			<path_radius value="7" />
 			<prefab_rule name="CommonCityPOIs" prob="1" />
 		</hub_rule>
-		<hub_rule name="largeCity"> 
-			<hub_type value="town"/>
-			<width value="1575, 1575" />
-			<height value="1575, 1575" />
-			<hub_layout name="slaanhattenLayout"/>
-			<prefab_rule name="cityHubPrefabs"/>
+		<hub_rule name="cityLarge"> 
+			<hub_type value="city"/>
+			<width value="1024, 1575" />
+			<height value="1024, 1575" />
+			<path_radius value="7" />
+			<prefab_rule name="CommonCityPOIs" prob="1" />
 		</hub_rule>
 
 		<hub_rule name="wastyTownHub">
@@ -202,10 +192,6 @@
 			<path_material value="asphalt" />
 			<path_radius value="7" />
 			<prefab_rule name="CoronadoCityPOIs" prob="1" />
-		</hub_rule>
-		<hub_rule name="none">
-			<hub_type value="default_hub" />
-			<prefab_rule name="none" />
 		</hub_rule>
 		<!-- Custom-Hubs : -->
 		<hub_rule name="ColtTownHub">
@@ -248,6 +234,11 @@
 			<hub_layout name="Hospital_Hub" />
 			<prefab_rule name="rm_hubs" />
 		</hub_rule>
+
+		<hub_rule name="none">
+			<hub_type value="default_hub" />
+			<prefab_rule name="none" />
+		</hub_rule>
 	</hub_rules>
 	<wilderness_rules>
 		<wilderness_rule name="wildernessEmpty" spawn_min_max="0,0">
@@ -275,10 +266,10 @@
 		<prefab_rule name="none" />
 		<prefab_rule name="CommonCityPOIs">
 			<prefab rule="cityBlocks" lot_type="CityBlock" />
-			<prefab name="xvanilla_store_bank_lg_01" min_count="1" max_count="1" />
+			<prefab rule="banks" />
+			<prefab rule="carlots" />
+			<prefab rule="apartments" />
 			<prefab name="xvanilla_settlement_01" min_count="1" max_count="1" />
-			<prefab name="xvanilla_carlot_01" min_count="1" max_count="1" />
-			<prefab name="xvanilla_carlot_02" min_count="1" max_count="1" />
 			<prefab name="xvanilla_cemetery_01" min_count="1" max_count="1" />
 			<prefab name="xvanilla_cemetery_02" min_count="1" max_count="1" />
 			<prefab name="xvanilla_utility_electric_co_01" min_count="1" max_count="1" />
@@ -300,28 +291,19 @@
 			<prefab name="xcostum_CityCombo14(by_Stallionsden)" max_count="1" />
 			<prefab name="xcostum_CityCombo15(by_Stallionsden)" max_count="1" />
 			<prefab name="xcostum_CityCombo16(by_Stallionsden)" max_count="1" />
-			<prefab name="xcostum_CityCombo17(by_Stallionsden)" max_count="1" />
+			<!--<prefab name="xcostum_CityCombo17(by_Stallionsden)" max_count="1" />-->
 			<prefab name="xcostum_CityCombo18(by_Stallionsden)" max_count="1" />
 			<prefab name="xcostum_Utility_Combo(by_LuckyStar)" min_count="1" max_count="1" />
 			<prefab name="xcostum_Dark_Mausoleum(by_LuckyStar)" min_count="1" max_count="1" />
 			<prefab name="xcostum_GasnWash(by_LuckyStar)" min_count="1" max_count="1" />
 			<prefab name="xcostum_Tank_Garage(by_LuckyStar)" min_count="1" max_count="1" />
-			<prefab name="xcostum_Apartments_Curtilage_Playground(by_magoli)" min_count="1" max_count="1" />
 			<prefab name="xcostum_CityPark(by_Spider)" min_count="1" max_count="1" />
 			<prefab name="xcostum_MiniMall(by_Spider)" min_count="1" max_count="1" />
 			<prefab name="xvanilla_business_red_brick_06" max_count="1" />
-			<prefab name="xvanilla_parking_garage_01" min_count="1" max_count="1" />
-			<prefab name="xvanilla_parking_lot_01_city" min_count="1" max_count="1" />
-			<prefab name="xvanilla_parking_lot_02_city" min_count="1" max_count="1" />
-			<prefab name="xvanilla_parking_lot_03_city" max_count="1" />
+			<prefab rule="parking" />
 			<prefab name="xvanilla_utility_waterworks_01" min_count="1" max_count="1" />
 			<prefab name="xcostum_3BlockStores(by_Leo_Liuos)" min_count="1" max_count="1" />
 			<prefab name="xcostum_Alms_house(ex_vanilla_ornate03)" min_count="1" max_count="1" />
-			<prefab name="xcostum_Apartment(by_Gertle)" min_count="1" max_count="1" />
-			<prefab name="xcostum_Apartment_Stores(by_Laz_Man)" min_count="1" max_count="1" />
-			<prefab name="xcostum_Apartments(by_Batman)" min_count="1" max_count="1" />
-			<prefab name="xcostum_Bank(by_Guppycur)" max_count="1" />
-			<prefab name="xcostum_Bank(by_Limodor)" max_count="1" />
 			<prefab name="xcostum_bowlingcenter_city(by_magoli)" min_count="1" max_count="1" />
 			<prefab name="xcostum_Brownstones_House(by_Laz_Man)" min_count="1" max_count="1" />
 			<prefab name="xcostum_CasinoANKH(by_magoli)" min_count="1" max_count="1" />
@@ -365,8 +347,6 @@
 			<prefab name="xcostum_Windowfactory(by_magoli)" min_count="1" max_count="1" />
 			<prefab name="xcostum_WulftownA(by_WereWulfen)" min_count="1" max_count="1" />
 			<prefab name="xcostum_ZombieZoo_city(by_Wsiegel)" min_count="1" max_count="1" />
-			<prefab name="xvanilla_apartment_adobe_red_5_flr(city)" min_count="1" max_count="1" />
-			<prefab name="xvanilla_apartment_brick_6_flr(city)" max_count="1" />
 			<prefab name="xvanilla_army_camp(universal)" min_count="1" max_count="1" />
 			<prefab name="xvanilla_church_graveyard1" min_count="1" max_count="1" />
 			<prefab name="xvanilla_house_new_mansion_02" min_count="1" max_count="1" />
@@ -410,10 +390,7 @@
 			<prefab name="xvanilla_mp_waste_bldg_03_intact" min_count="1" max_count="2" prob="0.3" />
 			<prefab name="xvanilla_mp_waste_bldg_06_intact" min_count="1" max_count="2" prob="0.3" />
 			<prefab name="xvanilla_mp_waste_bldg_07_intact" min_count="1" max_count="2" prob="0.3" />
-			<prefab name="xvanilla_parking_garage_01" min_count="1" max_count="1" prob="0.3" />
-			<prefab name="xvanilla_parking_lot_01_city" min_count="1" max_count="1" prob="0.3" />
-			<prefab name="xvanilla_parking_lot_02_city" min_count="1" max_count="1" prob="0.2" />
-			<prefab name="xvanilla_parking_lot_03_city" max_count="1" prob="0.2" />
+			<prefab rule="parking" />
 			<prefab name="xcostum_School(by_LazMan)" min_count="1" max_count="1" prob="0.3" />
 			<prefab name="xcostum_Car_Dealership_old(by_P1ut0nium)" min_count="1" max_count="1" prob="0.2" />
 			<prefab rule="gasStations" min_count="1" max_count="1" prob="0.1" />
@@ -692,10 +669,7 @@
 			<prefab name="xvanilla_mp_waste_sewer_hole_1" max_count="1" prob="0.5" />
 			<prefab name="xvanilla_mp_waste_sewer_hole_2" max_count="1" prob="0.5" />
 			<prefab name="xvanilla_mp_waste_tree_pile_02" max_count="2" prob="0.5" />
-			<prefab name="xvanilla_vacant_lot_med_01" max_count="1" prob="0.5" />
-			<prefab name="xvanilla_vacant_lot_med_02" max_count="2" prob="0.5" />
-			<prefab name="xvanilla_vacant_lot_sm_01" max_count="1" prob="0.5" />
-			<prefab name="xvanilla_vacant_lot_sm_02" max_count="2" prob="0.5" />
+			<prefab rule="vacant_lots" />
 			<prefab name="xvanilla_graveyard_sm" max_count="1" prob="0.7" />
 			<prefab name="xvanilla_bombshelter_lg_01" max_count="1" prob="0.15" />
 			<prefab name="xvanilla_parking_lot_01" min_count="1" max_count="1" prob="0.4" />
@@ -743,6 +717,12 @@
 		<prefab_rule name="apartments">
 			<prefab name="apartment_adobe_red_5_flr" max_count="1" />
 			<prefab name="apartment_brick_6_flr" max_count="1" />
+			<prefab name="xcostum_Apartment(by_Gertle)" max_count="1"/>
+			<prefab name="xcostum_Apartment_Stores(by_Laz_Man)"max_count="1" />
+			<prefab name="xcostum_Apartments_Curtilage_Playground(by_magoli)" max_count="1" />
+			<prefab name="xcostum_Apartments(by_Batman)" max_count="1" />
+			<prefab name="xvanilla_apartment_adobe_red_5_flr(city)" max_count="1" />
+			<prefab name="xvanilla_apartment_brick_6_flr(city)" max_count="1" />
 		</prefab_rule>
 		<prefab_rule name="autoparts_big">
 			<prefab name="store_autoparts_01" />
@@ -752,6 +732,10 @@
 		</prefab_rule>
 		<prefab_rule name="banks">
 			<prefab name="store_bank_lg_01" />
+			<prefab name="xcostum_Bank(by_Guppycur)" max_count="1" />
+			<prefab name="xcostum_Bank(by_Limodor)" max_count="1" />
+			<!-- Slaanhatten Minifab Add -->
+			<prefab name="x_custom_navez_bank" />
 		</prefab_rule>
 		<prefab_rule name="barnsAndSheds">
 			<prefab name="barn_01" />
@@ -826,8 +810,11 @@
 			<prefab name="xcostum_Car_Dealership_old(by_P1ut0nium)" />
 		</prefab_rule>
 		<prefab_rule name="carlots">
-			<prefab name="carlot_01" />
-			<prefab name="carlot_02" />
+			<prefab name="xvanilla_carlot_01" />
+			<prefab name="xvanilla_carlot_02" />
+			<!-- Slaanhatten Minifab Add -->
+			<prefab name="x_custom_carpark_01" />
+			<prefab name="x_custom_carpark_02" />
 		</prefab_rule>
 		<prefab_rule name="churches">
 			<prefab name="xcostum_Dark_Mausoleum32(by_LuckyStar)" />
@@ -875,6 +862,11 @@
 			<prefab name="utility_electric_co_01" />
 			<prefab name="utility_refinery_01" />
 			<prefab name="installation_red_mesa" />
+			<!-- Slaanhatten Minifab Add -->
+			<prefab name="x_custom_factory_01" />
+			<prefab name="x_custom_factory_02" />
+			<prefab name="x_custom_factory_03" />
+			<prefab name="x_custom_factory_04" />
 		</prefab_rule>
 		<prefab_rule name="firestations">
 			<prefab name="xcostum_Firedepartment(by_Guppycur)" />
@@ -965,6 +957,10 @@
 			<prefab name="housetan2" />
 			<prefab name="xcostum_kuldlargehouse(by_Kuldiin)" />
 			<prefab name="xcostum_Apartment(by_Spider)" />
+			<!-- Slaanhatten minifab add -->
+			<prefab name="x_custom_housesx1" />
+			<prefab name="x_custom_housesx2" />
+			<prefab name="x_custom_housesx3" />
 		</prefab_rule>
 		<prefab_rule name="militaryCamps">
 			<prefab name="army_camp_01" />
@@ -1099,129 +1095,10 @@
 			<prefab name="utility_refinery_01" />
 		</prefab_rule>
 		<prefab_rule name="vacant_lots">
-			<prefab name="vacant_lot_med_01" />
-			<prefab name="vacant_lot_med_02" />
-			<prefab name="vacant_lot_sm_01" />
-			<prefab name="vacant_lot_sm_02" />
-		</prefab_rule>
-		<prefab_rule name="cityHubPrefabs">
-
-			<!-- Please see the prefab gridmap included within the project folder for the grid these prefabs are used in. -->
-			<prefab name="x_custom_city_0_0"/>
-			<prefab name="x_custom_city_0_1"/>
-			<prefab name="x_custom_city_0_2"/>
-			<prefab name="x_custom_city_0_3"/>
-			<prefab name="x_custom_city_1_0"/>
-			<prefab name="x_custom_city_1_1"/>
-			<prefab name="x_custom_city_1_2"/>
-			<prefab name="x_custom_city_1_3"/>
-			<prefab name="x_custom_city_2_0"/>
-			<prefab name="x_custom_city_2_1"/>
-			<prefab name="x_custom_city_2_2"/>
-			<prefab name="x_custom_city_2_3"/>
-			<prefab name="x_custom_city_3_0"/>
-			<prefab name="x_custom_city_3_1"/>
-			<prefab name="x_custom_city_3_2"/>
-			<prefab name="x_custom_city_3_3"/>
-			<prefab name="x_custom_city_-1_0"/>
-			<prefab name="x_custom_city_-1_1"/>
-			<prefab name="x_custom_city_-1_2"/>
-			<prefab name="x_custom_city_-1_3"/>
-			<prefab name="x_custom_city_4_1"/>
-			<prefab name="x_custom_city_4_2"/>
-			<prefab name="x_custom_city_4_3"/>
-			<prefab name="x_custom_city_4_0"/>
-			<prefab name="x_custom_city_-2_0"/>
-			<prefab name="x_custom_city_-2_1"/>
-			<prefab name="x_custom_city_-2_2"/>
-			<prefab name="x_custom_city_-3_0"/>
-			<prefab name="x_custom_city_-3_1"/>
-			<prefab name="x_custom_city_-3_2"/>
-			<prefab name="x_custom_city_-3_3"/>
-			<prefab name="x_custom_city_-4_0"/>
-			<prefab name="x_custom_city_-4_1"/>
-			<prefab name="x_custom_city_-4_2"/>
-			<prefab name="x_custom_city_-4_3"/>
-			<prefab name="x_custom_city_-4_-2"/>
-			<prefab name="x_custom_city_-3_-2"/>
-			<prefab name="x_custom_city_-2_-2"/>
-			<prefab name="x_custom_city_-1_-2"/>
-			<prefab name="x_custom_city_0_-2"/>
-			<prefab name="x_custom_city_1_-2"/>
-			<prefab name="x_custom_city_2_-2"/>
-			<prefab name="x_custom_city_3_-2"/>
-			<prefab name="x_custom_city_-4_-1"/>
-			<prefab name="x_custom_city_-3_-1"/>
-			<prefab name="x_custom_city_-2_-1"/>
-			<prefab name="x_custom_city_-1_-1"/>
-			<prefab name="x_custom_city_0_-1"/>
-			<prefab name="x_custom_city_1_-1"/>
-			<prefab name="x_custom_city_2_-1"/>
-			<prefab name="x_custom_city_3_-1"/>
-			<prefab name="x_custom_city_0_-3"/>
-			<prefab name="x_custom_city_0_-4"/>
-			<prefab name="x_custom_city_0_-5"/>
-			<prefab name="x_custom_city_-1_-3"/>
-			<prefab name="x_custom_city_-1_-4"/>
-			<prefab name="x_custom_city_-1_-5"/>
-			<prefab name="x_custom_city_1_-3"/>
-			<prefab name="x_custom_city_2_-3"/>
-			<prefab name="x_custom_city_3_-3"/>
-			<prefab name="x_custom_city_1_-4"/>
-			<prefab name="x_custom_city_2_-4"/>
-			<prefab name="x_custom_city_3_-4"/>
-			<prefab name="x_custom_city_1_-5"/>
-			<prefab name="x_custom_city_2_-5"/>
-			<prefab name="x_custom_city_3_-5"/>
-			<prefab name="x_custom_city_0_-6"/>
-			<prefab name="x_custom_city_1_-6"/>
-			<prefab name="x_custom_city_2_-6"/>
-			<prefab name="x_custom_city_-3_-6"/>
-			<prefab name="x_custom_city_4_-3"/>
-			<prefab name="x_custom_city_4_-4"/>
-			<prefab name="x_custom_city_4_-5"/>
-			<prefab name="x_custom_city_4_-6"/>
-			<prefab name="x_custom_city_-2_-3"/>
-			<prefab name="x_custom_city_-3_-3"/>
-			<prefab name="x_custom_city_-2_-4"/>
-			<prefab name="x_custom_city_-3_-4"/>
-			<prefab name="x_custom_city_-2_-5"/>
-			<prefab name="x_custom_city_-3_-5"/>
-			<prefab name="x_custom_city_-4_-5"/>
-			<prefab name="x_custom_city_-4_-4"/>
-			<prefab name="x_custom_city_-4_-3"/>
-			<prefab name="x_custom_city_-4_-6"/>
-			<prefab name="x_custom_city_-3_-6"/>
-			<prefab name="x_custom_city_-2_-6"/>
-			<prefab name="x_custom_city_-1_-6"/>
-			<prefab name="x_custom_city_-5_-2"/>
-			<prefab name="x_custom_city_-5_-3"/>
-			<prefab name="x_custom_city_-6_-2"/>
-			<prefab name="x_custom_city_-6_-3"/>
-			<prefab name="x_custom_city_-6_-1"/>
-			<prefab name="x_custom_city_-5_-1"/>
-			<prefab name="x_custom_city_-1_4"/>
-			<prefab name="x_custom_city_0_4"/>
-			<prefab name="x_custom_city_1_4"/>
-			<prefab name="x_custom_city_2_4"/>
-			<prefab name="x_custom_city_3_4"/>
-			<prefab name="x_custom_city_4_4"/>
-			<prefab name="x_custom_city_5_4"/>
-			<prefab name="x_custom_city_-1_5"/>
-			<prefab name="x_custom_city_0_5"/>
-			<prefab name="x_custom_city_1_5"/>
-			<prefab name="x_custom_city_2_5"/>
-			<prefab name="x_custom_city_3_5"/>
-			<prefab name="x_custom_city_4_5"/>
-			<prefab name="x_custom_city_5_5"/>
-			<prefab name="x_custom_city_-2_5"/>
-			<prefab name="x_custom_city_-2_4"/>
-			<prefab name="x_custom_city_-2_3"/>
-			<prefab name="x_custom_city_-5_-4"/>
-			<!-- These prefabs are the drop in additions added at the bottom of the hub layout. -->
-			<prefab name="settlement_trader_04"/>
-			<prefab name="Slaanhatten_trader_02"/>
-			<prefab name="Slaanhatten_trader_03"/>
+			<prefab name="xvanilla_vacant_lot_med_01"/>
+			<prefab name="xvanilla_vacant_lot_med_02"/>
+			<prefab name="xvanilla_vacant_lot_sm_01"/>
+			<prefab name="xvanilla_vacant_lot_sm_02"/>
 		</prefab_rule>
 		<prefab_rule name="waterPOIs">
 			<prefab name="pond02" />
@@ -1653,237 +1530,6 @@
 			<lot min_x_y="-56, 8" size="48,48" rotation_to_road="1" />
 			<lot min_x_y="-56, -56" size="48,48" rotation_to_road="3" />
 		</hub_layout>
-		<hub_layout name="slaanhattenLayout">
-			<township_type value="town"/>
-			
-			    <!-- Hub border road 1521 x 1521-->
-				<street start_point="0,351" end_point="0,936" path_material="asphalt" path_radius="7"/> <!-- West -->
-				<street start_point="351,1521" end_point="1521,1521" path_material="asphalt" path_radius="7"/>   <!-- North -->
-				<street start_point="1521,1521" end_point="1521,1287" path_material="asphalt" path_radius="7"/>   <!-- East -->
-			    <!--<street start_point="702,0" end_point="1170,0" path_material="asphalt" path_radius="7"/>-->  <!-- South -->
-				<!-- North border road -->
-			    <street start_point="351,1287" end_point="585,1287" path_material="asphalt" path_radius="7"/>
-				<street start_point="585,1287" end_point="585,1170" path_material="asphalt" path_radius="7"/>
-				<street start_point="585,1170" end_point="702,1170" path_material="asphalt" path_radius="7"/>
-			    <street start_point="702,1170" end_point="702,1287" path_material="asphalt" path_radius="7"/> 
-				<street start_point="702,1287" end_point="1287,1287" path_material="asphalt" path_radius="7"/>
-				     <!-- connectors-->
-				<street start_point="351,1287" end_point="351,1521" path_material="asphalt" path_radius="7"/>
-				<street start_point="585,1287" end_point="585,1521" path_material="asphalt" path_radius="7"/>
-				<street start_point="702,1404" end_point="702,1521" path_material="asphalt" path_radius="7"/>
-				<street start_point="1287,1287" end_point="1287,1521" path_material="asphalt" path_radius="7"/>
-				<!-- Downtown inner roads-->
-				<street start_point="936,819" end_point="936,936" path_material="asphalt" path_radius="7"/>	 
-				<street start_point="1170,819" end_point="1170,936" path_material="asphalt" path_radius="7"/>
-				<street start_point="886,1170" end_point="1220,1170" path_material="asphalt" path_radius="7"/>
-				<street start_point="886,936" end_point="886,1170" path_material="asphalt" path_radius="7"/>
-				<street start_point="1220,936" end_point="1220,1170" path_material="asphalt" path_radius="7"/>
-				<street start_point="886,936" end_point="1220,936" path_material="asphalt" path_radius="7"/>
-				<street start_point="1220,1053" end_point="1096,1053" path_material="asphalt" path_radius="7"/>
-				<street start_point="886,1053" end_point="702,1053" path_material="asphalt" path_radius="7"/>
-				<street start_point="702,1053" end_point="702,1287" path_material="asphalt" path_radius="7"/>
-				<street start_point="886,936" end_point="702,936" path_material="asphalt" path_radius="7"/>
-				
-				     <!--Uptown inner roads-->
-				<street start_point="468,1131" end_point="458,864" path_material="asphalt" path_radius="7"/>
-				<street start_point="702,936" end_point="585,936" path_material="asphalt" path_radius="7"/>
-				<street start_point="555,936" end_point="468,936" path_material="asphalt" path_radius="7"/>
-				<street start_point="544,1170" end_point="351,1170" path_material="asphalt" path_radius="7"/>
-				     <!--connectors-->
-				<!--<street start_point="351,1170" end_point="0,1170" path_material="asphalt" path_radius="7"/>-->	  
-				<street start_point="351,936" end_point="0,936" path_material="asphalt" path_radius="7"/>
-				
-				     <!--Motorway road-->
-				<street start_point="351,819" end_point="702,819" path_material="asphalt" path_radius="14"/>
-				<street start_point="936,819" end_point="1287,819" path_material="asphalt" path_radius="14"/>
-				     <!-- connectors-->
-				<street start_point="351,819" end_point="234,819" path_material="asphalt" path_radius="7"/>
-                <street start_point="1287,819" end_point="1404,819" path_material="asphalt" path_radius="7"/>	
-                				
-				     <!-- Eastern border roads-->
-				<street start_point="1287,1287" end_point="1404,1287" path_material="asphalt" path_radius="7"/>
-				<street start_point="1404,1287" end_point="1404,819" path_material="asphalt" path_radius="7"/>
-				<street start_point="1287,936" end_point="1404,936" path_material="asphalt" path_radius="7"/>
-				<street start_point="1287,117" end_point="1287,585" path_material="asphalt" path_radius="7"/>
-				     <!--connectors-->
-				<!-- <street start_point="1404,1287" end_point="1521,1287" path_material="asphalt" path_radius="7"/>
-                <street start_point="1404,936" end_point="1521,936" path_material="asphalt" path_radius="7"/>
-				<street start_point="1404,936" end_point="1404,819" path_material="asphalt" path_radius="7"/>
-				<street start_point="1404,585" end_point="1521,585" path_material="asphalt" path_radius="7"/>
-				<street start_point="1404,234" end_point="1521,234" path_material="asphalt" path_radius="7"/>-->
-				
-				     <!--Southside roads-->
-				<street start_point="585,585" end_point="936,585" path_material="asphalt" path_radius="7"/>
-                <street start_point="702,468" end_point="585,468" path_material="asphalt" path_radius="7"/>
-                <street start_point="936,468" end_point="1170,468" path_material="asphalt" path_radius="7"/>
-				<street start_point="1170,468" end_point="1170,585" path_material="asphalt" path_radius="7"/>
-				<street start_point="1170,585" end_point="1287,585" path_material="asphalt" path_radius="7"/>
-				<street start_point="702,585" end_point="702,234" path_material="asphalt" path_radius="7"/>
-				<street start_point="702,351" end_point="1404,351" path_material="asphalt" path_radius="7"/>
-				<!--<street start_point="1170,351" end_point="1287,351" path_material="asphalt" path_radius="7"/>-->
-				
-				     <!--River roads-->
-				
-				<street start_point="936,702" end_point="1170,702" path_material="gravel" path_radius="5"/>   <!-- East river road main -->
-				<street start_point="468,702" end_point="702,702" path_material="gravel" path_radius="5"/> <!-- west river road main -->
-				<street start_point="468,351" end_point="468,702" path_material="gravel" path_radius="5"/> <!-- indy hub to main river -->
-				<street start_point="351,819" end_point="351,585" path_material="gravel" path_radius="5"/>  <!--river side paths-->
-				<street start_point="1287,819" end_point="1287,585" path_material="gravel" path_radius="5"/>
-				
-                     <!--Southern border roads-->
-                <street start_point="1404,234" end_point="351,234" path_material="asphalt" path_radius="7"/>
-                <!--<street start_point="585,234" end_point="351,234" path_material="asphalt" path_radius="7"/>-->
-                <street start_point="351,117" end_point="351,351" path_material="asphalt" path_radius="7"/>  <!-- Extended 1 block south -->
-                     <!--Connectors-->
-                <!--<street start_point="1170,117" end_point="1170,0" path_material="asphalt" path_radius="7"/>--> <!-- moved one block south-->
-                <!--<street start_point="936,117" end_point="936,0" path_material="asphalt" path_radius="7"/>--> <!-- moved one block south-->
-                <!--<street start_point="702,117" end_point="702,0" path_material="asphalt" path_radius="7"/>--> <!-- moved one block south-->
-                <street start_point="351,351" end_point="0,351" path_material="asphalt" path_radius="7"/>		
-                	 <!-- South side road extension-->
-                <street start_point="351,117" end_point="1404,117" path_material="asphalt" path_radius="7"/>
-				<street start_point="1404,585" end_point="1404,117" path_material="asphalt" path_radius="7"/>
-				
-				    <!-- Northern expansion roads -->
-				<street start_point="936,1287" end_point="936,1404" path_material="asphalt" path_radius="7"/>
-				<street start_point="936,1404" end_point="702,1404" path_material="asphalt" path_radius="7"/>
-
-					 
-			 <!-- Coordinates for cityblock grid (see gridmap in main project folder)-->	
-			 <!-- each lot prefab is 117-643 blocks, the coords in comments/prefab name point to their location when set within the prefab grid-->	
-			
-			<!-- Water Extension -->
-			
-			<lot min_x_y="0,585" prefab="x_custom_city_-6_-3"/>          <!-- -7,-3 -->
-			<lot min_x_y="0,702" prefab="x_custom_city_-6_-3"/>           <!-- -7,-2 -->
-			<lot min_x_y="0,819" prefab="x_custom_city_-6_-1"/>            <!-- -7,-1 -->
-			
-			<!-- West Side Copy -->
-			
-			<lot min_x_y="0,468" prefab="x_custom_city_1_-4" /> 		<!-- -7, -4 -->
-			<lot min_x_y="117,468" prefab="x_custom_city_2_-4" />		<!-- -6, -4 -->
-			
-			<!-- Slaanhatten Proper -->
-			
-			<lot min_x_y="117,585" prefab="x_custom_city_-6_-3"/>          <!-- -6,-3 -->
-			<lot min_x_y="117,702" prefab="x_custom_city_-6_-2"/>           <!-- -6,-2 -->
-			<lot min_x_y="117,819" prefab="x_custom_city_-6_-1"/>            <!-- -6,-1 -->
-			<lot min_x_y="234,468" prefab="x_custom_city_-5_-4"/>          <!-- -5,-4 -->
-			<lot min_x_y="234,585" prefab="x_custom_city_-5_-3"/>          <!-- -5,-3 -->
-			<lot min_x_y="234,702" prefab="x_custom_city_-5_-2"/>           <!-- -5,-2 -->
-			<lot min_x_y="234,819" prefab="x_custom_city_-5_-1"/>            <!-- -5,-1 -->
-            <lot min_x_y="351,234" prefab="x_custom_city_-4_-6"/>          <!-- -4,-6 -->
-			<lot min_x_y="351,351" prefab="x_custom_city_-4_-5"/>          <!-- -4,-5 -->
-			<lot min_x_y="351,468" prefab="x_custom_city_-4_-4"/>          <!-- -4,-4 -->
-			<lot min_x_y="351,585" prefab="x_custom_city_-4_-3"/>          <!-- -4,-3 -->
-			<lot min_x_y="351,702" prefab="x_custom_city_-4_-2"/>           <!-- -4,-2 --> 
-			<lot min_x_y="351,819" prefab="x_custom_city_-4_-1"/>            <!-- -4,-1 -->
-			<lot min_x_y="351,936" prefab="x_custom_city_-4_0"/>            <!-- -4, 0 -->
-			<lot min_x_y="351,1053" prefab="x_custom_city_-4_1"/>            <!-- -4, 1 -->
-			<lot min_x_y="351,1170" prefab="x_custom_city_-4_2"/>            <!-- -4, 2 -->
-			<lot min_x_y="351,1287" prefab="x_custom_city_-4_3"/>            <!-- -4, 3 -->
-			<lot min_x_y="468,234" prefab="x_custom_city_-3_-6"/>          <!-- -3,-6 -->
-			<lot min_x_y="468,351" prefab="x_custom_city_-3_-5"/>          <!-- -3,-5 -->
-			<lot min_x_y="468,468" prefab="x_custom_city_-3_-4"/>          <!-- -3,-4 -->
-			<lot min_x_y="468,585" prefab="x_custom_city_-3_-3"/>          <!-- -3,-3 -->
-			<lot min_x_y="468,702" prefab="x_custom_city_-3_-2"/>           <!-- -3,-2 --> 
-			<lot min_x_y="468,819" prefab="x_custom_city_-3_-1"/>            <!-- -3,-1 -->
-			<lot min_x_y="468,936" prefab="x_custom_city_-3_0"/>            <!-- -3, 0 -->
-			<lot min_x_y="468,1053" prefab="x_custom_city_-3_1"/>            <!-- -3, 1 -->
-			<lot min_x_y="468,1170" prefab="x_custom_city_-3_2"/>            <!-- -3, 2 -->
-			<lot min_x_y="468,1287" prefab="x_custom_city_-3_3"/>            <!-- -3, 3 -->
-			<lot min_x_y="585,234" prefab="x_custom_city_-2_-6"/>          <!-- -2,-6 -->
-			<lot min_x_y="585,351" prefab="x_custom_city_-2_-5"/>          <!-- -2,-5 -->
-			<lot min_x_y="585,468" prefab="x_custom_city_-2_-4"/>          <!-- -2,-4 -->
-			<lot min_x_y="585,585" prefab="x_custom_city_-2_-3"/>          <!-- -2,-3 -->
-			<lot min_x_y="585,702" prefab="x_custom_city_-2_-2"/>           <!-- -2,-2 --> 
-			<lot min_x_y="585,819" prefab="x_custom_city_-2_-1"/>            <!-- -2,-1 -->
-			<lot min_x_y="585,936" prefab="x_custom_city_-2_0"/>            <!-- -2, 0 -->
-			<lot min_x_y="585,1053" prefab="x_custom_city_-2_1"/>            <!-- -2, 1 -->
-			<lot min_x_y="585,1170" prefab="x_custom_city_-2_2"/>            <!-- -2, 2 -->
-			<lot min_x_y="585,1287" prefab="x_custom_city_-2_3"/>            <!-- -2, 3 -->
-			<lot min_x_y="585,1404" prefab="x_custom_city_-2_4"/>            <!-- -2, 4 -->
-			<lot min_x_y="585,1521" prefab="x_custom_city_-2_5"/>            <!-- -2, 5 -->
-			<lot min_x_y="702,351" prefab="x_custom_city_-1_-5"/>           <!-- -1,-5 -->
-			<lot min_x_y="702,468" prefab="x_custom_city_-1_-4"/>           <!-- -1,-4 -->
-			<lot min_x_y="702,585" prefab="x_custom_city_-1_-3"/>           <!-- -1,-3 -->      
-            <lot min_x_y="702,702" prefab="x_custom_city_-1_-2"/>            <!-- -1,-2 -->
-			<lot min_x_y="702,819" prefab="x_custom_city_-1_-1"/>             <!-- -1,-1 -->
-            <lot min_x_y="702,936" prefab="x_custom_city_-1_0"/>             <!-- -1, 0 -->
-            <lot min_x_y="702,1053" prefab="x_custom_city_-1_1"/>             <!-- -1, 1 -->			
-		    <lot min_x_y="702,1170" prefab="x_custom_city_-1_2"/>             <!-- -1, 2 -->
-			<lot min_x_y="702,1287" prefab="x_custom_city_-1_3"/>             <!-- -1, 3 -->
-			<lot min_x_y="702,1404" prefab="x_custom_city_-1_4"/>             <!-- -1, 4 -->
-			<lot min_x_y="702,1521" prefab="x_custom_city_-1_5"/>             <!-- -1, 5 -->
-			<lot min_x_y="702,234" prefab="x_custom_city_-1_-6"/>           <!-- -1,-6 -->
-			<lot min_x_y="819,234" prefab="x_custom_city_0_-6"/>              <!-- 0,-6 -->
-			<lot min_x_y="819,351" prefab="x_custom_city_0_-5"/>              <!-- 0,-5 --> 
-			<lot min_x_y="819,468" prefab="x_custom_city_0_-4"/>              <!-- 0,-4 -->
-            <lot min_x_y="819,585" prefab="x_custom_city_0_-3"/>              <!-- 0,-3 -->
-            <lot min_x_y="819,702" prefab="x_custom_city_0_-2"/>               <!-- 0,-2 -->	
-    		<lot min_x_y="819,819" prefab="x_custom_city_0_-1"/>                <!-- 0,-1 -->
-			<lot min_x_y="819,936" prefab="x_custom_city_0_0"/>                <!-- 0, 0 -->       
-			<lot min_x_y="819,1053" prefab="x_custom_city_0_1"/>                <!-- 0, 1 -->     
-			<lot min_x_y="819,1170" prefab="x_custom_city_0_2"/>                <!-- 0, 2 -->     
-			<lot min_x_y="819,1287" prefab="x_custom_city_0_3"/>                <!-- 0, 3 -->     
-			<lot min_x_y="819,1404" prefab="x_custom_city_0_4"/>                <!-- 0, 4 -->
-			<lot min_x_y="819,1521" prefab="x_custom_city_0_5"/>                <!-- 0, 5 -->
-			<lot min_x_y="936,234" prefab="x_custom_city_1_-6"/>             <!-- 1,-6 -->
-			<lot min_x_y="936,351" prefab="x_custom_city_1_-5"/>             <!-- 1,-5 -->        
-			<lot min_x_y="936,468" prefab="x_custom_city_1_-4"/>             <!-- 1,-4 -->        
-			<lot min_x_y="936,585" prefab="x_custom_city_1_-3"/>             <!-- 1,-3 -->	    
-            <lot min_x_y="936,702" prefab="x_custom_city_1_-2"/>              <!-- 1,-2 -->			
-            <lot min_x_y="936,819" prefab="x_custom_city_1_-1"/>               <!-- 1,-1 -->        
-			<lot min_x_y="936,936" prefab="x_custom_city_1_0"/>               <!-- 1, 0 -->     
-			<lot min_x_y="936,1053" prefab="x_custom_city_1_1"/>               <!-- 1, 1 -->     
-            <lot min_x_y="936,1170" prefab="x_custom_city_1_2"/>               <!-- 1, 2 -->     	
-			<lot min_x_y="936,1287" prefab="x_custom_city_1_3"/>               <!-- 1, 3 -->     
-			<lot min_x_y="936,1404" prefab="x_custom_city_1_4"/>               <!-- 1, 4 -->
-			<lot min_x_y="936,1521" prefab="x_custom_city_1_5"/>               <!-- 1, 5 -->
-			<lot min_x_y="1053,234" prefab="x_custom_city_2_-6"/>             <!-- 2,-6 -->
-			<lot min_x_y="1053,351" prefab="x_custom_city_2_-5"/>             <!-- 2,-5 -->       
-			<lot min_x_y="1053,468" prefab="x_custom_city_2_-4"/>             <!-- 2,-4 -->       
-			<lot min_x_y="1053,585" prefab="x_custom_city_2_-3"/>             <!-- 2,-3 -->       
-			<lot min_x_y="1053,702" prefab="x_custom_city_2_-2"/>              <!-- 2,-2 -->
-		 	<lot min_x_y="1053,819" prefab="x_custom_city_2_-1"/>               <!-- 2,-1 -->        
-			<lot min_x_y="1053,936" prefab="x_custom_city_2_0"/>               <!-- 2, 0 -->     
-			<lot min_x_y="1053,1053" prefab="x_custom_city_2_1"/>               <!-- 2, 1 -->     
-			<lot min_x_y="1053,1170" prefab="x_custom_city_2_2"/>               <!-- 2, 2 -->     
-			<lot min_x_y="1053,1287" prefab="x_custom_city_2_3"/>               <!-- 2, 3 -->     
-			<lot min_x_y="1053,1404" prefab="x_custom_city_2_4"/>               <!-- 2, 4 -->
-			<lot min_x_y="1053,1521" prefab="x_custom_city_2_5"/>               <!-- 2, 5 -->
-			<lot min_x_y="1170,234" prefab="x_custom_city_3_-6"/>             <!-- 3,-6 -->
-			<lot min_x_y="1170,351" prefab="x_custom_city_3_-5"/>             <!-- 3,-5 -->
-			<lot min_x_y="1170,468" prefab="x_custom_city_3_-4"/>             <!-- 3,-4 -->      
-			<lot min_x_y="1170,585" prefab="x_custom_city_3_-3"/>             <!-- 3,-3 -->               
-			<lot min_x_y="1170,702" prefab="x_custom_city_3_-2"/>              <!-- 3,-2 -->
-			<lot min_x_y="1170,819" prefab="x_custom_city_3_-1"/>               <!-- 3,-1 --> 
-			<lot min_x_y="1170,936" prefab="x_custom_city_3_0"/>               <!-- 3, 0 -->     
-			<lot min_x_y="1170,1053" prefab="x_custom_city_3_1"/>               <!-- 3, 1 -->     
-			<lot min_x_y="1170,1170" prefab="x_custom_city_3_2"/>               <!-- 3, 2 -->     
-			<lot min_x_y="1170,1287" prefab="x_custom_city_3_3"/>               <!-- 3, 3 -->
-			<lot min_x_y="1170,1404" prefab="x_custom_city_3_4"/>               <!-- 3, 4 -->
-			<lot min_x_y="1170,1521" prefab="x_custom_city_3_5"/>               <!-- 3, 5 -->
-			<lot min_x_y="1287,234" prefab="x_custom_city_4_-6"/>             <!-- 4,-6 -->
-			<lot min_x_y="1287,351" prefab="x_custom_city_4_-5"/>             <!-- 4,-5 -->
-			<lot min_x_y="1287,468" prefab="x_custom_city_4_-4"/>             <!-- 4,-4 -->
-			<lot min_x_y="1287,585" prefab="x_custom_city_4_-3"/>             <!-- 4,-3 -->
-			<lot min_x_y="1287,936" prefab="x_custom_city_4_0"/>               <!-- 4, 0 -->
-			<lot min_x_y="1287,1053" prefab="x_custom_city_4_1"/>               <!-- 4, 1 -->
-			<lot min_x_y="1287,1170" prefab="x_custom_city_4_2"/>               <!-- 4, 2 -->
-			<lot min_x_y="1287,1287" prefab="x_custom_city_4_3"/>               <!-- 4, 3 -->
-			<lot min_x_y="1287,1404" prefab="x_custom_city_4_4"/>               <!-- 4, 4 -->
-			<lot min_x_y="1287,1521" prefab="x_custom_city_4_5"/>               <!-- 4, 5 -->
-			<lot min_x_y="1404,1404" prefab="x_custom_city_5_4"/>               <!-- 5, 4 -->
-			<lot min_x_y="1404,1521" prefab="x_custom_city_5_5"/>               <!-- 5, 5 -->
-			
-			<!-- Drop in additions, see comments for details -->
-			<!-- Useful method of adding induvidual prefabs so they retain their spawn grouping--> 
-			<!-- The areas they are added to are typically cleaned up so the prefabs blend perfectly with surroundings, prefabs xml needs to include a Y offset if not spawning at road height.-->
-			<lot min_x_y="1027,1152" prefab="settlement_trader_04"/>                                <!-- NPC trader 04-->
-			<lot min_x_y="679,1361" prefab="Slaanhatten_trader_02"/>                                <!-- custom NPC trader 02-->
-			<lot min_x_y="369,348" prefab="Slaanhatten_trader_03" />                                <!-- custom NPC trader 03-->
-			
-		</hub_layout>
 	</hub_layouts>
 	<!--
 	GENERATOR MODULE TYPES
@@ -2069,7 +1715,7 @@
 		</biome_spawn_rule>
 
 		<biome_spawn_rule name="wasteland_hub">
-			<biome_generator range="0.95,0.99"/>
+			<biome_generator range="0.925,0.99"/>
 		</biome_spawn_rule>		
 
 		<biome_spawn_rule name="snow">
@@ -2080,14 +1726,13 @@
 			<terrain_generator range="134,150" />
 		</biome_spawn_rule>		
 		
-		<biome_spawn_rule name="wasteland">
-			<distance_from_center range="4250,5250" />
-		</biome_spawn_rule>
-		
 		<biome_spawn_rule name="radiated">
-			<distance_from_center range="5250,6000" />
+			<biome_generator range="0.99,1" />
 		</biome_spawn_rule>
 		
+		<biome_spawn_rule name="wasteland">
+			<distance_from_center range="2500,2800" />
+		</biome_spawn_rule>
 
 		<biome_spawn_rule name="desert">
 			<biome_generator range="0.575,0.75"/>
@@ -2097,9 +1742,6 @@
 			<biome_generator range="0.75,0.925"/>
 		</biome_spawn_rule>
 		
-		<biome_spawn_rule name="radiated">
-			<biome_generator range="0.99,1" />
-		</biome_spawn_rule>
 		
 		<biome_spawn_rule name="snow">
 			<terrain_generator range="150,255" />

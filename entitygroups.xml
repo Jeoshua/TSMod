@@ -909,22 +909,24 @@
 		<entity name="zombieYo" prob="0.05"/>
 		<entity name="zombieferal" prob="0.01"/>
 		<entity name="SpiderSmall" prob="0.01"/>
+		<entity name="SpiderSmall" prob="0.01"/>
+		<entity name="SpiderSmall" prob="0.01"/>
+		<entity name="BigSpider" prob="0.01"/>
 	</entitygroup>
 	<entitygroup name="AnimalsPlains">
 	  <entity name="SpiderSmall" prob="0.001"/>
 	</entitygroup> 
-	<entitygroup name="AnimalsCity">
-	  <entity name="SpiderSmall" prob="0.001"/>
-	</entitygroup>
 	<entitygroup name="AnimalsWater">
 	  <entity name="crocodile" prob="0.02"/>
 	  <entity name="SpiderSmall" prob="0.001"/>
+	  <entity name="BigSpider" prob="0.0001"/>
 	</entitygroup>
 	<entitygroup name="Spiders">
 	  <entity name="SpiderSmall" />
 	</entitygroup>
 	<entitygroup name="AnimalsForest">	  
 	  <entity name="SpiderSmall" prob="0.001"/>
+	  <entity name="BigSpider" prob="0.0001"/>
 	  <entity name="animalPig" prob="0.01" />
 	</entitygroup>
 	<entitygroup name="AnimalsAllDesert">
@@ -967,6 +969,7 @@
 		<entity name="animalBear" prob="0.04" />
 		<entity name="zombieBear" prob="0.02" />
 		<entity name="SpiderSmall" prob="0.0001" />
+		<entity name="BigSpider" prob="0.00001" />
 	</entitygroup>
 	<entitygroup name="HornetGroup">
 		<entity name="hornet" />
