@@ -2,11 +2,14 @@
 	<world ruleset="vanilla" />
 	<!-- rwgmixer for COMPOPACK 24 (by Magoli)  - Current Alpha: A15 stable   -->
 	<rulesets>
-		<ruleset name="vanilla" cell_cache_size="8" cell_size="2000" cell_offset="0.3" generation_distance="2800" terrain_generator="vanilla">
+		<ruleset name="vanilla" cell_cache_size="8" cell_size="1900" cell_offset="0.3" generation_distance="3500" terrain_generator="vanilla">
 			<cell_rule name="wastelandHub" position="0,0" prob="1" />
-			<cell_rule name="lowDensity" prob="0.3" />
+			<cell_rule name="wastelandCity" position="1,0" prob="1"/>
+			<cell_rule name="wastelandCity" position="0,1" prob="1"/>
+			<cell_rule name="wastelandCity" position="-1,0" prob="1"/>
+			<cell_rule name="wastelandCity" position="0,-1" prob="1"/>
+			<cell_rule name="lowDensity" prob="0.5" />
 			<cell_rule name="highDensity" prob="0.5" />
-			<cell_rule name="wastelandCity" prob="0.2"/>
 			<cell_rule name="empty" prob="0.1" />
 		</ruleset>
 	</rulesets>
@@ -16,9 +19,9 @@
 			<path_material value="asphalt" />
 			<path_radius value="5" />
 			<hub_rule name="ruralSmall" prob="0.3" />
+			<hub_rule name="Custom_Town01_Hub" prob="0.3" />
 			<hub_rule name="townSmall" prob="0.3" />
 			<hub_rule name="townLarge" prob="0.3" />
-			<hub_rule name="Custom_Town01_Hub" prob="0.3" />
 			<hub_rule name="wastyTownHub" prob="0.2" />
 			<hub_rule name="CoronadoCity" prob="0.3" />
 			<wilderness_rule name="wildernessDefault" />
@@ -27,11 +30,11 @@
 			<cave_count value="5,9" />
 			<path_material value="asphalt" />
 			<path_radius value="7" />
+			<hub_rule name="townLarge" prob="0.3" />
 			<hub_rule name="ColtTownHub" prob="0.3" />
-			<hub_rule name="wastycity" prob="0.2" />
-			<hub_rule name="Hospital_Hub" prob="0.3" />
+			<hub_rule name="Hospital_Hub" prob="0.2" />
 			<hub_rule name="SlumsHub" prob="0.2" />
-			<hub_rule name="RaceTrackStadiumHub" prob="0.3" />
+			<hub_rule name="RaceTrackStadiumHub" prob="0.2" />
 			<hub_rule name="Lim_PrisonHub" prob="0.3" />
 			<hub_rule name="IndustrialHub" prob="0.3" />
 			<hub_rule name="TWD_PrisonHub" prob="0.2" />
@@ -41,7 +44,8 @@
 			<cave_count value="5,9" />
 			<path_material value="asphalt" />
 			<path_radius value="7" />
-			<hub_rule name="citySmall" />
+			<hub_rule name="citySmall" prob="0.5" />
+			<hub_rule name="wastycity" prob="0.3" />
 			<wilderness_rule name="wildernessHub" prob="1" />
 		</cell_rule>
 		<cell_rule name="wastelandHub">
@@ -155,16 +159,16 @@
 		</hub_rule>
 		<hub_rule name="citySmall">
 			<hub_type value="city" />
-			<width value="512, 1024" />
-			<height value="512, 1024" />
+			<width value="512, 768" />
+			<height value="512, 768" />
 			<path_material value="asphalt" />
 			<path_radius value="7" />
 			<prefab_rule name="CommonCityPOIs" prob="1" />
 		</hub_rule>
 		<hub_rule name="cityLarge"> 
 			<hub_type value="city"/>
-			<width value="1024, 1575" />
-			<height value="1024, 1575" />
+			<width value="768, 1024" />
+			<height value="768, 1024" />
 			<path_radius value="7" />
 			<prefab_rule name="CommonCityPOIs" prob="1" />
 		</hub_rule>
@@ -179,8 +183,8 @@
 		</hub_rule>
 		<hub_rule name="wastycity">
 			<hub_type value="city" />
-			<width value="412, 412" />
-			<height value="412, 412" />
+			<width value="412, 512" />
+			<height value="412, 512" />
 			<path_material value="asphalt" />
 			<path_radius value="7" />
 			<prefab_rule name="wastycityPOIs" prob="1" />
@@ -232,6 +236,11 @@
 		<hub_rule name="Hospital_Hub">
 			<hub_type value="town" />
 			<hub_layout name="Hospital_Hub" />
+			<prefab_rule name="rm_hubs" />
+		</hub_rule>
+		<hub_rule name="LimodurHospital_Hub">
+			<hub_type value="town" />
+			<hub_layout name="LimodurHospitalHubLayout" />
 			<prefab_rule name="rm_hubs" />
 		</hub_rule>
 
@@ -718,7 +727,7 @@
 			<prefab name="apartment_adobe_red_5_flr" max_count="1" />
 			<prefab name="apartment_brick_6_flr" max_count="1" />
 			<prefab name="xcostum_Apartment(by_Gertle)" max_count="1"/>
-			<prefab name="xcostum_Apartment_Stores(by_Laz_Man)"max_count="1" />
+			<prefab name="xcostum_Apartment_Stores(by_Laz_Man)" max_count="1" />
 			<prefab name="xcostum_Apartments_Curtilage_Playground(by_magoli)" max_count="1" />
 			<prefab name="xcostum_Apartments(by_Batman)" max_count="1" />
 			<prefab name="xvanilla_apartment_adobe_red_5_flr(city)" max_count="1" />
@@ -1731,7 +1740,10 @@
 		</biome_spawn_rule>
 		
 		<biome_spawn_rule name="wasteland">
-			<distance_from_center range="2500,2800" />
+			<distance_from_center range="2500,3000" />
+		</biome_spawn_rule>
+		<biome_spawn_rule name="radiated">
+			<distance_from_center range="3000,3500" />
 		</biome_spawn_rule>
 
 		<biome_spawn_rule name="desert">

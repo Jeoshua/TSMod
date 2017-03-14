@@ -317,7 +317,6 @@
 		<property name="AvatarController" value="AvatarZombie01Controller" />
 		<property name="HandItem" value="handZombie02" />
 		<property name="Class" value="EntityZombieCrawlLight, Mods" />
-		<!--<property name="Class" value="EntityZombieCrawlLight, Mods" />-->
 		<property name="WalkType" value="4" />
 		<property name="CanClimbLadders" value="false" />
 		<property name="RotateToGround" value="true" />
@@ -2223,8 +2222,8 @@
 		<property name="NightApproachSpeed" value="0.42" />
 		<property name="PanicSpeed" value="0.56" />
 	</entity_class>
-	<entity_class name="spider1" extends="spiderzombie">
-		<property name="CanClimbVertical" value="false" />
+	<entity_class name="spider1" extends="zombie01">
+		<property name="Mesh" value="Zombies/zombieStandardSpiderRagdoll" />
 		<property name="WalkType" value="1" />
 		<property name="WanderSpeed" value="0.07" />
 		<property name="ApproachSpeed" value="0.19" />
@@ -2313,8 +2312,8 @@
 		<property name="NightApproachSpeed" value="0.42" />
 		<property name="PanicSpeed" value="0.65" />
 	</entity_class>
-	<entity_class name="spider2" extends="spiderzombie">
-		<property name="CanClimbVertical" value="false" />
+	<entity_class name="spider2" extends="zombie01">
+		<property name="Mesh" value="Zombies/zombieStandardSpiderRagdoll" />
 		<property name="WalkType" value="2" />
 		<property name="WanderSpeed" value="0.1" />
 		<property name="ApproachSpeed" value="0.36" />
@@ -2386,8 +2385,8 @@
 		<property name="NightApproachSpeed" value="0.35" />
 		<property name="PanicSpeed" value="0.75" />
 	</entity_class>
-	<entity_class name="spider3" extends="spiderzombie">
-		<property name="CanClimbVertical" value="false" />
+	<entity_class name="spider3" extends="zombie01">
+		<property name="Mesh" value="Zombies/zombieStandardSpiderRagdoll" />
 		<property name="WalkType" value="3" />
 		<property name="WanderSpeed" value="0.06" />
 		<property name="ApproachSpeed" value="0.19" />
@@ -2460,8 +2459,8 @@
 		<property name="NightApproachSpeed" value="0.64" />
 		<property name="PanicSpeed" value="0.9" />
 	</entity_class>
-	<entity_class name="spiderCrawler" extends="spiderzombie">
-		<property name="CanClimbVertical" value="false" />
+	<entity_class name="spiderCrawler" extends="zombie01">
+		<property name="Mesh" value="Zombies/zombieStandardSpiderRagdoll" />
 		<property name="WalkType" value="4" />
 		<property name="WanderSpeed" value="0.1" />
 		<property name="ApproachSpeed" value="0.4" />
@@ -2518,8 +2517,8 @@
 		<property name="NightApproachSpeed" value="0.29" />
 		<property name="PanicSpeed" value="0.50" />
 	</entity_class>
-	<entity_class name="spider5" extends="spiderzombie">
-		<property name="CanClimbVertical" value="false" />
+	<entity_class name="spider5" extends="zombie01">
+		<property name="Mesh" value="Zombies/zombieStandardSpiderRagdoll" />
 		<property name="WalkType" value="5" />
 		<property name="WanderSpeed" value="0.07" />
 		<property name="ApproachSpeed" value="0.1" />
@@ -2600,8 +2599,8 @@
 		<property name="NightApproachSpeed" value="0.32" />
 		<property name="PanicSpeed" value="0.7" />
 	</entity_class>
-	<entity_class name="spider6" extends="spiderzombie">
-		<property name="CanClimbVertical" value="false" />
+	<entity_class name="spider6" extends="zombie01">
+		<property name="Mesh" value="Zombies/zombieStandardSpiderRagdoll" />
 		<property name="WalkType" value="6" />
 		<property name="WanderSpeed" value="0.09" />
 		<property name="ApproachSpeed" value="0.24" />
@@ -2690,8 +2689,8 @@
 		<property name="NightApproachSpeed" value="0.45" />
 		<property name="PanicSpeed" value="0.9" />
 	</entity_class>
-	<entity_class name="spider7" extends="spiderzombie">
-		<property name="CanClimbVertical" value="false" />
+	<entity_class name="spider7" extends="zombie01">
+		<property name="Mesh" value="Zombies/zombieStandardSpiderRagdoll" />
 		<property name="WalkType" value="7" />
 		<property name="WanderSpeed" value="0.1" />
 		<property name="ApproachSpeed" value="0.34" />
@@ -2708,6 +2707,8 @@
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="0.89" />
 		<property name="PanicSpeed" value="1.2" />
+		<property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert" />
+		<property name="SoundSense" value="Enemies/Spider_Zombie/spidersense" />
 	</entity_class>
 	<entity_class name="Joe8" extends="zombieJoe">
 		<property name="WalkType" value="8" />
@@ -2717,6 +2718,8 @@
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="0.89" />
 		<property name="PanicSpeed" value="1.2" />
+		<property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert" />
+		<property name="SoundSense" value="Enemies/Spider_Zombie/spidersense" />
 	</entity_class>
 	<entity_class name="Moe8" extends="zombieMoe">
 		<property name="WalkType" value="8" />
@@ -2724,8 +2727,10 @@
 		<property name="WanderSpeed" value="0.2" />
 		<property name="ApproachSpeed" value="0.5" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="0.8" />
+		<property name="NightApproachSpeed" value="0.6" />
 		<property name="PanicSpeed" value="1.2" />
+		<property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert" />
+		<property name="SoundSense" value="Enemies/Spider_Zombie/spidersense" />
 	</entity_class>
 	<entity_class name="Arlene8" extends="zombieArlene">
 		<property name="WalkType" value="8" />
@@ -2735,6 +2740,8 @@
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="0.76" />
 		<property name="PanicSpeed" value="1.2" />
+		<property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert" />
+		<property name="SoundSense" value="Enemies/Spider_Zombie/spidersense" />
 	</entity_class>
 	<entity_class name="Darlene8" extends="zombieDarlene">
 		<property name="WalkType" value="8" />
@@ -2744,6 +2751,8 @@
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="0.76" />
 		<property name="PanicSpeed" value="1.2" />
+		<property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert" />
+		<property name="SoundSense" value="Enemies/Spider_Zombie/spidersense" />
 	</entity_class>
 	<entity_class name="Marlene8" extends="zombieMarlene">
 		<property name="WalkType" value="8" />
@@ -2753,6 +2762,8 @@
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="0.92" />
 		<property name="PanicSpeed" value="1.2" />
+		<property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert" />
+		<property name="SoundSense" value="Enemies/Spider_Zombie/spidersense" />
 	</entity_class>
 	<entity_class name="Yo8" extends="zombieYo">
 		<property name="WalkType" value="8" />
@@ -2762,6 +2773,8 @@
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="0.77" />
 		<property name="PanicSpeed" value="1.2" />
+		<property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert" />
+		<property name="SoundSense" value="Enemies/Spider_Zombie/spidersense" />
 	</entity_class>
 	<entity_class name="burnt8" extends="burntzombie">
 		<property name="WalkType" value="8" />
@@ -2771,6 +2784,8 @@
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="0.94" />
 		<property name="PanicSpeed" value="1.2" />
+		<property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert" />
+		<property name="SoundSense" value="Enemies/Spider_Zombie/spidersense" />
 	</entity_class>
 	<entity_class name="Nurse8" extends="zombieNurse">
 		<property name="WalkType" value="8" />
@@ -2780,6 +2795,8 @@
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="0.79" />
 		<property name="PanicSpeed" value="1.2" />
+		<property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert" />
+		<property name="SoundSense" value="Enemies/Spider_Zombie/spidersense" />
 	</entity_class>
 	<entity_class name="Steve8" extends="zombieSteve">
 		<property name="WalkType" value="8" />

@@ -1191,12 +1191,12 @@ Mesh files no longer used:
 			<property name="DamageEntity" value="5" />
 			<property name="DamageBlock" value="1" />
 			<property name="Stamina_usage" value="3" />
-			<property name="DamageBonus.head" value="2.5" />
+			<property name="DamageBonus.head" value="2" />
 			<property name="DamageBonus.organic" value="5" />
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="Buff" value="criticalBlunt,headshotMelee1" />
-			<property name="Buff_chance" value="0.1,0.3" />
+			<property name="Buff_chance" value="0.05,0.25" />
 			<property name="ToolCategory.Farm" value="1" />
 		</property>
 		<property class="Action1">
@@ -12006,6 +12006,7 @@ Mesh files no longer used:
 			<property name="DismembermentBonus" value="0.001,0.005" />
 		</property>
 		<property name="ActionSkillGroup" value="Blade Weapons" />
+		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
 	</item>
 	<item id="1656" name="axe02">
 		<property name="Meshfile" value="#axe1?AXE2" />

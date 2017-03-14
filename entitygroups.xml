@@ -101,6 +101,7 @@
    -->
 <entitygroups>
 	<entitygroup name="ZombiesAll">
+		<entity name="Dummy" prob="50" />
 		<entity name="zombieBoe" />
 		<entity name="zombieJoe" />
 		<entity name="zombieSteve" />
@@ -111,13 +112,13 @@
 		<entity name="zombieMarlene" />
 		<entity name="zombieNurse" />
 		<entity name="zombieSteveCrawler" />
-		<!--<entity name="spider1" />
+		<entity name="spider1" />
 		<entity name="spider2" />
 		<entity name="spider3" />
 		<entity name="spiderCrawler" />
 		<entity name="spider5" />
 		<entity name="spider6" />
-		<entity name="spider7" />-->
+		<entity name="spider7" />
 		<entity name="Boe1" />
 		<entity name="Boe3" />
 		<entity name="CrawlerBoe" />
@@ -198,62 +199,54 @@
 		<entity name="Boe5" />
 		<entity name="Boe6" />
 		<entity name="Boe7" />
-		<entity name="Boe8" />
 		<entity name="Moe2" />
 		<entity name="Moe3" />
 		<entity name="Moe5" />
 		<entity name="Moe6" />
 		<entity name="Moe7" />
-		<entity name="Moe8" />
 		<entity name="Arlene1" />
 		<entity name="Arlene2" />
 		<entity name="CrawlerArlene" />
 		<entity name="Arlene5" />
 		<entity name="Arlene6" />
 		<entity name="Arlene7" />
-		<entity name="Arlene8" />
 		<entity name="Darlene1" />
 		<entity name="Darlene2" />
 		<entity name="CrawlerDarlene" />
 		<entity name="Darlene6" />
 		<entity name="Darlene7" />
-		<entity name="Darlene8" />
 		<entity name="Marlene1" />
 		<entity name="Marlene2" />
 		<entity name="Marlene3" />
 		<entity name="CrawlerMarlene" />
 		<entity name="Marlene6" />
 		<entity name="Marlene7" />
-		<entity name="Marlene8" />
 		<entity name="Yo1" />
 		<entity name="Yo2" />
 		<entity name="Yo3" />
 		<entity name="CrawlerYo" />
 		<entity name="Yo6" />
 		<entity name="Yo7" />
-		<entity name="Yo8" />
 		<entity name="Nurse1" />
 		<entity name="Nurse2" />
 		<entity name="Nurse3" />
 		<entity name="CrawlerNurse" />
 		<entity name="Nurse5" />
 		<entity name="Nurse6" />
-		<entity name="Nurse8" />
 		<entity name="Steve1" />
 		<entity name="Steve2" />
 		<entity name="Steve3" />
 		<entity name="Steve5" />
 		<entity name="Steve7" />
-		<entity name="Steve8" />
 		<entity name="Joe1" />
 		<entity name="Joe2" />
 		<entity name="Joe3" />
 		<entity name="CrawlerJoe" />
 		<entity name="Joe6" />
 		<entity name="Joe7" />
-		<entity name="Joe8" />
 	</entitygroup>
 	<entitygroup name="ZombiesWasteland">
+		<entity name="Dummy" prob="40" />
 		<!--<entity name="spiderzombie" />-->
 		<entity name="zombieBoe" />
 		<entity name="zombieJoe" />
@@ -284,61 +277,51 @@
 		<entity name="Boe5" />
 		<entity name="Boe6" />
 		<entity name="Boe7" />
-		<entity name="Boe8" />
 		<entity name="Moe2" />
 		<entity name="Moe3" />
 		<entity name="Moe5" />
 		<entity name="Moe6" />
 		<entity name="Moe7" />
-		<entity name="Moe8" />
 		<entity name="Arlene1" />
 		<entity name="Arlene2" />
 		<entity name="CrawlerArlene" />
 		<entity name="Arlene5" />
 		<entity name="Arlene6" />
 		<entity name="Arlene7" />
-		<entity name="Arlene8" />
 		<entity name="Darlene1" />
 		<entity name="Darlene2" />
 		<entity name="CrawlerDarlene" />
 		<entity name="Darlene6" />
 		<entity name="Darlene7" />
-		<entity name="Darlene8" />
 		<entity name="Marlene1" />
 		<entity name="Marlene2" />
 		<entity name="Marlene3" />
 		<entity name="CrawlerMarlene" />
 		<entity name="Marlene6" />
 		<entity name="Marlene7" />
-		<entity name="Marlene8" />
 		<entity name="Yo1" />
 		<entity name="Yo2" />
 		<entity name="Yo3" />
 		<entity name="CrawlerYo" />
 		<entity name="Yo6" />
 		<entity name="Yo7" />
-		<entity name="Yo8" />
 		<entity name="Nurse1" />
 		<entity name="Nurse2" />
 		<entity name="Nurse3" />
 		<entity name="CrawlerNurse" />
 		<entity name="Nurse5" />
 		<entity name="Nurse6" />
-		<entity name="Nurse8" />
 		<entity name="Steve1" />
 		<entity name="Steve2" />
 		<entity name="Steve3" />
 		<entity name="Steve5" />
 		<entity name="Steve7" />
-		<entity name="Steve8" />
 		<entity name="Joe1" />
 		<entity name="Joe2" />
 		<entity name="Joe3" />
 		<entity name="CrawlerJoe" />
 		<entity name="Joe6" />
 		<entity name="Joe7" />
-		<entity name="Joe8" />
-		<entity name="burnt8" />
 		<entity name="burnt6" />
 		<entity name="burnt5" />
 		<entity name="burntCrawler" />
@@ -379,61 +362,51 @@
 		<entity name="Boe5" />
 		<entity name="Boe6" />
 		<entity name="Boe7" />
-		<entity name="Boe8" />
 		<entity name="Moe2" />
 		<entity name="Moe3" />
 		<entity name="Moe5" />
 		<entity name="Moe6" />
 		<entity name="Moe7" />
-		<entity name="Moe8" />
 		<entity name="Arlene1" />
 		<entity name="Arlene2" />
 		<entity name="CrawlerArlene" />
 		<entity name="Arlene5" />
 		<entity name="Arlene6" />
 		<entity name="Arlene7" />
-		<entity name="Arlene8" />
 		<entity name="Darlene1" />
 		<entity name="Darlene2" />
 		<entity name="CrawlerDarlene" />
 		<entity name="Darlene6" />
 		<entity name="Darlene7" />
-		<entity name="Darlene8" />
 		<entity name="Marlene1" />
 		<entity name="Marlene2" />
 		<entity name="Marlene3" />
 		<entity name="CrawlerMarlene" />
 		<entity name="Marlene6" />
 		<entity name="Marlene7" />
-		<entity name="Marlene8" />
 		<entity name="Yo1" />
 		<entity name="Yo2" />
 		<entity name="Yo3" />
 		<entity name="CrawlerYo" />
 		<entity name="Yo6" />
 		<entity name="Yo7" />
-		<entity name="Yo8" />
 		<entity name="Nurse1" />
 		<entity name="Nurse2" />
 		<entity name="Nurse3" />
 		<entity name="CrawlerNurse" />
 		<entity name="Nurse5" />
 		<entity name="Nurse6" />
-		<entity name="Nurse8" />
 		<entity name="Steve1" />
 		<entity name="Steve2" />
 		<entity name="Steve3" />
 		<entity name="Steve5" />
 		<entity name="Steve7" />
-		<entity name="Steve8" />
 		<entity name="Joe1" />
 		<entity name="Joe2" />
 		<entity name="Joe3" />
 		<entity name="CrawlerJoe" />
 		<entity name="Joe6" />
 		<entity name="Joe7" />
-		<entity name="Joe8" />
-		<entity name="burnt8" />
 		<entity name="burnt6" />
 		<entity name="burnt5" />
 		<entity name="burntCrawler" />
@@ -445,7 +418,6 @@
 		<entity name="feral5" />
 		<entity name="feral6" />
 		<entity name="feral7" />
-		<entity name="feral8" />
 	</entitygroup>
 	<entitygroup name="ZombiesWastelandNightNoBears">
 		<!-- 
@@ -465,7 +437,6 @@
 		<entity name="hornet" />
 		<entity name="zombiedog" />
 		<entity name="zombieSteveCrawler" />
-		<!--<entity name="ZombieBrute" />-->
 		<entity name="fatzombiecop" />
 		<entity name="burntzombie" />
 		<entity name="ZombieCharred" />
@@ -483,61 +454,51 @@
 		<entity name="Boe5" />
 		<entity name="Boe6" />
 		<entity name="Boe7" />
-		<entity name="Boe8" />
 		<entity name="Moe2" />
 		<entity name="Moe3" />
 		<entity name="Moe5" />
 		<entity name="Moe6" />
 		<entity name="Moe7" />
-		<entity name="Moe8" />
 		<entity name="Arlene1" />
 		<entity name="Arlene2" />
 		<entity name="CrawlerArlene" />
 		<entity name="Arlene5" />
 		<entity name="Arlene6" />
 		<entity name="Arlene7" />
-		<entity name="Arlene8" />
 		<entity name="Darlene1" />
 		<entity name="Darlene2" />
 		<entity name="CrawlerDarlene" />
 		<entity name="Darlene6" />
 		<entity name="Darlene7" />
-		<entity name="Darlene8" />
 		<entity name="Marlene1" />
 		<entity name="Marlene2" />
 		<entity name="Marlene3" />
 		<entity name="CrawlerMarlene" />
 		<entity name="Marlene6" />
 		<entity name="Marlene7" />
-		<entity name="Marlene8" />
 		<entity name="Yo1" />
 		<entity name="Yo2" />
 		<entity name="Yo3" />
 		<entity name="CrawlerYo" />
 		<entity name="Yo6" />
 		<entity name="Yo7" />
-		<entity name="Yo8" />
 		<entity name="Nurse1" />
 		<entity name="Nurse2" />
 		<entity name="Nurse3" />
 		<entity name="CrawlerNurse" />
 		<entity name="Nurse5" />
 		<entity name="Nurse6" />
-		<entity name="Nurse8" />
 		<entity name="Steve1" />
 		<entity name="Steve2" />
 		<entity name="Steve3" />
 		<entity name="Steve5" />
 		<entity name="Steve7" />
-		<entity name="Steve8" />
 		<entity name="Joe1" />
 		<entity name="Joe2" />
 		<entity name="Joe3" />
 		<entity name="CrawlerJoe" />
 		<entity name="Joe6" />
 		<entity name="Joe7" />
-		<entity name="Joe8" />
-		<entity name="burnt8" />
 		<entity name="burnt6" />
 		<entity name="burnt5" />
 		<entity name="burntCrawler" />
@@ -549,7 +510,6 @@
 		<entity name="feral5" />
 		<entity name="feral6" />
 		<entity name="feral7" />
-		<entity name="feral8" />
 	</entitygroup>
 	<entitygroup name="ZombiesWastelandNight2">
 		<entity name="spiderzombie" />
@@ -584,61 +544,51 @@
 		<entity name="Boe5" prob="0.05" />
 		<entity name="Boe6" prob="0.05" />
 		<entity name="Boe7" prob="0.05" />
-		<entity name="Boe8" prob="0.05" />
 		<entity name="Moe2" prob="0.05" />
 		<entity name="Moe3" prob="0.05" />
 		<entity name="Moe5" prob="0.05" />
 		<entity name="Moe6" prob="0.05" />
 		<entity name="Moe7" prob="0.05" />
-		<entity name="Moe8" prob="0.05" />
 		<entity name="Arlene1" />
 		<entity name="Arlene2" />
 		<entity name="CrawlerArlene" />
 		<entity name="Arlene5" />
 		<entity name="Arlene6" />
 		<entity name="Arlene7" />
-		<entity name="Arlene8" />
 		<entity name="Darlene1" />
 		<entity name="Darlene2" />
 		<entity name="CrawlerDarlene" prob="0.05" />
 		<entity name="Darlene6" />
 		<entity name="Darlene7" />
-		<entity name="Darlene8" />
 		<entity name="Marlene1" />
 		<entity name="Marlene2" />
 		<entity name="Marlene3" />
 		<entity name="CrawlerMarlene" prob="0.05" />
 		<entity name="Marlene6" />
 		<entity name="Marlene7" />
-		<entity name="Marlene8" />
 		<entity name="Yo1" prob="0.05" />
 		<entity name="Yo2" prob="0.05" />
 		<entity name="Yo3" prob="0.05" />
 		<entity name="CrawlerYo" prob="0.05" />
 		<entity name="Yo6" prob="0.05" />
 		<entity name="Yo7" prob="0.05" />
-		<entity name="Yo8" prob="0.05" />
 		<entity name="Nurse1" />
 		<entity name="Nurse2" />
 		<entity name="Nurse3" />
 		<entity name="CrawlerNurse" prob="0.05" />
 		<entity name="Nurse5" />
 		<entity name="Nurse6" />
-		<entity name="Nurse8" />
 		<entity name="Steve1" />
 		<entity name="Steve2" />
 		<entity name="Steve3" />
 		<entity name="Steve5" />
 		<entity name="Steve7" />
-		<entity name="Steve8" />
 		<entity name="Joe1" prob="0.05" />
 		<entity name="Joe2" prob="0.05" />
 		<entity name="Joe3" prob="0.05" />
 		<entity name="CrawlerJoe" prob="0.05" />
 		<entity name="Joe6" prob="0.05" />
 		<entity name="Joe7" prob="0.05" />
-		<entity name="Joe8" prob="0.05" />
-		<entity name="burnt8" prob="0.07" />
 		<entity name="burnt6" prob="0.07" />
 		<entity name="burnt5" prob="0.07" />
 		<entity name="burntCrawler" prob="0.05" />
@@ -650,7 +600,6 @@
 		<entity name="feral5" prob="0.1" />
 		<entity name="feral6" prob="0.1" />
 		<entity name="feral7" prob="0.1" />
-		<entity name="feral8" prob="0.1" />
 	</entitygroup>
 	<entitygroup name="ZombiesWastelandNight2NoBears">
 		<!-- 
@@ -688,61 +637,51 @@
 		<entity name="Boe5" prob="0.05" />
 		<entity name="Boe6" prob="0.05" />
 		<entity name="Boe7" prob="0.05" />
-		<entity name="Boe8" prob="0.05" />
 		<entity name="Moe2" prob="0.05" />
 		<entity name="Moe3" prob="0.05" />
 		<entity name="Moe5" prob="0.05" />
 		<entity name="Moe6" prob="0.05" />
 		<entity name="Moe7" prob="0.05" />
-		<entity name="Moe8" prob="0.05" />
 		<entity name="Arlene1" />
 		<entity name="Arlene2" />
 		<entity name="CrawlerArlene" />
 		<entity name="Arlene5" />
 		<entity name="Arlene6" />
 		<entity name="Arlene7" />
-		<entity name="Arlene8" />
 		<entity name="Darlene1" />
 		<entity name="Darlene2" />
 		<entity name="CrawlerDarlene" prob="0.05" />
 		<entity name="Darlene6" />
 		<entity name="Darlene7" />
-		<entity name="Darlene8" />
 		<entity name="Marlene1" />
 		<entity name="Marlene2" />
 		<entity name="Marlene3" />
 		<entity name="CrawlerMarlene" prob="0.05" />
 		<entity name="Marlene6" />
 		<entity name="Marlene7" />
-		<entity name="Marlene8" />
 		<entity name="Yo1" prob="0.05" />
 		<entity name="Yo2" prob="0.05" />
 		<entity name="Yo3" prob="0.05" />
 		<entity name="CrawlerYo" prob="0.05" />
 		<entity name="Yo6" prob="0.05" />
 		<entity name="Yo7" prob="0.05" />
-		<entity name="Yo8" prob="0.05" />
 		<entity name="Nurse1" />
 		<entity name="Nurse2" />
 		<entity name="Nurse3" />
 		<entity name="CrawlerNurse" prob="0.05" />
 		<entity name="Nurse5" />
 		<entity name="Nurse6" />
-		<entity name="Nurse8" />
 		<entity name="Steve1" />
 		<entity name="Steve2" />
 		<entity name="Steve3" />
 		<entity name="Steve5" />
 		<entity name="Steve7" />
-		<entity name="Steve8" />
 		<entity name="Joe1" prob="0.05" />
 		<entity name="Joe2" prob="0.05" />
 		<entity name="Joe3" prob="0.05" />
 		<entity name="CrawlerJoe" prob="0.05" />
 		<entity name="Joe6" prob="0.05" />
 		<entity name="Joe7" prob="0.05" />
-		<entity name="Joe8" prob="0.05" />
-		<entity name="burnt8" prob="0.07" />
 		<entity name="burnt6" prob="0.07" />
 		<entity name="burnt5" prob="0.07" />
 		<entity name="burntCrawler" prob="0.05" />
@@ -754,7 +693,6 @@
 		<entity name="feral5" prob="0.1" />
 		<entity name="feral6" prob="0.1" />
 		<entity name="feral7" prob="0.1" />
-		<entity name="feral8" prob="0.1" />
 	</entitygroup>
 	<entitygroup name="ZombiesHoard">
 		<entity name="spiderzombie" />
@@ -786,60 +724,51 @@
 		<entity name="Boe5" prob="0.05" />
 		<entity name="Boe6" prob="0.05" />
 		<entity name="Boe7" prob="0.05" />
-		<entity name="Boe8" prob="0.05" />
 		<entity name="Moe2" prob="0.05" />
 		<entity name="Moe3" prob="0.05" />
 		<entity name="Moe5" prob="0.05" />
 		<entity name="Moe6" prob="0.05" />
 		<entity name="Moe7" prob="0.05" />
-		<entity name="Moe8" prob="0.05" />
 		<entity name="Arlene1" />
 		<entity name="Arlene2" />
 		<entity name="CrawlerArlene" prob="0.1" />
 		<entity name="Arlene5" />
 		<entity name="Arlene6" />
 		<entity name="Arlene7" />
-		<entity name="Arlene8" />
 		<entity name="Darlene1" />
 		<entity name="Darlene2" />
 		<entity name="CrawlerDarlene" prob="0.1" />
 		<entity name="Darlene6" />
 		<entity name="Darlene7" />
-		<entity name="Darlene8" />
 		<entity name="Marlene1" />
 		<entity name="Marlene2" />
 		<entity name="Marlene3" />
 		<entity name="CrawlerMarlene" prob="0.1" />
 		<entity name="Marlene6" />
 		<entity name="Marlene7" />
-		<entity name="Marlene8" />
 		<entity name="Yo1" prob="0.05" />
 		<entity name="Yo2" prob="0.05" />
 		<entity name="Yo3" prob="0.05" />
 		<entity name="CrawlerYo" prob="0.1" />
 		<entity name="Yo6" prob="0.05" />
 		<entity name="Yo7" prob="0.05" />
-		<entity name="Yo8" prob="0.05" />
 		<entity name="Nurse1" />
 		<entity name="Nurse2" />
 		<entity name="Nurse3" />
 		<entity name="CrawlerNurse" prob="0.1" />
 		<entity name="Nurse5" />
 		<entity name="Nurse6" />
-		<entity name="Nurse8" />
 		<entity name="Steve1" />
 		<entity name="Steve2" />
 		<entity name="Steve3" />
 		<entity name="Steve5" />
 		<entity name="Steve7" />
-		<entity name="Steve8" />
 		<entity name="Joe1" prob="0.05" />
 		<entity name="Joe2" prob="0.05" />
 		<entity name="Joe3" prob="0.05" />
 		<entity name="CrawlerJoe" prob="0.1" />
 		<entity name="Joe6" prob="0.05" />
 		<entity name="Joe7" prob="0.05" />
-		<entity name="Joe8" prob="0.05" />
 	</entitygroup>
 	<entitygroup name="ZombieScouts">
 		<entity name="zombieScreamer" />
@@ -856,11 +785,11 @@
 		<entity name="CrawlerJoe" prob="0.3" />
 	</entitygroup>
 	<entitygroup name="ZombiesBurntForest">
+		<entity name="Dummy" prob="10" />
 		<entity name="burntzombie" prob="0.2" />
 		<entity name="ZombieCharred" prob="0.2" />
 		<entity name="zombieSteveCrawler" prob="0.05" />
 		<entity name="zombiedog" prob="0.01" />
-		<entity name="burnt8" prob="0.2" />
 		<entity name="burnt6" prob="0.2" />
 		<entity name="burnt5" prob="0.2" />
 		<entity name="burntCrawler" prob="0.2" />
@@ -877,13 +806,13 @@
 		<entity name="CrawlerJoe" prob="0.05" />
 	</entitygroup>
 	<entitygroup name="SnowZombies">
+		<entiyy name="Dummy" prob="1" />
 		<entity name="snow1" prob="0.3" />
 		<entity name="snow3" prob="0.3" />
 		<entity name="snow4" prob="0.3" />
 		<entity name="snow5" prob="0.3" />
 		<entity name="snow6" prob="0.3" />
 		<entity name="snow7" prob="0.3" />
-		<entity name="snow8" prob="0.3" />
 		<entity name="snowzombie" prob="0.3" />
 	</entitygroup>
 	<entitygroup name="ZombiesBoss">
@@ -898,23 +827,21 @@
 		<entity name="feral5" prob="0.3" />
 		<entity name="feral6" prob="0.3" />
 		<entity name="feral7" prob="0.3" />
-		<entity name="feral8" prob="0.3" />
 	</entitygroup>
 	<entitygroup name="ZombiesCave">
-		<entity name="animalBear" prob="0.1"/>
-		<entity name="zombieSteveCrawler" prob="0.05"/>
-		<entity name="zombieJoe" prob="0.05"/>
-		<entity name="zombieSteve" prob="0.05"/>
-		<entity name="zombieMoe" prob="0.05"/>
-		<entity name="zombieYo" prob="0.05"/>
-		<entity name="zombieferal" prob="0.01"/>
-		<entity name="SpiderSmall" prob="0.01"/>
-		<entity name="SpiderSmall" prob="0.01"/>
-		<entity name="SpiderSmall" prob="0.01"/>
-		<entity name="BigSpider" prob="0.01"/>
+		<entity name="animalBear" prob="1"/>
+		<entity name="zombieSteveCrawler" prob="0.5"/>
+		<entity name="zombieJoe" prob="0.5"/>
+		<entity name="zombieSteve" prob="0.5"/>
+		<entity name="zombieMoe" prob="0.5"/>
+		<entity name="zombieYo" prob="0.5"/>
+		<entity name="zombieferal" prob="0.05"/>
+		<entity name="SpiderSmall" prob="0.3"/>
+		<entity name="BigSpider" prob="0.1"/>
 	</entitygroup>
 	<entitygroup name="AnimalsPlains">
-	  <entity name="SpiderSmall" prob="0.001"/>
+		<entity name="Dummy" prob="1" />
+		<entity name="SpiderSmall" prob="0.1"/>
 	</entitygroup> 
 	<entitygroup name="AnimalsWater">
 	  <entity name="crocodile" prob="0.02"/>
@@ -988,6 +915,7 @@
 		<entity name="ZombieChicken" />
 	</entitygroup>
 	<entitygroup name="CrocGrp">
+		<entity name="Dummy" prob="0.5" />
 		<entity name="crocodile" prob="1" />
 	</entitygroup>
 	<entitygroup name="RadZoneAnimalGrp">
@@ -1110,7 +1038,7 @@
 		<entity name="BanditPestilenceLeader" prob="0.15" />
 	</entitygroup>
     <entitygroup name="StartingSurvivorGroup">
-        <entity name="Dummy" prob="0.98" />
+        <entity name="Dummy" prob="0.99" />
 		<entity name="Maggi" prob="0.15" />
 		<entity name="Morgan" prob="0.15" />
 		<entity name="DarrylDixon" prob="0.15" />
@@ -1119,10 +1047,10 @@
 		<entity name="Rosita" prob="0.15" />
 		<entity name="Rick" prob="0.15" />
         <entity name="Abraham" prob="0.15" />
-        <entity name="Dummy" prob="0.15" />
+        <entity name="Dummy" prob="0.35" />
     </entitygroup>
     <entitygroup name="ArmedSurvivorGroup">
-        <entity name="Dummy" prob="0.97" />
+        <entity name="Dummy" prob="0.99" />
 		<entity name="Maggi" prob="0.15" />
 		<entity name="Morgan" prob="0.15" />
 		<entity name="DarrylDixon" prob="0.15" />
@@ -1134,7 +1062,7 @@
 		<entity name="Rosita" prob="0.15" />
 		<entity name="Rick" prob="0.15" />
         <entity name="Abraham" prob="0.15" />
-        <entity name="Dummy" prob="0.15" />
+        <entity name="Dummy" prob="0.35" />
         <entity name="BanditWarLeader" prob="0.05" />
 		<entity name="BanditDreadLeader" prob="0.05" />
 		<entity name="BanditTheMakerLeader" prob="0.05" />

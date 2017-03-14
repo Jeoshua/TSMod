@@ -4100,7 +4100,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="stick" count="4" />
 	</recipe>
 	<recipe name="Tomahawk" count="1" craft_area="workAnvil" craft_tool="clawHammer" craft_time="30" craft_exp_gain="25">
-		<ingredient name="scrapIron" count="80" />
+		<ingredient name="scrapIron" count="150" />
 		<ingredient name="MeltedRubber" count="2" />
 	</recipe>
 	<recipe name="TomatoSeed" count="2" craft_area="workSeedNursery" craft_time="60" craft_exp_gain="0">

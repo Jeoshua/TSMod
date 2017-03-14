@@ -1776,7 +1776,7 @@
 			<recipe name="woodLogSpike1" unlock_level="1" />
 		</perk>
 		<perk name="Steel Spikes" icon="SteelSpikes" description_key="Learn to craft Steel Spikes on the metal working bench" title_key="Steel Spikes" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
-			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="5" />
+			<requirement perk_level="1" required_player_level="45" />
 			<recipe name="SteelSpikes" unlock_level="1" />
 		</perk>
 		<perk name="Barbed Fence" icon="barbedFence" description_key="Learn to craft Barbed Fence" title_key="Barbed Fence" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
