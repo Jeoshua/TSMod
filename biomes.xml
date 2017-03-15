@@ -485,13 +485,11 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="treeMaple13m" prob="0.0041" rotatemax="7" />
 				<decoration type="block" blockname="smallAvocadoTree" prob="0.0019" rotatemax="7" />
 				<!--<decoration type="block" blockname="smallCherryTree" prob="0.0017" rotatemax="7" />-->
-				<decoration type="block" blockname="smallOrangeTree" prob="0.0019" rotatemax="7" />
 				<decoration type="block" blockname="treeMaple15m" prob="0.0052" rotatemax="7" />
 				<decoration type="block" blockname="treeMaple16m" prob="0.0053" rotatemax="7" />
 				<decoration type="block" blockname="treeMaple17m" prob="0.0054" rotatemax="7" />
 				<decoration type="block" blockname="smallAvocadoTree" prob="0.0008" rotatemax="7" />
 				<!--<decoration type="block" blockname="smallCherryTree" prob="0.0005" rotatemax="7" />-->
-				<decoration type="block" blockname="smallOrangeTree" prob="0.0004" rotatemax="7" />
 				<decoration type="block" blockname="appleTree" prob="0.0008" rotatemax="7" />
 				<decoration type="block" blockname="snowberry3Harvest" prob=".001" />
 				<decoration type="block" blockname="cannabisPlant" prob=".00009" rotatemax="3" />
@@ -842,6 +840,7 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="prefab" name="resource_coal_pile" prob=".0007" rotatemax="7" />
 					<decoration type="block" blockname="treePlainsTree" prob="0.029" rotatemax="7" />
 					<decoration type="block" blockname="treePlainsTree2" prob="0.028" />
+					<decoration type="block" blockname="smallOrangeTree" prob="0.0019" rotatemax="7" />
 					<decoration type="block" blockname="smallLimeTree" prob="0.001" rotatemax="7" />
 					<decoration type="block" blockname="treeBirch10m" prob="0.0018" rotatemax="7" />
 					<decoration type="block" blockname="treeBirch12m" prob="0.0019" rotatemax="7" />

@@ -7399,9 +7399,9 @@
 	</SoundDataNode>
 	<SoundDataNode name="carAlarm">
 		<AudioSource name="Sounds/AudioSource_UseAction" />
-		<Noise range="100" prio="1" time="5" />
+		<Noise range="100" prio="1" time="10" />
 		<AudioClip ClipName="#carAlarms?alarm1" />
-		<AudioClip ClipName="#carAlarms?alarm2" />
+		<AudioClip ClipName="#carAlarms?alarm2" />	
 		<AudioClip ClipName="#carAlarms?alarm3" />
 		<LocalCrouchVolumeScale name="5.0" />
 		<CrouchNoiseScale name="5.0" />

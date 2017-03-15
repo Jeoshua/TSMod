@@ -40,7 +40,7 @@ Mesh files no longer used:
 		<property name="Stacknumber" value="1" />
 		<property name="EconomicValue" value="5" />
 		<property name="EconomicBundleSize" value="1" />
-		<property name="SellableToTrader" value="false" />
+		<property name="Weight" value="5" />
 		<property class="Action0">
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1.5" />
@@ -1537,7 +1537,6 @@ Mesh files no longer used:
 		<property name="EconomicValue" value="200" />
 		<property name="RepairTools" value="NoRepair" />
 		<property name="CustomIcon" value="stoneAxe" />
-        <property name="SellableToTrader" value="false" />
 		<property class="Action0">
 			<property name="Delay" value="1" />
 			<property name="Stamina_usage" value="7" />
@@ -1584,7 +1583,6 @@ Mesh files no longer used:
 		<property name="FuelValue" value="30" />
 		<property name="EconomicValue" value="2500" />
         <property name="Weight" value="100" />
-		<property name="SellableToTrader" value="false" />
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property class="Action0">
 			<property name="Class" value="Melee" />
@@ -1698,7 +1696,6 @@ Mesh files no longer used:
 		<property name="FuelValue" value="20" />
         <property name="Weight" value="100" />
 		<property name="EconomicValue" value="2500" />
-		<property name="SellableToTrader" value="false" />
 		<property class="Action0">
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1" />
@@ -1849,7 +1846,6 @@ Mesh files no longer used:
 		<property name="FuelValue" value="30" />
         <property name="Weight" value="100" />
 		<property name="EconomicValue" value="240" />
-        <property name="SellableToTrader" value="false" />
 		<property class="Action0">
 			<property name="Stamina_usage" value="7" />
 			<property name="DamageBonus.earth" value="5" />
@@ -1899,7 +1895,6 @@ Mesh files no longer used:
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property name="FuelValue" value="24" />
 		<property name="EconomicValue" value="200" />
-        <property name="SellableToTrader" value="false" />
 		<property class="Action0">
 			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
@@ -1954,7 +1949,6 @@ Mesh files no longer used:
 		<property name="HoldType" value="29" />
 		<property name="DegradationBreaksAfter" value="true" />
 		<property name="EconomicValue" value="240" />
-        <property name="SellableToTrader" value="false" />
 		<property name="SoundDestroy" value="metaldestroy1" />
 		<property class="Action0">
 			<!-- AttackAction -->
@@ -2012,7 +2006,6 @@ Mesh files no longer used:
 		<property name="FuelValue" value="18" />
         <property name="Weight" value="10" />
 		<property name="EconomicValue" value="200" />
-        <property name="SellableToTrader" value="false" />
 		<property class="Action0">
 			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
@@ -2299,7 +2292,6 @@ Mesh files no longer used:
 		<property name="HoldType" value="26" />
 		<property name="FuelValue" value="70" />
 		<property name="EconomicValue" value="220" />
-		<property name="SellableToTrader" value="false" />
 		<property name="Stacknumber" value="1" />
 		<property name="DegradationBreaksAfter" value="false" />
 		<property name="SoundDestroy" value="wooddestroy1" />
@@ -2669,7 +2661,6 @@ Mesh files no longer used:
 		<property name="FuelValue" value="8" />
 		<property name="EconomicValue" value="25" />
 		<property name="EconomicBundleSize" value="5" />
-		<property name="SellableToTrader" value="false" />
 		<property class="Action1">
 			<property name="Class" value="Projectile" />
 			<property name="Buff" value="arrowCriticalBleedout" />
@@ -2710,7 +2701,6 @@ Mesh files no longer used:
 		<property name="FuelValue" value="8" />
 		<property name="EconomicValue" value="53" />
 		<property name="EconomicBundleSize" value="5" />
-		<property name="SellableToTrader" value="false" />
 		<property class="Action1">
 			<property name="Class" value="Projectile" />
 			<property name="Buff" value="arrowCriticalBleedout" />
@@ -6175,7 +6165,6 @@ Mesh files no longer used:
 		<!-- STK resource -->
 		<property name="EconomicValue" value="5" />
 		<property name="EconomicBundleSize" value="1" />
-		<property name="SellableToTrader" value="false" />
 		<property name="HoldType" value="45" />
 		<property class="Action1">
 			<property name="Class" value="UseOther" />
@@ -8119,7 +8108,6 @@ Mesh files no longer used:
 		<property name="Weight" value="5" />
 		<property name="Stacknumber" value="1000" />
 		<!-- STK resource -->
-		<property name="SellableToTrader" value="false" />
 		<property name="HoldType" value="45" />
 		<property name="DropScale" value="3" />
 		<property name="EconomicValue" value="25" />
@@ -9106,7 +9094,6 @@ Mesh files no longer used:
 		<!-- STK resource -->
 		<property name="EconomicValue" value="12" />
 		<property name="EconomicBundleSize" value="5" />
-		<property name="SellableToTrader" value="false" />
 		<property class="Action1">
 			<property name="Class" value="PlaceAsBlock" />
 			<property name="Delay" value="0.5" />
@@ -9201,8 +9188,7 @@ Mesh files no longer used:
 		<property name="HoldType" value="21" />
 		<property name="Stacknumber" value="500" />
 		<!-- STK resource -->
-		<property name="EconomicValue" value="250" />
-		<property name="SellableToTrader" value="false" />
+		<property name="EconomicValue" value="25" />
 		<property class="Action1">
 			<property name="Class" value="PlaceAsBlock" />
 			<property name="Delay" value="0.5" />
@@ -9422,6 +9408,7 @@ Mesh files no longer used:
 		<!-- STK resource -->
 		<property name="EconomicValue" value="5" />
 		<property name="EconomicBundleSize" value="1" />
+		<property name="LootExpValue" value="5" />
 		<property name="SellableToTrader" value="false" />
 	</item>
 	<item id="1439" name="glue">
@@ -13917,7 +13904,6 @@ Mesh files no longer used:
 		<property name="HoldType" value="31" />
 		<property name="Stacknumber" value="50" />
 		<property name="IsDeveloper" value="true" />
-        <property name="SellableToTrader" value="false" />
 		<property class="Action1">
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
@@ -13938,7 +13924,6 @@ Mesh files no longer used:
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="3" />
 		<property name="Stacknumber" value="15" />
-		<property name="SellableToTrader" value="false" />
 		<property class="Action0">
 			<property name="Class" value="UseOther" />
 			<property name="Delay" value="1.0" />
@@ -15922,7 +15907,6 @@ Mesh files no longer used:
 		<property name="Stacknumber" value="5000" />
 		<property name="Weight" value="5" />
 		<property name="Group" value="Resources" />
-		<property name="SellableToTrader" value="false" />
 	</item>
 	<item id="1970" name="shortSteelPipe">
 		<property name="Meshfile" value="Items/Crafting/Metal/shortMetalPipe" />
@@ -15936,7 +15920,6 @@ Mesh files no longer used:
 		<property name="DescriptionKey" value="SteelPipeDesc" />
 		<property name="CustomIcon" value="ui_game_symbol_shortSteelPipe" />
 		<property name="CraftingSkillGroup" value="Master Craftsman" />
-		<property name="SellableToTrader" value="false" />
 	</item>
 	<item id="1971" name="Ink Pen">
 		<property name="Extends" value="itemMaster" />
@@ -15956,7 +15939,6 @@ Mesh files no longer used:
 		<property name="RepairTime" value="10" />
 		<property name="RepairAmount" value="1000" />
 		<property name="EconomicValue" value="186" />
-		<property name="SellableToTrader" value="false" />
 		<property name="DescriptionKey" value="weaponRepairKitDesc" />
 		<property name="CustomIcon" value="repairKit" />
 		<property name="CraftingSkillGroup" value="Gun Smithing" />
@@ -16961,6 +16943,7 @@ Mesh files no longer used:
 		<property name="CustomIcon" value="sledgehammer" />
 		<property name="DegradationBreaksAfter" value="false" />
 		<property name="Degradation" value="99999" param1="true" />
+		<property name="SellableToTrader" value="false" />
 		<property class="Action0">
 			<property name="Buff" value="criticalBlunt,stunned,sprainedLeg,banditBonus" />
 			<property name="Buff_chance" value=".5,.3,.3,1" />

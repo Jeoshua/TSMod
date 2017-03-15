@@ -369,7 +369,10 @@
 			</qualitytemplate>
 		</lootqualitytemplate>
 	</lootqualitytemplates>
-	<lootgroup name="empty" />
+	<lootgroup name="empty" count="1" >
+		<item name="cobweb" prob="1" count="0" />
+		<item name="cobweb" prob="0.1" count="1" />
+	</lootgroup>
 	<lootgroup name="questChallenge" count="1">
 		<item name="qc_Hen" count="1" />
 		<item name="qc_Vorpal" count="1" />
@@ -1838,8 +1841,7 @@
 	<lootgroup name="deadBody" count="1">
 		<item name="cntCorpseLoot01" />
 		<item name="cntCorpseLoot02" />
-		<item name="rottingFlesh" count="1,10" prob="0.75" />
-		<item name="animalGore" prob="0.5" />
+		<item name="rottingFlesh" count="1,10" prob="0.5" />
 		<item name="GoreBlock1Prefab" prob="0.25" />
 		<item name="GoreBlock1BonesPrefab" prob="0.1" />
 	</lootgroup>
@@ -1865,12 +1867,12 @@
 	</lootcontainer>
 	<!-- lootcontainer 5 stove, cooking pots and pans rotten food -->
 	<lootcontainer id="5" count="0,2" size="4,3" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox" open_time="5">
-		<item name="cookingPot" count="1,2" prob="0.5" />
-		<item name="FryingPan" count="1,2" prob="0.4" />
-		<item name="scrapIron" count="1,2" prob="0.7" />
-		<item name="cookingGrill" count="1,2" prob="0.3" />
-		<item name="emptyJar" count="1,2" prob="0.3" />
-		<item name="canEmpty" count="1,2" prob="0.3" />
+		<item name="cookingPot" count="1" prob="0.5" />
+		<item name="FryingPan" count="1" prob="0.4" />
+		<item name="scrapIron" count="1,10" prob="0.7" />
+		<item name="cookingGrill" count="1" prob="0.3" />
+		<item name="emptyJar" count="1,2" prob="0.5" />
+		<item name="canEmpty" count="1,2" prob="0.5" />
 		<item group="rottenFood" prob="0.6" />
 	</lootcontainer>
 	<!-- lootcontainer 6 night stands and dressers, pistol, ammo, magazines, books -->
@@ -1894,16 +1896,16 @@
 	</lootcontainer>
 	<!-- lootcontainer 8 kitchen cupboards (lower), cleaning chemicals, plates, silverware, pots and pans -->
 	<lootcontainer id="8" count="0,2" size="4,3" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard" open_time="5">
-		<item name="cookingPot" count="1" prob="0.3" />
-		<item name="FryingPan" count="1" prob="0.2" />
-		<item name="emptyJar" count="1,2" prob="0.3" />
-		<item name="canEmpty" count="1,2" prob="0.3" />
+		<item name="cookingPot" count="1" prob="0.2" />
+		<item name="FryingPan" count="1" prob="0.15" />
+		<item name="emptyJar" count="1,2" prob="0.4" />
+		<item name="canEmpty" count="1,2" prob="0.35" />
 		<item group="cupboard" count="1,2" prob="0.3" />
 		<item name="coffeeBeans" count="1,4" prob="0.3" />
 		<item name="shortMetalPipe" count="1,2" prob="0.7" />
 		<item name="wrench" count="1" quality="1,300" prob="0.15" />
-		<item name="scrapLead" count="1" prob="0.5" />
-		<item name="scrapPlastics" count="1,8" prob="0.5"/>
+		<item name="scrapLead" count="1,8" prob="0.75" />
+		<item name="scrapPlastics" count="1,8" prob="0.6"/>
 	</lootcontainer>
 	<!-- lootcontainer 9 backpack, place where people stash things, -->
 	<lootcontainer id="9" count="0,3" size="4,2" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="5">
@@ -1929,7 +1931,8 @@
 		<item group="handgun+ammo" prob="0.1" />
 	</lootcontainer>
 	<!-- lootcontainer 14 misc metal container mailbox-->
-	<lootcontainer id="14" count="0,2" size="4,2" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox" open_time="3">
+	<lootcontainer id="14" count="1,2" size="4,2" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox" open_time="3">
+		<item group="empty" prob="0.75" />
 		<item name="paper" count="1,10" />
 		<item name="book" prob="0.5" />
 		<item group="books" prob="0.1" />
@@ -1940,7 +1943,6 @@
 	<lootcontainer id="15" count="1,2" size="4,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" destroy_on_close="false">
 		<item group="junk" prob="1" />
 		<item group="clothes" prob="0.5" />
-
 		<item group="rottenFood" prob="0.062" />
 		<item group="armorHazmat" count="1" prob="0.008" />
 		<item group="questChallenge" count="1" prob="0.0105" />
@@ -2164,6 +2166,7 @@
 		<item group="drugs" prob="0.3" />
 		<item group="handgun+ammo" prob="0.05" />
 		<item name="oldCash" count="1,20" prob="0.3" />
+		<item name="casinoCoin" count="10,50" prob="0.01" />
 	</lootcontainer>
 	<!-- bookcase -->
 	<lootcontainer id="49" count="1,2" size="4,3" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" open_time="3">
@@ -2215,6 +2218,7 @@
 	<lootcontainer id="55" count="1,5" size="4,4" sound_open="UseActions/open_cash_register" sound_close="UseActions/close_cash_register">
 		<item name="oldCash" count="1,10" prob="0.5" />
 		<item name="paper" count="1,5" prob="0.5" />
+		<item name="casinoCoin" count="10,50" prob="0.01" />
 		<item group="empty" />
 	</lootcontainer>
 	<!-- Apache Artifact Chest -->
