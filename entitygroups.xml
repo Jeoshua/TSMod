@@ -765,17 +765,16 @@
 	</entitygroup>
 	
 	<entitygroup name="ScoutParty">
-		<entity name="zombieScreamer" 		prob="40"/>
-		<entity name="zombieferal" 		prob="20"/>
-		<entity name="zombiedog" 		prob="40"/>
+		<entity name="zombieScreamer" 		prob="50"/>
+		<entity name="zombiedog" 		prob="50"/>
 	</entitygroup>
 
 	<entitygroup name="ScoutWarparty">
 		<entity name="spiderzombie"		prob="15"/>
-		<entity name="ZombieBrute"		prob="15"/>
+		<entity name="ZombieBrute"		prob="10"/>
 		<entity name="zombieScreamer" 		prob="10"/>
 		<entity name="fatzombiecop" 		prob="20"/>
-		<entity name="zombieferal" 		prob="10"/>
+		<entity name="zombieferal" 		prob="15"/>
 		<entity name="zombiedog" 		prob="30"/>
 	</entitygroup>
 

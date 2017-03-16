@@ -8155,7 +8155,7 @@ Mesh files no longer used:
 		<!-- STK resource -->
         <property name="Weight" value="20" />
 		<property name="RepairTime" value="5" />
-		<property name="RepairAmount" value="100" />
+		<property name="RepairAmount" value="200" />
 		<property name="Group" value="Resources" />
 		<property name="MeltTimePerUnit" value="0.5" />
 		<property name="EconomicValue" value="12" />
@@ -8559,7 +8559,7 @@ Mesh files no longer used:
 		<property name="Material" value="paper" />
 		<property name="FuelValue" value="1" />
 		<property name="Weight" value="1" />
-		<property name="Stacknumber" value="10000" />
+		<property name="Stacknumber" value="100000" />
 		<property name="SellableToTrader" value="false" />
 		<!-- STK resource -->
 		<!--
@@ -8729,10 +8729,11 @@ Mesh files no longer used:
 			<property name="FlyTime" value="1" />
 			<property name="LifeTime" value="1" />
 			<property name="DamageBonus.head" value="6" />
-			<property name="DamageBonus.glass" value="0.01" />
+			<property name="DamageBonus.glass" value="25" />
 			<property name="DamageBonus.wood" value="0.1" />
 			<property name="DamageBonus.earth" value="0" />
 			<property name="DamageBonus.metal" value="0" />
+			<property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.cloth" value="0" />
 		</property>
 		<property class="Attributes">
@@ -15913,7 +15914,7 @@ Mesh files no longer used:
 		<property name="Material" value="Msteel" />
 		<property name="Stacknumber" value="1000" />
 		<property name="RepairTime" value="5" />
-		<property name="RepairAmount" value="100" />
+		<property name="RepairAmount" value="200" />
 		<property name="HoldType" value="16" />
 		<property name="Weight" value="20" />
 		<property name="Group" value="Resources" />
@@ -17324,4 +17325,53 @@ Mesh files no longer used:
 		<property name="EconomicValue" value="1" />
 	</item>
 
+	<item id="4000" name="Dollars_Ten">
+		<property name="Extends" value="oldCash" />
+		<property name="CustomIcon" value="oldCash" />
+		<property name="IsDeveloper" value="true" />
+		<property name="SellableToTrader" value="true" />
+		<property name="EconomicValue" value="10" />
+		<property name="Stacknumber" value="100000" />
+	</item>
+	<item id="4001" name="Dollars_Hundred">
+		<property name="Extends" value="oldCash" />
+		<property name="CustomIcon" value="oldCash" />
+		<property name="IsDeveloper" value="true" />
+		<property name="SellableToTrader" value="true" />
+		<property name="EconomicValue" value="100" />
+		<property name="Stacknumber" value="10000" />
+	</item>
+	<item id="4002" name="Dollars_Thousand">
+		<property name="Extends" value="oldCash" />
+		<property name="CustomIcon" value="oldCash" />
+		<property name="IsDeveloper" value="true" />
+		<property name="SellableToTrader" value="true" />
+		<property name="EconomicValue" value="1000" />
+		<property name="Stacknumber" value="1000" />
+	</item>
+	<item id="4003" name="Dollars_TenThousand">
+		<property name="Extends" value="oldCash" />
+		<property name="CustomIcon" value="oldCash" />
+		<property name="IsDeveloper" value="true" />
+		<property name="SellableToTrader" value="true" />
+		<property name="EconomicValue" value="10000" />
+		<property name="Stacknumber" value="100" />
+	</item>
+	<item id="4004" name="Dollars_HundredThousand">
+		<property name="Extends" value="oldCash" />
+		<property name="CustomIcon" value="oldCash" />
+		<property name="IsDeveloper" value="true" />
+		<property name="SellableToTrader" value="true" />
+		<property name="EconomicValue" value="100000" />
+		<property name="Stacknumber" value="10" />
+	</item>
+	<item id="4005" name="Dollars_Million">
+		<property name="Extends" value="oldCash" />
+		<property name="CustomIcon" value="oldCash" />
+		<property name="IsDeveloper" value="true" />
+		<property name="SellableToTrader" value="true" />
+		<property name="EconomicValue" value="1000000" />
+		<property name="Stacknumber" value="1" />
+	</item>
+	
 </items>

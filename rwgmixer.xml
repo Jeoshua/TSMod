@@ -2,15 +2,11 @@
 	<world ruleset="vanilla" />
 	<!-- rwgmixer for COMPOPACK 24 (by Magoli)  - Current Alpha: A15 stable   -->
 	<rulesets>
-		<ruleset name="vanilla" cell_cache_size="8" cell_size="1900" cell_offset="0.3" generation_distance="3500" terrain_generator="vanilla">
-			<cell_rule name="wastelandHub" position="0,0" prob="1" />
-			<cell_rule name="wastelandCity" position="1,0" prob="1"/>
-			<cell_rule name="wastelandCity" position="0,1" prob="1"/>
-			<cell_rule name="wastelandCity" position="-1,0" prob="1"/>
-			<cell_rule name="wastelandCity" position="0,-1" prob="1"/>
+		<ruleset name="vanilla" cell_cache_size="8" cell_size="1800" cell_offset="0.382" generation_distance="3500" terrain_generator="vanilla">
+			<cell_rule name="wastelandHub" position="0,0" />
+			<cell_rule name="wastelandCity" prob="0.2"/>
 			<cell_rule name="lowDensity" prob="0.5" />
-			<cell_rule name="highDensity" prob="0.5" />
-			<cell_rule name="empty" prob="0.1" />
+			<cell_rule name="highDensity" prob="0.3" />
 		</ruleset>
 	</rulesets>
 	<cell_rules>
@@ -24,6 +20,7 @@
 			<hub_rule name="townLarge" prob="0.3" />
 			<hub_rule name="wastyTownHub" prob="0.2" />
 			<hub_rule name="CoronadoCity" prob="0.3" />
+			<hub_rule name="ColtTownHub" prob="0.3" />
 			<wilderness_rule name="wildernessDefault" />
 		</cell_rule>
 		<cell_rule name="highDensity">
@@ -31,12 +28,10 @@
 			<path_material value="asphalt" />
 			<path_radius value="7" />
 			<hub_rule name="townLarge" prob="0.3" />
-			<hub_rule name="ColtTownHub" prob="0.3" />
 			<hub_rule name="Hospital_Hub" prob="0.2" />
 			<hub_rule name="SlumsHub" prob="0.2" />
 			<hub_rule name="RaceTrackStadiumHub" prob="0.2" />
 			<hub_rule name="Lim_PrisonHub" prob="0.3" />
-			<hub_rule name="IndustrialHub" prob="0.3" />
 			<hub_rule name="TWD_PrisonHub" prob="0.2" />
 			<wilderness_rule name="wildernessHigh" prob="1" />
 		</cell_rule>
@@ -46,6 +41,7 @@
 			<path_radius value="7" />
 			<hub_rule name="citySmall" prob="0.5" />
 			<hub_rule name="wastycity" prob="0.3" />
+			<hub_rule name="IndustrialHub" prob="0.3" />
 			<wilderness_rule name="wildernessHub" prob="1" />
 		</cell_rule>
 		<cell_rule name="wastelandHub">
@@ -159,16 +155,16 @@
 		</hub_rule>
 		<hub_rule name="citySmall">
 			<hub_type value="city" />
-			<width value="512, 768" />
-			<height value="512, 768" />
+			<width value="512, 512" />
+			<height value="512, 512" />
 			<path_material value="asphalt" />
 			<path_radius value="7" />
 			<prefab_rule name="CommonCityPOIs" prob="1" />
 		</hub_rule>
 		<hub_rule name="cityLarge"> 
 			<hub_type value="city"/>
-			<width value="768, 1024" />
-			<height value="768, 1024" />
+			<width value="768, 768" />
+			<height value="768, 768" />
 			<path_radius value="7" />
 			<prefab_rule name="CommonCityPOIs" prob="1" />
 		</hub_rule>
@@ -255,17 +251,17 @@
 			<path_radius value="3" />
 			<prefab_rule name="none" prob="1" />
 		</wilderness_rule>
-		<wilderness_rule name="wildernessDefault" spawn_min_max="50,100">
+		<wilderness_rule name="wildernessDefault" spawn_min_max="25,50">
 			<path_material value="asphalt" />
 			<path_radius value="5" />
 			<prefab_rule name="wildernessPOIs" prob="1" />
 		</wilderness_rule>
-		<wilderness_rule name="wildernessHigh" spawn_min_max="100,150">
+		<wilderness_rule name="wildernessHigh" spawn_min_max="50,75">
 			<path_material value="asphalt" />
 			<path_radius value="5" />
 			<prefab_rule name="wildernessPOIs" prob="1" />
 		</wilderness_rule>
-		<wilderness_rule name="wildernessHub" spawn_min_max="150,250">
+		<wilderness_rule name="wildernessHub" spawn_min_max="75,100">
 			<path_material value="asphalt" />
 			<path_radius value="7" />
 			<prefab_rule name="wildernessPOIs" prob="1" />
@@ -379,6 +375,7 @@
 			<prefab name="xvanilla_mp_waste_bldg_07_intact" max_count="1" prob="0.1" />
 			<prefab name="xvanilla_mp_waste_bldg_02_red" max_count="1" prob="0.1" />
 			<prefab name="xvanilla_mp_waste_bldg_02_tan" max_count="1" prob="0.1" />
+			<prefab rule="trader_settlements" max_count="2" prob="10" />
 		</prefab_rule>
 		<!-- Spawning for wastycity :  -->
 		<prefab_rule name="wastycityPOIs">
@@ -405,6 +402,7 @@
 			<prefab rule="gasStations" min_count="1" max_count="1" prob="0.1" />
 			<prefab rule="burntHousing" min_count="1" max_count="4" prob="0.4" />
 			<prefab rule="TrailerhousesMixCity" min_count="1" max_count="2" prob="0.1" />
+			<prefab rule="trader_settlements" max_count="1" prob="4" />
 		</prefab_rule>
 		<!-- Spawning for Coronadocity :  -->
 		<prefab_rule name="CoronadoCityPOIs">
@@ -598,6 +596,7 @@
 			<prefab name="xcostum_swimmingbath(by_magoli)" max_count="1" prob="0.2" />
 			<prefab name="xcostum_Science_lab(by_kinklade)" max_count="1" prob="0.2" />
 			<prefab name="xcostum_Warehouse(by_Illidua)" max_count="1" prob="0.2" />
+			<prefab rule="trader_settlements" max_count="1" prob="5" />
 		</prefab_rule>
 		<!--
 		<prefab_rule name="ruralLarge">
@@ -624,6 +623,7 @@
 			<prefab rule="middleClassHousing" />
 			<prefab rule="countryHousing" />
 			<prefab rule="townBuildings" />
+			<prefab rule="trader_settlements" max_count="1" prob="3" />
 		</prefab_rule>
 		<prefab_rule name="townBuildings">
 			<prefab rule="garages" max_count="8" prob="0.1" />
@@ -666,6 +666,7 @@
 			<prefab rule="entertainment" max_count="2" />
 			<prefab rule="trader_settlements" max_count="1" />
 			<prefab rule="UtilityPOIs" max_count="1" />
+			<prefab rule="trader_settlements" max_count="1" prob="10" />
 		</prefab_rule>
 		<prefab_rule name="wastyTownPrefabs">
 			<prefab rule="burntHousing" max_count="5" prob="0.4" />
@@ -695,6 +696,7 @@
 			<prefab rule="TrailerHouses" max_count="1" prob="0.1" />
 			<prefab rule="TrailerhousesMix" max_count="1" prob="0.1" />
 			<prefab rule="abandoned_houses" min_count="1" max_count="3" prob="0.5" />
+			<prefab rule="trader_settlements" max_count="1" prob="3" />
 		</prefab_rule>
 		<!-- from here pure Prefab-groups: -->
 		<prefab_rule name="A_frame_houses">
@@ -1640,8 +1642,8 @@
 			</module>
 			<module name="scaleBiasOutput" type="ScaleBiasOutput">
 				<property name="sourceModule" value="final"/>
-				<property name="scale" value="180"/>
-				<property name="bias" value="-2"/>
+				<property name="scale" value="185"/>
+				<property name="bias" value="-1"/>
 			</module>
 			<module name="clampOutput" type="ClampOutput">
 				<property name="sourceModule" value="scaleBiasOutput" />
@@ -1671,7 +1673,7 @@
 			<module name="biomeOutput" type="ScaleBiasOutput" >
 				<property name="sourceModule" value="biomeDither" />
 				<property name="scale" value="0.45" /> <!-- raise this for more contrasted biomes, lower for more "temperate" biomes-->
-				<property name="bias" value="0.4475" /> <!-- raise this for more "hot" biomes, lower for more "cold" biomes -->
+				<property name="bias" value="0.4675" /> <!-- raise this for more "hot" biomes, lower for more "cold" biomes -->
 			</module>
 
 			<module name="clampOutput" type="ClampOutput">
@@ -1692,27 +1694,27 @@
 		<!-- 0.05,0.125 city (snow forest) -->
 		
 		<biome_spawn_rule name="pine_forest">
-			<biome_generator range="0.1,0.25"/>
+			<biome_generator range="0.12,0.245"/>
 		</biome_spawn_rule>
 		
 		<biome_spawn_rule name="forest">
-			<biome_generator range="0.25,0.45"/>
+			<biome_generator range="0.245,0.425"/>
 		</biome_spawn_rule>
 		
 		<biome_spawn_rule name="plains">
-			<biome_generator range="0.45,0.575"/>
+			<biome_generator range="0.425,0.60"/>
 		</biome_spawn_rule>
 
 		
-		<!-- 0.575,0.75 desert -->
+		<!-- 0.60,0.775 desert -->
 		
-		<!-- 0.75,0.925 burnt_forest -->
+		<!-- 0.775,0.925 wasteland -->
 		
-		<!-- 0.925,1.0 wasteland -->
+		<!-- 0.925,1.0 wasteland_hub -->
 		
 		<!-- terrain_generator range in game elevation appears to be x - 28 -->
 		<biome_spawn_rule name="pine_forest">
-			<terrain_generator range="120,134" />
+			<terrain_generator range="120,128" />
 		</biome_spawn_rule>
 		
 		<biome_spawn_rule name="water">
@@ -1720,43 +1722,48 @@
 		</biome_spawn_rule>
 		
 		<biome_spawn_rule name="city">
-			<biome_generator range="0.05,0.1"/>
+			<biome_generator range="0.06,0.12"/>
 		</biome_spawn_rule>
 
 		<biome_spawn_rule name="wasteland_hub">
-			<biome_generator range="0.925,0.99"/>
+			<biome_generator range="0.925,0.98"/>
 		</biome_spawn_rule>		
 
 		<biome_spawn_rule name="snow">
-			<biome_generator range="0,0.05"/>
+			<biome_generator range="0.02,0.06"/>
 		</biome_spawn_rule>
+		
+		<biome_spawn_rule name="wasteland_hub">
+			<distance_from_center range="0,500" />
+		</biome_spawn_rule>
+		
 
 		<biome_spawn_rule name="city">
-			<terrain_generator range="134,150" />
-		</biome_spawn_rule>		
-		
-		<biome_spawn_rule name="radiated">
-			<biome_generator range="0.99,1" />
+			<terrain_generator range="128,138" />
 		</biome_spawn_rule>
 		
 		<biome_spawn_rule name="wasteland">
-			<distance_from_center range="2500,3000" />
-		</biome_spawn_rule>
-		<biome_spawn_rule name="radiated">
 			<distance_from_center range="3000,3500" />
 		</biome_spawn_rule>
 
 		<biome_spawn_rule name="desert">
-			<biome_generator range="0.575,0.75"/>
+			<biome_generator range="0.60,0.775"/>
 		</biome_spawn_rule>
 		
 		<biome_spawn_rule name="wasteland">
-			<biome_generator range="0.75,0.925"/>
+			<biome_generator range="0.775,0.925"/>
 		</biome_spawn_rule>
 		
+		<biome_spawn_rule name="radiated">
+			<biome_generator range="0.98,1" />
+		</biome_spawn_rule>
+		
+		<biome_spawn_rule name="city_wasteland">
+			<biome_generator range="0,0.02"/>
+		</biome_spawn_rule>
 		
 		<biome_spawn_rule name="snow">
-			<terrain_generator range="150,255" />
+			<terrain_generator range="138,255" />
 		</biome_spawn_rule>
 		
 	</biome_spawn_rules>

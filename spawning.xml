@@ -900,7 +900,7 @@
 		</day>
 		<day value="29,56">
 			<property name="ResetToday"		value="true" />
-			<property name="EntityGroupName"	value="ScoutWarparty" />
+			<property name="EntityGroupName"	value="ScoutParty" />
 			<property name="Time"			value="Any" />
 			<property name="DelayBetweenSpawns"	value="1" />
 			<property name="TotalAlive"		value="6" />
