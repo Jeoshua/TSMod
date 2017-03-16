@@ -2568,8 +2568,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="ProfessionPage" count="20" />
 	</recipe>
 	<recipe name="doorKnob" count="1" craft_area="workforge" craft_tool="calipers" material_based="true">
-		<ingredient name="unit_brass" count="10" />
-		<ingredient name="unit_clay" count="2" />
+		<ingredient name="unit_brass" count="20" />
+ 		<ingredient name="unit_clay" count="5" />
 	</recipe>
 	<recipe name="DoubleBarrel" count="1" craft_area="assembly">
 		<ingredient name="flashlight02" count="0" />
@@ -3412,7 +3412,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="partsPistol_grip" count="1" />
 		<ingredient name="BlankSkillBook" count="1" />
 	</recipe>
-	<recipe name="Plank" count="4" craft_time="5" craft_exp_gain="2">
+	<recipe name="Plank" count="2" craft_time="5" craft_exp_gain="2">
 		<ingredient name="driftwood2" count="1" />
 	</recipe>
 	<recipe name="Plank" count="5" craft_time="5" craft_exp_gain="2">
@@ -4099,8 +4099,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="glue" count="4" />
 		<ingredient name="stick" count="4" />
 	</recipe>
-	<recipe name="Tomahawk" count="1" craft_area="workAnvil" craft_tool="clawHammer" craft_time="30" craft_exp_gain="25">
-		<ingredient name="scrapIron" count="150" />
+	<recipe name="Tomahawk" count="1" craft_area="workAnvil" craft_tool="clawHammer" craft_time="30" craft_exp_gain="50">
+		<ingredient name="scrapIron" count="80" />
+		<ingredient name="coal" count="5" />
+		<ingredient name="stick" count="5" />
 		<ingredient name="MeltedRubber" count="2" />
 	</recipe>
 	<recipe name="TomatoSeed" count="2" craft_area="workSeedNursery" craft_time="60" craft_exp_gain="0">
@@ -4248,28 +4250,27 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="scrapCable" count="5" />
 	</recipe>
 	<recipe name="Wood_Bridge_1x3" count="1" craft_area="workworkbench" craft_tool="clawHammer" craft_exp_gain="30" craft_time="30">
-		<ingredient name="barbedWireSheet" count="5" />
-		<ingredient name="forgedSteel" count="1" />
-		<ingredient name="bat" count="1" />
-	</recipe>
+		<ingredient name="Plank" count="50" />
+		<ingredient name="mechanicalParts" count="2" />
+		<ingredient name="nail" count="20" />	</recipe>
 	<recipe name="Wood_Bridge_2x4" count="1" craft_area="workworkbench" craft_tool="clawHammer" craft_exp_gain="30" craft_time="30">
-		<ingredient name="barbedWireSheet" count="5" />
-		<ingredient name="forgedSteel" count="1" />
-		<ingredient name="bat" count="1" />
+		<ingredient name="Plank" count="150" />
+ 		<ingredient name="mechanicalParts" count="6" />
+ 		<ingredient name="nail" count="50" />
 	</recipe>
 	<recipe name="WoodFallTrap" count="1" craft_time="10" craft_exp_gain="5">
 		<ingredient name="Plank" count="4" />
 		<ingredient name="PlantFibers" count="2" />
 	</recipe>
 	<recipe name="Wood_Gate_2x3" count="1" craft_area="workworkbench" craft_tool="clawHammer" craft_exp_gain="30" craft_time="30">
-		<ingredient name="barbedWireSheet" count="5" />
-		<ingredient name="forgedSteel" count="1" />
-		<ingredient name="bat" count="1" />
+		<ingredient name="Plank" count="100" />
+		<ingredient name="mechanicalParts" count="2" />
+		<ingredient name="nail" count="25" />
 	</recipe>
 	<recipe name="Wood_Gate_3x2" count="1" craft_area="workworkbench" craft_tool="clawHammer" craft_exp_gain="30" craft_time="30">
-		<ingredient name="barbedWireSheet" count="5" />
-		<ingredient name="forgedSteel" count="1" />
-		<ingredient name="bat" count="1" />
+		<ingredient name="Plank" count="125" />
+		<ingredient name="mechanicalParts" count="4" />
+		<ingredient name="nail" count="30" />
 	</recipe>
 	<recipe name="WoodJavelin" count="1" craft_area="workcampfire" craft_time="30" craft_exp_gain="15">
 		<ingredient name="rockSmall" count="5" />
@@ -4282,9 +4283,9 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="stick" count="5" />
 	</recipe>
 	<recipe name="Wood_Shutters" count="1" craft_area="workworkbench" craft_tool="clawHammer" craft_exp_gain="30" craft_time="30">
-		<ingredient name="nail" count="10" />
-		<ingredient name="Plank" count="10" />
-		<ingredient name="mechanicalParts" count="2" />
+		<ingredient name="Plank" count="20" />
+		<ingredient name="mechanicalParts" count="1" />
+		<ingredient name="nail" count="5" />
 	</recipe>
 	<recipe name="Wood_Shutters_2" count="1" craft_area="workworkbench" craft_tool="clawHammer" craft_exp_gain="30" craft_time="30">
 		<ingredient name="nail" count="10" />

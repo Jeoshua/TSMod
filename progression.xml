@@ -178,7 +178,7 @@
 				<add skill_level="90,100" value="0.56,0.60"/>
 			</effect>
 		</player_skill>
-		<perk name="Secret Stash" icon="safe" description_key="secretStashDesc" title_key="secretStash" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="scavenging">
+		<perk name="Secret Stash" icon="safe" description_key="secretStashDesc" title_key="secretStash" max_level="5" skill_point_cost_multiplier="1.25" skill_point_cost_per_level="5" group="scavenging">
 			<requirement perk_level="1" required_skill_name="Barter" required_skill_level="20" />
 			<requirement perk_level="2" required_skill_name="Barter" required_skill_level="40" />
 			<requirement perk_level="3" required_skill_name="Barter" required_skill_level="60" />
@@ -997,7 +997,7 @@
 			<recipe name="SteelChestArmor" unlock_level="1" />
 		</perk>
 		<perk name="Light Attachment" icon="flashlight02" description_key="Learn to attach flashlights to helmets on the armor table" title_key="Light Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="clothing">
-			<requirement perk_level="1" required_skill_name="Miscellaneous Crafting" required_skill_level="20" />
+			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="15" />
 			<recipe name="scrapHelmet+Light" unlock_level="1" />
 			<recipe name="militaryHelmet+Light" unlock_level="1" />
 			<recipe name="footballHelmet+Light" unlock_level="1" />
@@ -1005,7 +1005,7 @@
 			<recipe name="SteelHelmet+Light" unlock_level="1" />
 		</perk>
 		<!--Building-->
-		<crafting_skill name="Primitive Crafting" icon="wood" description_key="Crafting simple items faster and at better quality. Decrease repair penalties and use fewer repair items. Gain skill by crafting and repairing items from this group. Recipe unlock levels 2/3/5/5/50" title_key="Primitive Crafting" group="crafting" skill_point_cost_per_level="3">
+		<crafting_skill name="Primitive Crafting" icon="wood" description_key="Crafting simple items faster and at better quality. Decrease repair penalties and use fewer repair items. Gain skill by crafting and repairing items from this group or by using the Claw Hammer. Recipe unlock levels 2/3/5/5/50" title_key="Primitive Crafting" group="crafting" skill_point_cost_per_level="3">
 			<recipe name="stoneKnife" unlock_level="2" />
             <recipe name="SharpeningStone" unlock_level="3" />
 			<recipe name="workMortarAndPestle" unlock_level="5" />
@@ -1174,7 +1174,7 @@
 			<recipe name="cobblestoneFramePillar50" unlock_level="1" />
 			<recipe name="cobblestoneFramePole" unlock_level="1" />
 		</perk>
-		<crafting_skill name="Journeyman Crafting" icon="Stone" description_key="Crafting intermediate items faster and at better quality. Decrease repair penalties and use fewer repair items. Gain skill by crafting and repairing items from this group" title_key="Journeyman Crafting" group="crafting" skill_point_cost_per_level="3">
+		<crafting_skill name="Journeyman Crafting" icon="Stone" description_key="Crafting intermediate items faster and at better quality. Decrease repair penalties and use fewer repair items. Gain skill by crafting and repairing items from this group or by using the a Wrench." title_key="Journeyman Crafting" group="crafting" skill_point_cost_per_level="3">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -1338,7 +1338,7 @@
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="Elevator_1x1x3" unlock_level="1" />
 		</perk>
-		<crafting_skill name="Master Craftsman" icon="forgedSteel" description_key="weaponSmithingDesc" title_key="Master Craftsman" group="crafting" skill_point_cost_per_level="3">
+		<crafting_skill name="Master Craftsman" icon="forgedSteel" description_key="Crafting complex items faster and at better quality. Decrease repair penalties and use fewer repair items. Gain skill by crafting and repairing items from this group or by using the a Nailgun." title_key="Master Craftsman" group="crafting" skill_point_cost_per_level="3">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />

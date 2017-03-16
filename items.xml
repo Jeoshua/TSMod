@@ -129,7 +129,7 @@ Mesh files no longer used:
 			<property name="ActionExp" value="15" />
 		</property>
 		<property class="Attributes">
-			<property name="EntityDamage" value="9,16" />
+			<property name="EntityDamage" value="10,20" />
 			<property name="BlockDamage" value="3,13" />
 		</property>
 		<property name="CritChance" value=".1" />
@@ -2141,7 +2141,7 @@ Mesh files no longer used:
 			<property name="Horde_meter_rate" value=".275" />
 			<property name="Horde_meter_distance" value="20" />
 			<property name="Particles_muzzle_smoke" value="nozzlesmoke_chainsaw" />
-			<property name="Buff" value="headshotMelee5" />
+			<property name="Buff" value="headshotMelee1" />
 			<property name="Buff_chance" value="1" />
 			<property name="DamageBonus.head" value="4" />
 			<property name="DamageBonus.wood" value="140" />
@@ -2288,7 +2288,7 @@ Mesh files no longer used:
 		<property name="DropMeshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowPrefab" />
 		<property name="HandMeshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowPrefab" />
 		<property name="Material" value="wood" />
-		<property name="RepairTools" value="shortMetalPipe" />
+		<property name="RepairTools" value="scrapIron" />
 		<property name="HoldType" value="26" />
 		<property name="FuelValue" value="70" />
 		<property name="EconomicValue" value="220" />
@@ -6249,6 +6249,7 @@ Mesh files no longer used:
 		</property>
 		<property name="ActionSkillGroup" value="Medicine" />
 		<property name="CraftingSkillGroup" value="Medicine" />
+		<property name="PickupJournalEntry" value="gunAssemblyTip,firstAidTip,farmingTip,augmentGunsTip" />
 		<property name="Group" value="Medicine" />
 		<property name="ActionExp" value="10" />
     </item>
@@ -8127,7 +8128,7 @@ Mesh files no longer used:
 		<property name="MeltTimePerUnit" value="0.5" />
 		<property name="Group" value="Resources" />
 		<property name="RepairTime" value="0.5" />
-		<property name="RepairAmount" value="20" />
+		<property name="RepairAmount" value="50" />
 		<property name="CraftingIngredientTime" value="0.2" />
 	</item>
 	<item id="1306" name="forgedIron">
@@ -8136,7 +8137,7 @@ Mesh files no longer used:
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="HoldType" value="45" />
 		<property name="EconomicValue" value="12" />
-		<property name="Stacknumber" value="500" />
+		<property name="Stacknumber" value="5000" />
 		<!-- STK resource -->
         <property name="Weight" value="40" />
 		<property name="CraftingIngredientExp" value="10" />
@@ -8151,7 +8152,7 @@ Mesh files no longer used:
 		<property name="Meshfile" value="Items/Crafting/Metal/shortMetalPipe" />
 		<property name="Material" value="metal" />
 		<property name="HoldType" value="16" />
-		<property name="Stacknumber" value="500" />
+		<property name="Stacknumber" value="5000" />
 		<!-- STK resource -->
         <property name="Weight" value="20" />
 		<property name="RepairTime" value="5" />
@@ -8891,7 +8892,6 @@ Mesh files no longer used:
 		<property name="Meshfile" value="Items/Crafting/Metal/IronBucket" />
 		<property name="Material" value="metal" />
 		<property name="HoldType" value="34" />
-		<property name="Weight" value="50" />
 		<property name="Stacknumber" value="1" />
 		<property name="EconomicValue" value="84" />
 		<property class="Action0">
@@ -11772,7 +11772,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.stone" value=".75" />
 		</property>
 		<property class="Attributes">
-			<property name="EntityDamage" value="10,20" />
+			<property name="EntityDamage" value="9,16" />
 			<property name="BlockDamage" value="3,13" />
 			<property name="DegradationMax" value="300,600" />
 			<property name="DegradationRate" value="3,1" />
@@ -11822,7 +11822,7 @@ Mesh files no longer used:
 			<property name="DegradationMax" value="300,600" />
 		</property>
 		<property name="DescriptionKey" value="nailedBatDesc" />
-		<property name="CraftingSkillGroup" value="Primitive Crafting" />
+		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
 	</item>
 	<item id="1651" name="lucille">
 		<property name="Extends" value="clubMaster" />
@@ -14007,6 +14007,9 @@ Mesh files no longer used:
 	<item id="1834" name="RedHotPipe">
 		<property name="Extends" value="RedHotSteelPipe" />
 		<property name="Material" value="metal" />
+		<property class="Action1">
+ +            <property name="Create_item" value="shortMetalPipe" />
+ +		</property>
 	</item>
 	<item id="1835" name="AntiVenom">
 		<property name="Extends" value="SuterKit" />
@@ -15912,7 +15915,7 @@ Mesh files no longer used:
 	<item id="1970" name="shortSteelPipe">
 		<property name="Meshfile" value="Items/Crafting/Metal/shortMetalPipe" />
 		<property name="Material" value="Msteel" />
-		<property name="Stacknumber" value="1000" />
+		<property name="Stacknumber" value="5000" />
 		<property name="RepairTime" value="5" />
 		<property name="RepairAmount" value="200" />
 		<property name="HoldType" value="16" />

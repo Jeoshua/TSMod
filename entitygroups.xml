@@ -101,7 +101,7 @@
    -->
 <entitygroups>
 	<entitygroup name="ZombiesAll">
-		<entity name="Dummy" prob="20" />
+		<entity name="Dummy" prob="15" />
 		<entity name="zombieBoe" />
 		<entity name="zombieJoe" />
 		<entity name="zombieSteve" />
@@ -245,7 +245,7 @@
 		<entity name="Joe7" />
 	</entitygroup>
 	<entitygroup name="ZombiesWasteland">
-		<entity name="Dummy" prob="20" />
+		<entity name="Dummy" prob="15" />
 		<entity name="zombieBoe" />
 		<entity name="zombieJoe" />
 		<entity name="zombieSteve" />
@@ -779,6 +779,7 @@
 	</entitygroup>
 
 	<entitygroup name="ZombiesCrawlers">
+		<entity name="Dummy" prob="1" />
 		<entity name="zombieSteveCrawler" prob="0.3" />
 		<entity name="spiderCrawler" prob="0.3" />
 		<entity name="CrawlerBoe" prob="0.3" />
@@ -790,7 +791,7 @@
 		<entity name="CrawlerJoe" prob="0.3" />
 	</entitygroup>
 	<entitygroup name="ZombiesBurntForest">
-		<entity name="Dummy" prob="5" />
+		<entity name="Dummy" prob="1" />
 		<entity name="burntzombie" prob="0.2" />
 		<entity name="ZombieCharred" prob="0.2" />
 		<entity name="zombieSteveCrawler" prob="0.05" />
@@ -860,9 +861,11 @@
 	  <entity name="BigSpider" prob="0.001"/>
 	</entitygroup>
 	<entitygroup name="Spiders">
-	  <entity name="SpiderSmall" />
+		<entity name="Dummy" prob="0.25" />
+		<entity name="SpiderSmall" />
 	</entitygroup>
 	<entitygroup name="AnimalsForest">
+		<entity name="Dummy" prob="0.25" />
 		<entity name="animalStag" />
 		<entity name="animalPig" />
 		<entity name="animalBear" prob="0.04" />
@@ -871,28 +874,33 @@
 		<entity name="SpiderSmall" prob="0.1"/>
 	</entitygroup>
 	<entitygroup name="AnimalsAllDesert">
+		<entity name="Dummy" prob="0.25" />
 		<entity name="animalRabbit" prob="0.48"/>
 		<entity name="animalChicken" prob="0.48"/>		
 		<entity name="animalPig" prob="0.04" />
 	</entitygroup>
 	<entitygroup name="AnimalsSmall">
+		<entity name="Dummy" prob="0.25" />
 		<entity name="animalRabbit" />
 		<entity name="animalChicken" />
 		<entity name="ZombieChicken" prob="0.03" />
 		<entity name="ZombieRabbit" prob="0.03" />
 	</entitygroup>
 	<entitygroup name="AnimalsFarm">
+		<entity name="Dummy" prob="0.25" />
 		<entity name="animalPig" />
 		<entity name="animalChicken" />
 		<entity name="ZombieChicken" prob="0.05" />
 	</entitygroup>
 	<entitygroup name="AnimalsBig">
+		<entity name="Dummy" prob="0.5" />
 		<entity name="animalStag" />
 		<entity name="animalPig" />
 		<entity name="animalBear" prob="0.04" />
 		<entity name="zombieBear" prob="0.02" />
 	</entitygroup>
 	<entitygroup name="AnimalsSnow">
+		<entity name="Dummy" prob="0.5" />
 		<entity name="animalRabbit" prob="0.8" />
 		<entity name="ZombieRabbit" prob="0.2" />
 		<entity name="animalStag" prob="0.35" />
@@ -901,6 +909,7 @@
 		<entity name="zombieBear" prob="0.2" />
 	</entitygroup>
 	<entitygroup name="AnimalsAll">
+		<entity name="Dummy" prob="1" />
 		<entity name="animalRabbit" />
 		<entity name="animalChicken" />
 		<entity name="ZombieChicken" prob="0.03" />
