@@ -11341,6 +11341,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1631" name="CarbonCrossbowBolt">
 		<property name="Extends" value="CarbonArrow" />
+		<property name="DescriptionKey" value="CarbonCrossboltDesc" />
 		<property name="CustomIcon" value="ironCrossbowBolt" />
 		<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/crossbow_bolt_droppedPrefab" />
@@ -11377,6 +11378,8 @@ Mesh files no longer used:
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property name="FuelValue" value="24" />
 		<property name="Weight" value="1" />
+		<property name="CrosshairOnAim" value="true" />
+ 		<property name="CrosshairUpAfterShot" value="false" />
 		<property class="Action0">
 			<property name="Class" value="Catapult" />
 			<property name="Delay" value="2.2" />
@@ -11464,7 +11467,7 @@ Mesh files no longer used:
 			<property name="EntityDamage" value="15,25" />
 			<property name="BlockDamage" value="1,2" />
 		</property>
-		<property name="DescriptionKey" value="AtlatlsDesc" />
+		<property name="DescriptionKey" value="WoodSpearDesc" />
 		<property name="CraftingSkillGroup" value="Primitive Crafting" />
 	</item>
 	<item id="1635" name="IronSpear">
@@ -11476,6 +11479,8 @@ Mesh files no longer used:
         <property name="Weight" value="10" />
 		<property name="RepairTools" value="scrapIron" />
 		<property name="FuelValue" value="24" />
+		<property name="CrosshairOnAim" value="true" />
+ 		<property name="CrosshairUpAfterShot" value="false" />
 		<property class="Action0">
 			<property name="Magazine_items" value="IronJavelin" />
 		</property>
@@ -11702,7 +11707,7 @@ Mesh files no longer used:
 		<!--Loot only -->
 		<property name="Extends" value="huntingKnife" />
 		<property name="Meshfile" value="#CombatKnife?CombatKnife" />
-		<property name="RepairTools" value="shortMetalPipe" />
+		<property name="RepairTools" value="SharpeningStone" />
 		<property class="Action0">
 			<property name="Stamina_usage" value="5" />
 		</property>
@@ -11716,6 +11721,8 @@ Mesh files no longer used:
 		<property name="Extends" value="huntingKnife" />
 		<property name="Meshfile" value="#Knife?Knife" />
 		<property name="CustomIcon" value="ui_game_symbol_FieldKnife" />
+		<property name="RepairTools" value="SharpeningStone" />
+		<property name="Weight" value="200" />
 		<property class="Action0">
 			<property name="Buff" value="bleeding,criticalBlunt" />
 			<property name="Buff_chance" value=".4,.4" />
@@ -11739,7 +11746,7 @@ Mesh files no longer used:
         <property name="Weight" value="100" />
 		<property name="Meshfile" value="#KnifeShark?KnifeShark" />
 		<property name="CustomIcon" value="ui_game_symbol_TheShark" />
-		<property name="RepairTools" value="shortMetalPipe" />
+		<property name="RepairTools" value="SharpeningStone" />
 		<property class="Action0">
 			<property name="Range" value="2.2" />
 			<property name="Stamina_usage" value="5" />
@@ -11975,6 +11982,9 @@ Mesh files no longer used:
 			<property name="DamageBonus.head" value="3" />
 			<property name="DamageBonus.stone" value="1" />
 			<property name="DamageBonus.cloth" value="10" />
+			<property name="DamageBonus.metal" value="2" />
+			<property name="DamageBonus.steel" value="0" />
+			<property name="DamageBonus.hardStone" value="0" />
 		</property>
 		<property class="Action1">
 			<property name="Delay" value="1.2" />
@@ -11984,6 +11994,9 @@ Mesh files no longer used:
 			<property name="DamageBonus.stone" value="1.5" />
 			<property name="DamageBonus.cloth" value="15" />
 			<property name="DamageBonus.organic" value="1.5" />
+			<property name="DamageBonus.metal" value="2" />
+            <property name="DamageBonus.steel" value="0" />
+			<property name="DamageBonus.hardStone" value="0" />
 		</property>
 		<property class="Attributes">
 			<property name="EntityDamage" value="10,25" />
@@ -11996,7 +12009,7 @@ Mesh files no longer used:
 		<property name="ActionSkillGroup" value="Blade Weapons" />
 		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
 	</item>
-	<item id="1656" name="axe02">
+	<!--<item id="1656" name="axe02">
 		<property name="Meshfile" value="#axe1?AXE2" />
 		<property name="Material" value="metal" />
 		<property name="HoldType" value="2" />
@@ -12007,7 +12020,6 @@ Mesh files no longer used:
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property name="Weight" value="24" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1.5" />
 			<property name="Range" value="2.3" />
@@ -12042,7 +12054,6 @@ Mesh files no longer used:
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property name="Weight" value="24" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1.8" />
 			<property name="Range" value="3" />
@@ -12077,7 +12088,6 @@ Mesh files no longer used:
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property name="Weight" value="24" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1.5" />
 			<property name="Range" value="2.3" />
@@ -12112,7 +12122,6 @@ Mesh files no longer used:
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property name="Weight" value="24" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1" />
 			<property name="Range" value="1.3" />
@@ -12147,7 +12156,6 @@ Mesh files no longer used:
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property name="Weight" value="24" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1" />
 			<property name="Range" value="1.3" />
@@ -12272,13 +12280,14 @@ Mesh files no longer used:
 			<property name="DismembermentBonus" value="0.01,1" />
 		</property>
 		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
-	</item>
+	</item>-->
 	<item id="1665" name="katanamichonne">
-		<property name="Extends" value="sword2" />
+		<property name="Extends" value="machete" />
 		<property name="Meshfile" value="#michonnekatana?katana" />
 		<property name="Material" value="Msteel" />
 		<property name="RepairTools" value="shortSteelPipe" />
 		<property name="HoldType" value="17" />
+		<property name="FuelValue" value="4" />
 		<property name="Weight" value="1000" />
 		<property class="Action0">
 			<property name="Delay" value="1.5" />
@@ -12286,9 +12295,13 @@ Mesh files no longer used:
 			<property name="Stamina_usage" value="9" />
 			<property name="Buff" value="katanaimpact,bleeding,criticalBlunt" />
 			<property name="Buff_chance" value="1,.8,.5" />
-			<property name="DamageBonus.wood" value="5" />
 			<property name="DamageBonus.head" value="77" />
+			<property name="DamageBonus.wood" value="5" />
+			<property name="DamageBonus.steel" value="10" />
+			<property name="DamageBonus.hardStone" value="10" />
 			<property name="ToolCategory.Hunter" value=".8" />
+			<property name="ActionExp" value="10" />
+			<property name="ActionExpBonusMultiplier" value="5" />
 		</property>
 		<property class="Action1">
 			<property name="Delay" value="2.25" />
@@ -12296,13 +12309,19 @@ Mesh files no longer used:
 			<property name="Stamina_usage" value="13" />
 			<property name="Buff" value="katanaimpact,bleeding,criticalBlunt" />
 			<property name="Buff_chance" value="1,.9,.6" />
-			<property name="DamageBonus.wood" value="7.5" />
 			<property name="DamageBonus.head" value="115.5" />
+			<property name="DamageBonus.wood" value="7.5" />
+			<property name="DamageBonus.steel" value="15" />
+			<property name="DamageBonus.hardStone" value="15" />
 			<property name="ToolCategory.Hunter" value=".8" />
+			<property name="ActionExp" value="10" />
+			<property name="ActionExpBonusMultiplier" value="5" />
 		</property>
 		<property class="Attributes">
 			<property name="EntityDamage" value="15,35" />
 			<property name="BlockDamage" value="8,15" />
+			<property name="DegradationMax" value="50,600" />
+			<property name="DegradationRate" value="5,1" />
 			<property name="DismembermentBaseChance" value="0.01,1" />
 			<property name="DismembermentBonus" value="0.01,1" />
 		</property>
@@ -12310,7 +12329,7 @@ Mesh files no longer used:
 		<property name="DescriptionKey" value="katanaMichonneDesc" />
 		<property name="CustomIcon" value="katanamichonne" />
 	</item>
-	<item id="1666" name="mace">
+	<!--<item id="1666" name="mace">
 		<property name="Meshfile" value="#mace?Mace" />
 		<property name="Material" value="metal" />
 		<property name="HoldType" value="2" />
@@ -12320,7 +12339,6 @@ Mesh files no longer used:
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property name="Weight" value="24" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1" />
 			<property name="Range" value="2.8" />
@@ -12354,7 +12372,6 @@ Mesh files no longer used:
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property name="Weight" value="24" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1" />
 			<property name="Range" value="2.8" />
@@ -12388,7 +12405,6 @@ Mesh files no longer used:
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property name="Weight" value="24" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1.5" />
 			<property name="Range" value="2.8" />
@@ -12423,7 +12439,6 @@ Mesh files no longer used:
 		<property name="FuelValue" value="16" />
 		<property name="Weight" value="72" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1.2" />
 			<property name="Range" value="3" />
@@ -12461,7 +12476,7 @@ Mesh files no longer used:
 			<property name="Pos" value="0,-0.4" />
 			<property name="Rot" value="0,24,0" />
 		</property>
-	</item>
+	</item> -->
 	<!--JZMOD TOOLS -->
 	<item id="1670" name="screwdriver">
 		<property name="CustomIcon" value="ui_game_symbol_screwdriver" />
@@ -13433,10 +13448,9 @@ Mesh files no longer used:
 		<property name="Extends" value="schematicMaster" />
         <property name="CustomIcon" value="unused" />
 		<property class="Action1">
-			<property name="Recipes_to_learn" value="NPCcrossbow,NPCcrossbow1,NPCcrossbow2,NPCPistol,NPC44Magnum,NPCSawedOffPumpShotgun,NPCPumpShotgun,NPCHuntingRifle,NPCMP5,NPCSniperRifle,NPCRocketLauncher,NPCchainsaw" />
+			<property name="Recipes_to_learn" value="NPCPistol,NPC44Magnum,NPCSawedOffPumpShotgun,NPCPumpShotgun,NPCHuntingRifle,NPCMP5,NPCSniperRifle,NPCRocketLauncher" />
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
-		<property name="CraftingSkillGroup" value="Gun Smithing" />
 	</item>
 	<!--JZMOD Skill Magazines-->
 	<item id="1749" name="Primitive Weekly">
@@ -13948,7 +13962,7 @@ Mesh files no longer used:
 		<property name="CraftingSkillGroup" value="Medicine" />
 		<property name="ActionExp" value="10" />
 	</item>
-	<item id="1831" name="SuterKit">
+	<item id="1831" name="SutureKit">
 		<property name="Extends" value="FoodMaster" />
 		<property name="Meshfile" value="Items/Health/gauze" />
 		<property name="HoldType" value="16" />
@@ -13959,14 +13973,14 @@ Mesh files no longer used:
 			<property name="Debuff" value="gash" />
 			<property name="Create_item" value="SewingNeedle" />
 		</property>
-		<property name="DescriptionKey" value="SuterKitDesc" />
+		<property name="DescriptionKey" value="SutureKitDesc" />
 		<property name="Group" value="Medicine" />
 		<property name="ActionSkillGroup" value="Medicine" />
 		<property name="CraftingSkillGroup" value="Medicine" />
 		<property name="ActionExp" value="25" />
 	</item>
 	<item id="1832" name="SanitizingBandage">
-		<property name="Extends" value="SuterKit" />
+		<property name="Extends" value="SutureKit" />
 		<property name="HoldType" value="16" />
 		<property name="Stacknumber" value="5" />
 		<property name="FuelValue" value="1" />
@@ -14012,7 +14026,7 @@ Mesh files no longer used:
  +		</property>
 	</item>
 	<item id="1835" name="AntiVenom">
-		<property name="Extends" value="SuterKit" />
+		<property name="Extends" value="SutureKit" />
 		<property name="Meshfile" value="Items/Health/painkillersPrefab" />
 		<property name="HoldType" value="16" />
 		<property name="Stacknumber" value="15" />
@@ -14028,7 +14042,7 @@ Mesh files no longer used:
 		<property name="CustomIconTint" value="96f91d" />
 	</item>
 	<item id="1836" name="Stimulant">
-		<property name="Extends" value="SuterKit" />
+		<property name="Extends" value="SutureKit" />
 		<property name="Meshfile" value="Items/Health/painkillersPrefab" />
 		<property name="HoldType" value="16" />
 		<property name="CustomIcon" value="ui_game_symbol_Stimulant" />
@@ -14044,7 +14058,7 @@ Mesh files no longer used:
 		<property name="ActionExp" value="10" />
 	</item>
 	<item id="1837" name="SuperPill">
-		<property name="Extends" value="SuterKit" />
+		<property name="Extends" value="SutureKit" />
 		<property name="Meshfile" value="Items/Health/painkillersPrefab" />
 		<property name="HoldType" value="16" />
 		<property name="Stacknumber" value="100" />
@@ -14172,7 +14186,7 @@ Mesh files no longer used:
 		<property name="CraftingSkillGroup" value="Engineering" />
 	</item>
 	<item id="1844" name="AntivirialMeds">
-		<property name="Extends" value="SuterKit" />
+		<property name="Extends" value="SutureKit" />
 		<property name="Meshfile" value="Items/Health/painkillersPrefab" />
 		<property name="HoldType" value="16" />
 		<property name="CustomIcon" value="antibiotics" />
@@ -14439,7 +14453,7 @@ Mesh files no longer used:
 		<property name="Extends" value="FoodMaster" />
 		<property name="Meshfile" value="Items/Food/can_plain" />
 		<property name="HoldType" value="3" />
-		<property name="Stacknumber" value="12" />
+		<property name="Stacknumber" value="15" />
 		<property class="Action1">
 			<property name="Gain_water" value="25" />
 			<property name="Gain_stamina" value="40" />
@@ -14543,7 +14557,7 @@ Mesh files no longer used:
 	<item id="1873" name="grilledBass">
 		<property name="Extends" value="FoodMaster" />
 		<property name="DescriptionKey" value="grilledBassDesc" />
-		<property name="Stacknumber" value="5" />
+		<property name="Stacknumber" value="64" />
 		<property class="Action1">
 			<property name="Gain_food" value="9" />
 			<property name="Gain_water" value="-5" />
@@ -14556,7 +14570,7 @@ Mesh files no longer used:
 	<item id="1874" name="grilledSalmon">
 		<property name="Extends" value="FoodMaster" />
 		<property name="DescriptionKey" value="grilledSalmonDesc" />
-		<property name="Stacknumber" value="5" />
+		<property name="Stacknumber" value="64" />
 		<property class="Action1">
 			<property name="Gain_food" value="8" />
 			<property name="Gain_water" value="-5" />
@@ -16252,7 +16266,7 @@ Mesh files no longer used:
 	</item>
 	<item id="2010" name="Hoof">
 		<property name="Extends" value="itemMaster" />
-		<property name="Stacknumber" value="20" />
+		<property name="Stacknumber" value="500" />
 		<property name="DescriptionKey" value="FiberRopeDesc" />
 	</item>
 	<item id="2011" name="scrapSteel">

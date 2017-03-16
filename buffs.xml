@@ -559,7 +559,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 		<modify id="1" stat="speedmodifier" setValue="0.89" />
 		<modify id="2" stat="health" amount="-1" rate="20" />
 	</buff>
-	<buff id="gash" mutex="healInfectedWound" castsound="Buffs/critical_blunt" duration="2400t" name_key="Gash" type="bleeding" actions="buff(bleeding)" description_key="You have a large gash in your skin. You will need to use a suture kit to stitch it closed" tooltip_key="Thats going to need Stitches" icon="gash" cures="SuterKit">
+	<buff id="gash" mutex="healInfectedWound" castsound="Buffs/critical_blunt" duration="2400t" name_key="Gash" type="bleeding" actions="buff(bleeding)" description_key="You have a large gash in your skin. You will need to use a suture kit to stitch it closed" tooltip_key="Thats going to need Stitches" icon="gash" cures="SutureKit">
 		<modify id="0" stat="stamina" amount="-1" rate="3" />
 		<modify id="1" stat="health" amount="-1" rate="15" />
 		<modify id="2" stat="coretemp" modifyValue="-25" />

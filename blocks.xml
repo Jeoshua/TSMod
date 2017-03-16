@@ -4622,7 +4622,7 @@ kind of free
 		<property name="DescriptionKey" value="furnitureGroupDesc" />
 		<property name="CanPickup" value="true" />
 		<property class="RepairItems">
-			<property name="leather" value="5" />
+ +			<property name="leather" value="2" />
 			<property name="cottonPlant" value="10" />
 			<property name="mechanicalParts" value="2" />
 			<property name="forgedIron" value="3" />
@@ -12106,10 +12106,10 @@ kind of free
 		<drop event="Harvest" name="EngineBlock" count="1" prob="0.2" tool_category="Disassemble" />
 		<drop event="Harvest" name="airFilter" count="1" prob="0.2" tool_category="Disassemble" />
 		<drop event="Harvest" name="carBattery" count="1" prob="0.2" tool_category="Disassemble" />
-		<drop event="Harvest" name="gasCan" count="50" prob="0.5" tool_category="Disassemble" />
+		<drop event="Harvest" name="gasCan" count="25,50" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="cloth" count="3,5" prob="0.5" />
-		<drop event="Harvest" name="mechanicalParts" count="1,5" prob=".25" tool_category="Disassemble" />
+		<drop event="Harvest" name="mechanicalParts" count="3,5" prob=".5" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="1" prob=".1" tool_category="Disassemble" />
 		<drop event="Harvest" name="electronicParts" count="1" prob=".1" tool_category="Disassemble" />
 		<drop event="Harvest" name="NutAndBolt" count="2,4" prob=".6" tool_category="Disassemble" />
@@ -12152,7 +12152,7 @@ kind of free
 		<drop event="Harvest" name="cloth" count="1,5" />
 		<drop event="Harvest" name="spring" count="1,5" tool_category="Disassemble" />
 		<drop event="Harvest" name="FanBelt" count="1" tool_category="Disassemble" />
-		<drop event="Harvest" name="mechanicalParts" count="1,5" prob=".5" tool_category="Disassemble" />
+		<drop event="Harvest" name="mechanicalParts" count="3,5" prob=".25" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="1,3" prob=".3" tool_category="Disassemble" />
 		<drop event="Harvest" name="electronicParts" count="1,2" prob=".2" tool_category="Disassemble" />
 		<drop event="Harvest" name="headlight" count="1" prob="0.45" tool_category="Disassemble" />
@@ -12192,11 +12192,11 @@ kind of free
 		<drop event="Harvest" name="shortMetalPipe" count="5,10" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="Alternator" count="1" prob="0.3" tool_category="Disassemble" />
-		<drop event="Harvest" name="mechanicalParts" count="1" prob=".5" tool_category="Disassemble" />
+		<drop event="Harvest" name="mechanicalParts" count="2,3" prob=".5" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="1" prob=".15" tool_category="Disassemble" />
 		<drop event="Harvest" name="Exhaust" count="1" prob="0.3" tool_category="Disassemble" />
 		<drop event="Harvest" name="NutAndBolt" count="2,4" prob=".6" tool_category="Disassemble" />
-		<drop event="Destroy" name="scrapIron" count="5,15"/>
+		<drop event="Destroy" name="scrapIron" count="10,25"/>
 		<drop event="Fall" name="scrapMetalPile" count="2" prob="1" stick_chance="0.95" />
 		<property name="BigDecorationRadius" value="5" />
 		<property name="CanDecorateOnSlopes" value="false" />
@@ -14081,7 +14081,7 @@ kind of free
 		<property name="LootList" value="10" />
 		<property name="Texture" value="422" />
 	</block>
-	<block id="67" name="StorageSack">
+	<!--<block id="67" name="StorageSack">
 		<property name="Extends" value="cntStorageHealthInsecure" />
 		<property name="Material" value="cloth" />
 		<property name="Shape" value="ModelEntity" />
@@ -14097,7 +14097,7 @@ kind of free
 		<drop event="Destroy" name="cloth" count="2,6" prob="1" />
 		<drop event="Destroy" name="Plank" count="0" prob="1" />
 		<drop event="Fall" name="woodDebris" count="0" prob="1" stick_chance="0.95" />
-	</block>
+	</block>-->
 	<!--JZMOD BLOCKS-->
 	<block id="68" name="BonesPrefab">
 		<property name="Material" value="organic" />
@@ -15180,7 +15180,6 @@ kind of free
 		<property class="Workstation">
 			<property name="Modules" value="output" />
 		</property>
-        <property name="DescriptionKey" value="digesterDesc" />
 		<drop event="Destroy" name="workBiogasDigester" count="1" prob="1" />
 		<property name="Group" value="Tools/Traps" />
 	</block>
@@ -17094,13 +17093,13 @@ kind of free
 		<drop event="Destroy" name="scrapIron" count="1" prob="1.0" />
 		<drop event="Fall" name="scrapIron" count="1" prob="1.0" />
 	</block>
-	<block id="1752" name="ammoDrop">
+	<!--<block id="1752" name="ammoDrop">
 		<property name="Class" value="Loot" />
 		<property name="LootList" value="50" />
 		<property name="Material" value="metal" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#hflnew?ammunationBagSmall" />
-	</block>
+	</block>-->
 	<block id="1774" name="MedicalBox">
 		<property name="Material" value="metal" />
 		<property name="Shape" value="ModelEntity" />
