@@ -2408,7 +2408,7 @@
 		<property name="ApproachSpeed" value="0.36" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="0.58" />
-		<property name="PanicSpeed" value="0.9" />
+		<property name="PanicSpeed" value="0.7" />
 	</entity_class>
 	<!--JZMOD CRAWLERS-->
 	<entity_class name="CrawlerBoe" extends="zombieBoe">
@@ -2482,7 +2482,7 @@
 		<property name="ApproachSpeed" value="0.4" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="0.64" />
-		<property name="PanicSpeed" value="0.9" />
+		<property name="PanicSpeed" value="0.7" />
 	</entity_class>
 	<!--JZMOD WALKTYPE 5-->
 	<entity_class name="Steve5" extends="zombieSteve">
@@ -2540,7 +2540,7 @@
 		<property name="ApproachSpeed" value="0.2" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="0.32" />
-		<property name="PanicSpeed" value="0.9" />
+		<property name="PanicSpeed" value="0.7" />
 	</entity_class>
 	<!--JZMOD WALKTYPE 6-->
 	<entity_class name="Boe6" extends="zombieBoe">
@@ -2631,7 +2631,7 @@
 		<property name="ApproachSpeed" value="0.2" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="0.32" />
-		<property name="PanicSpeed" value="0.9" />
+		<property name="PanicSpeed" value="0.7" />
 	</entity_class>
 	<entity_class name="Joe7" extends="zombieJoe">
 		<property name="WalkType" value="7" />
@@ -2793,8 +2793,8 @@
 		<property name="WanderSpeed" value="0.2" />
 		<property name="ApproachSpeed" value="0.49" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="0.79" />
-		<property name="PanicSpeed" value="1.2" />
+		<property name="NightApproachSpeed" value="0.69" />
+		<property name="PanicSpeed" value="0.8" />
 		<property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert" />
 		<property name="SoundSense" value="Enemies/Spider_Zombie/spidersense" />
 	</entity_class>

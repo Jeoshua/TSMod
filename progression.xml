@@ -4,7 +4,7 @@
 		<!-- these are defaults and can be used to modify individual skills as needed      -->
 		<!-- Player Action Skills -->
 		<!--health-->
-		<player_skill name="Athletics" icon="run" description_key="athleticsDesc" title_key="athletics" exp_to_level="1000" experience_multiplier="1.07152" group="health" skill_point_cost_per_level="3" skill_point_cost_multiplier="1.10976">
+		<player_skill name="Athletics" icon="run" description_key="athleticsDesc" title_key="athletics" exp_to_level="1000" experience_multiplier="1.07152" group="health" skill_point_cost_per_level="5" skill_point_cost_multiplier="1.04811">
 			<effect name="StaminaDegradation">
 				<multiply skill_level="1,5" value="1,.97" />
 				<multiply skill_level="5,11" value=".97,.94" />
@@ -119,7 +119,7 @@
 				<multiply perk_level="5" value="0.5" />
 			</effect>
 		</perk>
-		<player_skill name="Scavenging" icon="loot_sack" description_key="scavengingDesc" title_key="scavenging" group="scavenging" skill_point_cost_per_level="3" skill_point_cost_multiplier="1.10976">
+		<player_skill name="Scavenging" icon="loot_sack" description_key="scavengingDesc" title_key="scavenging" group="scavenging" skill_point_cost_per_level="5" skill_point_cost_multiplier="1.04811">
 			<effect name="LootTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -164,7 +164,7 @@
 				<add skill_level="3" value="100" />
 			</effect>
 		</perk>
-		<player_skill name="Barter" exp_to_level="100" experience_multiplier="1.04031" icon="coin" description_key="barterDesc" title_key="barter" group="scavenging" skill_point_cost_per_level="3" skill_point_cost_multiplier="1.10976">
+		<player_skill name="Barter" exp_to_level="100" experience_multiplier="1.04031" icon="coin" description_key="barterDesc" title_key="barter" group="scavenging" skill_point_cost_per_level="5" skill_point_cost_multiplier="1.04811">
 			<effect name="Bartering">
 				<add skill_level="1,10" value="0.00,0.15"/>	
 				<add skill_level="10,20" value="0.15,0.23"/>	
@@ -196,7 +196,7 @@
 		
 		<!-- Melee -->
 		
-		<action_skill name="Blunt Weapons" icon="club" description_key="bluntWeaponsDesc" title_key="bluntWeapons" group="weapons" skill_point_cost_per_level="3" skill_point_cost_multiplier="1.10976">
+		<action_skill name="Blunt Weapons" icon="club" description_key="bluntWeaponsDesc" title_key="bluntWeapons" group="weapons" skill_point_cost_per_level="5" skill_point_cost_multiplier="1.04811">
 			<effect name="EntityDamage">
 				<multiply skill_level="1,5" value="1,1.04" />
 				<multiply skill_level="5,11" value="1.04,1.07" />
@@ -223,7 +223,7 @@
 			<requirement perk_level="1" required_player_level="55" />
 			<recipe name="clubSteelSpiked" unlock_level="1" />
 		</perk>
-		<action_skill name="Blade Weapons" icon="knife" description_key="bladeWeaponsDesc" title_key="bladeWeapons" group="weapons" skill_point_cost_per_level="3" skill_point_cost_multiplier="1.10976">
+		<action_skill name="Blade Weapons" icon="knife" description_key="bladeWeaponsDesc" title_key="bladeWeapons" group="weapons" skill_point_cost_per_level="5" skill_point_cost_multiplier="1.04811">
 			<effect name="EntityDamage">
 				<multiply skill_level="1,5" value="1,1.04" />
 				<multiply skill_level="5,11" value="1.04,1.07" />
@@ -297,7 +297,7 @@
 				<add skill_level="3" value="0.3" />
 			</effect>
 		</perk>
-		<action_skill name="Pistols" icon="pistol" description_key="pistolsDesc" title_key="pistols" group="firearms" skill_point_cost_per_level="3" skill_point_cost_multiplier="1.10976">
+		<action_skill name="Pistols" icon="pistol" description_key="pistolsDesc" title_key="pistols" group="firearms" skill_point_cost_per_level="5" skill_point_cost_multiplier="1.04811">
 			<effect name="EntityDamage">
 				<multiply skill_level="1,5" value="1,1.04" />
 				<multiply skill_level="5,11" value="1.04,1.07" />
@@ -344,7 +344,7 @@
 				<add skill_level="3" value="0.3" />
 			</effect>
 		</perk>
-		<action_skill name="Shotguns" icon="shotgun" description_key="shotgunsDesc" title_key="shotguns" group="firearms" skill_point_cost_per_level="3" skill_point_cost_multiplier="1.10976">
+		<action_skill name="Shotguns" icon="shotgun" description_key="shotgunsDesc" title_key="shotguns" group="firearms" skill_point_cost_per_level="5" skill_point_cost_multiplier="1.04811">
 			<effect name="EntityDamage">
 				<multiply skill_level="1,5" value="1,1.04" />
 				<multiply skill_level="5,11" value="1.04,1.07" />
@@ -392,7 +392,7 @@
 				<add skill_level="3" value="0.3" />
 			</effect>
 		</perk>
-		<action_skill name="Rifles" icon="rifle" description_key="riflesDesc" title_key="rifles" group="firearms" skill_point_cost_per_level="3" skill_point_cost_multiplier="1.10976">
+		<action_skill name="Rifles" icon="rifle" description_key="riflesDesc" title_key="rifles" group="firearms" skill_point_cost_per_level="5" skill_point_cost_multiplier="1.04811">
 			<effect name="EntityDamage">
 				<multiply perk_level="0" value="1" />
 				<multiply skill_level="1,5" value="1,1.04" />
@@ -439,7 +439,7 @@
 				<multiply skill_level="5" value="1.5625" />
 			</effect>
 		</perk>
-		<action_skill name="Archery" icon="archery" description_key="archeryDesc" title_key="archery" group="weapons" skill_point_cost_per_level="3" skill_point_cost_multiplier="1.10976">
+		<action_skill name="Archery" icon="archery" description_key="archeryDesc" title_key="archery" group="weapons" skill_point_cost_per_level="5" skill_point_cost_multiplier="1.04811">
 			<effect name="EntityDamage">
 				<multiply skill_level="1,5" value="1,1.04" />
 				<multiply skill_level="5,11" value="1.04,1.07" />
@@ -485,7 +485,7 @@
             <recipe name="BoltCylinder" unlock_level="3" />
             <recipe name="AutoCrossbow" unlock_level="3" />
 		</perk>
-		<player_skill name="Medicine" icon="medical" description_key="medicineDesc" title_key="medicine" group="health" skill_point_cost_per_level="3" skill_point_cost_multiplier="1.10976">
+		<player_skill name="Medicine" icon="medical" description_key="medicineDesc" title_key="medicine" group="health" skill_point_cost_per_level="5" skill_point_cost_multiplier="1.04811">
 			<effect name="HealthGain">
 				<multiply skill_level="1,10" value="1.00,1.32" />
 				<multiply skill_level="10,20" value="1.32,1.45" />
@@ -1826,7 +1826,7 @@
 			<recipe name="ChrysanthemumSeed" unlock_level="1" />
 			<recipe name="TomatoSeed" unlock_level="1" />
 		</perk>
-		<action_skill name="Hunting" icon="light_armor" description_key="Learn to craft better Hunting knifes to harvest more and better animal parts.Gain skill by harvesting dead animal carcasses with hunting and field knives" title_key="Hunting" skill_point_cost_per_level="3" skill_point_cost_multiplier="1.10976" group="health">
+		<action_skill name="Hunting" icon="light_armor" description_key="Learn to craft better Hunting knifes to harvest more and better animal parts.Gain skill by harvesting dead animal carcasses with hunting and field knives" title_key="Hunting" skill_point_cost_per_level="5" skill_point_cost_multiplier="1.04811" group="health">
 			<recipe name="fishingLure2" unlock_level="10" />
 			<recipe name="fishingLure3" unlock_level="20" />
 			<recipe name="fishingLure4" unlock_level="40" />
@@ -1924,7 +1924,7 @@
 			<requirement perk_level="1" required_skill_name="Hunting" required_skill_level="50" />
 			<recipe name="workChickenCoop" unlock_level="1" />
 		</perk>
-		<action_skill name="Heavy Guns" icon="rocketLauncher" description_key="Do more damage with Heavy Guns. Gain skill by using items from this group" title_key="Heavy Guns" group="firearms" skill_point_cost_per_level="3" skill_point_cost_multiplier="1.10976">
+		<action_skill name="Heavy Guns" icon="rocketLauncher" description_key="Do more damage with Heavy Guns. Gain skill by using items from this group" title_key="Heavy Guns" group="firearms" skill_point_cost_per_level="5" skill_point_cost_multiplier="1.04811">
 			<effect name="EntityDamage">
 				<multiply skill_level="1,5" value="1,1.04" />
 				<multiply skill_level="5,11" value="1.04,1.07" />

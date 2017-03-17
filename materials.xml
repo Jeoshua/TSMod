@@ -631,7 +631,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="stepsound" value="wood" />
 		<property name="stability_glue" value="36" />
 		<property name="Mass" type="int" value="6" />
-		<property name="MaxDamage" value="5000" />
+		<property name="MaxDamage" value="20000" />
 	</material>
 	<material id="wood+metal">
 		<property name="damage_category" value="metal" />

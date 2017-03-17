@@ -2559,7 +2559,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="smallEngine" count="1" />
 		<ingredient name="mechanicalParts" count="10" />
 		<ingredient name="electronicParts" count="10" />
-		<ingredient name="electricParts" count="5" />
+		<ingredient name="Alternator" count="1" />
 	</recipe>
 	<recipe name="DoctorProfession" count="1" craft_time="5" craft_exp_gain="1000">
 		<ingredient name="ChooseAProfession" count="1" />

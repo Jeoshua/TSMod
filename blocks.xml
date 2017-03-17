@@ -378,7 +378,7 @@ then add recipes for those white/red/green metals
 			<property name="ToBlock" value="fertilizedFarmland" />
 			<property name="Item" value="fertilizer" />
 			<property name="ItemCount" value="1" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="1" />
 		</property>
 		<drop event="Harvest" name="dirtFragment" count="7" />
 		<drop event="Destroy" name="dirtFragment" count="3" />
@@ -793,7 +793,7 @@ then add recipes for those white/red/green metals
 			<property name="ToBlock" value="cobblestoneMaster" />
 			<property name="Item" value="cobblestones" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<drop event="Destroy" name="stick" count="1,3" prob="1" />
 		<drop event="Fall" name="woodDebris" count="1" prob=".3" stick_chance="0.95" />
@@ -814,7 +814,7 @@ then add recipes for those white/red/green metals
 			<property name="ToBlock" value="brickMaster" />
 			<property name="Item" value="clayLump" />
 			<property name="ItemCount" value="20" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="20" />
 		</property>
 		<drop event="Harvest" name="rockSmall" count="8" />
 		<drop event="Destroy" name="rockSmall" count="8" />
@@ -875,7 +875,7 @@ then add recipes for those white/red/green metals
 			<property name="ToBlock" value="rWoodMaster" />
 			<property name="Item" value="Plank" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<drop event="Harvest" name="Plank" count="4,9" prob="1" />
 		<drop event="Destroy" name="nail" count="2,3" prob="1" />
@@ -937,7 +937,7 @@ then add recipes for those white/red/green metals
 			<property name="ToBlock" value="adobeMaster" />
 			<property name="Item" value="clayLump" />
 			<property name="ItemCount" value="6" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="6" />
 		</property>
 		<drop event="Harvest" name="rockSmall" count="8" />
 		<drop event="Destroy" name="rockSmall" count="8" />
@@ -977,7 +977,7 @@ then add recipes for those white/red/green metals
 			<property name="ToBlock" value="stainlessSteelMaster" />
 			<property name="Item" value="shortSteelPipe" />
 			<property name="ItemCount" value="20" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="20" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_metal" />
 		<drop event="Harvest" name="scrapSteel" count="5,15" prob="1" />
@@ -1001,7 +1001,7 @@ then add recipes for those white/red/green metals
 			<property name="ToBlock" value="steelMaster" />
 			<property name="Item" value="forgedSteel" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_metal" />
 		<drop event="Harvest" name="rockSmall" count="13" />
@@ -1038,7 +1038,7 @@ then add recipes for those white/red/green metals
 			<property name="ToBlock" value="pouredConcreteMaster" />
 			<property name="Item" value="concreteMix" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="1" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<drop event="Destroy" count="0" />
 		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
@@ -1070,7 +1070,7 @@ then add recipes for those white/red/green metals
 			<property name="ToBlock" value="concreteMaster" />
 			<property name="Item" value="concreteMix" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="EconomicValue" value="8" />
 		<property name="EconomicBundleSize" value="20" />
@@ -1090,7 +1090,7 @@ then add recipes for those white/red/green metals
 			<property name="ToBlock" value="concreteMaster" />
 			<property name="Item" value="concreteMix" />
 			<property name="ItemCount" value="7" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="7" />
 		</property>
 		<drop event="Harvest" name="crushedSand" count="4" prob=".6" />
 		<drop event="Harvest" name="clayLump" count="6" prob=".6" />
@@ -1116,7 +1116,7 @@ then add recipes for those white/red/green metals
 			<property name="ToBlock" value="rConcreteMaster" />
 			<property name="Item" value="concreteMix" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_concrete" />
 		<drop event="Harvest" name="rockSmall" count="13" />
@@ -1139,7 +1139,7 @@ then add recipes for those white/red/green metals
 			<property name="ToBlock" value="steelMaster" />
 			<property name="Item" value="forgedSteel" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<drop event="Harvest" name="scrapIron" count="5,10" />
 		<drop event="Destroy" name="scrapIron" count="10,20" prob="1" />
@@ -1162,7 +1162,7 @@ then add recipes for those white/red/green metals
 			<property name="ToBlock" value="concreteFormMaster" />
 			<property name="Item" value="Plank" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 		<property class="RepairItems">
@@ -1203,7 +1203,7 @@ then add recipes for those white/red/green metals
 			<property name="ToBlock" value="rScrapIronMaster" />
 			<property name="Item" value="scrapIron" />
 			<property name="ItemCount" value="40" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="40" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_metal" />
 		<drop event="Harvest" name="scrapIron" count="5,10" />
@@ -1230,7 +1230,7 @@ then add recipes for those white/red/green metals
 			<property name="ToBlock" value="scrapIronMaster" />
 			<property name="Item" value="scrapIron" />
 			<property name="ItemCount" value="40" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="40" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_metal" />
 		<drop event="Harvest" name="scrapIron" count="5,10" />
@@ -1256,7 +1256,7 @@ then add recipes for those white/red/green metals
 			<property name="ToBlock" value="scrapIronMaster" />
 			<property name="Item" value="scrapIron" />
 			<property name="ItemCount" value="40" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="40" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_metal" />
 		<drop event="Destroy" name="scrapIron" count="15" prob="1" />
@@ -1276,7 +1276,7 @@ then add recipes for those white/red/green metals
 			<property name="ToBlock" value="rWoodMetalMaster" />
 			<property name="Item" value="scrapIron" />
 			<property name="ItemCount" value="20" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="20" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_metal" />
 		<drop event="Harvest" name="Plank" count="1,3" />
@@ -1298,7 +1298,7 @@ then add recipes for those white/red/green metals
 			<property name="ToBlock" value="rWoodMaster" />
 			<property name="Item" value="Plank" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 		<drop event="Harvest" name="Plank" count="1,3" />
@@ -1328,7 +1328,7 @@ then add recipes for those white/red/green metals
 			<property name="ToBlock" value="woodMaster" />
 			<property name="Item" value="Plank" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 		<drop event="Destroy" name="Plank" count="4" prob="1" />
@@ -1692,7 +1692,7 @@ then add recipes for those white/red/green metals
 			<property name="ToBlock" value="pouredConcretePillar100" />
 			<property name="Item" value="concreteMix" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_concrete" />
 	</block>
@@ -1784,7 +1784,7 @@ then add recipes for those white/red/green metals
 			<property name="ToBlock" value="4thUpgradedSteel" />
 			<property name="Item" value="shortSteelPipe" />
 			<property name="ItemCount" value="20" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="20" />
 		</property>
 	</block>
 	<block id="205" name="pouredConcreteWedgeTip">
@@ -2614,6 +2614,7 @@ then add recipes for those white/red/green metals
 			<property name="rockSmall" value="8" />
 		</property>
 		<drop event="Harvest" name="" count="0" tool_category="Dolly" />
+		<drop event="Harvest" name="rockSmall" count="5,8"/>
 		<drop event="Destroy" name="campfire" count="1" tool_category="Dolly" />
 		<drop event="Destroy" count="0" />
 		<property name="Group" value="Food/Cooking" />
@@ -3265,7 +3266,7 @@ then add recipes for those white/red/green metals
 			<property name="ToBlock" value="cntDeskSafeInsecure" />
 			<property name="Item" value="LockPick" />
 			<property name="ItemCount" value="1" />
-			<property name="UpgradeHitCount" value="5" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="DowngradeBlock" value="cntDeskSafeInsecure" />
 		<drop event="Destroy" count="0" prob="1" />
@@ -3290,7 +3291,7 @@ then add recipes for those white/red/green metals
 			<property name="ToBlock" value="cntWallSafeInsecure" />
 			<property name="Item" value="LockPick" />
 			<property name="ItemCount" value="2" />
-			<property name="UpgradeHitCount" value="5" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="DowngradeBlock" value="cntWallSafeInsecure" />
 		<drop event="Destroy" count="0" prob="1" />
@@ -3465,7 +3466,7 @@ then add recipes for those white/red/green metals
 			<property name="ToBlock" value="metalRivetSheet" />
 			<property name="Item" value="forgedIron" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_metal" />
 		<drop event="Destroy" name="scrapIron" count="10,15" prob="1" />
@@ -3561,7 +3562,7 @@ then add recipes for those white/red/green metals
 			<property name="ToBlock" value="plainWoodWindowPlug" />
 			<property name="Item" value="Plank" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 		<drop event="Destroy" count="0" />
@@ -3689,7 +3690,7 @@ then add recipes for those white/red/green metals
 			<property name="ToBlock" value="trapSpikesNew" />
 			<property name="Item" value="stick" />
 			<property name="ItemCount" value="5" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="5" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 	</block>
@@ -3699,6 +3700,7 @@ then add recipes for those white/red/green metals
 		<property name="DowngradeBlock" value="trapSpikesDamage3" />
 		<property class="UpgradeBlock">
 			<property name="ItemCount" value="8" />
+			<property name="UpgradeHitCount" value="8" />
 			<property name="ToBlock" value="trapSpikesNew" />
 		</property>
 	</block>
@@ -3708,6 +3710,7 @@ then add recipes for those white/red/green metals
 		<property name="DowngradeBlock" value="trapSpikesDamage4" />
 		<property class="UpgradeBlock">
 			<property name="ItemCount" value="10" />
+			<property name="UpgradeHitCount" value="10" />
 			<property name="ToBlock" value="trapSpikesNew" />
 		</property>
 	</block>
@@ -3717,6 +3720,7 @@ then add recipes for those white/red/green metals
 		<property name="DowngradeBlock" value="trapSpikesDamage5" />
 		<property class="UpgradeBlock">
 			<property name="ItemCount" value="12" />
+			<property name="UpgradeHitCount" value="12" />
 			<property name="ToBlock" value="trapSpikesNew" />
 		</property>
 	</block>
@@ -3735,7 +3739,7 @@ then add recipes for those white/red/green metals
 			<property name="ToBlock" value="4thUpgradedEngSteel" />
 			<property name="Item" value="shortSteelPipe" />
 			<property name="ItemCount" value="20" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="20" />
 		</property>
 	</block>
 	<block id="415" name="corrugatedMetalCNRFull">
@@ -3785,7 +3789,7 @@ then add recipes for those white/red/green metals
 			<property name="ToBlock" value="rWoodLogSpike2" />
 			<property name="Item" value="Plank" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 		<drop event="Destroy" name="Plank" count="5" prob="1" />
@@ -3821,7 +3825,7 @@ then add recipes for those white/red/green metals
 			<property name="ToBlock" value="metalTrussingSheet" />
 			<property name="Item" value="forgedIron" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_metal" />
 		<drop event="Destroy" name="scrapIron" count="15" prob=".7" />
@@ -4786,7 +4790,7 @@ kind of free
             <property name="ToBlock" value="commercialDoor1_v2" />
             <property name="Item" value="wood" />
             <property name="ItemCount" value="10" />
-            <property name="UpgradeHitCount" value="4" />
+            <property name="UpgradeHitCount" value="10" />
         </property>
         <property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
         -->
@@ -5064,6 +5068,7 @@ kind of free
 	<block id="560" name="treeMountainPine8m">
 		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="Entities/Trees/MountainPine40mPrefab" />
+		<property name="Material" value="treeWoodMedium" />
 		<property name="ModelOffset" value="0,-0.3,0" />
 		<property name="MultiBlockDim" value="1,10,1" />
 		<property name="BigDecorationRadius" value="2" />
@@ -5095,7 +5100,7 @@ kind of free
 	</block>
 	<block id="563" name="treeMountainPine19m">
 		<property name="Extends" value="treeMaster" />
-		<property name="Material" value="treeWoodLarge" />
+		<property name="Material" value="treeWoodFull" />
 		<property name="Model" value="Entities/Trees/MountainPine60mPrefab" />
 		<property name="ModelOffset" value="0,-0.3,0" />
 		<property name="MultiBlockDim" value="1,27,1" />
@@ -5227,7 +5232,7 @@ kind of free
 	</block>
 	<block id="575" name="treeMaple17m">
 		<property name="Extends" value="treeMaster" />
-		<property name="Material" value="treeWoodFull" />
+		<property name="Material" value="treeWoodLarge" />
 		<property name="Model" value="Entities/Trees/Red_Maple80Prefab" />
 		<property name="ModelOffset" value="0,-0.3,0" />
 		<property name="MultiBlockDim" value="1,6,1" />
@@ -5314,7 +5319,7 @@ kind of free
 			<property name="ToBlock" value="brickDecayedBlock" />
 			<property name="Item" value="cobblestones" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 	</block>
 	<block id="584" name="brickDecayedBroke2Block">
@@ -5324,7 +5329,7 @@ kind of free
 			<property name="ToBlock" value="brickDecayedBlock" />
 			<property name="Item" value="cobblestones" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 	</block>
 	<block id="585" name="brickDecayedBroke3Block">
@@ -5334,7 +5339,7 @@ kind of free
 			<property name="ToBlock" value="brickDecayedBlock" />
 			<property name="Item" value="cobblestones" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 	</block>
 	<block id="586" name="treeWinterEverGreen">
@@ -5477,7 +5482,7 @@ kind of free
 			<property name="ToBlock" value="brickDecayedTanBlock" />
 			<property name="Item" value="cobblestones" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 	</block>
 	<block id="604" name="tanBrickDecayedBroke3">
@@ -5487,7 +5492,7 @@ kind of free
 			<property name="ToBlock" value="brickDecayedTanBlock" />
 			<property name="Item" value="cobblestones" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 	</block>
 	<block id="605" name="paintedBrickBroke1">
@@ -5497,7 +5502,7 @@ kind of free
 			<property name="ToBlock" value="brickpaintedBlock" />
 			<property name="Item" value="cobblestones" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 	</block>
 	<block id="606" name="paintedBrickBroke2">
@@ -5507,7 +5512,7 @@ kind of free
 			<property name="ToBlock" value="brickpaintedBlock" />
 			<property name="Item" value="cobblestones" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 	</block>
 	<block id="607" name="paintedBrickBroke3">
@@ -5517,7 +5522,7 @@ kind of free
 			<property name="ToBlock" value="brickpaintedBlock" />
 			<property name="Item" value="cobblestones" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 	</block>
 	<block id="608" name="concreteTrim2Broke1">
@@ -5529,7 +5534,7 @@ kind of free
 			<property name="ToBlock" value="concreteTrim2Block" />
 			<property name="Item" value="concreteMix" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 	</block>
 	<block id="609" name="concreteTrim2Broke2">
@@ -5539,7 +5544,7 @@ kind of free
 			<property name="ToBlock" value="concreteTrim2Block" />
 			<property name="Item" value="concreteMix" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 	</block>
 	<block id="610" name="concreteTrim2Broke3">
@@ -5549,7 +5554,7 @@ kind of free
 			<property name="ToBlock" value="concreteTrim2Block" />
 			<property name="Item" value="concreteMix" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 	</block>
 	<block id="611" name="concreteTrim2Broke4">
@@ -5559,7 +5564,7 @@ kind of free
 			<property name="ToBlock" value="concreteTrim2Block" />
 			<property name="Item" value="concreteMix" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 	</block>
 	<block id="612" name="whiteSidingWoodPanelBurnt1">
@@ -5747,7 +5752,7 @@ kind of free
 			<property name="ToBlock" value="cntGunSafeInsecure" />
 			<property name="Item" value="LockPick" />
 			<property name="ItemCount" value="3" />
-			<property name="UpgradeHitCount" value="10" />
+			<property name="UpgradeHitCount" value="15" />
 		</property>
 		<property name="DowngradeBlock" value="cntGunSafeInsecure" />
 		<property class="RepairItems">
@@ -5814,7 +5819,7 @@ kind of free
 			<property name="ToBlock" value="secureReinforcedDoorWooden" />
 			<property name="Item" value="Plank" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 		<drop event="Destroy" name="Plank" count="2" />
@@ -5916,7 +5921,7 @@ kind of free
 			<property name="ToBlock" value="metalReinforcedDoorWooden" />
 			<property name="Item" value="scrapIron" />
 			<property name="ItemCount" value="20" />
-			<property name="UpgradeHitCount" value="10" />
+			<property name="UpgradeHitCount" value="20" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_metal" />
 		<property name="DowngradeBlock" value="secureDoorWooden" />
@@ -6040,7 +6045,7 @@ kind of free
 			<property name="ToBlock" value="plainWoodWindowPlug" />
 			<property name="Item" value="Plank" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 		<drop event="Destroy" count="0" />
@@ -6058,7 +6063,7 @@ kind of free
 			<property name="ToBlock" value="plainWoodWindowPlug" />
 			<property name="Item" value="wood" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 		<property name="DowngradeBlock" value="window02Frame" />
@@ -6191,7 +6196,7 @@ kind of free
 			<property name="ToBlock" value="plainWoodWindowPlug" />
 			<property name="Item" value="wood" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 		<drop event="Destroy" count="0" />
@@ -6293,7 +6298,7 @@ kind of free
 	<block id="677" name="treePlantedMountainPine13m">
 		<property name="Extends" value="treeMasterGrowing" />
 		<property name="IsDeveloper" value="true" />
-		<property name="Material" value="treeWoodLarge" />
+		<property name="Material" value="treeWoodMedium" />
 		<property name="Model" value="Entities/Trees/MountainPine55mPrefab" />
 		<property name="ModelOffset" value="0,-0.3,0" />
 		<property name="MultiBlockDim" value="1,24,1" />
@@ -6308,7 +6313,7 @@ kind of free
 		<property name="Extends" value="treeMasterGrowing" />
 		<property name="IsDeveloper" value="true" />
 		<property name="CustomIcon" value="treeMountainPine20m" />
-		<property name="Material" value="treeWoodFull" />
+		<property name="Material" value="treeWoodLarge" />
 		<property name="Model" value="Entities/Trees/MountainPine75Prefab" />
 		<property name="ModelOffset" value="0,-0.3,0" />
 		<property name="MultiBlockDim" value="1,28,1" />
@@ -6390,7 +6395,7 @@ kind of free
 		<property name="Extends" value="treeMasterGrowing" />
 		<property name="IsDeveloper" value="true" />
 		<property name="CustomIcon" value="treeMaple17m" />
-		<property name="Material" value="treeWoodFull" />
+		<property name="Material" value="treeWoodLarge" />
 		<property name="Model" value="Entities/Trees/Red_Maple80Prefab" />
 		<property name="ModelOffset" value="0,-0.3,0" />
 		<property name="MultiBlockDim" value="1,6,1" />
@@ -7301,7 +7306,7 @@ kind of free
 			<property name="ToBlock" value="UpgradedWood" />
 			<property name="Item" value="Plank" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="DowngradeBlock" value="woodDebris" />
 		<drop event="Harvest" name="Plank" count="0" prob="1" />
@@ -9427,7 +9432,7 @@ kind of free
 			<property name="ToBlock" value="WindowPlug01" />
 			<property name="Item" value="Plank" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property class="RepairItems">
 			<property name="Plank" value="5" />
@@ -9710,7 +9715,7 @@ kind of free
 			<property name="ToBlock" value="plainWoodWindowPlug" />
 			<property name="Item" value="Plank" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 		<drop event="Destroy" name="brokenGlass" count="1,4" />
@@ -9772,7 +9777,7 @@ kind of free
 			<property name="ToBlock" value="commercialDoor1_v2" />
 			<property name="Item" value="Plank" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 		<drop event="Destroy" count="0" />
@@ -9805,7 +9810,7 @@ kind of free
 			<property name="ToBlock" value="commercialDoor1_v3" />
 			<property name="Item" value="scrapIron" />
 			<property name="ItemCount" value="20" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="20" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_metal" />
 		<property name="DowngradeBlock" value="commercialDoor1_v1" />
@@ -9922,7 +9927,7 @@ kind of free
 			<property name="ToBlock" value="houseFrontDoor1_v2" />
 			<property name="Item" value="Plank" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<drop event="Destroy" name="Plank" count="1" prob="1" />
 		<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
@@ -9939,7 +9944,7 @@ kind of free
 			<property name="ToBlock" value="houseFrontDoor1_v3" />
 			<property name="Item" value="scrapIron" />
 			<property name="ItemCount" value="20" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="20" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_metal" />
 		<property name="DowngradeBlock" value="houseFrontDoor1_v1" />
@@ -9986,7 +9991,7 @@ kind of free
 			<property name="ToBlock" value="WindowPlug01" />
 			<property name="Item" value="Plank" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 		<drop event="Destroy" count="0" />
@@ -10044,7 +10049,7 @@ kind of free
 			<property name="ToBlock" value="plainWoodWindowPlug" />
 			<property name="Item" value="Plank" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 		<drop event="Destroy" count="0" />
@@ -10061,7 +10066,7 @@ kind of free
 			<property name="ToBlock" value="plainWoodWindowPlug" />
 			<property name="Item" value="Plank" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 		<drop event="Destroy" count="0" />
@@ -10100,7 +10105,7 @@ kind of free
 			<property name="ToBlock" value="plainWoodWindowPlug" />
 			<property name="Item" value="Plank" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 		<drop event="Destroy" count="0" />
@@ -10143,7 +10148,7 @@ kind of free
 			<property name="ToBlock" value="plainWoodWindowPlug" />
 			<property name="Item" value="Plank" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 		<drop event="Destroy" count="0" />
@@ -10162,7 +10167,7 @@ kind of free
 			<property name="ToBlock" value="plainWoodWindowPlug" />
 			<property name="Item" value="Plank" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 	</block>
@@ -10436,7 +10441,7 @@ kind of free
 			<property name="ToBlock" value="vaultDoor01" />
 			<property name="Item" value="forgedSteel" />
 			<property name="ItemCount" value="20" />
-			<property name="UpgradeHitCount" value="25" />
+			<property name="UpgradeHitCount" value="20" />
 		</property>
 		<drop event="Harvest" name="scrapIron" count="40" prob="1" />
 	</block>
@@ -10467,7 +10472,7 @@ kind of free
 			<property name="ToBlock" value="woodHatch1_v2" />
 			<property name="Item" value="Plank" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 		<drop event="Harvest" name="wood" count="2,4" />
@@ -10534,7 +10539,7 @@ kind of free
 			<property name="ToBlock" value="wallTorch" />
 			<property name="Item" value="torch" />
 			<property name="ItemCount" value="1" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="1" />
 		</property>
 	</block>
 	<!-- Free -->
@@ -10640,7 +10645,7 @@ kind of free
 			<property name="ToBlock" value="metalCatwalk" />
 			<property name="Item" value="forgedIron" />
 			<property name="ItemCount" value="8" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="8" />
 		</property>
 		<property name="DescriptionKey" value="woodCatwalkGroupDesc" />
 		<property name="EconomicValue" value="20" />
@@ -11362,7 +11367,7 @@ kind of free
 			<property name="ToBlock" value="WindowPlug01" />
 			<property name="Item" value="Plank" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property class="RepairItems">
 			<property name="Plank" value="10" />
@@ -11398,7 +11403,7 @@ kind of free
 			<property name="ToBlock" value="WindowPlug04" />
 			<property name="Item" value="scrapIron" />
 			<property name="ItemCount" value="20" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="20" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_metal" />
 		<property name="DowngradeBlock" value="WindowPlug02" />
@@ -11589,7 +11594,7 @@ kind of free
 			<property name="ToBlock" value="plainWoodWindowPlug" />
 			<property name="Item" value="Plank" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 		<property name="DowngradeBlock" value="window03WoodFrame" />
@@ -11607,7 +11612,7 @@ kind of free
 			<property name="ToBlock" value="plainWoodWindowPlug" />
 			<property name="Item" value="Plank" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 		<drop event="Destroy" count="0" />
@@ -11635,7 +11640,7 @@ kind of free
 			<property name="ToBlock" value="plainWoodWindowPlug" />
 			<property name="Item" value="Plank" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 		<property name="DowngradeBlock" value="window03WoodBroke1" />
@@ -11815,8 +11820,8 @@ kind of free
 	</block>
 	<block id="1429" name="garageDoorMetal_v1">
 		<property name="Class" value="DoorSecure" />
-		<property name="Material" value="metal" />
-		<property name="MaxDamage" value="1200" />
+		<property name="Material" value="Mmetal_thin" />
+		<property name="MaxDamage" value="1250" />
 		<property name="DescriptionKey" value="garageDoorDesc" />
 		<!-- need higher hit points to account for their area -->
 		<property name="Shape" value="ModelEntity" />
@@ -11839,7 +11844,7 @@ kind of free
 			<property name="ToBlock" value="garageDoorMetal_v2" />
 			<property name="Item" value="scrapIron" />
 			<property name="ItemCount" value="240" />
-			<property name="UpgradeHitCount" value="5" />
+			<property name="UpgradeHitCount" value="6" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_metal" />
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
@@ -11861,7 +11866,7 @@ kind of free
 			<property name="ToBlock" value="garageDoorMetal_v3" />
 			<property name="Item" value="forgedIron" />
 			<property name="ItemCount" value="60" />
-			<property name="UpgradeHitCount" value="6" />
+			<property name="UpgradeHitCount" value="60" />
 		</property>
 		<property name="DowngradeBlock" value="garageDoorMetal_v1" />
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
@@ -11927,7 +11932,7 @@ kind of free
 			<property name="ToBlock" value="steelLogSpike6" />
 			<property name="Item" value="forgedSteel" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="DowngradeBlock" value="scrapIronLogSpike4" />
 	</block>
@@ -12046,7 +12051,7 @@ kind of free
 			<property name="ToBlock" value="vaultDoor02" />
 			<property name="Item" value="forgedSteel" />
 			<property name="ItemCount" value="12" />
-			<property name="UpgradeHitCount" value="6" />
+			<property name="UpgradeHitCount" value="12" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_metal" />
 		<drop event="Harvest" name="scrapSteel" count="25" prob="1" />
@@ -12279,7 +12284,7 @@ kind of free
 			<property name="ToBlock" value="scrapHatch_v2" />
 			<property name="Item" value="scrapIron" />
 			<property name="ItemCount" value="40" />
-			<property name="UpgradeHitCount" value="5" />
+			<property name="UpgradeHitCount" value="40" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_metal" />
 		<drop event="Harvest" name="scrapIron" count="16" prob="1" />
@@ -12625,7 +12630,7 @@ kind of free
 			<property name="ToBlock" value="rScrapIronWindowPlug06CTRPlate" />
 			<property name="Item" value="scrapIron" />
 			<property name="ItemCount" value="40" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="40" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_metal" />
 		<drop event="Destroy" count="0" />
@@ -12641,7 +12646,7 @@ kind of free
 			<property name="ToBlock" value="pouredConcreteCTRPlate" />
 			<property name="Item" value="concreteMix" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_concrete" />
 		<property name="DowngradeBlock" value="scrapIronWindowPlug05CTRPlate" />
@@ -13264,7 +13269,7 @@ kind of free
 			<property name="ToBlock" value="rScrapIronPlate" />
 			<property name="Item" value="scrapIron" />
 			<property name="ItemCount" value="40" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="40" />
 		</property>
 		<property name="CustomUpgradeSound" value="Crafting/place_block_metal" />
 		<property name="DowngradeBlock" value="rWoodMetalPlate" />
@@ -14392,7 +14397,7 @@ kind of free
 			<property name="ToBlock" value="steelBlock" />
 			<property name="Item" value="forgedSteel" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property class="RepairItems">
 			<property name="forgedSteel" value="5" />
@@ -14427,7 +14432,7 @@ kind of free
 			<property name="ToBlock" value="trapSpikesNew" />
 			<property name="Item" value="stick" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<drop event="Destroy" count="0" />
 		<property name="Group" value="Tools/Traps" />
@@ -15689,13 +15694,14 @@ kind of free
 		<property name="FallOver" value="false" />
         <property name="MaxDamage" value="25" />
 		<drop event="Harvest" name="stick" count="1" prob="1" />
+		<drop event="Destroy" name="AppleSeed" count="1" prob="0.3" />
 	</block>
 	<block id="1665" name="smallAppleTree">
 		<property name="Extends" value="treeMasterGrowing" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#appleTree?appleTree4" />
 		<property name="PlantGrowing.Next" value="appleTree" />
-		<property name="Material" value="treeWoodMedium" />
+		<property name="Material" value="treeWoodSmall" />
 		<property name="Collide" value="melee" />
 		<property name="BigDecorationRadius" value="2" />
 		<property name="UpwardsCount" value="2" />
@@ -15703,19 +15709,20 @@ kind of free
         <property name="MaxDamage" value="2000" />
 		<drop event="Harvest" name="stick" count="30,75" />
 		<drop event="Destroy" name="wood" count="100,150" prob="1" />
+		<drop event="Destroy" name="AppleSeed" count="1" prob="0.5" />
 	</block>
 	<block id="1666" name="appleTree">
 		<property name="Extends" value="fruitTreeMaster" />
 		<property name="Model" value="#AppleTree1?AppleTree1Prefab" />
-		<property name="Material" value="treeWoodSmall" />
+		<property name="Material" value="treeWoodMedium" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="BigDecorationRadius" value="4" />
 		<property name="UpwardsCount" value="3" />
 		<property name="ModelOffset" value="0,0,0" />
-        <property name="MaxDamage" value="5000" />
-		<drop event="Harvest" name="Apple" count="3,15" />
+		<drop event="Harvest" name="Apple" count="5,15" />
 		<drop event="Harvest" name="Apple" count="10,20" tool_category="Farm" />
 		<drop event="Destroy" name="wood" count="10,25" prob="1" />
+		<drop event="Destroy" name="AppleSeed" count="1,2" prob="0.7" />
 	</block>
 	<block id="1667" name="smallOrangeTree">
 		<property name="Extends" value="fruitTreeMaster" />
@@ -15723,11 +15730,9 @@ kind of free
 		<property name="Model" value="#lemontree?smallOrangeTree" />
 		<property name="MeshScale" value="0.5,0.5" />
 		<property name="doDamage" value="false" />
-		<property name="Material" value="treeWoodMedium" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="BigDecorationRadius" value="4" />
 		<property name="UpwardsCount" value="1" />
-        <property name="MaxDamage" value="2000" />
 		<drop event="Harvest" name="Orange" count="3,8" />
 		<drop event="Harvest" name="Orange" count="3,8" tool_category="Farm" />
 	</block>
@@ -15738,7 +15743,6 @@ kind of free
 		<property name="MeshScale" value="2,2" />
 		<property name="BigDecorationRadius" value="4" />
 		<property name="UpwardsCount" value="2" />
-        <property name="MaxDamage" value="5000" />
 		<drop event="Harvest" name="Lime" count="3,8" />
 		<drop event="Harvest" name="Lime" count="3,8" tool_category="Farm" />
 	</block>
@@ -15765,7 +15769,7 @@ kind of free
 	</block>-->
 	<block id="1671" name="smallAvocadoTree">
 		<property name="Extends" value="fruitTreeMaster" />
-        <property name="MaxDamage" value="20000" />
+        <property name="Material" value="treeWoodMedium" />
 		<property name="Model" value="#avocado?AvocadoTree" />
 	</block>
 	<!--<block id="1672" name="Palm">
@@ -15794,11 +15798,10 @@ kind of free
 	<block id="1676" name="smallRedwoodTree">
 		<property name="Extends" value="treeMasterGrowing" />
 		<property name="PlantGrowing.Next" value="redwoodTree" />
-		<property name="Material" value="treeWoodMedium" />
+		<property name="Material" value="treeWoodLarge" />
 		<property name="Model" value="#redwoodtree?RedwoodTreeSmall" />
 		<property name="UpwardsCount" value="1" />
 		<property name="BigDecorationRadius" value="4" />
-		<property name="MaxDamage" value="10000" />
 		<property name="FallOver" value="true" />
 		<drop event="Destroy" name="Redwood" count="25,100" prob="1" />
 		<drop event="Destroy" name="RedwoodSeed" count="1" prob="0.5" />
@@ -15806,7 +15809,7 @@ kind of free
 	<block id="1677" name="redwoodTree">
 		<property name="Extends" value="treeMaster" />
 		<property name="Class" value="MortePlantGrowing, Mods" />
-		<property name="Material" value="treeWoodLarge" />
+		<property name="Material" value="treeWoodFull" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#redwoodtree?RedwoodTree" />
 		<property name="UpwardsCount" value="5" />
@@ -15815,7 +15818,7 @@ kind of free
 		<property name="MaxDamage" value="30000" />
 		<property name="MeshScale" value="2.2,2.2" />
 		<property name="FallOver" value="true" />
-		<drop event="Destroy" name="Redwood" count="50,250" prob="1" />
+		<drop event="Destroy" name="Redwood" count="100,250" prob="1" />
 		<drop event="Destroy" name="RedwoodSeed" count="1" prob="0.7" />
 	</block>
 	<block id="1678" name="plantedTomato">
@@ -16707,7 +16710,7 @@ kind of free
 			<property name="ToBlock" value="ScrIrShut2R1" />
 			<property name="Item" value="scrapIron" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property class="RepairItems">
 			<property name="scrapIron" value="10" />
@@ -16803,7 +16806,7 @@ kind of free
 			<property name="ToBlock" value="WoodShutters2R1" />
 			<property name="Item" value="Plank" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property class="RepairItems">
 			<property name="Plank" value="10" />
@@ -16873,7 +16876,7 @@ kind of free
 			<property name="ToBlock" value="WoodGate3x2R1" />
 			<property name="Item" value="Plank" />
 			<property name="ItemCount" value="30" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="30" />
 		</property>
 	</block>
 	<block id="2002" name="WoodGate3x2R1">
@@ -16885,7 +16888,7 @@ kind of free
 			<property name="ToBlock" value="WoodGate3x2R2" />
 			<property name="Item" value="scrapIron" />
 			<property name="ItemCount" value="16" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="16" />
 		</property>
 	</block>
 	<block id="2003" name="WoodGate3x2R2">
@@ -16910,7 +16913,7 @@ kind of free
 			<property name="ToBlock" value="ScrapIronGate3x2R1" />
 			<property name="Item" value="scrapIron" />
 			<property name="ItemCount" value="20" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="20" />
 		</property>
 		<property class="RepairItems">
 			<property name="scrapIron" value="20" />
@@ -16928,7 +16931,7 @@ kind of free
 			<property name="ToBlock" value="ScrapIronGate3x2R2" />
 			<property name="Item" value="scrapIron" />
 			<property name="ItemCount" value="16" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="16" />
 		</property>
 		<property class="RepairItems">
 			<property name="scrapIron" value="20" />
