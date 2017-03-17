@@ -276,8 +276,8 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<buff id="wellnessExample" duration="10" type="wellness" icon="ui_game_symbol_stunned" name_key="wellness" description_key="wellnessDesc" tooltip_key="wellnessTooltip">
 		<modify id="0" stat="wellness" amount="5" rate="1" />
 	</buff>
-	<buff id="hungry" mutex="hungry2" buffif="+starve &gt; 1" debuffif="+full &gt; 1" actions="increment(@wellness, -0.5, 100t, 0, 0);increment(@food, 1, 100t, 0, 0)" notificationClass="FoodBuffNotification" icon="ui_game_symbol_hunger" name_key="hungry" description_key="hungryDesc" tooltip_key="hungryTooltip" cures="shamSandwich,corn,canBeef,grilledMeat,baconAndEggs" />
-	<buff id="hungry2" buffif="+starve &gt; 1200" debuffif="+full &gt; 1" actions="increment(@wellness, -0.5, 20t, 0, 0);increment(@food, 1, 50t, 0, 0);debuff(hungry);damage(0,7,0,0)" notificationClass="FoodBuffNotification" icon="ui_game_symbol_hunger" name_key="hungry2" description_key="hungry2Desc" tooltip_key="hungry2Tooltip" cures="shamSandwich,corn,canBeef,grilledMeat,baconAndEggs">
+	<buff id="hungry" mutex="hungry2" buffif="+starve &gt; 1" debuffif="+full &gt; 1" actions="increment(@wellness, -0.5, 100t, 0, 0);increment(@food, 1, 50t, 0, 0)" notificationClass="FoodBuffNotification" icon="ui_game_symbol_hunger" name_key="hungry" description_key="hungryDesc" tooltip_key="hungryTooltip" cures="shamSandwich,corn,canBeef,grilledMeat,baconAndEggs" />
+	<buff id="hungry2" buffif="+starve &gt; 1200" debuffif="+full &gt; 1" actions="increment(@wellness, -0.5, 20t, 0, 0);debuff(hungry);damage(0,7,0,0)" notificationClass="FoodBuffNotification" icon="ui_game_symbol_hunger" name_key="hungry2" description_key="hungry2Desc" tooltip_key="hungry2Tooltip" cures="shamSandwich,corn,canBeef,grilledMeat,baconAndEggs">
 		<modify id="0" stat="stamina" amount="-3" rate="1" />
 		<modify id="1" stat="health" amount="-1" rate="1" />
 	</buff>

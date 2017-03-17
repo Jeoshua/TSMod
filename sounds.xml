@@ -5531,6 +5531,7 @@
 	</SoundDataNode>
 	<SoundDataNode name="hulksense">
 		<AudioSource name="Sounds/AudioSource_Pain" />
+		<Noise range="5" prio="5" time="1" muffled_when_crouched="0.5"/>
 		<AudioClip ClipName="Sounds/Enemies/Acid_Puking_Hulk/hulksense1" />
 		<AudioClip ClipName="Sounds/Enemies/Acid_Puking_Hulk/hulksense2" />
 		<AudioClip ClipName="Sounds/Enemies/Acid_Puking_Hulk/hulksense3" />
@@ -5661,6 +5662,7 @@
 	</SoundDataNode>
 	<SoundDataNode name="zombiefemalesense">
 		<AudioSource name="Sounds/AudioSource_Pain" />
+		<Noise range="5" prio="5" time="1" muffled_when_crouched="0.5"/>
 		<AudioClip ClipName="Sounds/Enemies/Base_Zombie_Female/zombiefemalesense1" />
 		<AudioClip ClipName="Sounds/Enemies/Base_Zombie_Female/zombiefemalesense2" />
 		<AudioClip ClipName="Sounds/Enemies/Base_Zombie_Female/zombiefemalesense3" />
@@ -5751,6 +5753,7 @@
 	</SoundDataNode>
 	<SoundDataNode name="zombiefemale2sense">
 		<AudioSource name="Sounds/AudioSource_Pain" />
+		<Noise range="5" prio="5" time="1" muffled_when_crouched="0.5"/>
 		<AudioClip ClipName="Sounds/Enemies/Base_Zombie_Female2/zombiefemale2sense1" />
 		<AudioClip ClipName="Sounds/Enemies/Base_Zombie_Female2/zombiefemale2sense2" />
 		<AudioClip ClipName="Sounds/Enemies/Base_Zombie_Female2/zombiefemale2sense3" />
@@ -5848,6 +5851,7 @@
 	</SoundDataNode>
 	<SoundDataNode name="zombiemalesense">
 		<AudioSource name="Sounds/AudioSource_Pain" />
+		<Noise range="5" prio="5" time="1" muffled_when_crouched="0.5"/>
 		<AudioClip ClipName="Sounds/Enemies/Base_Zombie_male/zombiemalesense1" />
 		<AudioClip ClipName="Sounds/Enemies/Base_Zombie_male/zombiemalesense2" />
 		<AudioClip ClipName="Sounds/Enemies/Base_Zombie_male/zombiemalesense3" />
@@ -5936,6 +5940,7 @@
 	</SoundDataNode>
 	<SoundDataNode name="zombiemale2sense">
 		<AudioSource name="Sounds/AudioSource_Pain" />
+		<Noise range="5" prio="5" time="1" muffled_when_crouched="0.5"/>
 		<AudioClip ClipName="Sounds/Enemies/Base_Zombie_Male2/zombiemale2sense1" />
 		<AudioClip ClipName="Sounds/Enemies/Base_Zombie_Male2/zombiemale2sense2" />
 		<AudioClip ClipName="Sounds/Enemies/Base_Zombie_Male2/zombiemale2sense3" />
@@ -6024,6 +6029,7 @@
 	</SoundDataNode>
 	<SoundDataNode name="zombieburntsense">
 		<AudioSource name="Sounds/AudioSource_Pain" />
+		<Noise range="5" prio="5" time="1" muffled_when_crouched="0.5"/>
 		<AudioClip ClipName="Sounds/Enemies/Burnt_Zombie/zombieburntsense1" />
 		<AudioClip ClipName="Sounds/Enemies/Burnt_Zombie/zombieburntsense2" />
 		<AudioClip ClipName="Sounds/Enemies/Burnt_Zombie/zombieburntsense3" />
@@ -6113,6 +6119,7 @@
 	</SoundDataNode>
 	<SoundDataNode name="zombieferalsense">
 		<AudioSource name="Sounds/AudioSource_Pain" />
+		<Noise range="10" prio="5" time="1" muffled_when_crouched="0.5"/>
 		<AudioClip ClipName="Sounds/Enemies/Feral_Zombie/zombieferalsense1" />
 		<AudioClip ClipName="Sounds/Enemies/Feral_Zombie/zombieferalsense2" />
 		<AudioClip ClipName="Sounds/Enemies/Feral_Zombie/zombieferalsense3" />
@@ -6276,6 +6283,7 @@
 	</SoundDataNode>
 	<SoundDataNode name="zombiefemalescoutsense">
 		<AudioSource name="Sounds/AudioSource_Screamer" />
+		<Noise range="10" prio="5" time="1" muffled_when_crouched="0.5"/>
 		<AudioClip ClipName="Sounds/Enemies/Scout_Zombie/zombiefemalescoutsense1" />
 		<AudioClip ClipName="Sounds/Enemies/Scout_Zombie/zombiefemalescoutsense2" />
 		<LocalCrouchVolumeScale name="1.0" />
@@ -6356,6 +6364,7 @@
 	</SoundDataNode>
 	<SoundDataNode name="zombiefemalesnowsense">
 		<AudioSource name="Sounds/AudioSource_Pain" />
+		<Noise range="5" prio="5" time="1" muffled_when_crouched="0.5"/>
 		<AudioClip ClipName="Sounds/Enemies/Snow_Zombie_Female/zombiefemalesnowsense1" />
 		<AudioClip ClipName="Sounds/Enemies/Snow_Zombie_Female/zombiefemalesnowsense2" />
 		<AudioClip ClipName="Sounds/Enemies/Snow_Zombie_Female/zombiefemalesnowsense3" />
@@ -6441,6 +6450,7 @@
 	</SoundDataNode>
 	<SoundDataNode name="zombiemalesnowsense">
 		<AudioSource name="Sounds/AudioSource_Pain" />
+		<Noise range="5" prio="5" time="1" muffled_when_crouched="0.5"/>
 		<AudioClip ClipName="Sounds/Enemies/Snow_Zombie_Male/zombiemalesnowsense1" />
 		<AudioClip ClipName="Sounds/Enemies/Snow_Zombie_Male/zombiemalesnowsense2" />
 		<AudioClip ClipName="Sounds/Enemies/Snow_Zombie_Male/zombiemalesnowsense3" />
@@ -6531,6 +6541,7 @@
 	</SoundDataNode>
 	<SoundDataNode name="spidersense">
 		<AudioSource name="Sounds/AudioSource_Pain" />
+		<Noise range="5" prio="5" time="1" muffled_when_crouched="0.5"/>
 		<AudioClip ClipName="Sounds/Enemies/Spider_Zombie/spidersense1" />
 		<AudioClip ClipName="Sounds/Enemies/Spider_Zombie/spidersense2" />
 		<AudioClip ClipName="Sounds/Enemies/Spider_Zombie/spidersense3" />
@@ -6616,6 +6627,7 @@
 	</SoundDataNode>
 	<SoundDataNode name="zombiedogsense">
 		<AudioSource name="Sounds/AudioSource_Pain" />
+		<Noise range="10" prio="5" time="1" muffled_when_crouched="0.5"/>
 		<AudioClip ClipName="Sounds/Enemies/Zombie_Dogs/zombiedogsense1" />
 		<AudioClip ClipName="Sounds/Enemies/Zombie_Dogs/zombiedogsense2" />
 		<AudioClip ClipName="Sounds/Enemies/Zombie_Dogs/zombiedogsense3" />
@@ -6954,6 +6966,7 @@
 	</SoundDataNode>
 	<SoundDataNode name="malehatesense">
 		<AudioSource name="Sounds/AudioSource_VO" />
+		<Noise range="10" prio="5" time="1" muffled_when_crouched="0.5"/>
 		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_sense_01" />
 		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_sense_02" />
 		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_sense_03" />

@@ -16759,7 +16759,7 @@ Mesh files no longer used:
 		<property name="IsDeveloper" value="true" />
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="gunPistol" />
-		<property name="DegradationBreaksAfter" value="false" />
+		<property name="DegradationBreaksAfter" value="true" />
 		<property name="Degradation" value="99999" param1="true" />
 		<property class="Action0">
 			<property name="Magazine_items" value="9mmNPCBullet" />
@@ -16782,7 +16782,7 @@ Mesh files no longer used:
 		<property name="IsDeveloper" value="true" />
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="gunSawedOffPumpShotgun" />
-		<property name="DegradationBreaksAfter" value="false" />
+		<property name="DegradationBreaksAfter" value="true" />
 		<property name="Degradation" value="99999" param1="true" />
 		<property class="Action0">
 			<property name="Magazine_items" value="shotgunNPCShell" />
@@ -16794,7 +16794,7 @@ Mesh files no longer used:
 		<property name="IsDeveloper" value="true" />
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="gunPumpShotgun" />
-		<property name="DegradationBreaksAfter" value="false" />
+		<property name="DegradationBreaksAfter" value="true" />
 		<property name="Degradation" value="99999" param1="true" />
 		<property class="Action0">
 			<property name="Magazine_items" value="shotgunNPCShell" />
@@ -16806,7 +16806,7 @@ Mesh files no longer used:
 		<property name="IsDeveloper" value="true" />
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="gunHuntingRifle" />
-		<property name="DegradationBreaksAfter" value="false" />
+		<property name="DegradationBreaksAfter" value="true" />
 		<property name="Degradation" value="99999" param1="true" />
 		<property class="Action0">
 			<property name="Magazine_items" value="762mmNPCBullet" />
@@ -16824,7 +16824,7 @@ Mesh files no longer used:
 		<property name="IsDeveloper" value="true" />
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="gunMP5" />
-		<property name="DegradationBreaksAfter" value="false" />
+		<property name="DegradationBreaksAfter" value="true" />
 		<property name="Degradation" value="99999" param1="true" />
 		<property class="Action0">
 			<property name="Magazine_items" value="9mmNPCBullet" />
@@ -16842,7 +16842,7 @@ Mesh files no longer used:
 		<property name="IsDeveloper" value="true" />
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="gunAK47" />
-		<property name="DegradationBreaksAfter" value="false" />
+		<property name="DegradationBreaksAfter" value="true" />
 		<property name="Degradation" value="99999" param1="true" />
 		<property class="Action0">
 			<property name="Magazine_items" value="762mmNPCBullet" />
@@ -16860,7 +16860,7 @@ Mesh files no longer used:
 		<property name="IsDeveloper" value="true" />
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="gunSniperRifle" />
-		<property name="DegradationBreaksAfter" value="false" />
+		<property name="DegradationBreaksAfter" value="true" />
 		<property name="Degradation" value="99999" param1="true" />
 		<property class="Action0">
 			<property name="Magazine_items" value="762mmNPCBullet" />
@@ -16878,7 +16878,7 @@ Mesh files no longer used:
 		<property name="IsDeveloper" value="true" />
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="gunRocketLauncher" />
-		<property name="DegradationBreaksAfter" value="false" />
+		<property name="DegradationBreaksAfter" value="true" />
 		<property name="Degradation" value="99999" param1="true" />
 		<property class="Action0">
 			<property name="Delay" value="2" />
@@ -16964,7 +16964,7 @@ Mesh files no longer used:
 		<property name="IsDeveloper" value="true" />
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="sledgehammer" />
-		<property name="DegradationBreaksAfter" value="false" />
+		<property name="DegradationBreaksAfter" value="true" />
 		<property name="Degradation" value="99999" param1="true" />
 		<property name="SellableToTrader" value="false" />
 		<property class="Action0">
@@ -16979,7 +16979,7 @@ Mesh files no longer used:
 		<property name="BlockDamage" value="11.8,29.5" />
 		<property name="SellableToTrader" value="false" />
 		<property name="Candrop" value="false" />
-		<property name="DegradationBreaksAfter" value="false" />
+		<property name="DegradationBreaksAfter" value="true" />
 		<property name="Degradation" value="99999" param1="true" />
 		<property name="IsDeveloper" value="true" />
 		<property class="Action0">
@@ -16992,7 +16992,7 @@ Mesh files no longer used:
         <property name="CustomIcon" value="unused" />
 		<property name="SellableToTrader" value="false" />
 		<property name="Candrop" value="false" />
-		<property name="DegradationBreaksAfter" value="false" />
+		<property name="DegradationBreaksAfter" value="true" />
 		<property name="Degradation" value="99999" param1="true" />
 		<property name="IsDeveloper" value="true" />
 	</item>
@@ -17001,7 +17001,7 @@ Mesh files no longer used:
         <property name="CustomIcon" value="unused" />
 		<property name="SellableToTrader" value="false" />
 		<property name="Candrop" value="false" />
-		<property name="DegradationBreaksAfter" value="false" />
+		<property name="DegradationBreaksAfter" value="true" />
 		<property name="Degradation" value="99999" param1="true" />
 		<property name="IsDeveloper" value="true" />
 	</item>
@@ -17014,7 +17014,7 @@ Mesh files no longer used:
 		</property>
 		<property name="SellableToTrader" value="false" />
 		<property name="Candrop" value="false" />
-		<property name="DegradationBreaksAfter" value="false" />
+		<property name="DegradationBreaksAfter" value="true" />
 		<property name="Degradation" value="99999" param1="true" />
 		<property name="IsDeveloper" value="true" />
 	</item>
@@ -17027,7 +17027,7 @@ Mesh files no longer used:
 		</property>
 		<property name="SellableToTrader" value="false" />
 		<property name="Candrop" value="false" />
-		<property name="DegradationBreaksAfter" value="false" />
+		<property name="DegradationBreaksAfter" value="true" />
 		<property name="Degradation" value="99999" param1="true" />
 		<property name="IsDeveloper" value="true" />
 	</item>
