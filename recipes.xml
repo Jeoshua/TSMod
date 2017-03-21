@@ -373,9 +373,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="bandage" count="1" craft_time="5" craft_exp_gain="25">
 		<ingredient name="cloth" count="3" />
 	</recipe>
-	<recipe name="bandana" count="1" craft_time="5" craft_exp_gain="5">
-		<ingredient name="cloth" count="4" />
-	</recipe>
 	<recipe name="barbedFence" count="1" craft_time="5" craft_exp_gain="5">
 		<ingredient name="barbedWireSheet" count="2" />
 		<ingredient name="Plank" count="5" />
@@ -1985,11 +1982,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="AK12_barrel" count="1" />
 		<ingredient name="assaultRifle_parts" count="1" />
 	</recipe>
-	<recipe name="ak47Schematic" count="1" craft_area="workResearchDesk" craft_time="300" craft_exp_gain="100">
+	<recipe name="AdvAssaultRifleSchematics" count="1" craft_area="workResearchDesk" craft_time="300" craft_exp_gain="100">
 		<ingredient name="AdvAssault_stock" count="1" />
-		<ingredient name="partsAK47_receiver" count="1" />
-		<ingredient name="partsAK47_barrel" count="1" />
 		<ingredient name="AdvAssault_parts" count="1" />
+		<ingredient name="partsAK47_receiver" count="1" />
+		<ingredient name="HK416_receiver" count="1" />
+		<ingredient name="ACW_receiver" count="1" />
+		<ingredient name="partsAK47_barrel" count="1" />
 		<ingredient name="BlankSkillBook" count="1" />
 	</recipe>
 	<recipe name="AK47StockScope" count="1" craft_area="workworkbench" craft_tool="wrench" craft_time="30" craft_exp_gain="25">
@@ -2085,6 +2084,27 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="USAS_parts" count="1" />
 		<ingredient name="USAS_barrel" count="1" />
 		<ingredient name="partsPumpShotgun_stock" count="1" />
+	</recipe>
+	 <recipe name="axe02" count="1" craft_time="30" craft_exp_gain="15">
+		<ingredient name="glue" count="1" />
+		<ingredient name="FiberRope" count="5" />
+		<ingredient name="Lashing" count="1" />
+        <ingredient name="stick" count="5" />
+		<ingredient name="rockSmall" count="50" />
+	</recipe>
+    <recipe name="axe03" count="1" craft_area="workAnvil" craft_tool="clawHammer" craft_time="30" craft_exp_gain="20">
+		<ingredient name="glue" count="1" />
+		<ingredient name="NutAndBolt" count="3" />
+		<ingredient name="Lashing" count="1" />
+        <ingredient name="stick" count="10" />
+        <ingredient name="forgedIron" count="25" />
+	</recipe>
+    <recipe name="axe04" count="1" craft_area="workAnvil" craft_tool="clawHammer" craft_time="30" craft_exp_gain="30">
+		<ingredient name="glue" count="1" />
+		<ingredient name="NutAndBolt" count="2" />
+		<ingredient name="Lashing" count="1" />
+        <ingredient name="stick" count="10" />
+        <ingredient name="forgedSteel" count="10" />
 	</recipe>
 	<recipe name="BabyChicken" count="1" craft_area="workChickenCoop1" craft_time="21600" craft_exp_gain="0">
 		<ingredient name="cloth" count="3" />

@@ -73,7 +73,6 @@
 		<property name="HasRagdoll" value="true" />
 		<property name="Prefab" value="NPC" />
 		<property name="Class" value="EntityZombieLight, Mods" />
-		<!--<property name="Class" value="EntityZombieLight, Mods" />-->
 		<property name="Parent" value="Enemies" />
 		<property name="PhysicsBody" value="zombieStandard" />
 		<!-- AI properties -->
@@ -446,7 +445,6 @@
 	<entity_class name="fatzombiecop" extends="zombie01">
 		<property name="Mesh" value="Zombies/zombieStandardCopRagdoll" />
 		<property name="Class" value="EntityZombieCopLight, Mods" />
-		<!--<property name="Class" value="EntityZombieCopLight, Mods" />-->
 		<property name="HandItem" value="handCopZombie" />
 		<property name="WalkType" value="1" />
 		<property name="RightHandJointName" value="Jaw" />

@@ -598,6 +598,7 @@
 		<item group="AssaultWeaponParts" prob="0.5" />
 		<item group="AdvAssaultWeaponParts" prob="0.5" />
 		<item group="SubMachineWeaponParts" prob="0.5" />
+        <item group="MachineGunWeaponParts" prob="0.5" />
 	</lootgroup>
 	<lootgroup name="smallCommonWeaponParts" count="1">
 		<item group="RevolverWeaponParts" prob="0.5" />
@@ -645,11 +646,18 @@
 		<item name="FieldKnife" prob="0.1" />
 	</lootgroup>
 	<lootgroup name="swords" quality="1,100">
-		<item name="machete" prob="0.25" />
+		<item name="machete" />
+		<item name="katanamichonne" prob="0.01" />
 	</lootgroup>
 	<lootgroup name="axes" quality="1,100">
-		<item name="fireaxeIron" />
+		<item name="OldAxe" />
+		<item name="fireaxeIron" prob="0.75" />
 		<item name="Tomahawk" prob="0.5"/>
+		<item name="fireaxeSteel" prob="0.25"/>
+		<item name="axe02" prob="0.1" />
+		<item name="axe03" prob="0.1" />
+		<item name="axe04" prob="0.1" />
+		<item name="axe06" prob="0.1" />
 	</lootgroup>
 	<lootgroup name="bladedmelee">
 		<item group="knives" />
@@ -732,7 +740,6 @@
         <item name="MachineGunSchematics" prob="0.4" />
         <item name="USASSchematic" prob="0.4" />
         <item name="AssaultRifleSchematics" prob="0.4" />
-		<item name="ak47Schematic" prob="0.4" />
 		<item name="SubMachineGunSchematics" prob="0.4" />
 		<item name="pistolBook" prob="0.7" />
 		<item name="pumpShotgunSchematic" prob="0.5" />
@@ -799,7 +806,7 @@
 		<item name="pistolBook" prob="0.4" />
 		<item name="pumpShotgunSchematic" prob="0.4" />
 		<item name="sawedoffPumpShotgunSchematic" prob="0.4" />
-		<item name="ak47Schematic" prob="0.5" />
+		<item name="AssaultRifleSchematics" prob="0.5" />
 		<item name="huntingRifleSchematic" prob="0.5" />
 		<item name="theEnforcerMagazine" prob="0.6" />
 		<item name="SubMachineGunSchematics" prob="0.6" />
@@ -2311,7 +2318,7 @@
 	<lootcontainer id="70" count="2,5" size="8,9" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="treasureTemplate">
 		<item name="oldCash" count="3000,8000" />
 		<item name="casinoCoin" count="50,250" prob="0.5" />
-		<item name="calipers" count="1" prob="1" />
+		<item name="calipers" count="1" prob="0.8" />
         <item group="ammoSmall" count="5,10" prob="0.5" />
 		<item group="rareOres" count="5,10" prob="0.5" />
 		<item name="toolAndDieSet" count="1" prob="0.23" />

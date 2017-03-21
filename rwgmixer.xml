@@ -1593,7 +1593,7 @@
 				<property name="bias" value="-0.25"/>
 			</module>
 			
-			<module name="land" type="FastTurbulence">
+			<module name="land" type="Turbulence">
 				<property name="sourceModule" value="landOutput"/>
 				<property name="frequency" value="0.125"/>
 				<property name="power" value="4"/>
@@ -1608,7 +1608,7 @@
 				<property name="scale" value="0.9"/>
 				<property name="bias" value="0.5"/>
 			</module>
-			<module name="mountains" type="FastTurbulence">
+			<module name="mountains" type="Turbulence">
 				<property name="sourceModule" value="mountainsScaled"/>
 				<property name="power" value="95"/>
 				<property name="frequency" value="0.32"/>
@@ -1663,7 +1663,7 @@
 				<property name="frequency" value="0.0007375" /> <!-- lower for larger & fewer biomes, higher for smaller & more biomes -->
 			</module>
 			
-			<module name="biomeDither" type="FastTurbulence">
+			<module name="biomeDither" type="Turbulence">
 				<property name="sourceModule" value="biomeBase" />
 				<property name="frequency" value="0.32" />
 				<property name="power" value="8" />

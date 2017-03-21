@@ -673,6 +673,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="treeTallGrassDiagonal" prob=".4" />
 				<decoration type="block" blockname="appleTree" prob="0.012" rotatemax="7" />
 				<decoration type="block" blockname="spiderTrap" prob="0.00009" rotatemax="7" />
+				<decoration type="block" blockname="treeAzalea" prob="0.0015" />
 			</decorations>
 			<terrain class="Mountains" />
 		</biome>
@@ -1062,8 +1063,8 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="block" blockname="treeCactus04" prob="0.0025" rotatemax="3" />
 					<decoration type="block" blockname="treeCactus05" prob="0.0025" rotatemax="3" />
 					<decoration type="block" blockname="treeCactus06" prob="0.0025" rotatemax="3" />
-					<decoration type="block" blockname="treePlainsGrassDiagonal" prob=".01" />
-					<decoration type="block" blockname="treeBrownGrassDiagonal" prob=".01" />
+					<decoration type="block" blockname="treePlainsGrassDiagonal" prob=".001" />
+					<decoration type="block" blockname="treeBrownGrassDiagonal" prob=".001" />
 				</decorations>
 			</subbiome>
 			<!-- ======================================================== Desert Ore Layers and Decorations================================================================ -->
@@ -1093,22 +1094,22 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="treeCactus03" prob="0.001" rotatemax="3" />
 				<decoration type="block" blockname="treeCactus04" prob="0.0007" rotatemax="3" />
 				<decoration type="block" blockname="treeCactus05" prob="0.0007" rotatemax="3" />
+				<decoration type="block" blockname="treeCactus06" prob="0.0009" rotatemax="3" />
 				<decoration type="block" blockname="rock01" prob=".006" rotatemax="3" />
 				<decoration type="block" blockname="rock02" prob=".006" rotatemax="3" />
 				<decoration type="block" blockname="rock04" prob=".006" rotatemax="3" />
 				<decoration type="block" blockname="rockResource" prob=".0005" rotatemax="3" />
 				<decoration type="block" blockname="rockResource02" prob=".0005" rotatemax="3" />
 				<decoration type="block" blockname="lootDesert" prob="0.00025" />
-				<decoration type="block" blockname="treeDeadPineLeaf" prob="0.020" rotatemax="7" />
 				<decoration type="block" blockname="plantedYucca3Harvest" prob="0.003" rotatemax="3" />
 				<decoration type="block" blockname="plantedAloe3Harvest" prob="0.003" rotatemax="3" />
 				<decoration type="block" blockname="treeDesertShrub" prob="0.05" rotatemax="7" />
 				<decoration type="block" blockname="driftwood" prob="0.002" />
 				<decoration type="block" blockname="driftwood2" prob="0.002" />
-				<decoration type="block" blockname="cntBirdnest" prob="0.002" />
+				<decoration type="block" blockname="cntBirdnest" prob="0.0015" />
 				<decoration type="block" blockname="sandstorm" prob="0.00004" />
-				<decoration type="block" blockname="treeCactus06" prob="0.0009" rotatemax="3" />
-				<decoration type="block" blockname="treeBrownGrassDiagonal" prob=".25" />
+				<decoration type="block" blockname="treeDeadPineLeaf" prob="0.01" rotatemax="7" />
+				<decoration type="block" blockname="treeBrownGrassDiagonal" prob="0.025" />
 				<decoration type="block" blockname="scorpionTrap" prob="0.0001" rotatemax="3" />
 				<decoration type="block" blockname="snakeTrap" prob="0.00009" rotatemax="3" />
 				<decoration type="block" blockname="SpiderNest" prob="0.00001" />
@@ -1418,11 +1419,10 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="block" blockname="tire" prob="0.0010" rotatemax="7" />
 				</decorations>
 			</subbiome>
-			<subbiome prob="0.1">
+			<subbiome prob="0.1" radiationlevel="1" >
 				<layers>
-					<layer depth="2" blockname="radiated">
+					<layer depth="2" blockname="destroyedStone">
 						<resource blockname="asphalt" cluster="1" prob="0.30" rwgGenerationType="all" />
-						<resource blockname="destroyedStone" cluster="1" prob="0.30" rwgGenerationType="all" />
 					</layer>
 					<layer depth="6" blockname="stone">
 						<resource blockname="ironOre" cluster="1" prob="0.1130" rwgGenerationType="all" />

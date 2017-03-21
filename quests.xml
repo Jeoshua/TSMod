@@ -400,7 +400,7 @@ Alternative settings for custom quest creation:
 		<objective type="Craft" id="painkillers" value="1" />
 		<objective type="Craft" id="antibiotics" value="1" />
 		<objective type="Craft" id="SuperPill" value="1" />
-		<reward type="Exp" id="800" />
+		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 	<quest id="challenge_Doctor3" name_key="challenge_Profession" subtitle_key="challenge_Doctor3_subtitle" description_key="challenge_Doctor3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor3_offer" difficulty="easy">
@@ -439,7 +439,7 @@ Alternative settings for custom quest creation:
 		<objective type="Craft" id="woodPlate" value="1" />
 		<objective type="Craft" id="woodPole" value="1" />
 		<objective type="Craft" id="woodArrowSlitHalf" value="1" />
-		<reward type="Exp" id="800" />
+		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 	<quest id="challenge_Carpenter3" name_key="challenge_Profession" subtitle_key="challenge_Carpenter3_subtitle" description_key="challenge_Carpenter3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Carpenter3_offer" difficulty="easy">
@@ -519,7 +519,7 @@ Alternative settings for custom quest creation:
 	</quest>
 	<quest id="challenge_Cop3" name_key="challenge_Profession" subtitle_key="challenge_Cop3_subtitle" description_key="challenge_Cop3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Cop3_offer" difficulty="easy">
 		<objective type="Craft" id="NightStick" value="1" />
-		<reward type="Exp" id="1200" />
+		<reward type="Exp" value="1200" />
 		<reward type="SkillPoints" value="3" />
 	</quest>
 	<!--Soldier-->
@@ -546,7 +546,7 @@ Alternative settings for custom quest creation:
 	<quest id="challenge_Soldier3" name_key="challenge_Profession" subtitle_key="challenge_Soldier3_subtitle" description_key="challenge_Soldier3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Soldier5_offer" difficulty="easy">
 		<objective type="Craft" id="mineCookingPot" value="3" />
 		<objective type="Craft" id="pipeBomb" value="3" />
-		<reward type="Exp" id="800" />
+		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 	<quest id="challenge_Soldier4" name_key="challenge_Profession" subtitle_key="challenge_Soldier_subtitle" description_key="challenge_Soldier4_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Soldier4_offer" difficulty="easy">
@@ -618,7 +618,7 @@ Alternative settings for custom quest creation:
 	</quest>
 	<quest id="challenge_Fisherman4" name_key="challenge_Profession" subtitle_key="challenge_Fisherman4_subtitle" description_key="challenge_Fisherman4_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist4_offer" difficulty="easy">
 		<objective type="Craft" id="barge" value="1" />
-		<reward type="Exp" id="800" />
+		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 	<!--Chef-->
@@ -679,12 +679,12 @@ Alternative settings for custom quest creation:
 	</quest>
 	<quest id="challenge_Fitness2" name_key="challenge_Profession" subtitle_key="challenge_Fitness2_subtitle" description_key="challenge_Fitness2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Fitness2_offer" difficulty="easy">
 		<objective type="Craft" id="RedBull" value="12" />
-		<reward type="Exp" id="800" />
+		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 	<quest id="challenge_Fitness3" name_key="challenge_Profession" subtitle_key="challenge_Fitness3_subtitle" description_key="challenge_Fitness3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Fitness3_offer" difficulty="easy">
 		<objective type="Craft" id="WellnessJuice" value="5" />
-		<reward type="Exp" id="800" />
+		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 	<!--Fireman-->
@@ -701,12 +701,12 @@ Alternative settings for custom quest creation:
 	</quest>
 	<quest id="challenge_Fireman2" name_key="challenge_Profession" subtitle_key="challenge_Fireman2_subtitle" description_key="challenge_Fireman2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Fireman2_offer" difficulty="easy">
 		<objective type="Craft" id="fireaxeIron" value="1" />
-		<reward type="Exp" id="800" />
+		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 	<quest id="challenge_Fireman3" name_key="challenge_Profession" subtitle_key="challenge_Fireman3_subtitle" description_key="challenge_Fireman3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Fireman3_offer" difficulty="easy">
 		<objective type="Craft" id="fireaxeSteel" value="1" />
-		<reward type="Exp" id="800" />
+		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 	<!--Construction Worker-->
@@ -723,7 +723,7 @@ Alternative settings for custom quest creation:
 	</quest>
 	<quest id="challenge_Construction2" name_key="challenge_Profession" subtitle_key="challenge_Construction2_subtitle" description_key="challenge_Construction2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Construction2_offer" difficulty="easy">
 		<objective type="Craft" id="scrapIronFrameBlock" value="50" />
-		<reward type="Exp" id="800" />
+		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 	<quest id="challenge_Construction3" name_key="challenge_Profession" subtitle_key="challenge_Construction3_subtitle" description_key="challenge_Construction3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Construction3_offer" difficulty="easy">
@@ -735,7 +735,7 @@ Alternative settings for custom quest creation:
 		<objective type="Craft" id="rScrapIronPlate" value="1" />
 		<objective type="Craft" id="scrapIronSheet" value="1" />
 		<objective type="Craft" id="scrapIronArrowSlitHalf" value="1" />
-		<reward type="Exp" id="800" />
+		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 	<!--Electrician-->
@@ -753,7 +753,7 @@ Alternative settings for custom quest creation:
 	</quest>
 	<quest id="challenge_Electrician2" name_key="challenge_Profession" subtitle_key="challenge_Electrician2_subtitle" description_key="challenge_Electrician2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Electrician2_offer" difficulty="easy">
 		<objective type="Craft" id="dieselGen" value="1" />
-		<reward type="Exp" id="800" />
+		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 	<quest id="challenge_Electrician3" name_key="challenge_Profession" subtitle_key="challenge_Electrician3_subtitle" description_key="challenge_Electrician3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Electrician3_offer" difficulty="easy">
@@ -776,12 +776,12 @@ Alternative settings for custom quest creation:
 	</quest>
 	<quest id="challenge_Metal" name_key="challenge_Profession" subtitle_key="challenge_Metal_subtitle" description_key="challenge_Metal_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Metal_offer" difficulty="easy">
 		<objective type="Craft" id="workforge" value="1" />
-		<reward type="Exp" id="800" />
+		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 	<quest id="challenge_Metal2" name_key="challenge_Profession" subtitle_key="challenge_Metal2_subtitle" description_key="challenge_Metal2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Metal2_offer" difficulty="easy">
 		<objective type="Craft" id="rebarFrameBlock" value="50" />
-		<reward type="Exp" id="800" />
+		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 	<quest id="challenge_Metal3" name_key="challenge_Profession" subtitle_key="challenge_Metal3_subtitle" description_key="challenge_Metal3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Metal3_offer" difficulty="easy">
@@ -805,13 +805,13 @@ Alternative settings for custom quest creation:
 	</quest>
 	<quest id="challenge_Burglar2" name_key="challenge_Profession" subtitle_key="challenge_Burglar2_subtitle" description_key="challenge_Burglar2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Burglar2_offer" difficulty="easy">
 		<objective type="Craft" id="LockPick" value="20" />
-		<reward type="Exp" id="800" />
+		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 	<quest id="challenge_Burglar3" name_key="challenge_Profession" subtitle_key="challenge_Burglar3_subtitle" description_key="challenge_Burglar3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Burglar3_offer" difficulty="easy">
 		<objective type="ZombieKill" value="5" />
 		<requirement type="Holding" id="SteakKnife" />
-		<reward type="Exp" id="800" />
+		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 	<!--Park Ranger-->
@@ -874,7 +874,7 @@ Alternative settings for custom quest creation:
 	</quest>
 	<quest id="challenge_Mechanic4" name_key="challenge_Profession" subtitle_key="challenge_Mechanic4_subtitle" description_key="challenge_Mechanic4_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Mechanic4_offer" difficulty="easy">
 		<objective type="Craft" id="auger" value="1" />
-		<reward type="Exp" id="800" />
+		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 	<!--JZMOD CHALLENGES-->

@@ -1313,6 +1313,7 @@ then add recipes for those white/red/green metals
 		<property name="Group" value="Building" />
 		<property name="DescriptionKey" value="woodFrameGroupDesc" />
 		<property name="Material" value="wood_weak" />
+		<property name="MaxDamage" value="50" />
 		<property name="Shape" value="CubeCutoutBackFaces" />
 		<property name="Mesh" value="cutout" />
 		<property name="Texture" value="381" />
@@ -1323,7 +1324,6 @@ then add recipes for those white/red/green metals
 		<property class="RepairItems">
 			<property name="Plank" value="5" />
 		</property>
-		<!-- <property name="CustomPlaceSound" value="Crafting/place_block_wood" />  this works but was too annoying -->
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="woodMaster" />
 			<property name="Item" value="Plank" />
@@ -1343,6 +1343,7 @@ then add recipes for those white/red/green metals
 	<!-- ****************************  Main Blocks  **************************** -->
 	<block id="150" name="woodFrameWedge">
 		<property name="Extends" value="woodFrameMaster" />
+		<property name="Material" value="wood_weak" />
 		<property name="Shape" value="Wedged60Full" />
 		<property name="CanPickup" value="true" />
 		<property class="UpgradeBlock">
@@ -1351,6 +1352,7 @@ then add recipes for those white/red/green metals
 	</block>
 	<block id="151" name="solidWoodFrameWedge">
 		<property name="Extends" value="woodFrameWedge" />
+		<property name="Material" value="wood_weak" />
 		<property name="CustomIcon" value="woodFrameWedge" />
 		<property name="CanPickup" value="false" />
 	</block>
@@ -1904,6 +1906,7 @@ then add recipes for those white/red/green metals
 	</block>
 	<block id="221" name="woodFrameRamp">
 		<property name="Extends" value="woodFrameMaster" />
+		<property name="Material" value="wood_weak" />
 		<property name="Group" value="Building" />
 		<property name="CanPickup" value="true" />
 		<property name="Shape" value="WedgedBackFaces" />
@@ -1941,6 +1944,7 @@ then add recipes for those white/red/green metals
 	</block>
 	<block id="225" name="woodFrameCNRInside">
 		<property name="Extends" value="woodFrameMaster" />
+		<property name="Material" value="wood_weak" />
 		<property name="Shape" value="WedgedInnerFull" />
 		<property name="CanPickup" value="true" />
 		<property class="UpgradeBlock">
@@ -1979,6 +1983,7 @@ then add recipes for those white/red/green metals
 	</block>
 	<block id="230" name="woodFrameCNRFull">
 		<property name="Extends" value="woodFrameMaster" />
+		<property name="Material" value="wood_weak" />
 		<property name="Shape" value="WedgedCornerFull" />
 		<property name="CanPickup" value="true" />
 		<property class="UpgradeBlock">
@@ -2516,6 +2521,7 @@ then add recipes for those white/red/green metals
 	</block>
 	<block id="295" name="woodFrameBlock">
 		<property name="Extends" value="woodFrameMaster" />
+		<property name="Material" value="wood_weak" />
 		<property name="Group" value="Building" />
 		<property name="CanPickup" value="true" />
 		<property name="MaxDamage" value="50" />
@@ -5569,6 +5575,7 @@ kind of free
 	</block>
 	<block id="612" name="whiteSidingWoodPanelBurnt1">
 		<property name="Extends" value="woodFrameMaster" />
+		<property name="Material" value="wood_weak" />
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
 		<property name="Model" value="Buildings/white_siding_wood_panel_burnt1" param1="main_mesh" />
@@ -14513,7 +14520,7 @@ kind of free
 		<property name="CustomIcon" value="ui_game_symbol_BearTrap" />
 		<property name="KillChance" value="90" />
 		<property name="SpawnChance" value="100" />
-		<property name="DamageDone" value="20" />
+		<property name="DamageDone" value="25" />
 		<property name="HitLegs" value="true" />
 		<property name="Baited" value="true" />
 		<property name="EntityGroup" value="AnimalsAll" />
