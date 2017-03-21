@@ -4644,7 +4644,7 @@ kind of free
 	</block>
 	<block id="522" name="storeShelving01">
 		<property name="DescriptionKey" value="furnitureGroupDesc" />
-		<property name="Material" value="Mmetal_thin" />
+		<property name="Material" value="Mmetal_weak" />
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
 		<property name="Texture" value="282" />
@@ -4652,7 +4652,7 @@ kind of free
 		<property class="RepairItems">
 			<property name="forgedIron" value="3" />
 		</property>
-		<drop event="Harvest" name="scrapIron" count="5,10" />
+		<drop event="Harvest" name="scrapIron" count="10,15" />
 		<drop event="Destroy" name="scrapIron" count="15" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="0.95" />
 		<property name="EconomicValue" value="18" />
@@ -4660,6 +4660,7 @@ kind of free
 	<block id="523" name="storeShelving01Double">
 		<property name="Extends" value="storeShelving01" />
 		<property name="Model" value="Commercial/store_shelving01_double" param1="main_mesh" />
+		<drop event="Harvest" name="scrapIron" count="5,10" />
 	</block>
 	<block id="524" name="storeShelving01Top">
 		<property name="Extends" value="storeShelving01" />
@@ -4667,7 +4668,7 @@ kind of free
 		<property name="Model" value="Commercial/store_shelving01_top" param1="main_mesh" />
 	</block>
 	<block id="525" name="storeShelving01TopDouble">
-		<property name="Extends" value="storeShelving01" />
+		<property name="Extends" value="storeShelving01Double" />
 		<property name="Model" value="Commercial/store_shelving01_top_double" param1="main_mesh" />
 	</block>
 	<block id="526" name="mineCookingPot">

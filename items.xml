@@ -1500,7 +1500,7 @@ Mesh files no longer used:
 		</property>
 			<property class="Action1">
 			<property name="Class" value="Repair" />
-			<property name="Delay" value="0.4" />
+			<property name="Delay" value="0.8" />
 			<property name="Repair_amount" value="10" />
 			<property name="Upgrade_hit_offset" value="0" />
 			<property name="Sound_start" value="UseActions/repair_block" />
@@ -1968,7 +1968,7 @@ Mesh files no longer used:
 			<property name="Class" value="Repair" />
 			<property name="Delay" value="0.5" />
 			<property name="Repair_amount" value="350" />
-			<property name="Upgrade_hit_offset" value="-2" />
+			<property name="Upgrade_hit_offset" value="-4" />
 			<property name="Sound_start" value="UseActions/repair_block" />
 			<property name="Allowed_upgrade_items" value="Plank,scrapIron,forgedIron,fertileDirt,forgedSteel,clayLump,fertileDirt,stick,nail" />
 			<property name="Restricted_upgrade_items" value="concreteMix,cobblestones" />
@@ -2023,7 +2023,7 @@ Mesh files no longer used:
 			<property name="Class" value="Repair" />
 			<property name="Delay" value="0.5" />
 			<property name="Repair_amount" value="250" />
-			<property name="Upgrade_hit_offset" value="-1" />
+			<property name="Upgrade_hit_offset" value="-5" />
 			<property name="Sound_start" value="UseActions/repair_block" />
 			<property name="Allowed_upgrade_items" value="Plank,fertileDirt,scrapIron,clayLump,stick,nail" />
 			<property name="Restricted_upgrade_items" value="concreteMix,shortSteelPipe,cobblestones" />
@@ -2082,7 +2082,7 @@ Mesh files no longer used:
 			<property name="Class" value="Repair" />
 			<property name="Delay" value="0.25" />
 			<property name="Repair_amount" value="250" />
-			<property name="Upgrade_hit_offset" value="-3" />
+			<property name="Upgrade_hit_offset" value="-5" />
 			<property name="Repair_action_sound" value="Weapons/Motorized/Nailgun/nailgun_fire" />
 			<property name="Upgrade_action_sound" value="Weapons/Motorized/Nailgun/nailgun_fire" />
 			<property name="Allowed_upgrade_items" value="dirtFragment,snowBall,steelPolish,yuccaFiber,wood,scrapIron,forgedIron,forgedSteel,shortSteelPipe,fertileDirt,shortMetalPipe,clayLump,Plank,stick,nail" />
@@ -12801,7 +12801,7 @@ Mesh files no longer used:
 			<property name="Class" value="Repair" />
 			<property name="Delay" value="0.3" />
 			<property name="Repair_amount" value="350" />
-			<property name="Upgrade_hit_offset" value="-2" />
+			<property name="Upgrade_hit_offset" value="-5" />
 			<property name="Sound_start" value="UseActions/repair_block" />
 			<property name="Allowed_upgrade_items" value="Plank,scrapIron,forgedIron,fertileDirt,forgedSteel,clayLump,fertileDirt,stick,nail" />
 			<property name="Restricted_upgrade_items" value="concreteMix,cobblestones" />
