@@ -836,7 +836,7 @@
 		<item group="TierOneBooks" prob="0.8" />
 		<item group="TierTwoBooks" prob="0.3" />
 		<item group="TierThreeBooks" prob="0.1" />
-		<item group="periodicals" prob="0.3" />
+		<item group="periodicals" prob="0.2" />
 	</lootgroup>
 	<lootgroup name="gasPumps" count="1">
 		<item name="gasCan" />
@@ -1295,7 +1295,7 @@
 		<item name="cigar" count="1" prob="0.2" />
 		<item name="FiberRope" count="1,3" prob="0.4" />
 		<item name="stick" count="1,5" prob="0.3" />
-		<item name="PlantFibers" count="1,10" prob="0.3" />
+		<item name="yuccaFiber" count="1,10" prob="0.3" />
 		<item name="dirtFragment" count="1,10" prob="0.4" />
 	</lootgroup>
 	<lootgroup name="garbage" count="1">
@@ -1843,13 +1843,16 @@
 		<item name="GoreBlock1BonesPrefab" prob="0.1" />
 	</lootgroup>
 	<!-- lootcontainer 1 misc storage, cardboard boxes-->
-	<lootcontainer id="1" count="0,2" size="5,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" open_time="5">
-		<item group="junk" prob="0.5" />
-		<item name="book" prob="0.1" />
+	<lootcontainer id="1" count="1,2" size="5,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" open_time="5">
+		<item group="junk" prob="1" />
+		<item name="book" prob="0.25" />
+		<item name="paper" prob="0.5" />
+		<item group="empty" prob="1" />
 	</lootcontainer>
 	<!-- lootcontainer 2 garbage-->
-	<lootcontainer id="2" count="0,2" size="5,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="5">
+	<lootcontainer id="2" count="1,2" size="5,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="5">
 		<item group="junk" />
+		<item group="empty" />
 	</lootcontainer>
 	<!-- lootcontainer 3 canned or dry food cupboard door open sound-->
 	<lootcontainer id="3" count="0,2" size="5,4" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard" open_time="5">
@@ -2053,7 +2056,7 @@
 		<item group="clothes" prob="0.3" />
 		<item group="questChallenge" count="1" prob="0.035" />
 		<item group="treasureMaps" count="1" prob="0.035" />
-		<item group="empty" prob="1.5" />
+		<item group="empty" prob="1" />
 		<!-- total 2.2% for a quest thing -->
 	</lootcontainer>
 	<!-- fat zombie loot -->
@@ -2114,11 +2117,11 @@
 		<item group="ammoBig" prob="0.01" />
 		<item group="periodicals" prob="0.05" />
 		<item group="TierOneBooks" prob="0.1" />
-		<item name="paper" count="5,10" prob="0.75" />
+		<item name="paper" count="5,10" prob="1" />
 		<item name="painkillers" prob="0.08" />
 		<item name="book" count="1,4" prob="0.5" />
 		<item group="ammoSmall" prob="0.4" />
-		<item group="empty" prob="1" />
+		<item group="empty" prob="0.75" />
 	</lootcontainer>
 	<!-- cooler loot -->
 	<lootcontainer id="45" count="0,2" size="4,3" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" open_time="5">

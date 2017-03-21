@@ -336,7 +336,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="Mass" type="int" value="15" />
 		<property name="fertile_level" value="1" />
 		<property name="explosionresistance" value=".20" />
-		<property name="MaxDamage" value="7500" />
+		<property name="MaxDamage" value="10000" />
 	</material>
 	<!-- has more explosion resistance -->
 	<material id="MrConcrete">
@@ -349,7 +349,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="Mass" type="int" value="15" />
 		<property name="fertile_level" value="1" />
 		<property name="explosionresistance" value=".25" />
-		<property name="MaxDamage" value="10000" />
+		<property name="MaxDamage" value="15000" />
 	</material>
 	<material id="Mbedrock">
 		<property name="damage_category" value="stone" />

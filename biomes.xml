@@ -1345,6 +1345,38 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="cntCar03Damage2" prob="0.002" rotatemax="3" />
 				<decoration type="block" blockname="treeBrownGrassDiagonal" prob=".05" />
 				<decoration type="block" blockname="DecalSphere" prob="0.1" rotatemax="3" />
+				<decoration type="block" blockname="randomCars" prob=".0008" rotatemax="3" />
+				<decoration type="block" blockname="BrokenCars" prob=".006" rotatemax="3" />
+				<decoration type="block" blockname="militaryCars" prob=".002" rotatemax="3" />
+				<decoration type="prefab" name="mp_waste_pile_01" prob="0.03" />
+				<decoration type="prefab" name="mp_waste_pile_02" prob="0.03" />
+				<decoration type="prefab" name="mp_waste_pile_03" prob="0.03" />
+				<decoration type="prefab" name="mp_waste_pile_04" prob="0.03" />
+				<decoration type="prefab" name="mp_waste_pile_05" prob="0.03" />
+				<decoration type="block" blockname="cntCorpseLoot02" prob=".006" rotatemax="3" />
+				<decoration type="prefab" name="waste_rubble_bldg_01" prob="0.02" />
+				<decoration type="prefab" name="waste_rubble_bldg_02" prob="0.02" />
+				<decoration type="prefab" name="waste_rubble_bldg_03" prob="0.02" />
+				<decoration type="prefab" name="waste_rubble_bldg_09" prob="0.02" />
+				<decoration type="prefab" name="waste_rubble_bldg_04" prob="0.0067" />
+				<decoration type="prefab" name="waste_rubble_bldg_05" prob="0.0067" />
+				<decoration type="prefab" name="waste_rubble_bldg_06" prob="0.0067" />
+				<decoration type="prefab" name="waste_rubble_bldg_07" prob="0.0067" />
+				<decoration type="prefab" name="waste_rubble_bldg_08" prob="0.0067" />
+				<decoration type="prefab" name="waste_rubble_highway_01" prob="0.005" />
+				<decoration type="prefab" name="mp_waste_pile_01" prob="0.005" />
+				<decoration type="prefab" name="mp_waste_pile_02" prob="0.005" />
+				<decoration type="prefab" name="mp_waste_pile_03" prob="0.005" />
+				<decoration type="prefab" name="mp_waste_pile_04" prob="0.005" />
+				<decoration type="prefab" name="mp_waste_pile_05" prob="0.005" />
+				<decoration type="prefab" name="street_light_02" prob="0.00125" />
+				<decoration type="prefab" name="power_pole_01" prob="0.00025" />
+				<decoration type="prefab" name="sign_slow" prob="0.00025" />
+				<decoration type="prefab" name="sign_speed_25" prob="0.00025" />
+				<decoration type="prefab" name="sign_speed_35" prob="0.00025" />
+				<decoration type="prefab" name="sign_speed_45" prob="0.00025" />
+				<decoration type="prefab" name="sign_speed_55" prob="0.00025" />
+				<decoration type="prefab" name="sign_stop" prob="0.00025" />
 			</decorations>
 			<terrain class="Hills" />
 		</biome>

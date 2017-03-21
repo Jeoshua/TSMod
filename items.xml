@@ -1494,27 +1494,18 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.earth" value=".5" />
 			<property name="DamageBonus.cloth" value="5" />
+			<property name="CraftingSkillGroup" value="Athletics" />
 			<property name="ActionExp" value="1" />
 			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
-		<property class="Action1">
-			<!-- AttackAction -->
-			<property name="Class" value="Melee" />
-			<property name="Delay" value="1.2" />
-			<property name="Range" value="2.7" />
-			<property name="Block_range" value="3" />
-			<property name="Sphere" value="0.1" />
-			<property name="Sound_start" value="swoosh" />
-			<property name="Stamina_usage" value="10" />
-			<property name="DamageBonus.head" value="40" />
-			<property name="DamageBonus.glass" value="38" />
-			<property name="DamageBonus.steel" value="0" />
-			<property name="DamageBonus.hardStone" value="0" />
-			<property name="DamageBonus.wood" value="30" />
-			<property name="DamageBonus.stone" value="20" />
-			<property name="DamageBonus.metal" value="0" />
-			<property name="DamageBonus.earth" value="0.75" />
-			<property name="DamageBonus.cloth" value="7.5" />
+			<property class="Action1">
+			<property name="Class" value="Repair" />
+			<property name="Delay" value="0.4" />
+			<property name="Repair_amount" value="10" />
+			<property name="Upgrade_hit_offset" value="0" />
+			<property name="Sound_start" value="UseActions/repair_block" />
+			<property name="Allowed_upgrade_items" value="wood,stick,yuccaFiber,nail" />
+			<property name="ActionSkillGroup" value="Primitive Crafting" />
 			<property name="ActionExp" value="1" />
 			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
@@ -1528,7 +1519,6 @@ Mesh files no longer used:
 		</property>
 		<property name="DescriptionKey" value="stoneAxeDesc" />
 		<property name="Group" value="Tools/Traps,Basics" />
-		<property name="ActionSkillGroup" value="Athletics" />
 		<property name="CraftingSkillGroup" value="Primitive Crafting" />
 		<property name="RepairExpMultiplier" value="2.2" />
 	</item>
@@ -2095,7 +2085,7 @@ Mesh files no longer used:
 			<property name="Upgrade_hit_offset" value="-3" />
 			<property name="Repair_action_sound" value="Weapons/Motorized/Nailgun/nailgun_fire" />
 			<property name="Upgrade_action_sound" value="Weapons/Motorized/Nailgun/nailgun_fire" />
-			<property name="Allowed_upgrade_items" value="dirtFragment,snowBall,steelPolish,PlantFibers,wood,scrapIron,forgedIron,forgedSteel,shortSteelPipe,fertileDirt,shortMetalPipe,clayLump,Plank,stick,nail" />
+			<property name="Allowed_upgrade_items" value="dirtFragment,snowBall,steelPolish,yuccaFiber,wood,scrapIron,forgedIron,forgedSteel,shortSteelPipe,fertileDirt,shortMetalPipe,clayLump,Plank,stick,nail" />
 			<property name="Restricted_upgrade_items" value="concreteMix,cobblestones" />
 			<!--<property name="Restricted_upgrade_items" value="concrete" />-->
 			<property name="ActionExp" value="1" />
@@ -2247,6 +2237,7 @@ Mesh files no longer used:
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property name="CrosshairOnAim" value="true" />
 		<property name="CrosshairUpAfterShot" value="false" />
+		<property name="Weight" value="1" />
 		<property class="Action0">
 			<property name="Class" value="Catapult" />
 			<property name="Hitmask_override" value="Arrow" />
@@ -3598,7 +3589,7 @@ Mesh files no longer used:
 		<property name="Insulation" value="2" />
 		<property name="Encumbrance" value="0.01" />
 		<property name="Material" value="plants" />
-		<property name="RepairTools" value="PlantFibers" />
+		<property name="RepairTools" value="yuccaFiber" />
 		<property name="DegradationBreaksAfter" value="false" />
 		<property name="FuelValue" value="6" />
 		<property name="EconomicValue" value="5" />
@@ -8064,7 +8055,7 @@ Mesh files no longer used:
 		</property>
 	</item>
 	<!-- * * * * * * * * * * other stuff * * * * * * * * * * -->
-	<item id="1300" name="PlantFibers">
+	<item id="1300" name="yuccaFiber">
 		<property name="Meshfile" value="Items/Crafting/plant_fibers" />
 		<property name="Weight" value="1" />
 		<property name="Material" value="plants" />
@@ -8383,7 +8374,7 @@ Mesh files no longer used:
 			<property name="Repair_amount" value="250" />
 			<property name="Sound_start" value="UseActions/repair_block" />
 			<property name="Allowed_upgrade_items" value="cobblestones" />
-			<property name="Restricted_upgrade_items" value="concreteMix,PlantFibers,wood,scrapIron,forgedIron,forgedSteel,shortSteelPipe,fertileDirt,shortMetalPipe,clayLump,Plank" />
+			<property name="Restricted_upgrade_items" value="concreteMix,yuccaFiber,wood,scrapIron,forgedIron,forgedSteel,shortSteelPipe,fertileDirt,shortMetalPipe,clayLump,Plank" />
 			<property name="Upgrade_action_sound" value="UseActions/bucketpour_concrete" />
 			<property name="ActionExp" value="1" />
 			<property name="ActionExpBonusMultiplier" value="1" />
@@ -8417,7 +8408,7 @@ Mesh files no longer used:
 			<property name="Upgrade_hit_offset" value="-2" />
 			<property name="Sound_start" value="UseActions/repair_block" />
 			<property name="Allowed_upgrade_items" value="concreteMix" />
-			<property name="Restricted_upgrade_items" value="cobblestones,PlantFibers,wood,scrapIron,forgedIron,forgedSteel,shortSteelPipe,fertileDirt,shortMetalPipe,clayLump,Plank" />
+			<property name="Restricted_upgrade_items" value="cobblestones,yuccaFiber,wood,scrapIron,forgedIron,forgedSteel,shortSteelPipe,fertileDirt,shortMetalPipe,clayLump,Plank" />
 			<property name="Upgrade_action_sound" value="UseActions/bucketpour_concrete" />
 			<property name="ActionExp" value="1" />
 			<property name="ActionExpBonusMultiplier" value="1" />
@@ -8614,6 +8605,7 @@ Mesh files no longer used:
 		<property name="EconomicValue" value="10" />
 		<property name="EconomicBundleSize" value="5" />
 		<property name="Group" value="Resources" />
+		<property name="CraftingSkillGroup" value="Miscellaneous Crafting" />
 		<property name="CraftingIngredientTime" value="0.1" />
 	</item>
 	<item id="1341" name="ironArrowHead">
@@ -8663,7 +8655,7 @@ Mesh files no longer used:
 			<property name="Upgrade_hit_offset" value="0" />
 			<property name="Sound_start" value="UseActions/repair_block" />
 			<property name="Allowed_upgrade_items" value="coal" />
-			<property name="Restricted_upgrade_items" value="concreteMix,cobblestones,PlantFibers,wood,scrapIron,forgedIron,forgedSteel,shortSteelPipe,fertileDirt,shortMetalPipe,clayLump,Plank" />
+			<property name="Restricted_upgrade_items" value="concreteMix,cobblestones,yuccaFiber,wood,scrapIron,forgedIron,forgedSteel,shortSteelPipe,fertileDirt,shortMetalPipe,clayLump,Plank" />
 			<property name="Upgrade_action_sound" value="wooddestroy1" />
 		</property>
 	</item>
@@ -16340,7 +16332,7 @@ Mesh files no longer used:
 			<property name="Upgrade_hit_offset" value="-2" />
 			<property name="Sound_start" value="UseActions/repair_block" />
 			<property name="Allowed_upgrade_items" value="ProfessionKey" />
-			<property name="Restricted_upgrade_items" value="concreteMix,cobblestones,PlantFibers,wood,scrapIron,forgedIron,forgedSteel,shortSteelPipe,fertileDirt,shortMetalPipe,clayLump,Plank" />
+			<property name="Restricted_upgrade_items" value="concreteMix,cobblestones,yuccaFiber,wood,scrapIron,forgedIron,forgedSteel,shortSteelPipe,fertileDirt,shortMetalPipe,clayLump,Plank" />
 		</property>
 		<property name="DescriptionKey" value="KeyDesc" />
 	</item>
@@ -16414,6 +16406,7 @@ Mesh files no longer used:
 	<item id="2006" name="FishingLine">
 		<property name="Extends" value="itemMaster" />
 		<property name="DescriptionKey" value="FiberRopeDesc" />
+		<property name="CraftingSkillGroup" value="Miscellaneous Crafting" />
 	</item>
 	<item id="2007" name="BowString">
 		<property name="Extends" value="itemMaster" />

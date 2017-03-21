@@ -66,7 +66,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="wood" count="1" tooltip="ttScrapMetalLead">
 		<wildcard_forge_category />
 	</recipe>
-	<recipe name="PlantFibers" count="1" tooltip="ttScrapMetalBrass">
+	<recipe name="yuccaFiber" count="1" tooltip="ttScrapMetalBrass">
 		<wildcard_forge_category />
 	</recipe>
 	<!-- * * * * * * * * * * * * main recipes * * * * * * * * * * * * -->
@@ -565,7 +565,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	</recipe>
 	<recipe name="workcampfire" count="1" craft_time="30" craft_exp_gain="10">
 		<ingredient name="rockSmall" count="16" />
-		<ingredient name="PlantFibers" count="4" />
+		<ingredient name="yuccaFiber" count="4" />
 	</recipe>
 	<recipe name="canBoiledWater" count="1" craft_area="workcampfire" craft_time="30" craft_exp_gain="0">
 		<ingredient name="canMurkyWater" count="1" />
@@ -1124,7 +1124,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="partsSniperRifle_parts" count="1" />
 	</recipe>
 	<recipe name="hayBaleBlock" count="1" craft_time="10" craft_exp_gain="2">
-		<ingredient name="PlantFibers" count="10" />
+		<ingredient name="yuccaFiber" count="10" />
 	</recipe>
 	<recipe name="herbalAntibiotics" count="1" craft_area="workMortarAndPestle" craft_time="60" craft_exp_gain="20">
 		<ingredient name="hangingMoss" count="1" />
@@ -1427,27 +1427,27 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="dirtFragment" count="12" />
 	</recipe>
 	<recipe name="plantFiberGloves" count="1" craft_time="30" craft_exp_gain="25">
-		<ingredient name="PlantFibers" count="5" />
+		<ingredient name="yuccaFiber" count="5" />
 		<ingredient name="FiberRope" count="3" />
 	</recipe>
 	<recipe name="plantFiberHat" count="1" craft_time="30" craft_exp_gain="25">
-		<ingredient name="PlantFibers" count="5" />
+		<ingredient name="yuccaFiber" count="5" />
 		<ingredient name="FiberRope" count="3" />
 	</recipe>
 	<recipe name="plantFiberHood" count="1" craft_time="30" craft_exp_gain="25">
-		<ingredient name="PlantFibers" count="5" />
+		<ingredient name="yuccaFiber" count="5" />
 		<ingredient name="FiberRope" count="3" />
 	</recipe>
 	<recipe name="plantFiberPants" count="1" craft_time="30" craft_exp_gain="25">
-		<ingredient name="PlantFibers" count="10" />
+		<ingredient name="yuccaFiber" count="10" />
 		<ingredient name="FiberRope" count="6" />
 	</recipe>
 	<recipe name="plantFiberShirt" count="1" craft_time="30" craft_exp_gain="25">
-		<ingredient name="PlantFibers" count="10" />
+		<ingredient name="yuccaFiber" count="10" />
 		<ingredient name="FiberRope" count="5" />
 	</recipe>
 	<recipe name="plantFiberShoes" count="1" craft_time="30" craft_exp_gain="25">
-		<ingredient name="PlantFibers" count="5" />
+		<ingredient name="yuccaFiber" count="5" />
 		<ingredient name="FiberRope" count="3" />
 	</recipe>
 	<recipe name="playerSignWood1x1" count="1" craft_time="10" craft_exp_gain="5">
@@ -1687,11 +1687,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="bottledWater" count="1" />
 	</recipe>
 	<recipe name="sod" count="1" craft_time="5" craft_exp_gain="5">
-		<ingredient name="PlantFibers" count="1" />
+		<ingredient name="yuccaFiber" count="1" />
 		<ingredient name="dirtFragment" count="12" />
 	</recipe>
 	<recipe name="sod" count="1" craft_area="workcementMixer" craft_time="5" craft_exp_gain="5">
-		<ingredient name="PlantFibers" count="1" />
+		<ingredient name="yuccaFiber" count="1" />
 		<ingredient name="dirtFragment" count="12" />
 	</recipe>
 	<recipe name="splint" count="1" craft_time="20" craft_exp_gain="20">
@@ -2056,13 +2056,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="cloth" count="10" />
 		<ingredient name="FiberRope" count="5" />
 		<ingredient name="coal" count="1" />
-		<ingredient name="PlantFibers" count="1" />
+		<ingredient name="yuccaFiber" count="1" />
 	</recipe>
 	<recipe name="armyShirt" count="1" craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="6" />
 		<ingredient name="FiberRope" count="3" />
 		<ingredient name="coal" count="1" />
-		<ingredient name="PlantFibers" count="1" />
+		<ingredient name="yuccaFiber" count="1" />
 	</recipe>
 	<recipe name="augerSchematic" count="1" craft_area="workResearchDesk" craft_time="300" craft_exp_gain="100">
 		<ingredient name="partsHandlebars" count="1" />
@@ -2127,7 +2127,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	</recipe>
 	<recipe name="bandanaGreen" count="1" craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="2" />
-		<ingredient name="PlantFibers" count="1" />
+		<ingredient name="yuccaFiber" count="1" />
 	</recipe>
 	<recipe name="bandanaBrown" count="1" craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="2" />
@@ -2284,7 +2284,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="BoneMeal" count="1" craft_area="workStoneMill" craft_time="5" craft_exp_gain="5">
 		<ingredient name="femur" count="3" />
 	</recipe>
-	<recipe name="BowString" count="1" craft_area="workcampfire" craft_tool="cookingPot" craft_time="5" craft_exp_gain="0">
+	<recipe name="BowString" count="1" craft_area="workcampfire" craft_tool="cookingPot" craft_time="5" craft_exp_gain="10">
 		<ingredient name="Sinew" count="3" />
 		<ingredient name="bottledWater" count="1" />
 	</recipe>
@@ -2432,7 +2432,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="coal" count="1" craft_area="workBlastFurnace" material_based="true" craft_time="1" craft_exp_gain="0">
 		<ingredient name="unit_coal" count="5" />
 	</recipe>
-	<recipe name="coal" count="5" craft_area="workBurnBarrel" craft_time="60" craft_exp_gain="25">
+	<recipe name="coal" count="5" craft_area="workBurnBarrel" craft_time="30" craft_exp_gain="15">
 		<ingredient name="wood" count="5" />
 	</recipe>
 	<recipe name="CoffeeSeeds" count="2" craft_area="workSeedNursery" craft_time="60" craft_exp_gain="0">
@@ -2607,10 +2607,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="mechanicalParts" count="30" />
 		<ingredient name="scrapCable" count="40" />
 	</recipe>
-	<recipe name="DriedCannabis" count="4" craft_area="workDryingRack" craft_time="300" craft_exp_gain="0">
+	<recipe name="DriedCannabis" count="4" craft_area="workDryingRack" craft_time="30" craft_exp_gain="0">
 		<ingredient name="CannabisBud" count="1" />
 	</recipe>
-	<recipe name="DriedTobacco" count="4" craft_area="workDryingRack" craft_time="300" craft_exp_gain="0">
+	<recipe name="DriedTobacco" count="4" craft_area="workDryingRack" craft_time="30" craft_exp_gain="0">
 		<ingredient name="TobaccoLeaf" count="1" />
 	</recipe>
 	<recipe name="egg" count="3" craft_area="workChickenCoop3" craft_time="5400" craft_exp_gain="0">
@@ -2683,14 +2683,14 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="corn" count="15" />
 		<ingredient name="bottledWater" count="1" />
 	</recipe>
-	<recipe name="feather" count="1" craft_time="5" craft_exp_gain="0">
+	<recipe name="feather" count="1" craft_time="5" craft_exp_gain="5">
 		<ingredient name="scrapPlastics" count="2" />
 	</recipe>
-	<recipe name="feather" count="1" craft_time="5" craft_exp_gain="0">
+	<recipe name="feather" count="1" craft_time="5" craft_exp_gain="5">
 		<ingredient name="ductTape" count="1" />
 	</recipe>
 	<recipe name="FiberRope" count="1" craft_time="2" craft_exp_gain="1">
-		<ingredient name="PlantFibers" count="2" />
+		<ingredient name="yuccaFiber" count="2" />
 	</recipe>
 	<recipe name="FieldKnife" count="1" craft_area="workAnvil" craft_tool="clawHammer" craft_time="30" craft_exp_gain="15">
 		<ingredient name="SmallKnifeBlade" count="1" />
@@ -2728,7 +2728,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="Fitness InstructorProfession" count="1" craft_area="workResearchDesk" craft_time="30" craft_exp_gain="5000">
 		<ingredient name="ProfessionPage" count="20" />
 	</recipe>
-	<recipe name="FishingLine" count="1" craft_area="workcampfire" craft_tool="cookingPot" craft_time="5" craft_exp_gain="0">
+	<recipe name="FishingLine" count="1" craft_area="workcampfire" craft_tool="cookingPot" craft_time="5" craft_exp_gain="5">
 		<ingredient name="Sinew" count="5" />
 		<ingredient name="bottledWater" count="1" />
 	</recipe>
@@ -2784,7 +2784,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="footballHelmet" count="1" />
 	</recipe>
 	<recipe name="ForestFallTrap" count="1" craft_time="10" craft_exp_gain="5">
-		<ingredient name="PlantFibers" count="2" />
+		<ingredient name="yuccaFiber" count="2" />
 		<ingredient name="dirtFragment" count="10" />
 		<ingredient name="stick" count="5" />
 	</recipe>
@@ -2882,7 +2882,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="gasTank" count="1" />
 	</recipe>
 	<recipe name="GrassFallTrap" count="1" craft_time="10" craft_exp_gain="5">
-		<ingredient name="PlantFibers" count="1" />
+		<ingredient name="yuccaFiber" count="1" />
 		<ingredient name="dirtFragment" count="10" />
 		<ingredient name="stick" count="5" />
 	</recipe>
@@ -3441,7 +3441,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="Plank" count="10" craft_area="workworkbench" craft_tool="CircularSaw" craft_time="5" craft_exp_gain="3">
 		<ingredient name="wood" count="1" />
 	</recipe>
-	<recipe name="PlantFibers" count="6" craft_time="5" craft_exp_gain="1">
+	<recipe name="yuccaFiber" count="6" craft_time="5" craft_exp_gain="1">
 		<ingredient name="plantedYucca3Harvest" count="1" />
 	</recipe>
 	<recipe name="powerBox" count="1" craft_area="workMetalWorkBench" craft_tool="CompactDriver" craft_time="30" craft_exp_gain="25">
@@ -3467,7 +3467,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="cloth" count="8" />
 		<ingredient name="cottonPlant" count="6" />
 		<ingredient name="FiberRope" count="4" />
-		<ingredient name="PlantFibers" count="5" />
+		<ingredient name="yuccaFiber" count="5" />
 	</recipe>
 	<recipe name="pufferCoatBrown" count="1" craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="8" />
@@ -3722,7 +3722,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="shirtGreen" count="1" craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="6" />
 		<ingredient name="FiberRope" count="3" />
-		<ingredient name="PlantFibers" count="3" />
+		<ingredient name="yuccaFiber" count="3" />
 	</recipe>
 	<recipe name="shirtRed" count="1" craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="6" />
@@ -3830,7 +3830,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="skullCapGreen" count="1" craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="3" />
 		<ingredient name="FiberRope" count="1" />
-		<ingredient name="PlantFibers" count="2" />
+		<ingredient name="yuccaFiber" count="2" />
 	</recipe>
 	<recipe name="skullCapBlue" count="1" craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="3" />
@@ -4056,7 +4056,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="sweatshirtGreen" count="1" craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="8" />
 		<ingredient name="FiberRope" count="3" />
-		<ingredient name="PlantFibers" count="5" />
+		<ingredient name="yuccaFiber" count="5" />
 	</recipe>
 	<recipe name="sweatshirtRed" count="1" craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="8" />
@@ -4092,7 +4092,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="tankTopGreen" count="1" craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="5" />
 		<ingredient name="FiberRope" count="2" />
-		<ingredient name="PlantFibers" count="2" />
+		<ingredient name="yuccaFiber" count="2" />
 	</recipe>
 	<recipe name="tankTopBlue" count="1" craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="5" />
@@ -4168,7 +4168,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="tshirtGreen" count="1" craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="6" />
 		<ingredient name="FiberRope" count="3" />
-		<ingredient name="PlantFibers" count="3" />
+		<ingredient name="yuccaFiber" count="3" />
 	</recipe>
 	<recipe name="tshirtRed" count="1" craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="6" />
@@ -4275,7 +4275,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	</recipe>
 	<recipe name="WoodFallTrap" count="1" craft_time="10" craft_exp_gain="5">
 		<ingredient name="Plank" count="4" />
-		<ingredient name="PlantFibers" count="2" />
+		<ingredient name="yuccaFiber" count="2" />
 	</recipe>
 	<recipe name="Wood_Gate_2x3" count="1" craft_area="workworkbench" craft_tool="clawHammer" craft_exp_gain="30" craft_time="30">
 		<ingredient name="Plank" count="100" />
@@ -4350,7 +4350,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	</recipe>
 	<recipe name="workChickenCoop" count="1" craft_time="30" craft_exp_gain="25">
 		<ingredient name="stick" count="20" />
-		<ingredient name="PlantFibers" count="10" />
+		<ingredient name="yuccaFiber" count="10" />
 		<ingredient name="feather" count="5" />
 		<ingredient name="Plank" count="2" />
 		<ingredient name="shortMetalPipe" count="6" />
