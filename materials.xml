@@ -788,7 +788,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="stepsound" value="stone" />
 		<property name="stability_glue" value="72" />
 		<property name="Mass" type="int" value="12" />
-		<property name="MaxDamage" value="5000" />
+		<property name="MaxDamage" value="7500" />
 	</material>
 	<!-- Materials for blocks that are not supposed to stick to walls. -->
 	<!-- There are not many of those so define individual hit points in blocks.xml. -->

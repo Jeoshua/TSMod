@@ -1484,6 +1484,7 @@ Mesh files no longer used:
 			<property name="Block_range" value="3" />
 			<property name="Sphere" value="0.1" />
 			<property name="Sound_start" value="swoosh" />
+			<property name="Sound_harvesting" value="UseActions/repair_block" />
 			<property name="Stamina_usage" value="5" />
 			<property name="Buff" value="headshotMelee1" />
 			<property name="Buff_chance" value="0.05" />
@@ -1491,7 +1492,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.glass" value="25" />
 			<property name="DamageBonus.wood" value="15" />
 			<property name="DamageBonus.stone" value="15" />
-			<property name="DamageBonus.metal" value="0.5" />
+			<property name="DamageBonus.metal" value="0.75" />
 			<property name="DamageBonus.earth" value="0.5" />
 			<property name="DamageBonus.cloth" value="5" />
 			<property name="DamageBonus.steel" value="0" />
@@ -1502,11 +1503,11 @@ Mesh files no longer used:
 		</property>
 			<property class="Action1">
 			<property name="Class" value="Repair" />
-			<property name="Delay" value="0.8" />
-			<property name="Repair_amount" value="10" />
+			<property name="Delay" value="0.5" />
+			<property name="Repair_amount" value="50" />
 			<property name="Upgrade_hit_offset" value="0" />
 			<property name="Sound_start" value="UseActions/repair_block" />
-			<property name="Allowed_upgrade_items" value="wood,stick,PlantFibers,nail" />
+			<property name="Allowed_upgrade_items" value="wood,stick,Plank,PlantFibers,nail" />
 			<property name="ActionExp" value="1" />
 			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
@@ -1514,7 +1515,7 @@ Mesh files no longer used:
 			<property name="EntityDamage" value="6,10" />
 			<property name="BlockDamage" value="5,30" />
 			<property name="DegradationMax" value="100,600" />
-			<property name="DegradationRate" value="3,1" />
+			<property name="DegradationRate" value="5,1" />
 			<property name="DismembermentBaseChance" value="0,0" />
 			<property name="DismembermentBonus" value="0,0" />
 		</property>
@@ -2039,7 +2040,7 @@ Mesh files no longer used:
 			<property name="Repair_amount" value="350" />
 			<property name="Upgrade_hit_offset" value="-4" />
 			<property name="Sound_start" value="UseActions/repair_block" />
-			<property name="Allowed_upgrade_items" value="Plank,scrapIron,forgedIron,fertileDirt,forgedSteel,clayLump,fertileDirt,stick,nail" />
+			<property name="Allowed_upgrade_items" value="Plank,scrapIron,forgedIron,forgedSteel,stick,nail" />
 			<property name="Restricted_upgrade_items" value="concreteMix,cobblestones" />
 			<property name="ActionExp" value="1" />
 			<property name="ActionExpBonusMultiplier" value="2" />
@@ -2307,7 +2308,7 @@ Mesh files no longer used:
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property name="CrosshairOnAim" value="true" />
 		<property name="CrosshairUpAfterShot" value="false" />
-		<property name="Weight" value="1" />
+		<property name="Weight" value="5" />
 		<property class="Action0">
 			<property name="Class" value="Catapult" />
 			<property name="Hitmask_override" value="Arrow" />
@@ -2586,7 +2587,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.stone" value="0" />
 			<property name="DamageBonus.cloth" value="5" />
-			<property name="ActionExp" value="10" />
+			<property name="ActionExp" value="5" />
 			<property name="ActionExpBonusMultiplier" value="3" />
 		</property>
 		<property name="Group" value="Ammo/Weapons,Basics" />
@@ -2606,7 +2607,7 @@ Mesh files no longer used:
 			<property name="Velocity" value="65" />
 			<property name="Buff" value="arrowCriticalBleedout" />
 			<property name="Buff_chance" value="0.35" />
-			<property name="ActionExp" value="15" />
+			<property name="ActionExp" value="8" />
 			<property name="ActionExpBonusMultiplier" value="3" />
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
@@ -2625,7 +2626,7 @@ Mesh files no longer used:
 			<property name="FlyTime" value="0.15" />
 			<property name="Buff" value="arrowCriticalBleedout" />
 			<property name="Buff_chance" value="0.35" />
-			<property name="ActionExp" value="20" />
+			<property name="ActionExp" value="10" />
 			<property name="ActionExpBonusMultiplier" value="3" />
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
@@ -2661,7 +2662,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.stone" value="0" />
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.cloth" value="100" />
-			<property name="ActionExp" value="20" />
+			<property name="ActionExp" value="10" />
 			<property name="ActionExpBonusMultiplier" value="3" />
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
@@ -2702,7 +2703,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.cloth" value="5" />
 			<property name="ActionExp" value="10" />
-			<property name="ActionExpBonusMultiplier" value="3" />
+			<property name="ActionExpBonusMultiplier" value="2" />
 		</property>
 		<property class="Attributes">
 			<property name="GetQualityFromWeapon" value="true" />
@@ -2741,7 +2742,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.cloth" value="5" />
 			<property name="DamageBonus.stone" value="0" />
 			<property name="ActionExp" value="20" />
-			<property name="ActionExpBonusMultiplier" value="3" />
+			<property name="ActionExpBonusMultiplier" value="2" />
 		</property>
 		<property class="Attributes">
 			<property name="GetQualityFromWeapon" value="true" />
@@ -2781,7 +2782,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.stone" value="0" />
 			<property name="DamageBonus.cloth" value="5" />
 			<property name="ActionExp" value="30" />
-			<property name="ActionExpBonusMultiplier" value="3" />
+			<property name="ActionExpBonusMultiplier" value="2" />
 		</property>
 		<property class="Attributes">
 			<property name="GetQualityFromWeapon" value="true" />
@@ -2822,7 +2823,7 @@ Mesh files no longer used:
 			<property name="Explosion.RadiusBlocks" value="3" />
 			<property name="Explosion.RadiusEntities" value="4" />
 			<property name="ActionExp" value="30" />
-			<property name="ActionExpBonusMultiplier" value="3" />
+			<property name="ActionExpBonusMultiplier" value="2" />
 		</property>
 		<property class="Attributes">
 			<property name="GetQualityFromWeapon" value="true" />
@@ -3891,7 +3892,7 @@ Mesh files no longer used:
 		<property name="Extends" value="animalHideBoots" />
 		<property name="FuelValue" value="20" />
 		<property name="EquipSlot" value="Head" />
-		<property name="Weight" value="1" />
+		<property name="Weight" value="5" />
 		<property class="UMA">
 			<property name="Mesh" value="armor_hide_hood" />
 			<property name="Overlay0" value="armor_hide_hood" />
@@ -3906,7 +3907,7 @@ Mesh files no longer used:
 		<property name="Extends" value="animalHideBoots" />
 		<property name="FuelValue" value="20" />
 		<property name="EquipSlot" value="Hands" />
-		<property name="Weight" value="1" />
+		<property name="Weight" value="5" />
 		<property class="UMA">
 			<property name="Mesh" value="armor_hide_gloves" />
 			<property name="Overlay0" value="armor_hide_gloves" />
@@ -3927,7 +3928,7 @@ Mesh files no longer used:
 		<property name="HoldType" value="45" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
-		<property name="Weight" value="1" />
+		<property name="Weight" value="5" />
 		<property class="Attributes">
 			<property name="ConcussiveProtection" value="0.152,0.38" />
 			<property name="PunctureProtection" value="0.12,0.3" />
@@ -4453,7 +4454,7 @@ Mesh files no longer used:
 		<property name="Material" value="leather" />
 		<property name="RepairTools" value="leather" />
 		<property name="DegradationBreaksAfter" value="false" />
-		<property name="Weight" value="1" />
+		<property name="Weight" value="5" />
 		<property name="FuelValue" value="16" />
 		<property name="EconomicValue" value="220" />
 		<property name="EquipSlot" value="Head" />
@@ -4488,7 +4489,7 @@ Mesh files no longer used:
 		<property name="CustomIcon" value="cowboyHat" />
 		<property name="CustomIconTint" value="87,87,87" />
 		<property name="HoldType" value="7" />
-		<property name="Weight" value="1" />
+		<property name="Weight" value="5" />
 		<property name="Meshfile" value="Items/Clothing/Head/PrefabCowboyhat" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="87,87,87" />
@@ -5234,7 +5235,7 @@ Mesh files no longer used:
 	</item>
 	<item id="508" name="runningShoes">
 		<property name="Extends" value="leatherBoots" />
-		<property name="Weight" value="1" />
+		<property name="Weight" value="5" />
 		<property name="Encumbrance" value="0.02" />
 		<property class="Attributes">
 			<property name="DegradationMax" value="250,600" />
@@ -5995,7 +5996,7 @@ Mesh files no longer used:
 	</item>
 	<item id="585" name="cowboyBootsBrown">
 		<property name="Extends" value="leatherBoots" />
-		<property name="Weight" value="1" />
+		<property name="Weight" value="5" />
 		<property class="Attributes">
 			<property name="DegradationMax" value="250,550" />
 		</property>
@@ -9483,7 +9484,7 @@ Mesh files no longer used:
 	<item id="1435" name="casinoCoin">
 		<property name="Meshfile" value="Items/Misc/casino_coinPrefab" />
 		<property name="Material" value="brass" />
-		<property name="Weight" value="1" />
+		<property name="Weight" value="5" />
 		<property name="HoldType" value="21" />
 		<property name="Stacknumber" value="20000" />
 		<!-- STK resource -->
@@ -9666,7 +9667,7 @@ Mesh files no longer used:
 		<property name="EconomicBundleSize" value="1" />
 		<property class="Action0">
 			<property name="Delay" value="0.5" />
-			<property name="Magazine_items" value="CarbonArrow,SedativeShot,InfectedShot,StimulantShot,PainKillerShot" />
+			<property name="Magazine_items" value="CarbonArrow,steelArrow,SedativeShot,InfectedShot,StimulantShot,PainKillerShot" />
 			<property name="Rays_spread" value="0.01" />
 			<property name="Max_strain_time" value="1.2" />
 			<property name="ActionExp" value="5" />
@@ -9767,7 +9768,7 @@ Mesh files no longer used:
 			<property name="Barrel" value="CarbonCrossbow_Barrel" />
 		</property>
 		<property class="Action0">
-			<property name="Magazine_items" value="CarbonCrossbowBolt, SedativeShot, InfectedShot, StimulantShot, PainKillerShot" />
+			<property name="Magazine_items" value="CarbonCrossbowBolt, steelCrossbowBolt, SedativeShot, InfectedShot, StimulantShot, PainKillerShot" />
 			<property name="Rays_spread" value="0.01" />
 		</property>
 	</item>
@@ -11458,7 +11459,7 @@ Mesh files no longer used:
 		<property name="Stacknumber" value="1" />
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property name="FuelValue" value="24" />
-		<property name="Weight" value="1" />
+		<property name="Weight" value="5" />
 		<property name="CrosshairOnAim" value="true" />
  		<property name="CrosshairUpAfterShot" value="false" />
 		<property class="Action0">
@@ -11523,7 +11524,7 @@ Mesh files no longer used:
 		<property name="HoldType" value="18" />
 		<property name="Stacknumber" value="250" />
 		<property name="FuelValue" value="24" />
-		<property name="Weight" value="1" />
+		<property name="Weight" value="5" />
 		<property class="Action1">
 			<property name="Class" value="Projectile" />
 			<property name="Explosion.ParticleIndex" value="0" />
@@ -16382,7 +16383,7 @@ Mesh files no longer used:
 	<item id="1994" name="FiberRope">
 		<property name="Extends" value="itemMaster" />
 		<property name="Meshfile" value="Items/Crafting/plant_fibers" />
-		<property name="Weight" value="1" />
+		<property name="Weight" value="3" />
 		<property name="Material" value="plants" />
 		<property name="RepairTime" value="2.5" />
 		<property name="RepairAmount" value="30" />

@@ -101,7 +101,7 @@
    -->
 <entitygroups>
 	<entitygroup name="ZombiesAll">
-		<entity name="Dummy" prob="15" />
+		<entity name="Dummy" prob="12.5" />
 		<entity name="zombieBoe" />
 		<entity name="zombieJoe" />
 		<entity name="zombieSteve" />

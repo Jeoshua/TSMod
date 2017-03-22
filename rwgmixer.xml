@@ -271,9 +271,14 @@
 		<prefab_rule name="none" />
 		<prefab_rule name="CommonCityPOIs">
 			<prefab rule="cityBlocks" lot_type="CityBlock" />
-			<prefab rule="banks" />
+			<prefab rule="banks" max_count="3" />
 			<prefab rule="carlots" />
 			<prefab rule="apartments" />
+			<prefab rule="parking" />
+			<prefab rule="entertainment" max_count="3" />
+			<prefab rule="TrailerhousesMixCity" min_count="1" max_count="2" />
+			<prefab rule="gasStations" min_count="1" max_count="3" />
+			<prefab rule="groceryStores" min_count="1" max_count="3" />
 			<prefab name="xvanilla_settlement_01" min_count="1" max_count="1" />
 			<prefab name="xvanilla_cemetery_01" min_count="1" max_count="1" />
 			<prefab name="xvanilla_cemetery_02" min_count="1" max_count="1" />
@@ -305,7 +310,6 @@
 			<prefab name="xcostum_CityPark(by_Spider)" min_count="1" max_count="1" />
 			<prefab name="xcostum_MiniMall(by_Spider)" min_count="1" max_count="1" />
 			<prefab name="xvanilla_business_red_brick_06" max_count="1" />
-			<prefab rule="parking" />
 			<prefab name="xvanilla_utility_waterworks_01" min_count="1" max_count="1" />
 			<prefab name="xcostum_3BlockStores(by_Leo_Liuos)" min_count="1" max_count="1" />
 			<prefab name="xcostum_Alms_house(ex_vanilla_ornate03)" min_count="1" max_count="1" />
@@ -363,8 +367,6 @@
 			<prefab name="xvanilla_store_hardware_lg_01" max_count="1" prob="0.4" />
 			<prefab name="xvanilla_store_pharmacy_sm" min_count="1" max_count="1" />
 			<prefab name="xvanilla_theater_01(city)" min_count="1" max_count="1" />
-			<prefab rule="TrailerhousesMixCity" min_count="1" max_count="2" />
-			<prefab rule="gasStations" min_count="1" max_count="2" />
 			<prefab name="xcostum_Warehouse(by_Illidua)" max_count="1" />
 			<prefab name="xcostum_CountyJail(by_Volar)" max_count="1" />
 			<prefab name="xcostum_SuperStore(by_Volar)" max_count="1" />
@@ -375,7 +377,7 @@
 			<prefab name="xvanilla_mp_waste_bldg_07_intact" max_count="1" prob="0.1" />
 			<prefab name="xvanilla_mp_waste_bldg_02_red" max_count="1" prob="0.1" />
 			<prefab name="xvanilla_mp_waste_bldg_02_tan" max_count="1" prob="0.1" />
-			<prefab rule="trader_settlements" max_count="2" prob="10" />
+			<prefab rule="trader_settlements" min_count="1" max_count="2" prob="10" />
 		</prefab_rule>
 		<!-- Spawning for wastycity :  -->
 		<prefab_rule name="wastycityPOIs">
@@ -445,9 +447,9 @@
 		</prefab_rule>
 		<prefab_rule name="W_POIs_common_Set_A">
 			<prefab rule="trader_settlements" min_count="1" max_count="1" prob="0.5" />
-			<prefab rule="A_frame_houses" max_count="1" prob="0.2" />
-			<prefab rule="barnsAndSheds" max_count="1" prob="0.3" />
-			<prefab rule="militaryCamps" max_count="1" prob="0.2" />
+			<prefab rule="A_frame_houses" max_count="3" prob="0.2" />
+			<prefab rule="barnsAndSheds" max_count="3" prob="0.3" />
+			<prefab rule="militaryCamps" max_count="3" prob="0.2" />
 			<prefab name="xcostum_WWHouse(by_IceJudge)" max_count="1" prob="0.4" />
 			<prefab name="xvanilla_house_new_mansion_01" max_count="1" prob="0.3" />
 			<prefab name="xcostum_Safehouse(by_Limodor)" max_count="1" prob="0.4" />
@@ -455,33 +457,33 @@
 			<prefab name="xcostum_TheSect_Followers-of-M(by_magoli)" max_count="1" prob="0.2" />
 			<prefab name="xvanilla_bombshelter_lg_01" max_count="1" prob="0.2" />
 			<prefab name="xcostum_FuneralParlor(by_Zombieman)" max_count="1" prob="0.1" />
-			<prefab rule="TrailerHouses" max_count="1" prob="0.1" />
+			<prefab rule="TrailerHouses" max_count="3" prob="0.1" />
 			<prefab name="xcostum_ShoppingCenterMall(by_Warsaken)" max_count="1" prob="0.1" />
 		</prefab_rule>
 		<prefab_rule name="W_POIs_common_Set_B">
 			<prefab name="xcostum_Prison1(by_Curbolt)" max_count="1" prob="0.3" />
-			<prefab rule="campsites" max_count="1" prob="0.3" />
-			<prefab rule="cabins" max_count="1" prob="0.5" />
+			<prefab rule="campsites" max_count="3" prob="0.3" />
+			<prefab rule="cabins" max_count="3" prob="0.5" />
 			<prefab name="xcostum_Villa(by_Limodor)" max_count="1" prob="0.4" />
 			<prefab name="xvanilla_house_new_mansion_02" max_count="1" prob="0.2" />
 			<prefab name="xcostum_House(by_ShoNuff)" max_count="1" prob="0.4" />
 			<prefab name="xcostum_NSiteMissileSilo(byEphoie)" max_count="1" prob="0.3" />
 			<prefab name="xvanilla_church_graveyard1" max_count="1" prob="0.3" />
 			<prefab name="xcostum_Treehouse_sm(by_magoli)" max_count="1" prob="0.2" />
-			<prefab rule="burntHousing" max_count="1" prob="0.2" />
+			<prefab rule="burntHousing" max_count="3" prob="0.2" />
 			<prefab name="xvanilla_junkyard_lg" max_count="1" prob="0.1" />
 			<prefab name="xcostum_TheMill(by_MoNKeYest1)" max_count="1" prob="0.1" />
 		</prefab_rule>
 		<prefab_rule name="W_POIs_common_Set_C">
-			<prefab rule="waterPOIs" max_count="1" prob="0.4" />
-			<prefab rule="abandoned_houses" max_count="1" prob="0.4" />
+			<prefab rule="waterPOIs" max_count="3" prob="0.4" />
+			<prefab rule="abandoned_houses" max_count="3" prob="0.4" />
 			<prefab name="xcostum_Cabin(by_Sudo)" max_count="1" prob="0.4" />
 			<prefab name="xvanilla_house_new_mansion_03" max_count="1" prob="0.3" />
 			<prefab name="xvanilla_ranger_station1" max_count="1" prob="0.2" />
 			<prefab name="xcostum_burialshrine(by_snake0567)" max_count="1" prob="0.2" />
 			<prefab name="xvanilla_indian_burial_grounds_01" max_count="1" prob="0.2" />
 			<prefab name="xvanilla_graveyard_sm" max_count="1" prob="0.2" />
-			<prefab rule="countryHousing" max_count="1" prob="0.2" />
+			<prefab rule="countryHousing" max_count="3" prob="0.2" />
 			<prefab name="xcostum_ShoppingCenterShops(by_Warsaken)" max_count="1" prob="0.1" />
 		</prefab_rule>
 		<prefab_rule name="W_POIs_rare">
@@ -548,11 +550,12 @@
 			<prefab rule="bandit_settlements" max_count="1"/>					
 		</prefab_rule>  -->
 		<prefab_rule name="ruralSmallPOIs">
-			<prefab rule="gasStations" max_count="1" prob="1" />
-			<prefab rule="abandoned_houses" max_count="1" prob="0.2" />
+			<prefab rule="gasStations" max_count="2" prob="1" />
+			<prefab rule="diners" max_count="1" prob="0.3" />
+			<prefab rule="abandoned_houses" max_count="3" prob="0.2" />
 			<prefab name="xvanilla_utility_waterworks_01" max_count="1" prob="0.2" />
-			<prefab rule="barnsAndSheds" max_count="1" prob="0.1" />
-			<prefab rule="countryHousing" max_count="1" prob="0.3" />
+			<prefab rule="barnsAndSheds" max_count="2" prob="0.1" />
+			<prefab rule="countryHousing" max_count="2" prob="0.3" />
 			<prefab rule="CarDealerships" max_count="1" prob="0.3" />
 			<prefab name="xvanilla_hotel_new_01" prob="0.2" />
 			<prefab name="xvanilla_house_new_mansion_01" max_count="1" prob="0.2" />
@@ -618,23 +621,24 @@
 			<prefab rule="bookStores" max_count="1" prob="0.9" />
 			<prefab rule="groceryStores" max_count="1" prob="0.9" />
 			<prefab rule="banks" max_count="1" prob="0.9" />
-			<prefab rule="restaurants_and_bars" max_count="1" prob="0.9" />
+			<prefab rule="restaurants_and_bars" max_count="2" prob="0.9" />
 			<prefab rule="funeral_homes" max_count="1" prob="0.9" />
 			<prefab rule="middleClassHousing" />
 			<prefab rule="countryHousing" />
 			<prefab rule="townBuildings" />
-			<prefab rule="trader_settlements" max_count="1" prob="3" />
+			<prefab rule="diners" max_count="1" prob="0.3" />
+			<prefab rule="trader_settlements" min_count="1" max_count="1" prob="3" />
 		</prefab_rule>
 		<prefab_rule name="townBuildings">
 			<prefab rule="garages" max_count="8" prob="0.1" />
 			<prefab rule="gunStores" max_count="1" />
 			<prefab rule="pharmacies" max_count="1" />
-			<prefab rule="banks" max_count="1" />
-			<prefab rule="restaurants_and_bars" max_count="1" />
+			<prefab rule="banks" max_count="2" />
+			<prefab rule="diners" max_count="2" />
 			<prefab rule="funeral_homes" max_count="1" />
 			<prefab rule="hardwareStores" max_count="1" />
 			<prefab rule="bookStores" max_count="1" />
-			<prefab rule="groceryStores" max_count="1" />
+			<prefab rule="groceryStores" max_count="2" />
 			<prefab rule="governmentOffices" max_count="3" />
 			<prefab rule="oldWest" max_count="4" />
 			<prefab rule="countryHousing" max_count="8" />
@@ -645,7 +649,6 @@
 			<prefab rule="businessTan" max_count="3" />
 			<prefab rule="gasStations" min_count="1" max_count="2" prob="20" />
 			<prefab rule="hotels" min_count="1" max_count="1" prob="20" />
-			<prefab rule="diners" max_count="1" />
 			<prefab name="water_tower_02" max_count="1" />
 			<prefab rule="abandoned_houses" max_count="5" />
 			<prefab rule="lowerClassHousing" />
@@ -653,20 +656,19 @@
 			<prefab rule="upperClassHousing" max_count="5" />
 			<prefab rule="burntHousing" />
 			<prefab rule="bandit_settlements" max_count="1" />
-			<prefab rule="carlots" max_count="1" />
+			<prefab rule="carlots" max_count="2" />
 			<prefab rule="signsAndLights" prob="0.1" />
 			<prefab rule="bunkers" max_count="2" />
 			<prefab name="xcostum_Car_Dealership_old(by_P1ut0nium)" max_count="1" />
 			<prefab name="xcostum_Cell_Tower(by_LuckyStar)" max_count="1" />
-			<prefab rule="churches" max_count="1" />
+			<prefab rule="churches" max_count="4" />
 			<prefab rule="firestations" max_count="1" />
-			<prefab rule="restaurants_and_bars" max_count="1" />
+			<prefab rule="restaurants_and_bars" max_count="2" />
 			<prefab rule="town_pois_misc" max_count="2" />
 			<prefab rule="Curbolts_houses" max_count="1" />
 			<prefab rule="entertainment" max_count="2" />
-			<prefab rule="trader_settlements" max_count="1" />
-			<prefab rule="UtilityPOIs" max_count="1" />
-			<prefab rule="trader_settlements" max_count="1" prob="10" />
+			<prefab rule="UtilityPOIs" max_count="2" />
+			<prefab rule="trader_settlements" min_count="1" max_count="1" prob="10" />
 		</prefab_rule>
 		<prefab_rule name="wastyTownPrefabs">
 			<prefab rule="burntHousing" max_count="5" prob="0.4" />
@@ -746,7 +748,7 @@
 			<prefab name="xcostum_Bank(by_Guppycur)" max_count="1" />
 			<prefab name="xcostum_Bank(by_Limodor)" max_count="1" />
 			<!-- Slaanhatten Minifab Add -->
-			<prefab name="x_custom_navez_bank" />
+			<prefab name="x_custom_navez_bank" max_count="1" />
 		</prefab_rule>
 		<prefab_rule name="barnsAndSheds">
 			<prefab name="barn_01" />
