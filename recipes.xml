@@ -2826,6 +2826,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="Strawberry" count="1" />
 		<ingredient name="emptyJar" count="1" />
 	</recipe>
+	<recipe name="FruitSalad Yu/St" count="1" craft_time="5" craft_exp_gain="0">
+		<ingredient name="Strawberry" count="1" />
+		<ingredient name="foodYuccaFruit" count="1" />
+		<ingredient name="emptyJar" count="1" />
+	</recipe>
 	<recipe name="FruitSalad Ap/Bl/Yu" count="1" craft_time="5" craft_exp_gain="0">
 		<ingredient name="Apple" count="1" />
 		<ingredient name="blueberries" count="1" />
@@ -2850,7 +2855,98 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="foodYuccaFruit" count="1" />
 		<ingredient name="emptyJar" count="1" />
 	</recipe>
-	<recipe name="FruitSalad AP/Bl/Yu/St" count="1" craft_time="5" craft_exp_gain="0">
+	<recipe name="FruitSalad Ap/Bl/Yu/St" count="1" craft_time="5" craft_exp_gain="0">
+		<ingredient name="Apple" count="1" />
+		<ingredient name="foodYuccaFruit" count="1" />
+		<ingredient name="Strawberry" count="1" />
+		<ingredient name="blueberries" count="1" />
+		<ingredient name="emptyJar" count="1" />
+	</recipe>
+	<recipe name="FruitSalad Or/Ap" count="1" craft_time="5" craft_exp_gain="0">
+		<ingredient name="Apple" count="1" />
+		<ingredient name="Orange" count="1" />
+		<ingredient name="emptyJar" count="1" />
+	</recipe>
+	<recipe name="FruitSalad Or/Yu" count="1" craft_time="5" craft_exp_gain="0">
+		<ingredient name="Orange" count="1" />
+		<ingredient name="foodYuccaFruit" count="1" />
+		<ingredient name="emptyJar" count="1" />
+	</recipe>
+	<recipe name="FruitSalad Or/St" count="1" craft_time="5" craft_exp_gain="0">
+		<ingredient name="Orange" count="1" />
+		<ingredient name="Strawberry" count="1" />
+		<ingredient name="emptyJar" count="1" />
+	</recipe>
+	<recipe name="FruitSalad Or/Bl" count="1" craft_time="5" craft_exp_gain="0">
+		<ingredient name="blueberries" count="1" />
+		<ingredient name="Orange" count="1" />
+		<ingredient name="emptyJar" count="1" />
+	</recipe>
+	<recipe name="FruitSalad Or/Ap/Bl" count="1" craft_time="5" craft_exp_gain="0">
+		<ingredient name="Orange" count="1" />
+		<ingredient name="Apple" count="1" />
+		<ingredient name="blueberries" count="1" />
+		<ingredient name="emptyJar" count="1" />
+	</recipe>
+	<recipe name="FruitSalad Or/Ap/Yu" count="1" craft_time="5" craft_exp_gain="0">
+		<ingredient name="Orange" count="1" />
+		<ingredient name="Apple" count="1" />
+		<ingredient name="foodYuccaFruit" count="1" />
+		<ingredient name="emptyJar" count="1" />
+	</recipe>
+	<recipe name="FruitSalad Or/Ap/St" count="1" craft_time="5" craft_exp_gain="0">
+		<ingredient name="Orange" count="1" />
+		<ingredient name="Apple" count="1" />
+		<ingredient name="Strawberry" count="1" />
+		<ingredient name="emptyJar" count="1" />
+	</recipe>
+	<recipe name="FruitSalad Or/Bl/Yu" count="1" craft_time="5" craft_exp_gain="0">
+		<ingredient name="Orange" count="1" />
+		<ingredient name="blueberries" count="1" />
+		<ingredient name="foodYuccaFruit" count="1" />
+		<ingredient name="emptyJar" count="1" />
+	</recipe>
+	<recipe name="FruitSalad Or/Bl/St" count="1" craft_time="5" craft_exp_gain="0">
+		<ingredient name="Orange" count="1" />
+		<ingredient name="blueberries" count="1" />
+		<ingredient name="Strawberry" count="1" />
+		<ingredient name="emptyJar" count="1" />
+	</recipe>
+	<recipe name="FruitSalad Or/Yu/St" count="1" craft_time="5" craft_exp_gain="0">
+		<ingredient name="Orange" count="1" />
+		<ingredient name="foodYuccaFruit" count="1" />
+		<ingredient name="Strawberry" count="1" />
+		<ingredient name="emptyJar" count="1" />
+	</recipe>
+	<recipe name="FruitSalad Or/Ap/Bl/Yu" count="1" craft_time="5" craft_exp_gain="0">
+		<ingredient name="Orange" count="1" />
+		<ingredient name="Apple" count="1" />
+		<ingredient name="blueberries" count="1" />
+		<ingredient name="foodYuccaFruit" count="1" />
+		<ingredient name="emptyJar" count="1" />
+	</recipe>
+	<recipe name="FruitSalad Or/Ap/Bl/St" count="1" craft_time="5" craft_exp_gain="0">
+		<ingredient name="Apple" count="1" />
+		<ingredient name="blueberries" count="1" />
+		<ingredient name="Strawberry" count="1" />
+		<ingredient name="emptyJar" count="1" />
+	</recipe>
+	<recipe name="FruitSalad Or/Bl/Yu/St" count="1" craft_time="5" craft_exp_gain="0">
+		<ingredient name="Orange" count="1" />
+		<ingredient name="blueberries" count="1" />
+		<ingredient name="foodYuccaFruit" count="1" />
+		<ingredient name="Strawberry" count="1" />
+		<ingredient name="emptyJar" count="1" />
+	</recipe>
+	<recipe name="FruitSalad Or/Ap/Yu/St" count="1" craft_time="5" craft_exp_gain="0">
+		<ingredient name="Orange" count="1" />
+		<ingredient name="Apple" count="1" />
+		<ingredient name="Strawberry" count="1" />
+		<ingredient name="foodYuccaFruit" count="1" />
+		<ingredient name="emptyJar" count="1" />
+	</recipe>
+	<recipe name="FruitSalad Or/Ap/Bl/Yu/St" count="1" craft_time="5" craft_exp_gain="0">
+		<ingredient name="Orange" count="1" />
 		<ingredient name="Apple" count="1" />
 		<ingredient name="foodYuccaFruit" count="1" />
 		<ingredient name="Strawberry" count="1" />
@@ -4629,6 +4725,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="Tomato" count="4" />
 		<ingredient name="emptyJar" count="1" />
 	</recipe>-->
+	
+	<recipe name="OrangeJuice" count="1" craft_time="20" craft_exp_gain="5">
+		<ingredient name="Orange" count="3" />
+		<ingredient name="emptyJar" count="1" />
+	</recipe>
 	
 	<recipe name="rawSugar" count="1" scrapable="False" craft_area="workStoneMill">
 		<ingredient name="sugarcanePlant" count="1" />

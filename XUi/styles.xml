@@ -504,7 +504,7 @@
 	</style>
 	<style name="compass.window.icon.compass" type="sprite">
 		<style_entry name="depth" value="3" />
-		<style_entry name="name" value="crafting" />
+		<style_entry name="name" value="compass" />
 		<style_entry name="sprite" value="ui_game_symbol_compass" />
 		<style_entry name="width" value="32" />
 		<style_entry name="height" value="32" />

@@ -3349,13 +3349,13 @@ then add recipes for those white/red/green metals
 			<!-- which prefab/particle is used -->
 			<property name="RadiusBlocks" value="4" />
 			<!-- damage radius for blocks -->
-			<property name="BlockDamage" value="2000" />
+			<property name="BlockDamage" value="3000" />
 			<!-- damage for blocks in the center of the explosion -->
 			<property name="RadiusEntities" value="7" />
 			<!-- damage radius for entities -->
-			<property name="EntityDamage" value="200" />
+			<property name="EntityDamage" value="250" />
 			<!-- damage for entities in the center of the explosion -->
-			<property name="DamageBonus.earth" value="0.1" />
+			<property name="DamageBonus.earth" value="0.05" />
 			<property name="DamageBonus.organic" value="10" />
 		</property>
 		<drop event="Destroy" count="0" prob="1" />
@@ -12101,7 +12101,7 @@ kind of free
 	<block id="1453" name="cntCar03Blue">
 		<property name="Material" value="metal" />
 		<property name="Class" value="CarAlarmLoot, Mods" />
-        <property name="AlarmChance" value="5" />
+        <property name="AlarmChance" value="10" />
         <property name="AlarmHeatStrength" value="1000" />
         <property name="AlarmHeatTime" value="300" />
 		<property name="LootList" value="19" />
@@ -12145,7 +12145,7 @@ kind of free
 	<block id="1454" name="cntCar03BlueDamage1">
 		<property name="Material" value="metal" />
 		<property name="Class" value="CarAlarmLoot, Mods" />
-        <property name="AlarmChance" value="1" />
+        <property name="AlarmChance" value="5" />
         <property name="AlarmHeatStrength" value="1000" />
         <property name="AlarmHeatTime" value="300" />
 		<property name="LootList" value="19" />
@@ -15745,8 +15745,8 @@ kind of free
 		<property name="MeshScale" value="2,2" />
 		<property name="BigDecorationRadius" value="4" />
 		<property name="UpwardsCount" value="2" />
-		<drop event="Harvest" name="Lime" count="3,8" />
-		<drop event="Harvest" name="Lime" count="3,8" tool_category="Farm" />
+		<!--<drop event="Harvest" name="Lime" count="3,8" />
+		<drop event="Harvest" name="Lime" count="3,8" tool_category="Farm" />-->
 	</block>
 	<block id="1669" name="smallPlainsTree">
 		<property name="Extends" value="fruitTreeMaster" />
@@ -15754,8 +15754,8 @@ kind of free
 		<property name="Model" value="#lemontree?smallPearTree" />
 		<property name="BigDecorationRadius" value="4" />
 		<property name="UpwardsCount" value="1" />
-		<drop event="Harvest" name="Pear" count="3,8" />
-		<drop event="Harvest" name="Pear" count="3,8" tool_category="Farm" />
+		<!--<drop event="Harvest" name="Pear" count="3,8" />
+		<drop event="Harvest" name="Pear" count="3,8" tool_category="Farm" />-->
 	</block>
 	<!--<block id="1670" name="smallCherryTree">
 		<property name="Extends" value="fruitTreeMaster" />
@@ -15996,7 +15996,7 @@ kind of free
 	<block id="1702" name="militaryTruckOpen">
 		<property name="Material" value="Mmetal_hard" />
 		<property name="Class" value="CarAlarmLoot, Mods" />
-        <property name="AlarmChance" value="10" />
+        <property name="AlarmChance" value="20" />
         <property name="AlarmHeatStrength" value="1000" />
         <property name="AlarmHeatTime" value="300" />
 		<property name="LootList" value="46" />
@@ -16191,6 +16191,10 @@ kind of free
 	</block>
 	<block id="1988" name="PoliceUnsecure">
 		<property name="Extends" value="PoliceSecure" param1="UpgradeBlock"/>
+		<property name="Class" value="CarAlarmLoot, Mods" />
+        <property name="AlarmChance" value="25" />
+        <property name="AlarmHeatStrength" value="1000" />
+        <property name="AlarmHeatTime" value="300" />
 		<property name="Model" value="#police?policeD1" />
 		<property name="LootList" value="112" />
 	</block>

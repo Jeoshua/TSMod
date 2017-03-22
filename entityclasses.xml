@@ -100,7 +100,7 @@
 		<property name="WanderSpeed" value="0.08" />
 		<property name="ApproachSpeed" value="0.3" />
 		<property name="NightWanderSpeed" value="0.1" />
-		<property name="NightApproachSpeed" value="0.42" />
+		<property name="NightApproachSpeed" value="0.62" />
 		<property name="PanicSpeed" value="0.55" />
 		<property name="CanClimbLadders" value="true" />
 		<property name="IsEnemyEntity" value="true" />
@@ -892,6 +892,7 @@
 		<property name="IsEntityAnimal" value="true" />
 		<property name="PhysicsBody" value="bear" />
 		<property name="HandItem" value="zombieHandBear" />
+		<property name="IsEnemyEntity" value="true" />
 		<!-- AI properties -->
 		<property name="AITask-1" value="BreakDoor" />
 		<property name="AITask-2" value="BreakBlock" />
@@ -1561,7 +1562,6 @@
 		<property name="ApproachSpeed" value="0.25" />
 		<property name="NightWanderSpeed" value="0.09" />
 		<property name="NightApproachSpeed" value="0.4" />
-		<property name="PanicSpeed" value="0.6" />
 	</entity_class>
 	<!--Zombie Animals -->
 	<entity_class name="ZombieChicken" extends="zombieBear">
@@ -2563,7 +2563,7 @@
 		<property name="ApproachSpeed" value="0.12" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="0.31" />
-		<property name="PanicSpeed" value="0.9" />
+		<property name="PanicSpeed" value="0.7" />
 	</entity_class>
 	<entity_class name="Joe6" extends="zombieJoe">
 		<property name="WalkType" value="6" />
@@ -2579,7 +2579,6 @@
 		<property name="ApproachSpeed" value="0.14" />
 		<property name="NightWanderSpeed" value="0.05" />
 		<property name="NightApproachSpeed" value="0.36" />
-		<property name="PanicSpeed" value="0.9" />
 	</entity_class>
 	<entity_class name="Arlene6" extends="zombieArlene">
 		<property name="WalkType" value="6" />
@@ -2661,7 +2660,6 @@
 		<property name="ApproachSpeed" value="0.25" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="0.4" />
-		<property name="PanicSpeed" value="0.9" />
 	</entity_class>
 	<entity_class name="Steve7" extends="zombieSteve">
 		<property name="WalkType" value="7" />

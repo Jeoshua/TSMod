@@ -1906,6 +1906,7 @@
 		<item name="scrapLead" count="1,8" prob="0.75" />
 		<item name="scrapIron" count="1,8" prob="0.6" />
 		<item name="scrapPlastics" count="1,8" prob="0.5"/>
+		<item name="grainAlcohol" prob="0.05" count="1,2" />
 	</lootcontainer>
 	<!-- lootcontainer 9 backpack, place where people stash things, -->
 	<lootcontainer id="9" count="0,3" size="4,2" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="5">
@@ -1975,9 +1976,10 @@
 		<item group="metalpipe" />
 	</lootcontainer>
 	<!-- lootcontainer 21 medical supplies dead nurse-->
-	<lootcontainer id="21" count="0,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
+	<lootcontainer id="21" count="1,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
 		<item group="medicine" prob="0.5" />
-		<item group="junk" prob="0.25" />
+		<item group="junk" count="0,1" prob="0.5" />
+		<item name="hazmatGloves" prob="0.05" />
 		<item name="beaker" prob="0.01" />
 	</lootcontainer>
 	<!-- lootcontainer 22 garage stuff, tools, etc -->
@@ -2199,8 +2201,9 @@
 		<item group="empty" />
 	</lootcontainer>
 	<!-- beer cooler -->
-	<lootcontainer id="52" count="0,1" size="4,4" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" open_time="5">
-		<item group="beverages" count="1,2" />
+	<lootcontainer id="52" count="0,2" size="4,4" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" open_time="5">
+		<item group="beverages" count="0,2" />
+		<item name="grainAlcohol" prob="0.25" count="1,2" />
 	</lootcontainer>
 	<!-- working stiffs -->
 	<lootcontainer id="53" count="1,2" size="4,4" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate" open_time="10">
@@ -2528,14 +2531,14 @@
 	</lootcontainer>
 
 	<!-- Unlocked Police Car -->
-	<lootcontainer id="112" count="0,3" size="7,4" buff_chance="0.1" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="5">
+	<lootcontainer id="112" count="1,3" size="7,4" buff_chance="0.1" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="5">
 		<item group="smallCommonWeaponParts" prob="0.15" />
 		<item group="TierOneBooks" prob="0.1" />
 		<item group="smallUncommonWeaponParts" prob="0.1" />
 		<item name="book" prob="0.25" />
 		<item group="automotive+tools+junk" />
-		<item group="handgun+ammo" prob="0.1" />
-		<item group="shotgun+ammo" prob="0.08" />
+		<item group="handgun+ammo" prob="0.2" />
+		<item group="shotgun+ammo" prob="0.1" />
 		<item group="drugs" prob="0.4" />
 		<item name="firstAidKit" prob="0.5" />
 		<item name="swatHelmet" prob="0.2" />

@@ -60,7 +60,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.earth" value="0.5" />
 			<property name="ActionExp" value="5" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="4" />
 		</property>
 		<property class="Action1">
 			<property name="Class" value="Melee" />
@@ -81,7 +81,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.earth" value="0.75" />
 			<property name="ActionExp" value="8" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="4" />
 		</property>
 		<property class="Attributes">
 			<property name="EntityDamage" value="5,10" />
@@ -1175,6 +1175,7 @@ Mesh files no longer used:
 			<property name="Sound_start" value="swoosh" />
 			<property name="DamageBonus.metal" value="0.5" />
 			<property name="DamageBonus.wood" value="5" />
+			<property name="DamageBonus.cloth" value="5" />
 			<property name="DamageBonus.glass" value="25" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
@@ -1490,7 +1491,7 @@ Mesh files no longer used:
 			<property name="Buff_chance" value="0.05" />
 			<property name="DamageBonus.head" value="3" />
 			<property name="DamageBonus.glass" value="25" />
-			<property name="DamageBonus.wood" value="15" />
+			<property name="DamageBonus.wood" value="5" />
 			<property name="DamageBonus.stone" value="15" />
 			<property name="DamageBonus.metal" value="0.75" />
 			<property name="DamageBonus.earth" value="0.5" />
@@ -2297,7 +2298,7 @@ Mesh files no longer used:
 	<!-- * * * * * * * * * * bows, crossbows * * * * * * * * * * -->
 	<item id="145" name="woodenBow">
 		<property name="Meshfile" value="Items/Weapons/Ranged/Bows/WoodenBow/WoodenBowPrefab" />
-		<property name="Material" value="wood" />
+		<property name="Material" value="sticks" />
 		<property name="RepairTools" value="FiberRope" />
 		<property name="HoldType" value="27" />
 		<property name="FuelValue" value="36" />
@@ -2588,7 +2589,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.stone" value="0" />
 			<property name="DamageBonus.cloth" value="5" />
 			<property name="ActionExp" value="5" />
-			<property name="ActionExpBonusMultiplier" value="3" />
+			<property name="ActionExpBonusMultiplier" value="5" />
 		</property>
 		<property name="Group" value="Ammo/Weapons,Basics" />
 		<property class="Attributes">
@@ -2608,7 +2609,7 @@ Mesh files no longer used:
 			<property name="Buff" value="arrowCriticalBleedout" />
 			<property name="Buff_chance" value="0.35" />
 			<property name="ActionExp" value="8" />
-			<property name="ActionExpBonusMultiplier" value="3" />
+			<property name="ActionExpBonusMultiplier" value="4.5" />
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
 		<property class="Attributes">
@@ -2627,7 +2628,7 @@ Mesh files no longer used:
 			<property name="Buff" value="arrowCriticalBleedout" />
 			<property name="Buff_chance" value="0.35" />
 			<property name="ActionExp" value="10" />
-			<property name="ActionExpBonusMultiplier" value="3" />
+			<property name="ActionExpBonusMultiplier" value="4" />
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
 		<property class="Attributes">
@@ -2703,7 +2704,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.cloth" value="5" />
 			<property name="ActionExp" value="10" />
-			<property name="ActionExpBonusMultiplier" value="2" />
+			<property name="ActionExpBonusMultiplier" value="3" />
 		</property>
 		<property class="Attributes">
 			<property name="GetQualityFromWeapon" value="true" />
@@ -2742,7 +2743,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.cloth" value="5" />
 			<property name="DamageBonus.stone" value="0" />
 			<property name="ActionExp" value="20" />
-			<property name="ActionExpBonusMultiplier" value="2" />
+			<property name="ActionExpBonusMultiplier" value="2.5" />
 		</property>
 		<property class="Attributes">
 			<property name="GetQualityFromWeapon" value="true" />
@@ -3827,8 +3828,8 @@ Mesh files no longer used:
 		<!-- armorMasterHideArmor -->
 		<property name="Insulation" value="2" />
 		<property name="Encumbrance" value="0.02" />
-		<property name="Material" value="leather" />
-		<property name="RepairTools" value="leather" />
+		<property name="Material" value="animalHide" />
+		<property name="RepairTools" value="animalHide" />
 		<property name="DegradationBreaksAfter" value="false" />
 		<property name="FuelValue" value="20" />
 		<property name="EconomicValue" value="120" />
@@ -3862,7 +3863,7 @@ Mesh files no longer used:
 		<property name="FuelValue" value="40" />
 		<property name="EconomicValue" value="240" />
 		<property name="EquipSlot" value="Legs" />
-		<property name="Weight" value="4" />
+		<property name="Weight" value="10" />
 		<property class="UMA">
 			<property name="Mesh" value="armor_hide_legs" />
 			<property name="Overlay0" value="armor_hide_pants" />
@@ -3879,7 +3880,7 @@ Mesh files no longer used:
 		<property name="FuelValue" value="40" />
 		<property name="EconomicValue" value="240" />
 		<property name="EquipSlot" value="Chest" />
-		<property name="Weight" value="4" />
+		<property name="Weight" value="10" />
 		<property class="UMA">
 			<property name="Mesh" value="armor_hide_chest" />
 			<property name="Overlay0" value="armor_hide_chest" />
@@ -4914,7 +4915,7 @@ Mesh files no longer used:
 		<property name="Waterproof" value="0.45" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
-		<property name="Material" value="leather" />
+		<property name="Material" value="animalHide" />
 		<property name="RepairTools" value="leather" />
 		<property name="HoldType" value="45" />
 		<property name="DegradationBreaksAfter" value="false" />
@@ -8288,7 +8289,8 @@ Mesh files no longer used:
 	</item>
 	<item id="1312" name="animalHide">
 		<property name="Meshfile" value="Items/Crafting/animal_hidePrefab" />
-		<property name="Material" value="organic" />
+		<property name="Material" value="animalHide" />
+		<property name="RepairAmount" value="80" />
 		<property name="HoldType" value="21" />
 		<property name="Stacknumber" value="250" />
 		<!-- STK resource -->
@@ -8309,8 +8311,8 @@ Mesh files no longer used:
 		<property name="FuelValue" value="5" />
 		<property name="EconomicValue" value="22" />
 		<property name="Group" value="Resources,Clothing" />
-		<property name="CraftingIngredientTime" value="2" />
 		<property name="Weight" value="5" />
+		<property name="CraftingIngredientTime" value="2" />
 		<property name="CraftingSkillGroup" value="Leatherworking" />
 	</item>
 	<item id="1314" name="hopsFlower">
@@ -15067,7 +15069,7 @@ Mesh files no longer used:
 		<property name="CustomIcon" value="FruitSalad" />
 		<property name="DescriptionKey" value="FruitSaladDesc" />
 	</item>
-	<item id="1893" name="FruitSalad AP/Bl/Yu/St">
+	<item id="1893" name="FruitSalad Ap/Bl/Yu/St">
 		<property name="Extends" value="FoodMaster" />
 		<property class="Action1">
 			<property name="Gain_health" value="0" />
@@ -17501,22 +17503,22 @@ Mesh files no longer used:
 	
 	
 	
-	<item id="3021" name="Lime">
+	<!--<item id="3021" name="Lime">
 		<property name="Extends" value="Apple" />
 		<property name="Meshfile" value="#lemontree?limeFruit" />
 		<property name="DropMeshfile" value="#lemontree?limeFruit" />
-	</item>
+	</item>-->
 	<item id="3022" name="Orange">
 		<property name="Extends" value="Apple" />
 		<property name="Meshfile" value="#lemontree?orangeFruit" />
 		<property name="DropMeshfile" value="#lemontree?orangeFruit" />
 	</item>
-	<item id="3023" name="Pear">
+	<!--<item id="3023" name="Pear">
 		<property name="Extends" value="Apple" />
 		<property name="Meshfile" value="#lemontree?pearFruit" />
 		<property name="DropMeshfile" value="#lemontree?pearFruit" />
 	</item>
-	<!--<item id="3024" name="Cherry">
+	<item id="3024" name="Cherry">
 		<property name="Extends" value="Apple" />
 		<property name="Meshfile" value="#lemontree?cherryFruit" />
 		<property name="DropMeshfile" value="#lemontree?cherryFruit" />
@@ -17525,11 +17527,11 @@ Mesh files no longer used:
 			<property name="Gain_water" value="1" />
 		</property>
 		<property name="EconomicValue" value="2" />
-	</item>-->
+	</item>
 	<item id="3025" name="LimeJuice">
 		<property name="Extends" value="AppleJuice" />
 		<property name="Meshfile" value="Items/Food/yucca_juicePrefab" />
-	</item>
+	</item>-->
 	<item id="3026" name="OrangeJuice">
 		<property name="Extends" value="AppleJuice" />
 		<property name="Meshfile" value="Items/Food/goldenrod_teaPrefab" />
@@ -17573,7 +17575,214 @@ Mesh files no longer used:
 		</property>
 		<property name="EconomicValue" value="1" />
 	</item>
-
+	
+	<item id="3200" name="FruitSalad Or/Ap">
+		<property name="Extends" value="FoodMaster" />
+		<property class="Action1">
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="4" />
+			<property name="Gain_water" value="4" />
+			<property name="Gain_stamina" value="3" />
+			<property name="Gain_wellness" value="0.2" />
+			<property name="Create_item" value="emptyJar" />
+		</property>
+		<property name="CustomIcon" value="FruitSalad" />
+		<property name="DescriptionKey" value="FruitSaladDesc" />
+	</item>
+	<item id="3201" name="FruitSalad Or/Yu">
+		<property name="Extends" value="FoodMaster" />
+		<property class="Action1">
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="4" />
+			<property name="Gain_water" value="4" />
+			<property name="Gain_stamina" value="4" />
+			<property name="Gain_wellness" value="0.2" />
+			<property name="Create_item" value="emptyJar" />
+		</property>
+		<property name="CustomIcon" value="FruitSalad" />
+		<property name="DescriptionKey" value="FruitSaladDesc" />
+	</item>
+	<item id="3202" name="FruitSalad Or/St">
+		<property name="Extends" value="FoodMaster" />
+		<property class="Action1">
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="4" />
+			<property name="Gain_water" value="3" />
+			<property name="Gain_stamina" value="3" />
+			<property name="Gain_wellness" value="0.2" />
+			<property name="Create_item" value="emptyJar" />
+		</property>
+		<property name="CustomIcon" value="FruitSalad" />
+		<property name="DescriptionKey" value="FruitSaladDesc" />
+	</item>
+	<item id="3203" name="FruitSalad Or/Bl">
+		<property name="Extends" value="FoodMaster" />
+		<property class="Action1">
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="4" />
+			<property name="Gain_water" value="4" />
+			<property name="Gain_stamina" value="3" />
+			<property name="Gain_wellness" value="0.2" />
+			<property name="Create_item" value="emptyJar" />
+		</property>
+		<property name="CustomIcon" value="FruitSalad" />
+		<property name="DescriptionKey" value="FruitSaladDesc" />
+	</item>
+	<item id="3203" name="FruitSalad Or/Ap/Yu">
+		<property name="Extends" value="FoodMaster" />
+		<property class="Action1">
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="9" />
+			<property name="Gain_water" value="9" />
+			<property name="Gain_stamina" value="8" />
+			<property name="Gain_wellness" value="0.3" />
+			<property name="Buff" value="eatFood_6_Trigger" />
+			<property name="Create_item" value="emptyJar" />
+		</property>
+		<property name="CustomIcon" value="FruitSalad" />
+		<property name="DescriptionKey" value="FruitSaladDesc" />
+	</item>
+	<item id="3204" name="FruitSalad Or/Ap/St">
+		<property name="Extends" value="FoodMaster" />
+		<property class="Action1">
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="9" />
+			<property name="Gain_water" value="9" />
+			<property name="Gain_stamina" value="8" />
+			<property name="Gain_wellness" value="0.3" />
+			<property name="Buff" value="eatFood_6_Trigger" />
+			<property name="Create_item" value="emptyJar" />
+		</property>
+		<property name="CustomIcon" value="FruitSalad" />
+		<property name="DescriptionKey" value="FruitSaladDesc" />
+	</item>
+	<item id="3205" name="FruitSalad Or/Ap/Bl">
+		<property name="Extends" value="FoodMaster" />
+		<property class="Action1">
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="9" />
+			<property name="Gain_water" value="9" />
+			<property name="Gain_stamina" value="8" />
+			<property name="Gain_wellness" value="0.3" />
+			<property name="Buff" value="eatFood_6_Trigger" />
+			<property name="Create_item" value="emptyJar" />
+		</property>
+		<property name="CustomIcon" value="FruitSalad" />
+		<property name="DescriptionKey" value="FruitSaladDesc" />
+	</item>
+	<item id="3206" name="FruitSalad Or/Bl/Yu">
+		<property name="Extends" value="FoodMaster" />
+		<property class="Action1">
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="9" />
+			<property name="Gain_water" value="9" />
+			<property name="Gain_stamina" value="8" />
+			<property name="Gain_wellness" value="0.3" />
+			<property name="Buff" value="eatFood_6_Trigger" />
+			<property name="Create_item" value="emptyJar" />
+		</property>
+		<property name="CustomIcon" value="FruitSalad" />
+		<property name="DescriptionKey" value="FruitSaladDesc" />
+	</item>
+	<item id="3207" name="FruitSalad Or/Bl/St">
+		<property name="Extends" value="FoodMaster" />
+		<property class="Action1">
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="9" />
+			<property name="Gain_water" value="9" />
+			<property name="Gain_stamina" value="8" />
+			<property name="Gain_wellness" value="0.3" />
+			<property name="Buff" value="eatFood_6_Trigger" />
+			<property name="Create_item" value="emptyJar" />
+		</property>
+		<property name="CustomIcon" value="FruitSalad" />
+		<property name="DescriptionKey" value="FruitSaladDesc" />
+	</item>
+	<item id="3208" name="FruitSalad Or/Yu/St">
+		<property name="Extends" value="FoodMaster" />
+		<property class="Action1">
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="9" />
+			<property name="Gain_water" value="9" />
+			<property name="Gain_stamina" value="8" />
+			<property name="Gain_wellness" value="0.3" />
+			<property name="Buff" value="eatFood_6_Trigger" />
+			<property name="Create_item" value="emptyJar" />
+		</property>
+		<property name="CustomIcon" value="FruitSalad" />
+		<property name="DescriptionKey" value="FruitSaladDesc" />
+	</item>
+	<item id="3209" name="FruitSalad Or/Ap/Bl/Yu">
+		<property name="Extends" value="FoodMaster" />
+		<property class="Action1">
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="16" />
+			<property name="Gain_water" value="15" />
+			<property name="Gain_stamina" value="14" />
+			<property name="Gain_wellness" value="0.8" />
+			<property name="Buff" value="eatFood_12_Trigger" />
+			<property name="Create_item" value="emptyJar" />
+		</property>
+		<property name="CustomIcon" value="FruitSalad" />
+		<property name="DescriptionKey" value="FruitSaladDesc" />
+	</item>
+	<item id="3210" name="FruitSalad Or/Ap/Bl/St">
+		<property name="Extends" value="FoodMaster" />
+		<property class="Action1">
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="16" />
+			<property name="Gain_water" value="15" />
+			<property name="Gain_stamina" value="14" />
+			<property name="Gain_wellness" value="0.8" />
+			<property name="Buff" value="eatFood_12_Trigger" />
+			<property name="Create_item" value="emptyJar" />
+		</property>
+		<property name="CustomIcon" value="FruitSalad" />
+		<property name="DescriptionKey" value="FruitSaladDesc" />
+	</item>
+	<item id="3211" name="FruitSalad Or/Bl/Yu/St">
+		<property name="Extends" value="FoodMaster" />
+		<property class="Action1">
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="16" />
+			<property name="Gain_water" value="15" />
+			<property name="Gain_stamina" value="14" />
+			<property name="Gain_wellness" value="0.8" />
+			<property name="Buff" value="eatFood_12_Trigger" />
+			<property name="Create_item" value="emptyJar" />
+		</property>
+		<property name="CustomIcon" value="FruitSalad" />
+		<property name="DescriptionKey" value="FruitSaladDesc" />
+	</item>
+	<item id="3212" name="FruitSalad Or/Ap/Yu/St">
+		<property name="Extends" value="FoodMaster" />
+		<property class="Action1">
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="16" />
+			<property name="Gain_water" value="15" />
+			<property name="Gain_stamina" value="14" />
+			<property name="Gain_wellness" value="0.8" />
+			<property name="Buff" value="eatFood_12_Trigger" />
+			<property name="Create_item" value="emptyJar" />
+		</property>
+		<property name="CustomIcon" value="FruitSalad" />
+		<property name="DescriptionKey" value="FruitSaladDesc" />
+	</item>
+	<item id="3213" name="FruitSalad Or/Ap/Bl/Yu/St">
+		<property name="Extends" value="FoodMaster" />
+		<property class="Action1">
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="22" />
+			<property name="Gain_water" value="20" />
+			<property name="Gain_stamina" value="18" />
+			<property name="Gain_wellness" value="1.0" />
+			<property name="Buff" value="eatFood_16_Trigger" />
+			<property name="Create_item" value="emptyJar" />
+		</property>
+		<property name="CustomIcon" value="FruitSalad" />
+		<property name="DescriptionKey" value="FruitSaladDesc" />
+	</item>
+	
 	<item id="4000" name="Dollars_Ten">
 		<property name="Extends" value="oldCash" />
 		<property name="CustomIcon" value="oldCash" />

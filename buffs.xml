@@ -240,7 +240,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 		<modify id="1" stat="health" amount="1" rate="1" />
 	</buff>
 	<buff id="painkillerBuff" duration="120t" stack="extend" type="healthup" actions="debuff(pain)" icon="ui_game_symbol_pills" name_key="painkillersBuffName" description_key="painkillersBuffDesc" tooltip_key="painkillersBuffTooltip" causes="painkillers">
-		<modify id="1" stat="health" amount="0.34" rate="3" />
+		<modify id="1" stat="health" amount="0.5" rate="3" />
 	</buff>
 	<buff id="internalBleeding" duration="10" stack="reset" actions="damage(0,1,0,1);damage(0,3,0,0)" type="bleeding" icon="ui_game_symbol_critical" name_key="internalBleeding" description_key="internalBleedingDesc" tooltip_key="internalBleedingTooltip" causes="brokenGlass">
 		<modify id="0" stat="stamina" amount="-15" rate="1" />
