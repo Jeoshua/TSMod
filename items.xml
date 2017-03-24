@@ -1508,7 +1508,7 @@ Mesh files no longer used:
 			<property name="Repair_amount" value="50" />
 			<property name="Upgrade_hit_offset" value="0" />
 			<property name="Sound_start" value="UseActions/repair_block" />
-			<property name="Allowed_upgrade_items" value="wood,stick,Plank,PlantFibers,nail" />
+			<property name="Allowed_upgrade_items" value="wood,stick,Plank,PlantFibers,nail,clayLump" />
 			<property name="ActionExp" value="1" />
 			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
@@ -8163,7 +8163,7 @@ Mesh files no longer used:
 		<property name="EconomicBundleSize" value="50" />
 		<property name="SellableToTrader" value="false" />
 		<property name="Group" value="Resources,Basics" />
-		<property name="RepairAmount" value="10" />
+		<property name="RepairAmount" value="50" />
 		<property name="LootExpValue" value="1" />
 		<property name="DescriptionKey" value="woodDesc" />
 		<property name="CraftingIngredientTime" value="0.5" />
@@ -8309,7 +8309,7 @@ Mesh files no longer used:
 		<property name="Stacknumber" value="250" />
 		<!-- STK resource -->
 		<property name="FuelValue" value="5" />
-		<property name="EconomicValue" value="22" />
+		<property name="EconomicValue" value="25" />
 		<property name="Group" value="Resources,Clothing" />
 		<property name="Weight" value="5" />
 		<property name="CraftingIngredientTime" value="2" />
@@ -8395,6 +8395,19 @@ Mesh files no longer used:
 		<property name="Group" value="Resources" />
 		<property name="CraftingIngredientTime" value="0.5" />
 		<property name="MeltTimePerUnit" value="0.5" />
+		<property class="Action1">
+			<!-- UseAction -->
+			<property name="Class" value="Repair" />
+			<property name="Delay" value="0.4" />
+			<property name="Repair_amount" value="250" />
+			<property name="Upgrade_hit_offset" value="-5" />
+			<property name="Sound_start" value="UseActions/repair_block" />
+			<property name="Allowed_upgrade_items" value="clayLump" />
+			<property name="Restricted_upgrade_items" value="cobblestones,PlantFibers,wood,scrapIron,forgedIron,forgedSteel,shortSteelPipe,fertileDirt,shortMetalPipe,concreteMix,Plank" />
+			<property name="Upgrade_action_sound" value="UseActions/bucketpour_concrete" />
+			<property name="ActionExp" value="1" />
+			<property name="ActionExpBonusMultiplier" value="1" />
+		</property>
 	</item>
 	<item id="1320" name="dirtFragment">
 		<property name="CustomIcon" value="fertileDirt" />
@@ -8528,8 +8541,9 @@ Mesh files no longer used:
 		<!-- STK resource -->
 		<property name="FuelValue" value="1" />
 		<property name="Weight" value="1" />
-        <property name="SellableToTrader" value="false" />
+        <property name="SellableToTrader" value="true" />
 		<property name="EconomicValue" value="10" />
+		<property name="EconomicBundleSize" value="10" />
 		<property name="Group" value="Decor/Miscellaneous" />
 		<property name="CraftingSkillGroup" value="Miscellaneous Crafting" />
 	</item>
@@ -8540,7 +8554,7 @@ Mesh files no longer used:
 		<property name="Stacknumber" value="50" />
 		<property name="FuelValue" value="20" />
 		<property name="Weight" value="20" />
-		<property name="EconomicValue" value="300" />
+		<property name="EconomicValue" value="100" />
 		<property name="CraftingSkillGroup" value="Miscellaneous Crafting" />
 	</item>
 	<item id="1330" name="militaryFiber">
@@ -13511,7 +13525,7 @@ Mesh files no longer used:
 	<item id="1728" name="Cooking with Eggs">
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
-			<property name="Recipes_to_learn" value="FriedEggOmelet,baconAndEggs" />
+			<property name="Recipes_to_learn" value="FriedEgg,FriedEggOmelet,baconAndEggs" />
 		</property>
 		<property name="DescriptionKey" value="SkillBookDesc" />
 		<property name="CustomIcon" value="cookbook" />
@@ -14213,7 +14227,6 @@ Mesh files no longer used:
 			<property name="Gain_health" value="-5" />
 			<property name="Sound_start" value="UseActions/player_bandage" />
 			<property name="Debuff" value="gash" />
-			<property name="Create_item" value="SewingNeedle" />
 		</property>
 		<property name="DescriptionKey" value="SutureKitDesc" />
 		<property name="Group" value="Medicine" />
@@ -14415,6 +14428,7 @@ Mesh files no longer used:
 		<property class="Action1">
 			<property name="Debuff" value="burning,bearTrap,bleeding,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2,severeWound,dirtyBandage3,InfectedWound,dirtyBandage4" />
 			<property name="Buff" value="firstAidLarge,splint" />
+			<property name="Create_item" value="DeadBattery" />
 		</property>
 	</item>
 	<item id="1843" name="PurificationTablets">
@@ -16285,6 +16299,7 @@ Mesh files no longer used:
 		<property name="Extends" value="itemMaster" />
 		<property name="Stacknumber" value="5000" />
 		<property name="FuelValue" value="5" />
+		<property name="RepairAmount" value="25" />
 		<property name="CustomIcon" value="ui_game_symbol_Plank" />
 		<property name="DescriptionKey" value="PlankDesc" />
 		<property name="CraftingSkillGroup" value="Primitive Crafting" />
@@ -17292,7 +17307,7 @@ Mesh files no longer used:
 		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
 		<property name="DescriptionKey" value="HandDollyDesc" />
 	</item>
-	<item id="2080" name="forge">
+	<item id="2080" name="itemForge">
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="Material" value="organic" />
@@ -17302,145 +17317,145 @@ Mesh files no longer used:
 		<property class="Action1">
 			<property name="Class" value="PlaceAsBlock" />
 			<property name="Delay" value="0.5" />
-			<property name="Blockname" value="workforge" />
+			<property name="Blockname" value="forge" />
 			<property name="Change_item_to" value="HandDolly" />
 			<property name="Sound_start" value="UseActions/repair_block" />
 		</property>
 	</item>
-	<item id="2081" name="campfire">
-		<property name="Extends" value="forge" />
+	<item id="2081" name="itemCampfire">
+		<property name="Extends" value="itemForge" />
 		<property class="Action1">
-			<property name="Blockname" value="workcampfire" />
+			<property name="Blockname" value="campfire" />
 		</property>
 	</item>
 	<item id="2082" name="BurnBarrel">
-		<property name="Extends" value="forge" />
+		<property name="Extends" value="itemForge" />
 		<property name="CustomIcon" value="workBurnBarrel" />
 		<property class="Action1">
 			<property name="Blockname" value="workBurnBarrel" />
 		</property>
 	</item>
 	<item id="2083" name="MetalWorkBench">
-		<property name="Extends" value="forge" />
+		<property name="Extends" value="itemForge" />
 		<property name="CustomIcon" value="ui_game_symbol_MetalWorkBench" />
 		<property class="Action1">
 			<property name="Blockname" value="workMetalWorkBench" />
 		</property>
 	</item>
 	<item id="2084" name="ResearchDesk">
-		<property name="Extends" value="forge" />
+		<property name="Extends" value="itemForge" />
 		<property name="CustomIcon" value="cntDesk01" />
 		<property class="Action1">
 			<property name="Blockname" value="workResearchDesk" />
 		</property>
 	</item>
 	<item id="2085" name="ArmorTable">
-		<property name="Extends" value="forge" />
+		<property name="Extends" value="itemForge" />
 		<property name="CustomIcon" value="ui_game_symbol_ArmorTable" />
 		<property class="Action1">
 			<property name="Blockname" value="workArmorTable" />
 		</property>
 	</item>
 	<item id="2086" name="SeedNursery">
-		<property name="Extends" value="forge" />
+		<property name="Extends" value="itemForge" />
 		<property name="CustomIcon" value="ui_game_symbol_SeedNursery" />
 		<property class="Action1">
 			<property name="Blockname" value="workSeedNursery" />
 		</property>
 	</item>
 	<item id="2087" name="BlastFurnace">
-		<property name="Extends" value="forge" />
+		<property name="Extends" value="itemForge" />
 		<property name="CustomIcon" value="ui_game_symbol_BlastFurnace" />
 		<property class="Action1">
 			<property name="Blockname" value="workBlastFurnace" />
 		</property>
 	</item>
 	<item id="2088" name="OilRefinery">
-		<property name="Extends" value="forge" />
+		<property name="Extends" value="itemForge" />
 		<property name="CustomIcon" value="ui_game_symbol_OilRefinery" />
 		<property class="Action1">
 			<property name="Blockname" value="workOilRefinery" />
 		</property>
 	</item>
 	<item id="2089" name="DryingRack">
-		<property name="Extends" value="forge" />
+		<property name="Extends" value="itemForge" />
 		<property name="CustomIcon" value="ui_game_symbol_DryingRack" />
 		<property class="Action1">
 			<property name="Blockname" value="workDryingRack" />
 		</property>
 	</item>
 	<item id="2090" name="ChickenCoop">
-		<property name="Extends" value="forge" />
+		<property name="Extends" value="itemForge" />
 		<property name="CustomIcon" value="ui_game_symbol_ChickenCoop" />
 		<property class="Action1">
 			<property name="Blockname" value="workChickenCoop" />
 		</property>
 	</item>
-	<item id="2091" name="cementMixer">
-		<property name="Extends" value="forge" />
+	<item id="2091" name="itemCementMixer">
+		<property name="Extends" value="itemForge" />
 		<property name="CustomIcon" value="ui_game_symbol_cementMixer" />
 		<property class="Action1">
-			<property name="Blockname" value="workcementMixer" />
+			<property name="Blockname" value="cementMixer" />
 		</property>
 	</item>
-	<item id="2092" name="woodWorkBench">
-		<property name="Extends" value="forge" />
-		<property name="CustomIcon" value="ui_game_symbol_workworkbench" />
+	<item id="2092" name="itemWorkbench">
+		<property name="Extends" value="itemForge" />
+		<property name="CustomIcon" value="ui_game_symbol_workbench" />
 		<property class="Action1">
-			<property name="Blockname" value="workworkbench" />
+			<property name="Blockname" value="workbench" />
 		</property>
 	</item>
-	<item id="2093" name="chemistryStation">
-		<property name="Extends" value="forge" />
+	<item id="2093" name="itemChemistryStation">
+		<property name="Extends" value="itemForge" />
 		<property name="CustomIcon" value="chemistryStation" />
 		<property class="Action1">
-			<property name="Blockname" value="workchemistryStation" />
+			<property name="Blockname" value="chemistryStation" />
 		</property>
 	</item>
 	<item id="2094" name="BulletPress">
-		<property name="Extends" value="forge" />
+		<property name="Extends" value="itemForge" />
 		<property name="CustomIcon" value="ui_game_symbol_BulletPress" />
 		<property class="Action1">
 			<property name="Blockname" value="workBulletPress" />
 		</property>
 	</item>
 	<item id="2095" name="BatteryPack">
-		<property name="Extends" value="forge" />
+		<property name="Extends" value="itemForge" />
 		<property name="CustomIcon" value="chemistryStation" />
 		<property class="Action1">
 			<property name="Blockname" value="workBatteryPack" />
 		</property>
 	</item>
 	<item id="2096" name="StoneMill">
-		<property name="Extends" value="forge" />
+		<property name="Extends" value="itemForge" />
 		<property name="CustomIcon" value="ui_game_symbol_StoneMill" />
 		<property class="Action1">
 			<property name="Blockname" value="workStoneMill" />
 		</property>
 	</item>
 	<item id="2097" name="Stove">
-		<property name="Extends" value="forge" />
+		<property name="Extends" value="itemForge" />
 		<property name="CustomIcon" value="ui_game_symbol_Stove" />
 		<property class="Action1">
 			<property name="Blockname" value="workStove" />
 		</property>
 	</item>
 	<item id="3001" name="DieselGen">
- 		<property name="Extends" value="forge" />
+ 		<property name="Extends" value="itemForge" />
  		<property name="CustomIcon" value="ui_game_symbol_dieselGen" />
  		<property class="Action1">
  			<property name="Blockname" value="dieselGen" />
  		</property>
  	</item>
     <item id="3002" name="BigGenerator">
- 		<property name="Extends" value="forge" />
+ 		<property name="Extends" value="itemForge" />
  		<property name="CustomIcon" value="smallGenerator" />
  		<property class="Action1">
  			<property name="Blockname" value="bigGenerator" />
  		</property>
  	</item>
     <item id="3003" name="SmallGenerator">
- 		<property name="Extends" value="forge" />
+ 		<property name="Extends" value="itemForge" />
  		<property name="CustomIcon" value="smallGenerator" />
  		<property class="Action1">
  			<property name="Blockname" value="smallGenerator" />
@@ -17781,6 +17796,19 @@ Mesh files no longer used:
 		</property>
 		<property name="CustomIcon" value="FruitSalad" />
 		<property name="DescriptionKey" value="FruitSaladDesc" />
+	</item>
+	
+	<item id="3214" name="FriedEgg">
+		<property name="Extends" value="FoodMaster" />
+		<property name="Stacknumber" value="64" />
+		<property class="Action1">
+			<property name="Gain_food" value="5" />
+			<property name="Gain_water" value="1" />
+			<property name="Gain_stamina" value="-3" />
+			<property name="Buff" value="stuffed2,eatFood_2_Trigger" />
+		</property>
+		<property name="CustomIcon" value="Fried Egg Omelet" />
+		<property name="DescriptionKey" value="EggOmeletDesc" />
 	</item>
 	
 	<item id="4000" name="Dollars_Ten">

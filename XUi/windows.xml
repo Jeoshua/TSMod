@@ -1928,7 +1928,7 @@
 			</grid>
 		</panel>
 	</window>
-	<window name="windowToolsWorkWorkBench" width="228" height="79" anchor="CenterTop" panel="Right">
+	<window name="windowToolsWorkBench" width="228" height="79" anchor="CenterTop" panel="Right">
 		<panel style="header.panel">
 			<sprite style="header.icon" sprite="ui_game_symbol_cookware" />
 			<label style="header.name" text="TOOLS" />

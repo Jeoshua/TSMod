@@ -3387,7 +3387,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="rockResource02" prob=".0005" rotatemax="3" />
 				<decoration type="block" blockname="cntCorpseLoot02" prob="0.004" rotatemax="7" />
 				<decoration type="block" blockname="rock01" prob=".016" rotatemax="3" />
-				<decoration type="block" blockname="workcampfire" prob=".00004" rotatemax="3" />
+				<decoration type="block" blockname="campfire" prob=".00004" rotatemax="3" />
 				<decoration type="block" blockname="cntApacheArtifactChest" prob=".00001" rotatemax="3" />
 				<decoration type="block" blockname="tire" prob="0.001" rotatemax="3" />
 				<decoration type="block" blockname="spiderTrap" prob="0.001" rotatemax="3" />

@@ -1403,12 +1403,12 @@ woodLogSpike1Desc,blocks,Trap,EnChanged KgNone,"Log spike traps can damage, crip
 campfire,blocks,Workstation,KgNone,Campfire,Feu de camp,Lagerfeuer,,Fogata
 campfireDesc,blocks,Workstation,KgNone,"Useful to cook food and warm up. Unlock more recipes by adding a stick, cooking pot, cooking grill or Frying Pan. You do not gain any XP in this Workstation.","Utile pour cuisiner de la nourriture et se réchauffer. Déverrouillez d'autres compositions en ajoutant une marmite, un grill ou un bécher.","Nützlich zum Kochen von Nahrung und zum Aufwärmen. Schalte mehr Rezepte frei, indem du einen Kochtopf, Kochgrill oder Messbecher hinzufügst.",,"Útil para cocinar comida y calentarse. Añade una olla, una parrilla o un matraz para desbloquear más recetas."
 cementMixer,blocks,Workstation,KgNone,Cement Mixer,Bétonnière,Zementmischer,,Mezclador de cemento
-workcementMixerDesc,blocks,Workstation,KgNone,A cement mixer needs a solid foundation and will help you craft materials like concrete or asphalt. Craft it on the Wood Working Bench using a Wrench.,Une bétonnière nécessite une base solide et vous aidera à fabriquer des matériaux comme le béton ou l'asphalte.,Ein Zementmischer benötigt ein stabiles Fundament und dient zur Fertigung von Beton oder Asphalt.,,Una mezcladora de cemento necesita una base sólida. Te ayudará a fabricar materiales como hormigón o asfalto.
+cementMixerDesc,blocks,Workstation,KgNone,A cement mixer needs a solid foundation and will help you craft materials like concrete or asphalt. Craft it on the Wood Working Bench using a Wrench.,Une bétonnière nécessite une base solide et vous aidera à fabriquer des matériaux comme le béton ou l'asphalte.,Ein Zementmischer benötigt ein stabiles Fundament und dient zur Fertigung von Beton oder Asphalt.,,Una mezcladora de cemento necesita una base sólida. Te ayudará a fabricar materiales como hormigón o asfalto.
 chemistryStation,blocks,Workstation,KeyTrunk FrNone GrNone KgNone SpNone,Chemistry Station,,Chemietisch,,
-workchemistryStationDesc,blocks,Workstation,KeyTrunk FrNone GrNone KgNone SpNone,With the proper equipment you can work far more efficiently than on a campfire. Crafted on the Wood Working Bench using a Claw Hammer.,,Mit der richtigen Ausrüstung kannst du effektiver arbeiten als mit einem Messbecher am Lagerfeuer.,,
+chemistryStationDesc,blocks,Workstation,KeyTrunk FrNone GrNone KgNone SpNone,With the proper equipment you can work far more efficiently than on a campfire. Crafted on the Wood Working Bench using a Claw Hammer.,,Mit der richtigen Ausrüstung kannst du effektiver arbeiten als mit einem Messbecher am Lagerfeuer.,,
 forge,blocks,Workstation,KgNone,Forge,Forge,Schmiede,,Fragua
 forgeDesc,blocks,Workstation,KgNone,"Used to smelt metals into tools and weapons. Unlock more recipes by adding an anvil, calipers or tool and die set.","Sert à faire fondre des métaux pour en faire des outils ou des armes. Déverrouillez d'autres compositions en ajoutant une enclume, un pied à coulisse ou un lot de matrices et d'outils.","Dient zum Einschmelzen von Metallen für Werkzeuge und Waffen. Schalte mehr Rezepte frei, indem du einen Amboss, einen Messschieber oder eine Werkzeugkiste hinzufügst.",,"Se usa para fundir metales y convertirlos en herramientas y armas. Añade un yunque, calibradores o herramientas y un juego de ajuste para desbloquear más recetas."
-workbench,blocks,Workstation,KgNone,Workbench,Établi,Werkbank,,Mesa de trabajo
+workbench,blocks,Workstation,KgNone,Wood Working Bench,Établi,Werkbank,,Mesa de trabajo
 workbenchDesc,blocks,Workstation,KgNone,A workbench lets you craft items just like you do in your backpack.,Un établi vous permet de fabriquer des objets comme vous le faites dans votre sac à dos.,Mit einer Werkbank kannst du genauso wie in deinem Rucksack Gegenstände fertigen.,,"Una mesa de trabajo te permite fabricar objetos, igual que en la mochila."
 alcoholPoisoning,buffs,Buff,KgNone,Inebriated,Ébriété,Berauscht,,Embriaguez
 alcoholPoisoningDesc,buffs,Buff,EnChanged KgNone,You have alcohol poisoning. There may be a duration but you're too sick to figure it out.,"Vous êtes en état d'ébriété. Les effets ont une durée limitée, mais vous ne la connaissez pas.","Du hast eine Alkoholvergiftung. Dies hält vielleicht eine gewisse Zeit an, aber du kannst nicht rauskriegen, wie lange.",,"Tienes una congestión alcohólica. Puede que solo sea durante un rato, pero no sabes cuánto durará."
@@ -4660,11 +4660,6 @@ BurglarProfession,,,,"Burglar Profession",,,,
 Park RangerProfession,,,,"Park Ranger Profession",,,,
 MechanicProfession,,,,"Mechanic Profession",,,,
 SoldierProfession,,,,"Soldier Profession",,,,
-workcampfire,,,,"Campfire",,,,
-workchemistryStation,,,,"Chemistry Station",,,,
-workforge,,,,"Forge",,,,
-workcementMixer,,,,"Cement Mixer",,,,
-workworkbench,,,,"Wood Working Bench",,,,
 workBatteryPack,,,,"Battery Pack",,,,
 workBatteryPackDesc,,,,"Place the Battery Pack next to a power line and power it with a genorator. Use this workstation to recharge batteries and refill scuba tanks. You do not gain any XP in this Workstation.",,,,
 workMortarAndPestle,,,,"Mortar & Pestle",,,,
@@ -4710,7 +4705,7 @@ workStill,,,,"Still",,,,
 workStillDesc,,,,"A crude still perched above a fire. Used to make Grain alcohol. Craft it on the Wood Working Bench.",,,,
 PieDesc,items,Food,KgNone,This homemade pie is nutritious and raises your wellness. Mmm...just like Grandma used to make.,Cette tarte aux myrtilles faite maison vous nourrit et améliore votre bien-être. Miam... Exactement comme celle que faisait mamie.,Dieser selbst gemachte Blaubeerkuchen ist nahrhaft und erhöht dein Wohlbefinden. Mmm … wie von der Oma.,,Este pastel de moras casero es nutritivo y mejora tu bienestar. Mmmm... Tal y como la abuela solía hacerlo.
 WoodSpear,,,,"Wooden Spear",,,,
-WoodSpearDesc,,,,"A sharp stick hardened in a fire. Good for puncturing rotten skulls but not very durable. With the wooden spear in hand you can throw the wooden javelins with the left mouse button.",,,,
+WoodSpearDesc,,,,"A sharp stick. Good for puncturing rotten skulls but not very durable. With the wooden spear in hand you can throw the wooden javelins with the left mouse button.",,,,
 SmokingDesc,,,,"The worlds gone to shit and you might be dead tomorrow. No reason to quite now. Smoking reduces hunger by 10 over 3 min.",,,,
 CarbonCrossbowBoltDesc,,,,"A powerful crossbow bolt. You will need a Carbon Crossbow to fire one of these. Crafted on the metal working bench.",,,,
 MakeBookDesc,,,,"A old dusty book filled with knowledge. Collect the requierd items to make a copy of this book on the Research Desk.",,,,

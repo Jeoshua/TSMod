@@ -1140,7 +1140,7 @@
 		<!-- If set this entity shows on the map -->
 		<!--<property name="MapIcon" value="map_supply_crate" /> -->
 	</entity_class>
-	<!--entity_class name="driveablecar">
+	<entity_class name="driveablecar">
         <property name="Mesh"   value="Vehicles/car03_blue_dmg0_Prefab" />
 		<property name="ModelType" value="Custom" />
         <property name="Prefab" value="Car" />
@@ -1159,7 +1159,7 @@
         <property name="Explosion.ParticleIndex"   value="6" />
         <property name="Explosion.RadiusBlocks"    value="6" />
         <property name="Explosion.RadiusEntities"  value="6" />
-    </entity_class-->
+    </entity_class>
 	<entity_class name="zombieUMA" extends="zombie01">
 		<!-- This one decides for scoring -->
 		<property name="EntityType" value="Zombie" />

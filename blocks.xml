@@ -749,8 +749,6 @@ then add recipes for those white/red/green metals
 		<property class="RepairItems"> <property name="forgedSteel" value="15" /> </property>
 		<drop event="Harvest" name="scrapSteel" count="5,15" prob="1" />
         <drop event="Destroy" name="NutAndBolt" count="1,2" prob=".4" />
-        <drop event="Destroy" name="scrapCable" count="1" prob=".3" />
-        <drop event="Destroy" name="scrapCable" count="1,2" prob=".6" tool_category="Disassemble" />
         <drop event="Destroy" name="NutAndBolt" count="1,2" prob="1" tool_category="Disassemble" />
         <drop event="Harvest" name="scrapSteel" count="5,15" prob="1" tool_category="Disassemble" />
 		<drop event="Fall" name="scrapSteelPile" count="1" prob=".75" stick_chance="0.95" />
@@ -879,8 +877,6 @@ then add recipes for those white/red/green metals
 		</property>
 		<drop event="Harvest" name="Plank" count="4,9" prob="1" />
 		<drop event="Destroy" name="nail" count="2,3" prob="1" />
-        <drop event="Destroy" name="scrapCable" count="1" prob=".3" />
-        <drop event="Destroy" name="scrapCable" count="1,2" prob=".6" tool_category="Disassemble" />
 		<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="0.95" />
 		<property name="CraftingSkillGroup" value="Primitive Crafting" />
 		<property name="EconomicValue" value="35" />
@@ -941,8 +937,6 @@ then add recipes for those white/red/green metals
 		</property>
 		<drop event="Harvest" name="rockSmall" count="8" />
 		<drop event="Destroy" name="rockSmall" count="8" />
-        <drop event="Destroy" name="scrapCable" count="1" prob=".3" />
-        <drop event="Destroy" name="scrapCable" count="1,2" prob=".6" tool_category="Disassemble" />
 		<drop event="Fall" name="destroyedStone" count="1" prob="0.85" stick_chance="0.95" />
 		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
 		<property name="EconomicValue" value="8" />
@@ -982,8 +976,6 @@ then add recipes for those white/red/green metals
 		<property name="CustomUpgradeSound" value="Crafting/place_block_metal" />
 		<drop event="Harvest" name="scrapSteel" count="5,15" prob="1" />
         <drop event="Destroy" name="NutAndBolt" count="1,2" prob=".4" />
-        <drop event="Destroy" name="scrapCable" count="1" prob=".3" />
-        <drop event="Destroy" name="scrapCable" count="1,2" prob=".6" tool_category="Disassemble" />
         <drop event="Destroy" name="NutAndBolt" count="1,2" prob="1" tool_category="Disassemble" />
         <drop event="Harvest" name="scrapSteel" count="5,15" prob="1" tool_category="Disassemble" />
 		<drop event="Fall" name="scrapSteelPile" count="1" prob="0.85" stick_chance="0.95" />
@@ -1021,7 +1013,9 @@ then add recipes for those white/red/green metals
 		<property name="Class" value="UpgradeRated" />
 		<property name="UpgradeRated.ToBlock" value="rConcreteMaster" />
 		<property name="UpgradeRated.Rate" value="15" />
-		<drop event="Destroy" count="0" />
+		<drop event="Harvest" name="rockSmall" count="13" />
+		<drop event="Destroy" name="rockSmall" count="12" />
+        <drop event="Fall" name="destroyedStone" count="1" prob="0.85" stick_chance="0.95" />
 		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
 	</block>
 	<block id="136" name="concreteFormMaster">
@@ -1039,14 +1033,15 @@ then add recipes for those white/red/green metals
 			<property name="ItemCount" value="10" />
 			<property name="UpgradeHitCount" value="10" />
 		</property>
-		<drop event="Destroy" count="0" />
+		<drop event="Harvest" name="rockSmall" count="13" />
+		<drop event="Destroy" name="rockSmall" count="12" />
+        <drop event="Fall" name="destroyedStone" count="1" prob="0.85" stick_chance="0.95" />
 		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
 	</block>
 	<block id="137" name="brickNoUpgradeMaster">
 		<property name="Group" value="Building" />
 		<property name="DescriptionKey" value="brickGroupDesc" />
 		<property name="Material" value="Mbrick" />
-		<!-- 1000 -->
 		<property name="Weight" value="70" />
 		<property name="Texture" value="7,7,7,7,7,7" />
 		<property name="IsDeveloper" value="true" />
@@ -1063,7 +1058,15 @@ then add recipes for those white/red/green metals
 		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
 	</block>
 	<block id="138" name="brickMaster">
-		<property name="Extends" value="brickNoUpgradeMaster" />
+		<property name="Group" value="Building" />
+		<property name="DescriptionKey" value="brickGroupDesc" />
+		<property name="Material" value="Mbrick" />
+		<property name="Weight" value="70" />
+		<property name="Texture" value="7,7,7,7,7,7" />
+		<property name="IsDeveloper" value="true" />
+		<property class="RepairItems">
+			<property name="cobblestones" value="6" />
+		</property>
 		<property name="IsDeveloper" value="true" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="concreteMaster" />
@@ -1071,8 +1074,12 @@ then add recipes for those white/red/green metals
 			<property name="ItemCount" value="10" />
 			<property name="UpgradeHitCount" value="10" />
 		</property>
+		<drop event="Harvest" name="rockSmall" count="8" />
+		<drop event="Destroy" name="rockSmall" count="8" />
+        <drop event="Fall" name="destroyedStone" count="1" prob="0.85" stick_chance="0.95" />
 		<property name="EconomicValue" value="8" />
 		<property name="EconomicBundleSize" value="20" />
+		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
 	</block>
 	<block id="139" name="adobeMaster">
 		<property name="Group" value="Building" />
@@ -1094,8 +1101,6 @@ then add recipes for those white/red/green metals
 		<drop event="Harvest" name="crushedSand" count="4" prob=".6" />
 		<drop event="Harvest" name="clayLump" count="6" prob=".6" />
 		<drop event="Harvest" name="rockSmall" count="1" prob=".6" />
-        <drop event="Destroy" name="scrapCable" count="1" prob=".3" />
-        <drop event="Destroy" name="scrapCable" count="1,2" prob=".6" tool_category="Disassemble" />
 		<drop event="Destroy" count="0" />
 		<drop event="Fall" name="destroyedStone" count="1" prob=".1" stick_chance="0.95" />
 		<property name="EconomicValue" value="11" />
@@ -1120,8 +1125,6 @@ then add recipes for those white/red/green metals
 		<property name="CustomUpgradeSound" value="Crafting/place_block_concrete" />
 		<drop event="Harvest" name="rockSmall" count="13" />
 		<drop event="Destroy" name="rockSmall" count="12" />
-        <drop event="Destroy" name="scrapCable" count="1" prob=".3" />
-        <drop event="Destroy" name="scrapCable" count="1,2" prob=".6" tool_category="Disassemble" />
 		<drop event="Fall" name="destroyedStone" count="1" prob=".75" stick_chance="0.95" />
 		<property name="EconomicValue" value="25" />
 		<property name="EconomicBundleSize" value="10" />
@@ -1169,8 +1172,6 @@ then add recipes for those white/red/green metals
 		</property>
 		<drop event="Destroy" name="scrapIron" count="5" prob="1" />
         <drop event="Harvest" name="scrapIron" count="5,10" />
-	    <drop event="Destroy" name="scrapCable" count="1" prob=".3" />
-        <drop event="Destroy" name="scrapCable" count="1,2" prob=".6" tool_category="Disassemble" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".2" stick_chance="0.95" />
 		<property name="EconomicValue" value="25" />
 		<property name="EconomicBundleSize" value="5" />
@@ -1234,7 +1235,6 @@ then add recipes for those white/red/green metals
 		<property name="CustomUpgradeSound" value="Crafting/place_block_metal" />
 		<drop event="Harvest" name="scrapIron" count="5,10" />
 		<drop event="Destroy" name="scrapIron" count="15" prob="1" />
-        <drop event="Destroy" name="scrapCable" count="1" prob=".3" />
         <drop event="Destroy" name="NutAndBolt" count="1" prob=".3" />
         <drop event="Destroy" name="NutAndBolt" count="1,2" prob=".6" tool_category="Disassemble" />
         <drop event="Destroy" name="scrapCable" count="1,2" prob=".6" tool_category="Disassemble" />
@@ -1332,8 +1332,6 @@ then add recipes for those white/red/green metals
 		<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 		<drop event="Destroy" name="Plank" count="4" prob="1" />
 		<drop event="Destroy" name="nail" count="3" prob="1" />
-        <drop event="Destroy" name="scrapCable" count="1" prob=".3" />
-        <drop event="Destroy" name="scrapCable" count="1,2" prob=".6" tool_category="Disassemble" />
 		<drop event="Fall" name="woodDebris" count="1" prob=".3" stick_chance="0.95" />
 		<property name="EconomicValue" value="5" />
 		<property name="EconomicBundleSize" value="20" />
@@ -2594,7 +2592,7 @@ then add recipes for those white/red/green metals
 		<property name="Extends" value="rock01" />
 		<property name="Model" value="Rocks/Rock12" param1="main_mesh" />
 	</block>
-	<block id="309" name="workcampfire">
+	<block id="309" name="campfire">
 		<property name="Class" value="Campfire" />
 		<property name="Material" value="MSWorkStation" />
 		<property name="MaxDamage" value="100" />
@@ -2620,7 +2618,7 @@ then add recipes for those white/red/green metals
 		</property>
 		<drop event="Harvest" name="" count="0" tool_category="Dolly" />
 		<drop event="Harvest" name="rockSmall" count="5,8"/>
-		<drop event="Destroy" name="campfire" count="1" tool_category="Dolly" />
+		<drop event="Destroy" name="itemCampfire" count="1" tool_category="Dolly" />
 		<drop event="Destroy" count="0" />
 		<property name="Group" value="Food/Cooking" />
 		<property name="DescriptionKey" value="campfireDesc" />
@@ -3222,7 +3220,7 @@ then add recipes for those white/red/green metals
 		<property name="Shape" value="ModelEntity" />
 		<property name="Texture" value="241" />
 		<property name="Light" value="0.75" />
-        <property name="MaxDamage" value="500" />
+        <property name="MaxDamage" value="1000" />
 		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 		<property name="Model" value="Entities/Lighting/street_light01Prefab" />
 		<drop event="Harvest" name="electricParts" count="2,4" prob="1" tool_category="Disassemble" />
@@ -3837,7 +3835,7 @@ then add recipes for those white/red/green metals
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="0.95" />
 		<property name="EconomicValue" value="20" />
 	</block>
-	<block id="422" name="workchemistryStation">
+	<block id="422" name="chemistryStation">
 		<property name="Class" value="Campfire" />
 		<property name="Material" value="MMWorkStation" />
 		<property name="CustomIcon" value="chemistryStation" />
@@ -3858,14 +3856,14 @@ then add recipes for those white/red/green metals
 		<property name="HeatMapFrequency" value="25" />
 		<property name="ActiveRadiusEffects" value="+heatSource(3)" />
 		<property class="Workstation">
-			<property name="CraftingAreaRecipes" value="workMortarAndPestle,workchemistryStation" />
+			<property name="CraftingAreaRecipes" value="workMortarAndPestle,chemistrystation" />
 			<property name="Modules" value="output,fuel,input" />
 		</property>
 		<property class="RepairItems">
 			<property name="forgedIron" value="8" />
 		</property>
 		<drop event="Harvest" name="" count="0" tool_category="Dolly" />
-		<drop event="Destroy" name="chemistryStation" count="1" tool_category="Dolly" />
+		<drop event="Destroy" name="itemChemistryStation" count="1" tool_category="Dolly" />
 		<drop event="Destroy" count="0" />
 		<property name="Group" value="Food/Cooking,Building" />
 		<property name="EconomicValue" value="5" />
@@ -5010,19 +5008,18 @@ kind of free
 			<property name="animalHide" value="12" />
 		</property>
 		<property class="Workstation">
-			<property name="CraftingAreaRecipes" value="workforge" />
+			<property name="CraftingAreaRecipes" value="forge" />
 			<property name="Modules" value="tools,output,fuel,material_input" />
 			<property name="InputMaterials" value="iron,brass,lead,glass,stone,clay" />
 		</property>
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="bellows" count="1" tool_category="Disassemble" />
 		<drop event="Harvest" name="" count="0" tool_category="Dolly" />
-		<drop event="Destroy" name="forge" count="1" tool_category="Dolly" />
+		<drop event="Destroy" name="itemForge" count="1" tool_category="Dolly" />
 		<drop event="Destroy" count="0" />
 		<property name="Group" value="Building" />
 		<property name="DescriptionKey" value="forgeDesc" />
 		<property name="EconomicValue" value="214" />
-		<property name="SellableToTrader" value="false" />
 		<property name="CraftingSkillGroup" value="Primitive Crafting" />
 	</block>
 	<block id="557" name="cntMunitionsBox">
@@ -5847,22 +5844,26 @@ kind of free
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="adobeWhiteBlock" />
 		</property>
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 		<property name="Texture" value="436" />
 	</block>
 	<block id="635" name="brickPaintedTanDrywallBlock">
 		<property name="Extends" value="brickBlock" />
 		<property name="CustomIcon" value="brickPaintedIndustrialTileBlock" />
 		<property name="Texture" value="332,332,332,215,332,332" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="636" name="brickPaintedTanBaseboardBlock">
 		<property name="Extends" value="brickBlock" />
 		<property name="CustomIcon" value="brickPaintedIndustrialTileBlock" />
 		<property name="Texture" value="332,332,332,216,332,332" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="637" name="brickPaintedBlueDrywallBlock">
 		<property name="Extends" value="brickBlock" />
 		<property name="CustomIcon" value="brickPaintedIndustrialTileBlock" />
 		<property name="Texture" value="332,332,332,436,332,332" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="638" name="stainlessSteelRamp">
 		<property name="Extends" value="stainlessSteelMaster" />
@@ -6485,6 +6486,7 @@ kind of free
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="concreteBlock" />
 		</property>
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="694" name="adobePeachDrywallBlock">
 		<property name="Extends" value="adobeMaster" />
@@ -6501,6 +6503,7 @@ kind of free
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="concreteBlock" />
 		</property>
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="696" name="cremeDrywallBlock">
 		<property name="Extends" value="stoneToAdobeMaster" />
@@ -6508,6 +6511,7 @@ kind of free
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="adobeWhiteBlock" />
 		</property>
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="697" name="cremeDrywallBaseboardBlock">
 		<property name="Extends" value="stoneToAdobeMaster" />
@@ -6515,6 +6519,7 @@ kind of free
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="adobeWhiteBlock" />
 		</property>
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="698" name="tileFloor5Stairs25">
 		<property name="Extends" value="concreteMaster" />
@@ -6688,14 +6693,17 @@ kind of free
 		<property name="Extends" value="woodBlock" />
 		<property name="Material" value="wood_weak" />
 		<property name="Texture" value="59" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="716" name="wallPlasterMiddle2Block">
 		<property name="Extends" value="woodBlock" />
 		<property name="Texture" value="58" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="717" name="wallPlasterTop2Block">
 		<property name="Extends" value="woodBlock" />
 		<property name="Texture" value="62" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="718" name="plantedCotton3HarvestLargeLegacy">
 		<property name="Extends" value="plantedCotton3Harvest" />
@@ -6706,6 +6714,7 @@ kind of free
 	<block id="719" name="drywallWhiteCNRInside">
 		<property name="Extends" value="woodCNRInside" />
 		<property name="Texture" value="217" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="720" name="concreteCTRPlate">
 		<property name="Extends" value="concreteMaster" />
@@ -6719,6 +6728,7 @@ kind of free
 		<property name="Shape" value="Plate" />
 		<property name="Texture" value="217" />
 		<drop event="Destroy" count="0" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="722" name="dropCeiling2RoofAsphaltBlock">
 		<property name="Extends" value="concreteBlock" />
@@ -6761,18 +6771,22 @@ kind of free
 	<block id="726" name="concreteTrim2TanDrywallBlock">
 		<property name="Extends" value="concreteBlock" />
 		<property name="Texture" value="8,8,330,215,330,330" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="727" name="drywallTrim2SidesBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="Texture" value="215,215,215,215,216,216" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="728" name="cremeBacksplashBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="Texture" value="173,173,9,173,173,173" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="729" name="drywallOldwoodBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="Texture" value="241,217,241,241,241,241" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="730" name="clayRoofCNRInside">
 		<property name="Extends" value="stoneToAdobeMaster" />
@@ -6789,6 +6803,7 @@ kind of free
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="adobeWhiteBlock" />
 		</property>
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="732" name="treePlantedMaple17mPlus">
 		<property name="Extends" value="treeMaple17m" />
@@ -7352,26 +7367,32 @@ kind of free
 	<block id="800" name="sidingBluePlasterBaseboardBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="Texture" value="50,50,50,59,50,50" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="801" name="sidingGreenPlasterBaseboardBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="Texture" value="51,51,51,59,51,51" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="802" name="sidingWhitePlasterBaseboardBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="Texture" value="52,52,52,59,52,52" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="803" name="sidingYellowPlasterBaseboardBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="Texture" value="53,53,53,59,53,53" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="804" name="sidingTanPlasterBaseboardBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="Texture" value="77,77,77,59,77,77" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="805" name="brickPlasterBaseboardBlock">
 		<property name="Extends" value="brickBlock" />
 		<property name="Texture" value="7,7,7,59,7,7" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="806" name="stainlessSteelStairs25">
 		<property name="Extends" value="stainlessSteelMaster" />
@@ -7475,6 +7496,7 @@ kind of free
 	<block id="821" name="concreteTrimTanDrywallBlock">
 		<property name="Extends" value="concreteBlock" />
 		<property name="Texture" value="8,8,321,215,321,321" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="822" name="dropCeilingRedWoodTrimBlock">
 		<property name="Extends" value="redWoodMaster" />
@@ -7567,10 +7589,12 @@ kind of free
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="adobeWhiteBlock" />
 		</property>
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="832" name="tanStuccoPlasterBaseboardBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="Texture" value="245,245,245,59,245,245" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="833" name="woodStairs50">
 		<property name="Material" value="wood" />
@@ -7872,6 +7896,7 @@ kind of free
 	<block id="866" name="tanDrywallBaseboardRamp">
 		<property name="Extends" value="woodRamp" />
 		<property name="Texture" value="216" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="867" name="tanDrywallRamp">
 		<property name="Extends" value="woodRamp" />
@@ -7880,6 +7905,7 @@ kind of free
 	<block id="868" name="drywallWhiteBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="Texture" value="217" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="869" name="plantedChrysanthemum1">
 		<property name="Extends" value="cropsGrowingMaster" />
@@ -7970,6 +7996,7 @@ kind of free
 	<block id="881" name="DrywallIndustrialTileBlock">
 		<property name="Extends" value="brickBlock" />
 		<property name="Texture" value="215,215,215,319,215,215" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="882" name="rWoodMetalArrowSlitHalf">
 		<property name="Extends" value="rWoodMetalMaster" />
@@ -8304,6 +8331,7 @@ kind of free
 	<block id="917" name="peachDrywallBaseboardPillar100">
 		<property name="Extends" value="woodPillar100" />
 		<property name="Texture" value="215,215,216,216,216,216" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="918" name="powerPoleWoodPillar100">
 		<property name="Extends" value="woodPillar100" />
@@ -8395,6 +8423,7 @@ kind of free
 	<block id="933" name="concreteTrim3TanDrywallBlock">
 		<property name="Extends" value="concreteBlock" />
 		<property name="Texture" value="331,8,331,215,331,331" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<!-- 1 Free -->
 	<block id="935" name="gravelWedge">
@@ -8482,15 +8511,18 @@ kind of free
 	<block id="945" name="flagstoneDrywallBlock">
 		<property name="Extends" value="brickBlock" />
 		<property name="Texture" value="226,226,226,226,215,215" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="946" name="brickModernTanDrywallBlock">
 		<property name="Extends" value="brickBlock" />
 		<property name="Texture" value="227,227,227,215,227,227" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="947" name="brickModernTanBaseboardBlock">
 		<property name="Extends" value="brickBlock" />
 		<property name="CustomIcon" value="brickModernTanDrywallBlock" />
 		<property name="Texture" value="227,227,227,216,227,227" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="948" name="flagstoneBlock">
 		<property name="Extends" value="stoneToAdobeMaster" />
@@ -8510,6 +8542,7 @@ kind of free
 	<block id="950" name="flagstoneDrywallBaseboardBlock">
 		<property name="Extends" value="brickBlock" />
 		<property name="Texture" value="226,226,226,226,216,216" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="951" name="brickAsphaltBlock">
 		<property name="Extends" value="brickBlock" />
@@ -8838,90 +8871,109 @@ kind of free
 	<block id="1010" name="sidingBluePlasterMiddleBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="Texture" value="50,50,50,58,50,50" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1011" name="sidingBluePlasterTopBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="CustomIcon" value="sidingBluePlasterMiddleBlock" />
 		<property name="Texture" value="50,50,50,62,50,50" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1012" name="sidingBlueOldWoodBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="CustomIcon" value="sidingBluePlasterMiddleBlock" />
 		<property name="Texture" value="50,50,50,241,50,50" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1013" name="sidingGreenPlasterMiddleBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="Texture" value="51,51,51,58,51,51" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1014" name="sidingGreenPlasterTopBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="CustomIcon" value="sidingGreenPlasterMiddleBlock" />
 		<property name="Texture" value="51,51,51,62,51,51" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1015" name="sidingGreenOldWoodBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="CustomIcon" value="sidingGreenPlasterMiddleBlock" />
 		<property name="Texture" value="51,51,51,241,51,51" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1016" name="sidingWhitePlasterMiddleBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="Texture" value="52,52,52,58,52,52" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1017" name="sidingWhitePlasterTopBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="Texture" value="52,52,52,62,52,52" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1018" name="sidingWhiteOldWoodBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="Texture" value="52,52,52,241,52,52" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1019" name="sidingWhiteBurntBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="Texture" value="302,302,302,303,302,302" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1020" name="sidingYellowPlasterMiddleBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="Texture" value="53,53,53,58,53,53" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1021" name="sidingYellowPlasterTopBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="CustomIcon" value="sidingYellowPlasterMiddleBlock" />
 		<property name="Texture" value="53,53,53,62,53,53" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1022" name="sidingYellowOldWoodBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="CustomIcon" value="sidingYellowPlasterMiddleBlock" />
 		<property name="Texture" value="53,53,53,241,53,53" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1023" name="sidingTanPlasterMiddleBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="CustomIcon" value="sidingGreenPlasterMiddleBlock" />
 		<property name="Texture" value="77,77,77,58,77,77" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1024" name="sidingTanPlasterTopBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="CustomIcon" value="sidingGreenPlasterMiddleBlock" />
 		<property name="Texture" value="77,77,77,62,77,77" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1025" name="sidingTanOldWoodBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="CustomIcon" value="sidingGreenPlasterMiddleBlock" />
 		<property name="Texture" value="77,77,77,241,77,77" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1026" name="brickPlasterMiddleBlock">
 		<property name="Extends" value="brickBlock" />
 		<property name="CustomIcon" value="brickBlock" />
 		<property name="Texture" value="7,7,7,58,7,7" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1027" name="brickPlasterTopBlock">
 		<property name="Extends" value="brickBlock" />
 		<property name="CustomIcon" value="brickBlock" />
 		<property name="Texture" value="7,7,7,62,7,7" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1028" name="brickOldWoodBlock">
 		<property name="Extends" value="brickBlock" />
 		<property name="CustomIcon" value="brickBlock" />
 		<property name="Texture" value="7,7,7,241,7,7" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1029" name="awningTanPyramid">
 		<property name="Extends" value="awningGreenCNRFull" />
@@ -9146,14 +9198,17 @@ kind of free
 	<block id="1064" name="tanStuccoPlasterMiddleBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="Texture" value="245,245,245,58,245,245" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1065" name="tanStuccoPlasterTopBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="Texture" value="245,245,245,62,245,245" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1066" name="tanStuccoOldWoodBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="Texture" value="245,245,245,241,245,245" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1067" name="rWoodWedgeTip">
 		<property name="Extends" value="rWoodMaster" />
@@ -9291,6 +9346,7 @@ kind of free
 	<block id="1085" name="concreteBlueDrywallBlock">
 		<property name="Extends" value="concreteBlock" />
 		<property name="Texture" value="436,8,8,8,8,8" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1086" name="dotsWoodBlock">
 		<property name="Extends" value="woodBlock" />
@@ -9505,10 +9561,12 @@ kind of free
 	<block id="1115" name="drywallBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="Texture" value="215,215,215,215,215,215" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1116" name="peachDrywallBaseboardBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="Texture" value="215,215,216,216,216,216" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1117" name="dropCeilingBlock">
 		<property name="Extends" value="woodBlock" />
@@ -9517,18 +9575,22 @@ kind of free
 	<block id="1118" name="rug01DrywallBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="Texture" value="248,217,215,215,215,215" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1119" name="tileFloor3DrywallBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="Texture" value="340,217,215,215,215,215" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1120" name="carpet3DrywallBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="Texture" value="344,217,215,215,215,215" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1121" name="tileBackspashDrywallBlock">
 		<property name="Extends" value="woodBlock" />
 		<property name="Texture" value="340,217,340,215,215,215" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1122" name="treeSnowyDeadBush">
 		<property name="Material" value="leaves" />
@@ -9543,6 +9605,7 @@ kind of free
 	<block id="1123" name="BaseboardIndustrialTileBlock">
 		<property name="Extends" value="brickBlock" />
 		<property name="Texture" value="215,215,216,319,216,216" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1124" name="brickModernTanIndustrialTileBlock">
 		<property name="Extends" value="brickBlock" />
@@ -9672,6 +9735,7 @@ kind of free
 	<block id="1147" name="concreteTrim2TanBaseboardBlock">
 		<property name="Extends" value="concreteBlock" />
 		<property name="Texture" value="8,8,330,216,330,330" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1148" name="concreteTrim2IndustrialTileBlock">
 		<property name="Extends" value="concreteBlock" />
@@ -9680,6 +9744,7 @@ kind of free
 	<block id="1149" name="concreteTrim3TanBaseboardBlock">
 		<property name="Extends" value="concreteBlock" />
 		<property name="Texture" value="8,8,331,216,331,331" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1150" name="concreteTrim3IndustrialTileBlock">
 		<property name="Extends" value="concreteBlock" />
@@ -9688,6 +9753,7 @@ kind of free
 	<block id="1151" name="concreteTrimTanBaseboardBlock">
 		<property name="Extends" value="concreteBlock" />
 		<property name="Texture" value="8,8,321,216,321,321" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1152" name="concreteTrimIndustrialTileBlock">
 		<property name="Extends" value="concreteBlock" />
@@ -9697,11 +9763,13 @@ kind of free
 		<property name="Extends" value="concreteBlock" />
 		<property name="CustomIcon" value="concreteBlock" />
 		<property name="Texture" value="8,8,8,215,8,8" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1154" name="concreteTanBaseboardBlock">
 		<property name="Extends" value="concreteBlock" />
 		<property name="CustomIcon" value="concreteBlock" />
 		<property name="Texture" value="8,8,8,216,8,8" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1155" name="concreteIndustrialTileBlock">
 		<property name="Extends" value="concreteBlock" />
@@ -10620,16 +10688,19 @@ kind of free
 		<property name="Extends" value="metalNoUpgradeMaster" />
 		<property name="CustomIcon" value="orangeMetalBlock" />
 		<property name="Texture" value="429,429,429,216,429,429" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1268" name="orangeMetalTanDrywallBlock">
 		<property name="Extends" value="metalNoUpgradeMaster" />
 		<property name="CustomIcon" value="orangeMetalBlock" />
 		<property name="Texture" value="429,429,429,215,429,429" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1269" name="orangeMetalOrangeDrywallBlock">
 		<property name="Extends" value="metalNoUpgradeMaster" />
 		<property name="CustomIcon" value="orangeMetalBlock" />
 		<property name="Texture" value="429,429,429,430,429,429" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1270" name="orangeMetalTanIndustrialTileBlock">
 		<property name="Extends" value="metalNoUpgradeMaster" />
@@ -10994,10 +11065,12 @@ kind of free
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="adobeWhiteBlock" />
 		</property>
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1329" name="brickModernOrangeDrywallBlock">
 		<property name="Extends" value="brickBlock" />
 		<property name="Texture" value="227,227,227,430,227,227" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" />
 	</block>
 	<block id="1330" name="cntSupplyCrateWorkingStiffs">
 		<property name="Material" value="wood" />
@@ -12520,8 +12593,9 @@ kind of free
 		<drop event="Harvest" name="spring" count="1" prob="0.1" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="1,3" prob="1" tool_category="Disassemble" />
 		<drop event="Harvest" name="electronicParts" count="1,3" prob=".4" tool_category="Disassemble" />
-		<drop event="Harvest" name="scrapIron" count="5,20" prob="0.5" />
-		<drop event="Destroy" name="scrapIron" count="10" prob="1" />
+		<drop event="Harvest" name="scrapCable" count="1,2" prob="0.5" tool_category="Disassemble" />
+		<drop event="Harvest" name="scrapIron" count="5,10" prob="0.5" />
+		<drop event="Destroy" name="scrapIron" count="20" prob="1" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="0.95" />
 	</block>
 	<block id="1510" name="controlPanelBase02">
@@ -12747,6 +12821,8 @@ kind of free
 			<property name="scrapIron" value="5" />
 		</property>
 		<drop event="Harvest" name="electricParts" count="2,4" prob="1" tool_category="Disassemble" />
+		<drop event="Harvest" name="scrapCable" count="1" prob="0.5" tool_category="Disassemble" />
+		<drop event="Destroy" name="scrapIron" count="1" prob="1" />
 		<property name="EconomicValue" value="150" />
 		<!-- disassemble value -->
 	</block>
@@ -12863,6 +12939,7 @@ kind of free
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="Texture" value="526" />
 		<drop event="Harvest" name="electricParts" count="1,3" prob=".7" tool_category="Disassemble" />
+		<drop event="Harvest" name="scrapCable" count="3,5" prob="0.5" tool_category="Disassemble" />
 		<drop event="Destroy" name="shortMetalPipe" count="2,5" prob="1" tool_category="Disassemble" />
 	</block>
 	<block id="1557" name="conduit01Curve">
@@ -12884,7 +12961,7 @@ kind of free
 		<property name="FuelValue" value="40" />
 		<property name="Model" value="Furniture/chair04" param1="main_mesh" />
 	</block>
-	<block id="1561" name="workcementMixer">
+	<block id="1561" name="cementMixer">
 		<property name="Class" value="Workstation" />
 		<property name="Material" value="MMWorkStation" />
 		<property name="StabilitySupport" value="false" />
@@ -12901,6 +12978,7 @@ kind of free
 		<!--<property name="CraftTimeMultiplier" value="0.5,1"/>-->
 		<property class="Workstation">
 			<property name="Modules" value="output" />
+			<property name="CraftingAreaRecipes" value="cementMixer" />
 		</property>
 		<property class="RepairItems">
 			<property name="forgedIron" value="50" />
@@ -12911,7 +12989,7 @@ kind of free
         <drop event="Destroy" name="Exhaust" count="1" prob=".2" tool_category="Disassemble" />
         <drop event="Destroy" name="EngineBlock" count="1" prob=".2" tool_category="Disassemble" />
 		<drop event="Harvest" name="" count="0" tool_category="Dolly" />
-		<drop event="Destroy" name="cementMixer" count="1" tool_category="Dolly" />
+		<drop event="Destroy" name="itemCementMixer" count="1" tool_category="Dolly" />
 		<drop event="Destroy" count="0" />
 		<property name="Group" value="Building" />
 		<property name="CustomIcon" value="ui_game_symbol_cementMixer" />
@@ -12945,8 +13023,8 @@ kind of free
 		<property name="EconomicValue" value="10" />
 		<property name="EconomicBundleSize" value="10" />
 	</block>
-	<block id="1563" name="workworkbench">
-		<property name="CustomIcon" value="ui_game_symbol_workworkbench" />
+	<block id="1563" name="workbench">
+		<property name="CustomIcon" value="ui_game_symbol_workbench" />
 		<property name="Class" value="Workstation" />
 		<property name="Material" value="MWWorkStation" />
 		<property name="StabilitySupport" value="false" />
@@ -12960,7 +13038,7 @@ kind of free
 		<property name="HeatMapFrequency" value="25" />
 		<property class="Workstation">
 			<property name="Modules" value="output" />
-			<property name="CraftingAreaRecipes" value="workworkbench" />
+			<property name="CraftingAreaRecipes" value="workbench" />
 		</property>
 		<property class="RepairItems">
 			<property name="forgedIron" value="35" />
@@ -14767,7 +14845,7 @@ kind of free
 		<property name="BuffsWhenWalkedOn" value="blockBurn3Trigger" />
 		<property name="ActiveRadiusEffects" value="+heatSource(3)" />
 		<property class="Workstation">
-			<property name="CraftingAreaRecipes" value="workcampfire,workStove" />
+			<property name="CraftingAreaRecipes" value="campfire,workStove" />
 			<property name="Modules" value="tools,output,fuel,input" />
 		</property>
 		<property class="RepairItems">

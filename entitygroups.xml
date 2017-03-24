@@ -232,7 +232,7 @@
 		<entity name="Joe7" />
 	</entitygroup>
 	<entitygroup name="ZombiesWasteland">
-		<entity name="Dummy" prob="12.5" />
+		<entity name="Dummy" prob="7.5" />
 		<entity name="zombieBoe" />
 		<entity name="zombieJoe" />
 		<entity name="zombieSteve" />
@@ -307,7 +307,7 @@
 		<entity name="burnt1" />
 	</entitygroup>
 	<entitygroup name="ZombiesWastelandNight">
-		<entity name="Dummy" prob="10" />
+		<entity name="Dummy" prob="7.5" />
 		<entity name="spiderzombie" />
 		<entity name="zombieBoe" />
 		<entity name="zombieJoe" />
@@ -933,7 +933,7 @@
 		<entity name="crocodile" prob="1" />
 	</entitygroup>
 	<entitygroup name="RadZoneAnimalGrp">
-		<entity name="Dummy" prob="0.50" />
+		<entity name="Dummy" prob="0.66" />
 		<entity name="RadSpider" prob="0.33" />
 		<entity name="zombiedog" prob="0.2" />
 	</entitygroup>
