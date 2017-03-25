@@ -1312,7 +1312,7 @@ then add recipes for those white/red/green metals
 		<property name="Group" value="Building" />
 		<property name="DescriptionKey" value="woodFrameGroupDesc" />
 		<property name="Material" value="wood_weak" />
-		<property name="MaxDamage" value="50" />
+		<property name="MaxDamage" value="100" />
 		<property name="Shape" value="CubeCutoutBackFaces" />
 		<property name="Mesh" value="cutout" />
 		<property name="Texture" value="381" />
@@ -1340,7 +1340,6 @@ then add recipes for those white/red/green metals
 	<!-- ****************************  Main Blocks  **************************** -->
 	<block id="150" name="woodFrameWedge">
 		<property name="Extends" value="woodFrameMaster" />
-		<property name="Material" value="wood_weak" />
 		<property name="Shape" value="Wedged60Full" />
 		<property name="CanPickup" value="true" />
 		<property class="UpgradeBlock">
@@ -1903,7 +1902,6 @@ then add recipes for those white/red/green metals
 	</block>
 	<block id="221" name="woodFrameRamp">
 		<property name="Extends" value="woodFrameMaster" />
-		<property name="Material" value="wood_weak" />
 		<property name="Group" value="Building" />
 		<property name="CanPickup" value="true" />
 		<property name="Shape" value="WedgedBackFaces" />
@@ -1941,7 +1939,6 @@ then add recipes for those white/red/green metals
 	</block>
 	<block id="225" name="woodFrameCNRInside">
 		<property name="Extends" value="woodFrameMaster" />
-		<property name="Material" value="wood_weak" />
 		<property name="Shape" value="WedgedInnerFull" />
 		<property name="CanPickup" value="true" />
 		<property class="UpgradeBlock">
@@ -1980,7 +1977,6 @@ then add recipes for those white/red/green metals
 	</block>
 	<block id="230" name="woodFrameCNRFull">
 		<property name="Extends" value="woodFrameMaster" />
-		<property name="Material" value="wood_weak" />
 		<property name="Shape" value="WedgedCornerFull" />
 		<property name="CanPickup" value="true" />
 		<property class="UpgradeBlock">
@@ -2518,7 +2514,6 @@ then add recipes for those white/red/green metals
 	</block>
 	<block id="295" name="woodFrameBlock">
 		<property name="Extends" value="woodFrameMaster" />
-		<property name="Material" value="wood_weak" />
 		<property name="Group" value="Building" />
 		<property name="CanPickup" value="true" />
 		<property name="MaxDamage" value="50" />
@@ -4576,13 +4571,12 @@ kind of free
 		<property name="Mesh" value="models" />
 		<property name="Model" value="Furniture/chair01" param1="main_mesh" />
 		<property name="Place" value="TowardsPlacer" />
-		<property name="FuelValue" value="32" />
 		<property name="Weight" value="50" />
 		<property name="CanPickup" value="true" />
 		<property name="DescriptionKey" value="furnitureGroupDesc" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob="1.0" stick_chance=".75" />
-		<drop event="Harvest" name="shortMetalPipe" count="1" tool_category="Disassemble" />
-		<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
+		<drop event="Destroy" name="shortMetalPipe" count="1" tool_category="Disassemble" />
+		<drop event="Destroy" name="scrapIron" count="1,4" prob="1" />
 	</block>
 	<block id="519" name="cntDesk01">
 		<property name="Class" value="Loot" />
@@ -4611,11 +4605,9 @@ kind of free
 		<property name="MultiBlockDim" value="2,1,1" />
 		<property name="LootList" value="44" />
 		<property name="DescriptionKey" value="furnitureGroupDesc" />
-		<drop event="Harvest" name="shortMetalPipe" count="2,4" tool_category="Disassemble" />
 		<drop event="Harvest" name="scrapIron" count="25" tool_category="Disassemble" />
-		<drop event="Destroy" name="scrapIron" count="25" tool_category="Disassemble" />
-		<drop event="Destroy" name="scrapIron" count="5" />
-		<!-- <drop event="Harvest" name="[recipe]" count="1" tool_category="Disassemble" />-->
+		<drop event="Harvest" name="shortMetalPipe" count="2,4" tool_category="Disassemble" />
+		<drop event="Destroy" name="scrapIron" count="25" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="0.95" />
 		<property name="EconomicValue" value="570" />
 	</block>
@@ -4634,9 +4626,9 @@ kind of free
 			<property name="mechanicalParts" value="2" />
 			<property name="forgedIron" value="3" />
 		</property>
-		<drop event="Harvest" name="leather" count="1,3" prob="1" tool_category="Disassemble" />
-		<drop event="Harvest" name="mechanicalParts" count="1" prob="1" tool_category="Disassemble" />
-		<drop event="Harvest" name="mechanicalParts" count="1" prob=".4" tool_category="Disassemble" />
+		<drop event="Destroy" name="leather" count="1,3" prob="1" tool_category="Disassemble" />
+		<drop event="Destroy" name="mechanicalParts" count="1" prob="1" tool_category="Disassemble" />
+		<drop event="Destroy" name="mechanicalParts" count="1" prob=".4" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapIron" count="5,15" />
 		<property name="EconomicValue" value="65" />
 	</block>
@@ -4887,10 +4879,9 @@ kind of free
 			<property name="Plank" value="5" />
 		</property>
 		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
-		<drop event="Harvest" name="nail" count="2" tool_category="Disassemble" />
+		<drop event="Destroy" name="nail" count="2" tool_category="Disassemble" />
 		<drop event="Destroy" name="Plank" count="1" />
 		<drop event="Destroy" name="stick" count="4" />
-		<drop event="Destroy" count="0" />
 	</block>
 	<block id="548" name="endTableLamp">
 		<property name="Extends" value="endTable" param1="RepairItems,wood" />
@@ -4899,11 +4890,14 @@ kind of free
 			<property name="Planks" value="5" />
 			<property name="electricParts" value="3" />
 		</property>
-		<drop event="Harvest" name="electricParts" count="2" prob="1" tool_category="Disassemble" />
+		<drop event="Destroy" name="electricParts" count="2" prob="1" tool_category="Disassemble" />
 		<!-- HV: mounted lamp -->
-		<drop event="Harvest" name="scrapCable" count="1" tool_category="Disassemble" />
-		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
-		<drop event="Harvest" name="electricParts" count="1,3" prob=".3" tool_category="Disassemble" />
+		<drop event="Destroy" name="scrapCable" count="1" tool_category="Disassemble" />
+		<drop event="Destroy" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
+		<drop event="Destroy" name="electricParts" count="1,3" prob=".3" tool_category="Disassemble" />
+		<drop event="Destroy" name="nail" count="2" tool_category="Disassemble" />
+		<drop event="Destroy" name="Plank" count="1" />
+		<drop event="Destroy" name="stick" count="4" />
 	</block>
 	<block id="549" name="sectionalArm2">
 		<property name="CustomIcon" value="sectionalArm" />
@@ -4915,8 +4909,9 @@ kind of free
 		<property name="DescriptionKey" value="furnitureGroupDesc" />
 		<property name="CanPickup" value="true" />
 		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
-		<drop event="Harvest" name="leather" count="1" tool_category="Disassemble" />
-		<drop event="Harvest" name="spring" count="2,4" tool_category="Disassemble" />
+		<drop event="Destroy" name="leather" count="1" tool_category="Disassemble" />
+		<drop event="Destroy" name="spring" count="2,4" tool_category="Disassemble" />
+		<drop event="Destroy" name="leather" count="1" />
 		<drop event="Destroy" name="Plank" count="1" />
 		<drop event="Destroy" name="stick" count="4" />
 		<drop event="Destroy" count="0" />
@@ -4944,10 +4939,10 @@ kind of free
 		<property name="CanPickup" value="true" />
 		<drop event="Harvest" name="electricParts" count="2" prob="1" tool_category="Disassemble" />
 		<!-- HV: mounted fluorescent lamp -->
-		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
-		<drop event="Harvest" name="electronicParts" count="1,3" prob="1" tool_category="Disassemble" />
-		<drop event="Harvest" name="electronicParts" count="2,4" prob=".5" tool_category="Disassemble" />
-		<drop event="Harvest" name="scrapPlastics" count="1,3" prob=".5" tool_category="Disassemble" />
+		<drop event="Destroy" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
+		<drop event="Destroy" name="electronicParts" count="1,3" prob="1" tool_category="Disassemble" />
+		<drop event="Destroy" name="electronicParts" count="2,4" prob=".5" tool_category="Disassemble" />
+		<drop event="Destroy" name="scrapPlastics" count="1,3" prob=".5" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapPlastics" count="3" />
 		<property name="Group" value="Decor/Miscellaneous" />
 		<property name="DescriptionKey" value="furnitureGroupDesc" />
@@ -4986,7 +4981,7 @@ kind of free
 		<drop event="Harvest" name="electronicParts" count="1,3" prob="1" tool_category="Disassemble" />
 		<drop event="Harvest" name="electronicParts" count="2,4" prob=".5" tool_category="Disassemble" />
 	</block>
-	<block id="556" name="workforge">
+	<block id="556" name="forge">
 		<property name="CustomIcon" value="forge" />
 		<property name="Class" value="Forge" />
 		<property name="Material" value="MSWorkStation" />
@@ -5571,7 +5566,6 @@ kind of free
 	</block>
 	<block id="612" name="whiteSidingWoodPanelBurnt1">
 		<property name="Extends" value="woodFrameMaster" />
-		<property name="Material" value="wood_weak" />
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
 		<property name="Model" value="Buildings/white_siding_wood_panel_burnt1" param1="main_mesh" />
@@ -15261,6 +15255,7 @@ kind of free
 		<property name="Material" value="MMWorkStation" />
 		<property name="Class" value="Campfire" />
 		<property name="Stacknumber" value="1" />
+		<property name="CustomIcon" value="ui_game_symbol_workBiogasDigester"/>
 		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
 		<property class="RepairItems">
 			<property name="scrapIron" value="50" />
@@ -15268,7 +15263,11 @@ kind of free
 		<property class="Workstation">
 			<property name="Modules" value="output" />
 		</property>
-		<drop event="Destroy" name="workBiogasDigester" count="1" prob="1" />
+		<property name="DescriptionKey" value="workBiogasDigesterDesc" />
+		<drop event="Destroy" name="scrapIron" count="3,20" tool_category="Disassemble" />
+		<drop event="Destroy" name="MethaneProducer" count="1" tool_category="Dolly" />
+		<drop event="Fall" name="scrapMetalPile" count="1" stick_chance="0.95" />
+		<property name="CraftingSkillGroup" value="Engineering" />
 		<property name="Group" value="Tools/Traps" />
 	</block>
     <!--JZMOD PROFESSION KITS-->
@@ -16513,11 +16512,10 @@ kind of free
 		<property name="debug" value="false" />
         <property name="DescriptionKey" value="dieselGenDesc" />
         <property name="CraftingSkillGroup" value="Journeyman Crafting" />
-		<drop event="Destroy" count="0" />
-        <drop event="Harvest" name="scrapIron" count="5,20" prob="1" />
-        <drop event="Harvest" name="" count="1" prob="1" tool_category="Disassemble" />
+        <drop event="Harvest" name="scrapIron" count="10,20" prob="1" />
+        <drop event="Harvest" name="" count="0" prob="1" tool_category="Dolly" />
         <drop event="Destroy" name="DieselGen" count="1" prob="1" tool_category="Dolly" />
-        <drop event="Destroy" name="dieselGen" count="1" prob="1" tool_category="Disassemble" />
+        <drop event="Destroy" name="scrapIron" count="20" prob="1" tool_category="Disassemble" />
     </block>
 	<block id="1711" name="bigGenerator">
 		<property name="Extends" value="dieselGen" />
@@ -16531,11 +16529,10 @@ kind of free
 		<property name="CustomIcon" value="ui_game_symbol_bigGenerator" />
         <property name="DescriptionKey" value="bigGeneratorDesc" />
         <property name="CraftingSkillGroup" value="Master Craftsman" />
-		<drop event="Destroy" count="0" />
-        <drop event="Harvest" name="scrapIron" count="50" prob="1" />
-        <drop event="Harvest" name="" count="1" prob="1" tool_category="Disassemble" />
+        <drop event="Harvest" name="scrapIron" count="25,50" prob="1" />
+        <drop event="Harvest" name="" count="0" prob="1" tool_category="Dolly" />
         <drop event="Destroy" name="BigGenerator" count="1" prob="1" tool_category="Dolly" />
-        <drop event="Destroy" name="bigGenerator" count="1" prob="1" tool_category="Disassemble" />
+        <drop event="Destroy" name="scrapIron" count="25,50" prob="1" tool_category="Disassemble" />
     </block>
 	<block id="1712" name="smallGenerator">
 		<property name="Extends" value="dieselGen" />
@@ -16549,11 +16546,10 @@ kind of free
 		</property>
 		<property name="CanPickup" value="true" />
 		<property name="DescriptionKey" value="smallGeneratorDesc" />
-        <drop event="Destroy" count="0" />
-        <drop event="Harvest" name="scrapIron" count="10,50" prob="1" />
-        <drop event="Harvest" name="" count="1" prob="1" tool_category="Disassemble" />
+        <drop event="Harvest" name="scrapIron" count="10,25" prob="1" />
+        <drop event="Harvest" name="" count="1" prob="1" tool_category="Dolly" />
         <drop event="Destroy" name="SmallGenerator" count="1" prob="1" tool_category="Dolly" />
-        <drop event="Destroy" name="smallGenerator" count="1" prob="1" tool_category="Disassemble" />
+        <drop event="Destroy" name="scrapIron" count="10,25" prob="1" tool_category="Disassemble" />
     </block>
 	<block id="1718" name="powerCeilingLight01">
 		<property name="Extends" value="ceilingLight01" />

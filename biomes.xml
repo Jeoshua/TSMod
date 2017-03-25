@@ -1050,7 +1050,6 @@ If you do not declare them, the decorations of the main biome are used.
 				<decorations>
 					<decoration type="prefab" name="rock_form02" prob=".001" rotatemax="7" />
 					<decoration type="prefab" name="resource_coal_pile" prob=".0007" rotatemax="7" />
-					<decoration type="block" blockname="treePlainsTree" prob="0.005" rotatemax="7" />
 					<decoration type="block" blockname="rock01" prob=".002" rotatemax="3" />
 					<decoration type="block" blockname="rock02" prob=".002" rotatemax="3" />
 					<decoration type="block" blockname="rock04" prob=".002" rotatemax="3" />
@@ -1089,20 +1088,20 @@ If you do not declare them, the decorations of the main biome are used.
 			<spectrum name="desert" />
 			<decorations>
 				<decoration type="prefab" name="desert_arch" prob=".00009" rotatemax="7" />
-				<decoration type="block" blockname="treeCactus01" prob="0.001" rotatemax="3" />
-				<decoration type="block" blockname="treeCactus02" prob="0.001" rotatemax="3" />
-				<decoration type="block" blockname="treeCactus03" prob="0.001" rotatemax="3" />
-				<decoration type="block" blockname="treeCactus04" prob="0.0007" rotatemax="3" />
-				<decoration type="block" blockname="treeCactus05" prob="0.0007" rotatemax="3" />
-				<decoration type="block" blockname="treeCactus06" prob="0.0009" rotatemax="3" />
+				<decoration type="block" blockname="treeCactus01" prob="0.0009" rotatemax="3" />
+				<decoration type="block" blockname="treeCactus02" prob="0.0009" rotatemax="3" />
+				<decoration type="block" blockname="treeCactus03" prob="0.0009" rotatemax="3" />
+				<decoration type="block" blockname="treeCactus04" prob="0.0006" rotatemax="3" />
+				<decoration type="block" blockname="treeCactus05" prob="0.0005" rotatemax="3" />
+				<decoration type="block" blockname="treeCactus06" prob="0.0004" rotatemax="3" />
 				<decoration type="block" blockname="rock01" prob=".006" rotatemax="3" />
 				<decoration type="block" blockname="rock02" prob=".006" rotatemax="3" />
 				<decoration type="block" blockname="rock04" prob=".006" rotatemax="3" />
 				<decoration type="block" blockname="rockResource" prob=".0005" rotatemax="3" />
 				<decoration type="block" blockname="rockResource02" prob=".0005" rotatemax="3" />
 				<decoration type="block" blockname="lootDesert" prob="0.00025" />
-				<decoration type="block" blockname="plantedYucca3Harvest" prob="0.003" rotatemax="3" />
-				<decoration type="block" blockname="plantedAloe3Harvest" prob="0.003" rotatemax="3" />
+				<decoration type="block" blockname="plantedYucca3Harvest" prob="0.0015" rotatemax="3" />
+				<decoration type="block" blockname="plantedAloe3Harvest" prob="0.0015" rotatemax="3" />
 				<decoration type="block" blockname="treeDesertShrub" prob="0.05" rotatemax="7" />
 				<decoration type="block" blockname="driftwood" prob="0.002" />
 				<decoration type="block" blockname="driftwood2" prob="0.002" />

@@ -20,7 +20,7 @@
 			<window name="windowFuel" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
-		<window_group name="workstation_workforge" controller="XUiC_WorkstationWindowGroup">
+		<window_group name="workstation_forge" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList" />
 			<window name="craftingInfoPanel" />
 			<window name="windowCraftingQueue" />

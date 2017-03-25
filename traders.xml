@@ -625,7 +625,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="BikeNABox" prob="0.05" />
 		</trader_item_group>
 		<trader_item_group name="workstations" count="1">
-			<item name="workforge" />
+			<item name="forge" />
 		</trader_item_group>
 		<trader_item_group name="decorativeCurtains" count="all">
 			<item name="curtain_top1Sheet3" count="4,15" />
@@ -844,7 +844,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="foodHoney" />
 			<item name="foodYuccaJuice" />
 			<item name="footballHelmet" />
-			<item name="workforge" />
+			<item name="forge" />
 			<item name="forgedIron" />
 			<item name="forgedSteel" />
 			<item name="gasCan" />
