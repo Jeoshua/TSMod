@@ -519,6 +519,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="snowberryJuice" />
 			<item name="CarrotJuice" prob="0.5" />
 			<item name="AppleJuice" prob="0.5" />
+			<item name="OrangeJuice" prob="0.5" />
 			<item name="RedBull" prob="0.5" />
 			<item name="megaCrush" prob=".045" />
 		</trader_item_group>
@@ -542,6 +543,25 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="rebarFrameBlock" count="5,20" />
 			<!-- 10 -->
 			<item group="landMines" count="1" prob="0.3" />
+		</trader_item_group>
+		<trader_item_group name="workstations" count="1">
+			<item name="workchemistryStation" count="1" prob="0.1" />
+			<item name="workforge" count="1" prob="0.1" />
+			<item name="workcementMixer" count="1" prob="0.3" />
+			<item name="workworkbench" count="1" prob="0.3" />
+			<item name="workStove" count="1" prob="0.3" />
+			<item name="workMetalWorkBench" count="1" prob="0.2" />
+			<item name="workResearchDesk" count="1" prob="0.3" />
+			<item name="workArmorTable" count="1" prob="0.3" />
+			<item name="workSeedNursery" count="1" prob="0.3" />
+			<item name="workBlastFurnace" count="1" prob="0.03" />
+			<item name="workStoneMill" count="1" prob="0.3" />
+			<item name="workMortarAndPestle" count="1" prob="0.3" />
+			<item name="workOilRefinery" count="1" prob="0.3" />
+			<item name="workBulletPress" count="1" prob="0.03" />
+			<item name="workAnvil" count="1" prob="0.3" />
+			<item name="workBatteryPack" count="1" prob="0.3" />
+			<item name="workChickenCoop" count="1" prob="0.3" />
 		</trader_item_group>
 		<trader_item_group name="generalResources">
 			<!-- bundle size -->
@@ -623,9 +643,6 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="smallEngine" prob=".3" />
 			<item name="shoppingBasketItem" prob=".3" />
 			<item name="BikeNABox" prob="0.05" />
-		</trader_item_group>
-		<trader_item_group name="workstations" count="1">
-			<item name="forge" />
 		</trader_item_group>
 		<trader_item_group name="decorativeCurtains" count="all">
 			<item name="curtain_top1Sheet3" count="4,15" />
@@ -768,7 +785,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="candyTin" />
 			<item name="carBattery" />
 			<item name="cement" />
-			<item name="cementMixer" />
+			<item name="workcementMixer" />
 			<item name="chainLink" />
 			<item name="chainsaw" />
 			<item name="chair04" />
@@ -844,7 +861,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="foodHoney" />
 			<item name="foodYuccaJuice" />
 			<item name="footballHelmet" />
-			<item name="forge" />
+			<item name="workforge" />
 			<item name="forgedIron" />
 			<item name="forgedSteel" />
 			<item name="gasCan" />
@@ -1103,7 +1120,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="woodSupport" />
 			<item name="woodTable" />
 			<item name="woodWeakNoUpgradeMaster" />
-			<item name="workbench" />
+			<item name="workworkbench" />
 			<item name="wornBoots" />
 			<item name="wrench" />
 			<item name="wroughtIronFenceSheet" />
@@ -1204,6 +1221,7 @@ workstations
 			<item group="decorativeBlocks" count="2,7" />
 			<item group="tools" count="0,2" />
 			<item group="commonWeaponParts" count="0,2" />
+			<item group="workstations" count="0,1" />
 		</trader_items>
 		<tier_items level="1,25" count="1,3">
 			<item group="gunsCommon" count="1" prob="0.2" />
@@ -1236,6 +1254,7 @@ workstations
 			<item group="hazmatGear" count="1" prob="0.4" />
 			<item group="workstations" count="1" prob="0.5" />
 			<item group="minibikeParts" count="1" prob="0.4" />
+			<item group="workstations" count="1,2" prob="0.3" />
 			<item name="nightvisionGoggles" count="1" prob=".2" />
 			<item name="miningHelmet" prob="0.5" />
 		</tier_items>
@@ -1246,13 +1265,14 @@ workstations
 	<trader_info id="4" reset_interval="1" override_buy_markup="1.0" allow_sell="false" min_inventory="6" max_inventory="13" min_items_swapped="6" max_items_swapped="13">
 		<trader_items count="10">
 			<item name="bottledWater" count="1,2" />
-			<item name="goldenRodTea" count="1,2" />
-			<item name="redTea" count="1,2" />
 			<item name="coffee" count="1,2" />
 			<item name="beer" count="1,2" />
 			<item name="canMiso" count="1,2" />
 			<item name="canPasta" count="1,2" />
 			<item name="canSoup" count="1,2" />
+			<item name="OrangeJuice" count="1,2" />
+			<item name="TomatoJuice" count="1" />
+			<item name="RedBull" count="1" />
 		</trader_items>
 	</trader_info>
 	<!-- Rented - Vending Machine -->
@@ -1267,6 +1287,7 @@ workstations
 			<item group="tools" count="0,2" />
 			<item group="commonWeaponParts" count="0,2" />
 			<item group="ItemsAndBlocksTest" />
+			<item group="workstations" count="1,3" />
 		</trader_items>
 		<tier_items level="1,25" count="1,3">
 			<item name="silverNugget" count="1,9" />

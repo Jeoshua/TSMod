@@ -855,10 +855,10 @@
 		<item name="gunPowder" count="12,36" prob="0.5" />
 	</lootgroup>
     <lootgroup name="workStations" count="1">
-        <item name="chemistryStation" count="1" prob="0.1" />
-        <item name="forge" count="1" prob="0.1" />
-        <item name="cementMixer" count="1" prob="0.3" />
-        <item name="workbench" count="1" prob="0.3" />
+        <item name="workchemistryStation" count="1" prob="0.1" />
+        <item name="workforge" count="1" prob="0.1" />
+        <item name="workcementMixer" count="1" prob="0.3" />
+        <item name="workworkbench" count="1" prob="0.3" />
         <item name="workStove" count="1" prob="0.3" />
         <item name="workMetalWorkBench" count="1" prob="0.2" />
         <item name="workResearchDesk" count="1" prob="0.3" />

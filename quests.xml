@@ -126,8 +126,8 @@ Alternative settings for custom quest creation:
 	<quest id="quest_BasicSurvival11" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival11" subtitle_key="quest_BasicSurvival11_subtitle" description_key="quest_BasicSurvival11_description" icon="ui_game_symbol_campfire" category_key="Quest">
 		<objective type="FetchKeep" id="PlantFibers" value="3" />
 		<objective type="FetchKeep" id="rockSmall" value="16" />
-		<objective type="Craft" id="campfire" value="1" />
-		<objective type="BlockPlace" id="campfire" value="1" />
+		<objective type="Craft" id="workcampfire" value="1" />
+		<objective type="BlockPlace" id="workcampfire" value="1" />
 		<reward type="Exp" value="200" />
 	</quest>
 	<!-- Basic Survival 12 - Craft Stone Shovel /> -->
@@ -756,7 +756,7 @@ Alternative settings for custom quest creation:
 		<reward type="Quest" id="challenge_Metal3" />
 	</quest>
 	<quest id="challenge_Metal" name_key="challenge_Profession" subtitle_key="challenge_Metal_subtitle" description_key="challenge_Metal_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Metal_offer" difficulty="easy">
-		<objective type="Craft" id="forge" value="1" />
+		<objective type="Craft" id="workforge" value="1" />
 		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>

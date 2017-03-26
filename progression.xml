@@ -260,7 +260,7 @@
 			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="40" />
 			<recipe name="Tomahawk" unlock_level="1" />
 		</perk>
-		<perk name="Katana" icon="katanamichonne" description_key="Learn to craft a mighty Katana on the anvil using a claw hammer and learn how to craft the Sword Blade in the Blast Furnace that you need to craft it. This is a long Sharp sword thats best at cutting things off." title_key="Katana" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="health">
+		<perk name="Katana" icon="katanamichonne" description_key="Learn to craft a mighty Katana on the anvil using a claw hammer and learn how to craft the Sword Blade in the Blast Furnace that you need to craft it. This is a long Sharp sword thats best at cutting things off." title_key="Katana" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="weapons">
 			<requirement perk_level="1" required_skill_name="Blade Weapons" required_skill_level="1" />
 			<requirement perk_level="1" required_skill_name="Master Craftsman" required_skill_level="5" />
 			<recipe name="SwordBlade" unlock_level="1" />
@@ -502,9 +502,9 @@
 				<multiply skill_level="90,100" value="1.95,2.00" />
 			</effect>
 		</player_skill>
-		<perk name="Wood Working Bench" icon="workbench" description_key="Learn to craft a Wood Working Bench. Use it to craft more complex items and faster. The wood working bench has 3 tools - CircularSaw, claw Hammer and wrench." title_key="Wood Working Bench" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
+		<perk name="Wood Working Bench" icon="workworkbench" description_key="Learn to craft a Wood Working Bench. Use it to craft more complex items and faster. The wood working bench has 3 tools - CircularSaw, claw Hammer and wrench." title_key="Wood Working Bench" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
 			<requirement perk_level="1" required_player_level="5" />
-			<recipe name="workbench" unlock_level="1" />
+			<recipe name="workworkbench" unlock_level="1" />
 		</perk>
 		<perk name="Fan Belt" icon="FanBelt" description_key="Learn to craft a Fan Belt on the wood working bench" title_key="Fan Belt" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="tools">
 			<requirement perk_level="1" required_player_level="1" />
@@ -513,7 +513,7 @@
 		</perk>
 		<perk name="Forge" icon="forge1" description_key="Learn to craft and use a forge" title_key="Forge" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
 			<requirement perk_level="1" required_player_level="10" />
-			<recipe name="forge" unlock_level="1" />
+			<recipe name="workforge" unlock_level="1" />
 			<recipe name="bellows" unlock_level="1" />
 		</perk>
 		<perk name="Anvil" icon="Anvil" description_key="Learn to craft an anvil in a forge. The Anvil can be used as a workstation or as a tool in a workstation. Use a Hand Dolly to pick it back up and re install it." title_key="Anvil" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
@@ -568,7 +568,7 @@
 		</perk>
 		<perk name="Cement Mixer" icon="cementMixer" description_key="Lean to craft a cement mixer on the wood working bench using a wrench. use it to make cement, concrete mix and other terrain blocks" title_key="Cement Mixer" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
 			<requirement perk_level="1" required_player_level="10" />
-			<recipe name="cementMixer" unlock_level="1" />
+			<recipe name="workcementMixer" unlock_level="1" />
 		</perk>
 		<perk name="Concrete Mix" icon="concreteMix" description_key="Learn to craft concrete mix in the cement mixer" title_key="Concrete Mix" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
 			<requirement perk_level="1" required_player_level="25" />
@@ -1608,13 +1608,15 @@
 		<perk name="Chemistry Station" icon="AloeCream" description_key="Learn to craft achemistry Station on the wood working bench using a claw hammer. Use it to craft complex chemical and medical items. The Chemistry Station has 2 tools - Mortar And Pestle and beaker." title_key="Chemistry Station" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="health">
 			<requirement perk_level="1" required_skill_name="Medicine" required_skill_level="1" />
 			<requirement perk_level="1" required_player_level="25" />
-			<recipe name="chemistryStation" unlock_level="1" />
+			<recipe name="workchemistryStation" unlock_level="1" />
+			<recipe name="workMortarAndPestle" unlock_level="1" />
 		</perk>
-		<perk name="Aloe Cream" icon="AloeCream" description_key="Learn to craft healing creams" title_key="Healing Creams" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="4" group="health">
+		<perk name="Healing Creams" icon="AloeCream" description_key="Learn to craft healing creams" title_key="Healing Creams" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="4" group="health">
 			<requirement perk_level="1" required_skill_name="Medicine" required_skill_level="1" />
 			<requirement perk_level="1" required_player_level="3" />
 			<recipe name="aloeCream" unlock_level="1" />
             <recipe name="herbalCream" unlock_level="1" />
+			<recipe name="workMortarAndPestle" unlock_level="1" />
 		</perk>
 		<perk name="First Aid Bandage" icon="firstAidBandage" description_key="Learn to craft a First Aid Bandage" title_key="First Aid Bandage" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="health">
 			<requirement perk_level="1" required_skill_name="Medicine" required_skill_level="3" />
@@ -2033,6 +2035,8 @@
 			<recipe name="TomatoSeed" unlock_level="1" />
 		</perk>
 		<perk name="Chemist" icon="gunsmithing" description_key="These are the skills a Chemist starts with. Collect 20 Profession pages to learn another profession" title_key="Chemist" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+			<recipe name="workchemistryStation" unlock_level="1" />
+			<recipe name="workMortarAndPestle" unlock_level="1" />
 			<recipe name="RedBull" unlock_level="1" />
 			<recipe name="Stimulant" unlock_level="1" />
 			<recipe name="MixedChemicals" unlock_level="1" />
@@ -2143,7 +2147,7 @@
 			</effect>
 		</perk>
 		<perk name="Metal Worker" icon="gunsmithing" description_key="These are the skills a Metal Worker starts with. Collect 20 Profession pages to learn another profession" title_key="Metal Worker" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
-			<recipe name="forge" unlock_level="1" />
+			<recipe name="workforge" unlock_level="1" />
             <recipe name="bellows" unlock_level="1" />
 			<recipe name="rebarFrameBlock" unlock_level="1" />
 			<recipe name="rebarFrameCNRInside" unlock_level="1" />
