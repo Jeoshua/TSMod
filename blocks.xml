@@ -17326,7 +17326,7 @@ kind of free
 		<property name="CraftingSkillGroup" value="Engineering" />
 	</block>
 	
-	<block id="3000" name="SpiderNest">
+	<block id="2022" name="SpiderNest">
 		<property name="Class" value="Spawner, Mods" />
 		<property name="Material" value="wood" />
 		<property name="Shape" value="ModelEntity" />

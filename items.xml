@@ -1499,8 +1499,8 @@ Mesh files no longer used:
 			<property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
 			<property name="ToolCategory.Disassemble" value="0.1" />
-			<property name="ActionExp" value="0" />
-			<property name="ActionExpBonusMultiplier" value="0" />
+			<property name="ActionExp" value="1" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 			<property class="Action1">
 			<property name="Class" value="Repair" />
@@ -1522,7 +1522,7 @@ Mesh files no longer used:
 		</property>
 		<property name="DescriptionKey" value="stoneAxeDesc" />
 		<property name="Group" value="Tools/Traps,Basics" />
-		<property name="ActionSkillGroup" value="Primitive Crafting" />
+		<property name="ActionSkillGroup" value="Athletics" />
 		<property name="CraftingSkillGroup" value="Primitive Crafting" />
 		<property name="RepairExpMultiplier" value="2.2" />
 	</item>
@@ -13357,6 +13357,8 @@ Mesh files no longer used:
 	<!--JZMOD SKILLBOOKS-->
 	<item id="1709" name="CircularSaw">
 		<property name="Extends" value="schematicMaster" />
+		<property name="Material" value="metal" />
+		<property name="Weight" value="10" />
 		<property class="Action1">
 			<property name="Skills_to_gain" value="Plank" />
 		</property>
@@ -13705,7 +13707,7 @@ Mesh files no longer used:
 		<property name="Extends" value="schematicMaster" />
         <property name="CustomIcon" value="unused" />
 		<property class="Action1">
-			<property name="Recipes_to_learn" value="NPCPistol,NPC44Magnum,NPCSawedOffPumpShotgun,NPCPumpShotgun,NPCHuntingRifle,NPCMP5,NPCSniperRifle,NPCRocketLauncher" />
+			<property name="Recipes_to_learn" value="NPCPistol,NPC44Magnum,NPCNPCSawedOffPumpShotgun,NPCPumpShotgun,NPCHuntingRifle,NPCMP5,NPCSniperRifle,NPCRocketLauncher" />
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
 	</item>
@@ -17028,7 +17030,7 @@ Mesh files no longer used:
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="gunSawedOffPumpShotgun" />
 		<property name="DegradationBreaksAfter" value="true" />
-		<property name="Degradation" value="99999" param1="true" />
+		<property name="Attributes.DegradationMax" value="99999" />
 		<property class="Action0">
 			<property name="Magazine_items" value="shotgunNPCShell" />
 			<property name="Infinite_ammo" value="true" />
@@ -17040,7 +17042,7 @@ Mesh files no longer used:
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="gunPumpShotgun" />
 		<property name="DegradationBreaksAfter" value="true" />
-		<property name="Degradation" value="99999" param1="true" />
+		<property name="Attributes.DegradationMax" value="99999" />
 		<property class="Action0">
 			<property name="Magazine_items" value="shotgunNPCShell" />
 			<property name="Infinite_ammo" value="true" />
@@ -17052,7 +17054,7 @@ Mesh files no longer used:
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="gunHuntingRifle" />
 		<property name="DegradationBreaksAfter" value="true" />
-		<property name="Degradation" value="99999" param1="true" />
+		<property name="Attributes.DegradationMax" value="99999" />
 		<property class="Action0">
 			<property name="Magazine_items" value="762mmNPCBullet" />
 			<property name="Infinite_ammo" value="true" />
@@ -17070,7 +17072,7 @@ Mesh files no longer used:
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="gunMP5" />
 		<property name="DegradationBreaksAfter" value="true" />
-		<property name="Degradation" value="99999" param1="true" />
+		<property name="Attributes.DegradationMax" value="99999" />
 		<property class="Action0">
 			<property name="Magazine_items" value="9mmNPCBullet" />
 			<property name="Infinite_ammo" value="true" />
@@ -17088,7 +17090,7 @@ Mesh files no longer used:
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="gunAK47" />
 		<property name="DegradationBreaksAfter" value="true" />
-		<property name="Degradation" value="99999" param1="true" />
+		<property name="Attributes.DegradationMax" value="99999" />
 		<property class="Action0">
 			<property name="Magazine_items" value="762mmNPCBullet" />
 			<property name="Infinite_ammo" value="true" />
@@ -17106,7 +17108,7 @@ Mesh files no longer used:
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="gunSniperRifle" />
 		<property name="DegradationBreaksAfter" value="true" />
-		<property name="Degradation" value="99999" param1="true" />
+		<property name="Attributes.DegradationMax" value="99999" />
 		<property class="Action0">
 			<property name="Magazine_items" value="762mmNPCBullet" />
 			<property name="Infinite_ammo" value="true" />
@@ -17124,7 +17126,7 @@ Mesh files no longer used:
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="gunRocketLauncher" />
 		<property name="DegradationBreaksAfter" value="true" />
-		<property name="Degradation" value="99999" param1="true" />
+		<property name="Attributes.DegradationMax" value="99999" />
 		<property class="Action0">
 			<property name="Delay" value="2" />
 			<property name="Magazine_items" value="NPCRocket" />
@@ -17210,7 +17212,7 @@ Mesh files no longer used:
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="sledgehammer" />
 		<property name="DegradationBreaksAfter" value="true" />
-		<property name="Degradation" value="99999" param1="true" />
+		<property name="Attributes.DegradationMax" value="99999" />
 		<property name="SellableToTrader" value="false" />
 		<property class="Action0">
 			<property name="Buff" value="criticalBlunt,stunned,sprainedLeg,banditBonus" />
@@ -17225,7 +17227,7 @@ Mesh files no longer used:
 		<property name="SellableToTrader" value="false" />
 		<property name="Candrop" value="false" />
 		<property name="DegradationBreaksAfter" value="true" />
-		<property name="Degradation" value="99999" param1="true" />
+		<property name="Attributes.DegradationMax" value="99999" />
 		<property name="IsDeveloper" value="true" />
 		<property class="Action0">
 			<property name="Delay" value="1" />
@@ -17238,7 +17240,7 @@ Mesh files no longer used:
 		<property name="SellableToTrader" value="false" />
 		<property name="Candrop" value="false" />
 		<property name="DegradationBreaksAfter" value="true" />
-		<property name="Degradation" value="99999" param1="true" />
+		<property name="Attributes.DegradationMax" value="99999" />
 		<property name="IsDeveloper" value="true" />
 	</item>
 	<item id="2076" name="NPCfireaxeSteel">
@@ -17247,7 +17249,7 @@ Mesh files no longer used:
 		<property name="SellableToTrader" value="false" />
 		<property name="Candrop" value="false" />
 		<property name="DegradationBreaksAfter" value="true" />
-		<property name="Degradation" value="99999" param1="true" />
+		<property name="Attributes.DegradationMax" value="99999" />
 		<property name="IsDeveloper" value="true" />
 	</item>
 	<item id="2077" name="NPCmachete">
@@ -17260,7 +17262,7 @@ Mesh files no longer used:
 		<property name="SellableToTrader" value="false" />
 		<property name="Candrop" value="false" />
 		<property name="DegradationBreaksAfter" value="true" />
-		<property name="Degradation" value="99999" param1="true" />
+		<property name="Attributes.DegradationMax" value="99999" />
 		<property name="IsDeveloper" value="true" />
 	</item>
 	<item id="2078" name="NPChuntingKnife">
@@ -17273,7 +17275,7 @@ Mesh files no longer used:
 		<property name="SellableToTrader" value="false" />
 		<property name="Candrop" value="false" />
 		<property name="DegradationBreaksAfter" value="true" />
-		<property name="Degradation" value="99999" param1="true" />
+		<property name="Attributes.DegradationMax" value="99999" />
 		<property name="IsDeveloper" value="true" />
 	</item>
 	<!--JZMOD HAND DOLLY AND WORKSTATIONS-->

@@ -2698,7 +2698,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="scrapLead" count="5" />
 	</recipe>
 	<recipe name="FanBelt" count="1" craft_area="workworkbench" craft_time="10" craft_exp_gain="5">
-		<ingredient name="MeltedRubber" count="3" />
+		<ingredient name="ScrapRubber" count="3" />
 		<ingredient name="scrapCable" count="5" />
 	</recipe>
 	<recipe name="FarmerProfession" count="1" craft_time="5" craft_exp_gain="1000">
@@ -3763,7 +3763,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="NutAndBolt" count="4" />
 		<ingredient name="scrapHelmet" count="1" />
 	</recipe>
-	    <recipe name="ScrapRubber" count="2" craft_time="10" craft_exp_gain="10">
+	<recipe name="ScrapRubber" count="2" craft_time="10" craft_exp_gain="10">
 		<ingredient name="minibikeWheels" count="1" />
 	</recipe>
     <recipe name="ScrapRubber" count="1" craft_time="5" craft_exp_gain="5">

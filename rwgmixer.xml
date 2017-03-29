@@ -2,13 +2,14 @@
 	<world ruleset="vanilla" />
 	<!-- rwgmixer for COMPOPACK 24 (by Magoli)  - Current Alpha: A15 stable   -->
 	<rulesets>
-		<ruleset name="vanilla" cell_cache_size="8" cell_size="1800" cell_offset="0.382" generation_distance="3500" terrain_generator="vanilla">
+		<ruleset name="vanilla" cell_cache_size="8" cell_size="2000" cell_offset="0.382" generation_distance="3500" terrain_generator="vanilla">
 			<cell_rule name="wastelandHub" position="0,0" />
 			<cell_rule name="wastelandCity" prob="0.2"/>
 			<cell_rule name="lowDensity" prob="0.5" />
 			<cell_rule name="highDensity" prob="0.3" />
 		</ruleset>
 	</rulesets>
+	
 	<cell_rules>
 		<cell_rule name="lowDensity">
 			<cave_count value="5,9" />
@@ -21,7 +22,8 @@
 			<hub_rule name="wastyTownHub" prob="0.2" />
 			<hub_rule name="CoronadoCity" prob="0.3" />
 			<hub_rule name="ColtTownHub" prob="0.3" />
-			<wilderness_rule name="wildernessDefault" />
+			<wilderness_rule name="wildernessEmpty" prob="0.25" />
+			<wilderness_rule name="wildernessDefault" prob="0.75" />
 		</cell_rule>
 		<cell_rule name="highDensity">
 			<cave_count value="5,9" />
@@ -33,7 +35,9 @@
 			<hub_rule name="RaceTrackStadiumHub" prob="0.2" />
 			<hub_rule name="Lim_PrisonHub" prob="0.3" />
 			<hub_rule name="TWD_PrisonHub" prob="0.2" />
-			<wilderness_rule name="wildernessHigh" prob="1" />
+			<wilderness_rule name="wildernessDefault" prob="0.25" />
+			<wilderness_rule name="wildernessHigh" prob="0.5" />
+			<wilderness_rule name="wildernessHub" prob="0.25" />
 		</cell_rule>
 		<cell_rule name="wastelandCity">
 			<cave_count value="5,9" />
@@ -42,7 +46,8 @@
 			<hub_rule name="citySmall" prob="0.5" />
 			<hub_rule name="wastycity" prob="0.3" />
 			<hub_rule name="IndustrialHub" prob="0.3" />
-			<wilderness_rule name="wildernessHub" prob="1" />
+			<wilderness_rule name="wildernessHigh" prob="0.75" />
+			<wilderness_rule name="wildernessHub" prob="0.25" />
 		</cell_rule>
 		<cell_rule name="wastelandHub">
 			<cave_count value="5,9" />
@@ -54,9 +59,10 @@
 		<cell_rule name="empty">
 			<cave_count value="9,12" />
 			<hub_rule name="none" />
-			<wilderness_rule name="wildernessEmpty" prob="1" />
+			<wilderness_rule name="wildernessEmpty" prob="0.75" />
+			<wilderness_rule name="wildernessDefault" prob="0.25" />
 		</cell_rule>
-
+		
 		<!-- Custom-Hubs : -->
 
 		<cell_rule name="CoronadoCityCell">
