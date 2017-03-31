@@ -69,7 +69,7 @@
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="ZombiesBoss" />
 		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="RadZoneAnimalGrp" spawnDeadChance="0" />
 		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsSmall" spawndeadchance="0.9" />
-        <spawn maxcount="1" respawndelay="40" time="Any" entitygroup="StartingSurvivorGroup" />
+        <spawn maxcount="1" respawndelay="40" time="Any" entitygroup="ArmedSurvivorGroup" />
 	</biome>
 	<biome name="burnt_forest">
 		<spawn maxcount="3" respawndelay="3" time="Any" entitygroup="ZombiesBurntForest" />

@@ -120,6 +120,9 @@
 			</effect>
 		</perk>
 		<player_skill name="Scavenging" icon="loot_sack" description_key="scavengingDesc" title_key="scavenging" group="scavenging">
+			<recipe name="electricParts" unlock_level="10" />
+			<recipe name="mechanicalParts" unlock_level="15" />
+			<recipe name="electronicParts" unlock_level="20" />
 			<effect name="LootTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -472,7 +475,7 @@
 			<requirement perk_level="1" required_player_level="20" />
 			<recipe name="electricSpear" unlock_level="1" />
 		</perk>
-		<perk name="Crossbow" icon="crossbow" description_key="Level 1 - Learn to build and disassemble a simple Crossbow, crafting its parts on the wood working bench using a wrench. Level 2 - Learn to add a scope to the crossbow. Level 3 - Learn to upgrade to a automatic 6 shot crossbow." title_key="Crossbow" max_level="2" skill_point_cost_multiplier="1" skill_point_cost_per_level="5" group="weapons">
+		<perk name="Crossbow" icon="crossbow" description_key="Level 1 - Learn to build and disassemble a simple Crossbow, crafting its parts on the wood working bench using a wrench. Level 2 - Learn to add a scope to the crossbow. Level 3 - Learn to upgrade to a automatic 6 shot crossbow." title_key="Crossbow" max_level="3" skill_point_cost_per_level="5" skill_point_cost_multiplier="1.18921" group="weapons">
 			<requirement perk_level="1" required_skill_name="Archery" required_skill_level="5" />
 			<requirement perk_level="1" required_player_level="5" />
 			<requirement perk_level="2" required_skill_name="Archery" required_skill_level="20" />
@@ -687,6 +690,8 @@
 			</effect>
 		</crafting_skill>
 		<crafting_skill name="Engineering" icon="science" description_key="scienceDesc" title_key="Engineering" group="crafting" skill_point_cost_per_level="3">
+			<recipe name="electricParts" unlock_level="5" />
+			<recipe name="electronicParts" unlock_level="10" />
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -1014,7 +1019,7 @@
             <recipe name="SharpeningStone" unlock_level="3" />
 			<recipe name="workMortarAndPestle" unlock_level="5" />
 			<recipe name="workStoneMill" unlock_level="5" />
-            <recipe name="axe02" unlock_level="5" />
+            <!--<recipe name="axe02" unlock_level="5" />-->
             <recipe name="bucket" unlock_level="15" />
 			<recipe name="ironShiv" unlock_level="25" />
 			<effect name="CraftingTime">
@@ -1426,12 +1431,12 @@
 			<requirement perk_level="1" required_player_level="75" />
 			<recipe name="vaultDoor01" unlock_level="1" />
 		</perk>
-		<perk name="Steel Gun Safe" icon="GunSafe" description_key="Learn to craft The Steel Gun Safe on the metal work bench using the Wielder. these are the strongest secure storage container you can make" title_key="Steel Gun Safe" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
+		<!--<perk name="Steel Gun Safe" icon="GunSafe" description_key="Learn to craft The Steel Gun Safe on the metal work bench using the Wielder. these are the strongest secure storage container you can make" title_key="Steel Gun Safe" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
 			<requirement perk_level="1" required_skill_name="Master Craftsman" required_skill_level="5" />
 			<requirement perk_level="1" required_player_level="60" />
 			<recipe name="cntSteelGunSafe" unlock_level="1" />
 			<recipe name="cntSteelGunSafeB" unlock_level="1" />
-		</perk>
+		</perk>-->
         <perk name="LargeGenerator" icon="bigGenerator" description_key="Learn to craft a Large Generator on the metal working bench using the Wielder. Use it to power traps, lights and work benches more effeicently." title_key="Large Generator" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="crafting">
 			<requirement perk_level="1" required_skill_name="Master Craftsman" required_skill_level="5" />
 			<requirement perk_level="1" required_player_level="75" />

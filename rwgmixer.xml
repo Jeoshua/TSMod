@@ -2,7 +2,7 @@
 	<world ruleset="vanilla" />
 	<!-- rwgmixer for COMPOPACK 24 (by Magoli)  - Current Alpha: A15 stable   -->
 	<rulesets>
-		<ruleset name="vanilla" cell_cache_size="8" cell_size="2000" cell_offset="0.382" generation_distance="3500" terrain_generator="vanilla">
+		<ruleset name="vanilla" cell_cache_size="8" cell_size="1800" cell_offset="0.382" generation_distance="3500" terrain_generator="vanilla">
 			<cell_rule name="wastelandHub" position="0,0" />
 			<cell_rule name="wastelandCity" prob="0.2"/>
 			<cell_rule name="lowDensity" prob="0.5" />
@@ -22,8 +22,7 @@
 			<hub_rule name="wastyTownHub" prob="0.2" />
 			<hub_rule name="CoronadoCity" prob="0.3" />
 			<hub_rule name="ColtTownHub" prob="0.3" />
-			<wilderness_rule name="wildernessEmpty" prob="0.25" />
-			<wilderness_rule name="wildernessDefault" prob="0.75" />
+			<wilderness_rule name="wildernessDefault" prob="1" />
 		</cell_rule>
 		<cell_rule name="highDensity">
 			<cave_count value="5,9" />
@@ -153,24 +152,24 @@
 		</hub_rule>
 		<hub_rule name="townLarge">
 			<hub_type value="town" />
-			<width value="350, 512" />
-			<height value="350, 512" />
+			<width value="384, 384" />
+			<height value="384, 384" />
 			<path_material value="asphalt" />
 			<path_radius value="7" />
 			<prefab_rule name="townLarge" prob="1" />
 		</hub_rule>
 		<hub_rule name="citySmall">
 			<hub_type value="city" />
-			<width value="512, 512" />
-			<height value="512, 512" />
+			<width value="200, 350" />
+			<height value="200, 350" />
 			<path_material value="asphalt" />
 			<path_radius value="7" />
 			<prefab_rule name="CommonCityPOIs" prob="1" />
 		</hub_rule>
 		<hub_rule name="cityLarge"> 
 			<hub_type value="city"/>
-			<width value="768, 768" />
-			<height value="768, 768" />
+			<width value="512, 512" />
+			<height value="512, 512" />
 			<path_radius value="7" />
 			<prefab_rule name="CommonCityPOIs" prob="1" />
 		</hub_rule>
@@ -509,7 +508,7 @@
 			<prefab name="xcostum_MiniBikeRaceTrack(by_Spider)" max_count="1" prob="0.3" />
 		</prefab_rule>
 		<prefab_rule name="W_POIs_rare_Set_B">
-			<prefab name="xcostum_ResidentEvilMansion(by_magoli)" max_count="1" prob="0.3" />
+			<!--<prefab name="xcostum_ResidentEvilMansion(by_magoli)" max_count="1" prob="0.3" />-->
 			<prefab name="xcostum_Nuclear_Powerplant(by_Rocky)" max_count="1" prob="0.3" />
 			<prefab name="xcostum_timbershop(by_magoli)" max_count="1" prob="0.3" />
 			<prefab name="xcostum_Firewatchtower(by_SciFiFlippa)" max_count="1" prob="0.2" />
@@ -1598,7 +1597,7 @@
 			</module>
 			<module name="landOutput" type="BiasOutput">
 				<property name="sourceModule" value="landBase"/>
-				<property name="bias" value="-0.25"/>
+				<property name="bias" value="-0.35"/>
 			</module>
 			
 			<module name="land" type="Turbulence">

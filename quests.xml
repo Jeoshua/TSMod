@@ -26,9 +26,9 @@ Alternative settings for custom quest creation:
 		<action type="ShowTip" value="tutorialTipQuest02" />
 		<action type="TrackQuest" />
 		<objective type="FetchKeep" id="KeystoneRock" value="1" />
-        <reward type="Item" id="TatteredShoes" value="600" />
+        <!--<reward type="Item" id="TatteredShoes" value="600" />
         <reward type="Item" id="TatteredPants" value="600" />
-        <reward type="Item" id="TatteredShirt" value="600" />
+        <reward type="Item" id="TatteredShirt" value="600" />-->
 		<reward type="Quest" id="quest_BasicSurvival2" />
 		<reward type="Quest" id="quest_BasicSurvival3" />
 		<reward type="Quest" id="quest_BasicSurvival4" />
@@ -399,7 +399,7 @@ Alternative settings for custom quest creation:
 	</quest>
 	<!--Carpenter-->
 	<quest id="StartCarpenter" name_key="challenge_Profession" subtitle_key="Carpenters Quests" description_key="challenge_all_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
-		<reward type="Item" id="OldHammer" value="600" />
+		<reward type="Item" id="clawHammer" value="300" />
         <reward type="Quest" id="challenge_Carpenter" />
 		<reward type="Quest" id="challenge_Carpenter2" />
 		<reward type="Quest" id="challenge_Carpenter3" />
@@ -435,7 +435,7 @@ Alternative settings for custom quest creation:
 	</quest>
 	<!--Farmer-->
 	<quest id="StartFarmer" name_key="challenge_Profession" subtitle_key="Farmers Quest" description_key="challenge_all_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
-		<reward type="Item" id="OldHoe" value="600" />
+		<reward type="Item" id="StoneHoe" value="300" />
         <reward type="Quest" id="challenge_Farmer" />
 		<reward type="Quest" id="challenge_Farmer2" />
 		<reward type="Quest" id="challenge_Farmer3" />
@@ -483,7 +483,7 @@ Alternative settings for custom quest creation:
 	</quest>
 	<!--Cop-->
 	<quest id="StartCop" name_key="challenge_Profession" subtitle_key="Cops Quests" description_key="challenge_all_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
-		<reward type="Item" id="OldRevolver" value="600" />
+		<reward type="Item" id="gunRevolver" value="300" />
         <reward type="Quest" id="challenge_Cop" />
 		<reward type="Quest" id="challenge_Cop2" />
 		<reward type="Quest" id="challenge_Cop3" />
@@ -505,7 +505,9 @@ Alternative settings for custom quest creation:
 	</quest>
 	<!--Soldier-->
 	<quest id="StartSoldier" name_key="challenge_Profession" subtitle_key="Soldiers Quests" description_key="challenge_all_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
-		<reward type="Item" id="OldRifle" value="600" />
+		<reward type="Item" id="gunPistol" value="300" />
+		<reward type="Item" id="militaryPants" value="300" />
+		<reward type="Item" id="militaryShirt" value="300" />
         <reward type="Quest" id="challenge_Soldier" />
 		<reward type="Quest" id="challenge_Soldier2" />
 		<reward type="Quest" id="challenge_Soldier3" />
@@ -572,7 +574,7 @@ Alternative settings for custom quest creation:
 	</quest>
 	<!--Fisherman-->
 	<quest id="StartFisherman" name_key="challenge_Profession" subtitle_key="Fishermans Quests" description_key="challenge_all_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
-		<reward type="Item" id="OldRifle" value="600" />
+		<reward type="Item" id="huntingKnife" value="300" />
         <reward type="Quest" id="challenge_Fisherman" />
 		<reward type="Quest" id="challenge_Fisherman2" />
 		<reward type="Quest" id="challenge_Fisherman3" />
@@ -594,7 +596,7 @@ Alternative settings for custom quest creation:
 	</quest>
 	<quest id="challenge_Fisherman3" name_key="challenge_Profession" subtitle_key="challenge_Fisherman3_subtitle" description_key="challenge_Fisherman3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist4_offer" difficulty="easy">
 		<objective type="Craft" id="FishingPole" value="1" />
-		<reward type="Exp" value="400" />
+		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Fisherman4" name_key="challenge_Profession" subtitle_key="challenge_Fisherman4_subtitle" description_key="challenge_Fisherman4_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist4_offer" difficulty="easy">
@@ -670,7 +672,8 @@ Alternative settings for custom quest creation:
 	</quest>
 	<!--Fireman-->
 	<quest id="StartFireman" name_key="challenge_Profession" subtitle_key="Firemans Quests" description_key="challenge_all_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
-		<reward type="Item" id="OldAxe" value="600" />
+		<reward type="Item" id="hazmatShirt" value="300" />
+		<reward type="Item" id="hazmatPants" value="300" />
         <reward type="Quest" id="challenge_Fireman" />
 		<reward type="Quest" id="challenge_Fireman2" />
 		<reward type="Quest" id="challenge_Fireman3" />
@@ -692,7 +695,7 @@ Alternative settings for custom quest creation:
 	</quest>
 	<!--Construction Worker-->
 	<quest id="StartConstruction" name_key="challenge_Profession" subtitle_key="Construction Workers Quests" description_key="challenge_all_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
-		<reward type="Item" id="OldWrench" value="600" />
+		<reward type="Item" id="clawHammer" value="300" />
         <reward type="Quest" id="challenge_Construction" />
 		<reward type="Quest" id="challenge_Construction2" />
 		<reward type="Quest" id="challenge_Construction3" />
@@ -721,7 +724,7 @@ Alternative settings for custom quest creation:
 	</quest>
 	<!--Electrician-->
 	<quest id="StartElectrician" name_key="challenge_Profession" subtitle_key="Electrician Quests" description_key="challenge_all_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
-		<reward type="Item" id="OldWrench" value="600" />
+		<reward type="Item" id="screwdriver" value="300" />
         <reward type="Quest" id="challenge_Electrician" />
 		<reward type="Quest" id="challenge_Electrician2" />
 		<reward type="Quest" id="challenge_Electrician3" />
@@ -750,7 +753,7 @@ Alternative settings for custom quest creation:
 	</quest>
 	<!--Metal Worker-->
 	<quest id="StartMetal" name_key="challenge_Profession" subtitle_key="Metal Workers Quests" description_key="challenge_all_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
-		<reward type="Item" id="OldWrench" value="600" />
+		<reward type="Item" id="wrench" value="300" />
         <reward type="Quest" id="challenge_Metal" />
 		<reward type="Quest" id="challenge_Metal2" />
 		<reward type="Quest" id="challenge_Metal3" />
@@ -797,7 +800,7 @@ Alternative settings for custom quest creation:
 	</quest>
 	<!--Park Ranger-->
 	<quest id="StartRanger" name_key="challenge_Profession" subtitle_key="Park Rangers Quests" description_key="challenge_all_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
-		<reward type="Item" id="OldRifle" value="600" />
+		<reward type="Item" id="huntingRifle" value="300" />
         <reward type="Quest" id="challenge_Ranger" />
 		<reward type="Quest" id="challenge_Ranger2" />
 		<reward type="Quest" id="challenge_Ranger3" />
@@ -832,7 +835,7 @@ Alternative settings for custom quest creation:
 	</quest>
 	<!--Mechanic-->
 	<quest id="StartMechanic" name_key="challenge_Profession" subtitle_key="Mechanics Quests" description_key="challenge_all_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
-		<reward type="Item" id="OldWrench" value="600" />
+		<reward type="Item" id="wrench" value="300" />
         <reward type="Quest" id="challenge_Mechanic" />
 		<reward type="Quest" id="challenge_Mechanic2" />
 		<reward type="Quest" id="challenge_Mechanic3" />

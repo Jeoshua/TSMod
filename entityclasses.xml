@@ -1138,9 +1138,9 @@
 		<property name="TimeStayAfterDeath" value="0" />
 		<property name="SkinTexture" value="SupplyCrate/supply_crate_general" />
 		<!-- If set this entity shows on the map -->
-		<!--<property name="MapIcon" value="map_supply_crate" /> -->
+		<property name="MapIcon" value="map_supply_crate" />
 	</entity_class>
-	<entity_class name="driveablecar">
+	<!--<entity_class name="driveablecar">
         <property name="Mesh"   value="Vehicles/car03_blue_dmg0_Prefab" />
 		<property name="ModelType" value="Custom" />
         <property name="Prefab" value="Car" />
@@ -1159,7 +1159,7 @@
         <property name="Explosion.ParticleIndex"   value="6" />
         <property name="Explosion.RadiusBlocks"    value="6" />
         <property name="Explosion.RadiusEntities"  value="6" />
-    </entity_class>
+    </entity_class>-->
 	<entity_class name="zombieUMA" extends="zombie01">
 		<!-- This one decides for scoring -->
 		<property name="EntityType" value="Zombie" />
@@ -1260,6 +1260,8 @@
 	<entity_class name="ZombieSkateboarder" extends="zombieUMA">
 		<property name="Archetype" value="ZombieSkateboarder" />
 		<property name="LootListOnDeath" value="80" />
+		<property name="ApproachSpeed" value="0.8" />
+		<property name="NightApproachSpeed" value="1.2" />
 	</entity_class>
 	<entity_class name="ZombieCheerleader" extends="ZombieFemaleUMA">
 		<property name="Archetype" value="ZombieCheerleader" />

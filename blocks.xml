@@ -334,6 +334,7 @@ then add recipes for those white/red/green metals
 		<property name="EconomicValue" value="20" />
 		<property name="EconomicBundleSize" value="20" />
 	</block>
+		
 	<!--gravel: 7 sand, 8 rocks  (1/2 the hit points of stone)-->
 	<block id="18" name="ice">
 		<property name="Material" value="snow" />
@@ -961,7 +962,6 @@ then add recipes for those white/red/green metals
 	</block>
 	<block id="133" name="steelMaster">
 		<property name="Material" value="Msteel" />
-		<property name="MaxDamage" value="10000" />
 		<property name="Texture" value="355,355,356,356,356,356" />
 		<property name="IsDeveloper" value="true" />
 		<property class="RepairItems">
@@ -14006,7 +14006,7 @@ kind of free
 	</block>
 	<!--JZMOD ADDED-->
 	<!--JZMOD LOOT CONTAINERS-->
-	<block id="17" name="cntSteelGunSafe">
+	<!--<block id="17" name="cntSteelGunSafe">
 		<property name="Extends" value="cntGunSafe" />
 		<property name="CustomIcon" value="ui_game_symbol_SteelGunSafe" />
 		<property name="Material" value="Msteel" />
@@ -14052,7 +14052,7 @@ kind of free
 		<drop event="Fall" name="scrapMetalPile" count="0" prob="1" stick_chance="0.95" />
 		<drop event="Destroy" name="scrapSteel" count="5,20" prob="1" />
 		<drop event="Fall" name="scrapSteelPile" count="1" prob=".75" stick_chance="0.95" />
-	</block>
+	</block>-->
 	<block id="36" name="SecureStorageChest">
 		<property name="Extends" value="cntSecureStorageChest" />
 		<property name="LootList" value="10" />
@@ -14464,7 +14464,7 @@ kind of free
 	</block>
 	<block id="103" name="forgedFrame">
 		<property name="Material" value="Msteel" />
-		<property name="MaxDamage" value="5000" />
+		<property name="MaxDamage" value="1000" />
 		<property name="LightOpacity" value="0" />
 		<property name="Group" value="Building" />
 		<property name="Shape" value="CubeCutoutBackFaces" />
@@ -14489,7 +14489,6 @@ kind of free
 	<block id="104" name="solidforgedFrame">
 		<property name="Extends" value="forgedFrame" />
 		<property name="CanPickup" value="false" />
-		<property name="DowngradeBlock" value="scrapSteelPile" />
 	</block>
 	<!--JZMOD TRAPS-->
 	<block id="105" name="SetUpASpikeTrap">

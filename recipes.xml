@@ -2108,7 +2108,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="USAS_barrel" count="1" />
 		<ingredient name="partsPumpShotgun_stock" count="1" />
 	</recipe>
-	 <recipe name="axe02" count="1" craft_time="30" craft_exp_gain="15">
+	<!-- <recipe name="axe02" count="1" craft_time="30" craft_exp_gain="15">
 		<ingredient name="glue" count="1" />
 		<ingredient name="FiberRope" count="5" />
         <ingredient name="stick" count="5" />
@@ -2127,7 +2127,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="Lashing" count="1" />
         <ingredient name="stick" count="10" />
         <ingredient name="forgedSteel" count="10" />
-	</recipe>
+	</recipe>-->
 	<recipe name="BabyChicken" count="1" craft_area="workChickenCoop1" craft_time="21600" craft_exp_gain="0">
 		<ingredient name="cloth" count="3" />
 		<ingredient name="candle" count="2" />
@@ -2448,12 +2448,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="clubSpiked" count="1" />
 		<ingredient name="shortSteelPipe" count="10" />
 	</recipe>
-	<recipe name="cntSteelGunSafe" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="30" craft_exp_gain="50">
+	<!--<recipe name="cntSteelGunSafe" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="30" craft_exp_gain="50">
 		<ingredient name="forgedSteel" count="20" />
 		<ingredient name="spring" count="5" />
 		<ingredient name="mechanicalParts" count="5" />
 		<ingredient name="NutAndBolt" count="10" />
-	</recipe>
+	</recipe>-->
 	<recipe name="coal" count="1" craft_area="workBlastFurnace" material_based="true" craft_time="1" craft_exp_gain="0">
 		<ingredient name="unit_coal" count="5" />
 	</recipe>
@@ -4762,7 +4762,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="rawSugar" count="1" scrapable="False" craft_area="workStoneMill">
 		<ingredient name="sugarcanePlant" count="1" />
 	</recipe>
-
+	
+	
 </recipes>
 <!-- To do (maybe / later)cookingGrill
 
