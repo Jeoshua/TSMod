@@ -63,6 +63,9 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="scrapSteel" count="1" craft_area="workBlastFurnace" material_based="true" craft_time="1" craft_exp_gain="0">
 		<ingredient name="unit_steel" count="1" />
 	</recipe>
+	<recipe name="scrapRubber" count="1" tooltip="ttScrapMetalBrass">
+		<wildcard_forge_category />
+	</recipe>
 	<recipe name="wood" count="1" tooltip="ttScrapMetalLead">
 		<wildcard_forge_category />
 	</recipe>
@@ -1513,7 +1516,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="unit_clay" count="1" />
 	</recipe>
 	<recipe name="redTea" count="1" craft_area="workcampfire" craft_tool="cookingPot" craft_time="20" craft_exp_gain="0">
-		<ingredient name="chrysanthemumPlant" count="2" />
+		<ingredient name="chrysanthemumPlant" count="1" />
 		<ingredient name="bottledWater" count="1" />
 	</recipe>
 	<recipe name="redWoodBlock" count="1" craft_area="workworkbench" craft_tool="clawHammer" craft_time="5" craft_exp_gain="5">
@@ -1706,11 +1709,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	</recipe>
 	<recipe name="sod" count="1" craft_time="5" craft_exp_gain="5">
 		<ingredient name="PlantFibers" count="1" />
-		<ingredient name="dirtFragment" count="12" />
+		<ingredient name="dirtFragment" count="5" />
 	</recipe>
 	<recipe name="sod" count="1" craft_area="workcementMixer" craft_time="5" craft_exp_gain="5">
 		<ingredient name="PlantFibers" count="1" />
-		<ingredient name="dirtFragment" count="12" />
+		<ingredient name="dirtFragment" count="5" />
 	</recipe>
 	<recipe name="splint" count="1" craft_time="20" craft_exp_gain="20">
 		<ingredient name="cloth" count="2" />
@@ -2698,7 +2701,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="scrapLead" count="5" />
 	</recipe>
 	<recipe name="FanBelt" count="1" craft_area="workworkbench" craft_time="10" craft_exp_gain="5">
-		<ingredient name="ScrapRubber" count="3" />
+		<ingredient name="MeltedRubber" count="3" />
 		<ingredient name="scrapCable" count="5" />
 	</recipe>
 	<recipe name="FarmerProfession" count="1" craft_time="5" craft_exp_gain="1000">
@@ -3418,10 +3421,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="Medicine Monthly" count="1" />
 	</recipe>
 	<recipe name="MeltedRubber" count="1" craft_area="workcampfire" craft_tool="stick" craft_time="15" craft_exp_gain="0">
-		<ingredient name="ScrapRubber" count="1" />
-	</recipe>
-	<recipe name="MeltedRubber" count="2" craft_area="workBurnBarrel" craft_time="15" craft_exp_gain="0">
-		<ingredient name="minibikeWheels" count="1" />
+		<ingredient name="scrapRubber" count="1" />
 	</recipe>
 	<recipe name="Metal WorkerProfession" count="1" craft_time="5" craft_exp_gain="1000">
 		<ingredient name="ChooseAProfession" count="1" />
@@ -3762,12 +3762,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="flashlight02" count="1" />
 		<ingredient name="NutAndBolt" count="4" />
 		<ingredient name="scrapHelmet" count="1" />
-	</recipe>
-	<recipe name="ScrapRubber" count="2" craft_time="10" craft_exp_gain="10">
-		<ingredient name="minibikeWheels" count="1" />
-	</recipe>
-    <recipe name="ScrapRubber" count="1" craft_time="5" craft_exp_gain="5">
-		<ingredient name="FanBelt" count="2" />
 	</recipe>
 	<recipe name="Scrap_Iron_Gate_2x3" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="10" craft_exp_gain="10">
 		<ingredient name="forgedIron" count="50" />

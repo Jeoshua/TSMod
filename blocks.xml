@@ -703,7 +703,6 @@ then add recipes for those white/red/green metals
 		<property name="Texture" value="293" />
 		<property name="MultiBlockDim" value="1,2,1" />
 		<property name="Collide" value="melee" />
-		<property name="doDamage" value="true" />
 		<property name="AllowSize" value="0,0,0" />
 		<property name="Tag" value="TreeTrunk" />
 		<property name="BigDecorationRadius" value="0" />
@@ -2703,7 +2702,7 @@ then add recipes for those white/red/green metals
 		<property name="Model" value="Furniture/sectionalArm" param1="main_mesh" />
 	</block>
 	<block id="316" name="porchLight01">
-		<property name="Class" value="Light" />
+		<property name="Class" value="PowerLight, Mods" />
 		<property name="Material" value="Mmetal_thin" />
 		<property name="StabilitySupport" value="false" />
 		<property name="Shape" value="ModelEntity" />
@@ -3210,7 +3209,7 @@ then add recipes for those white/red/green metals
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="0.95" />
 	</block>
 	<block id="364" name="streetLight01">
-		<property name="Class" value="Light" />
+		<property name="Class" value="PowerLight, Mods" />
 		<property name="Material" value="Mmetal_weak" />
 		<property name="StabilitySupport" value="false" />
 		<property name="Shape" value="ModelEntity" />
@@ -12869,7 +12868,7 @@ kind of free
 		<!-- disassemble value -->
 	</block>
 	<block id="1551" name="industrialLight01">
-		<property name="Class" value="Light" />
+		<property name="Class" value="PowerLight, Mods" />
 		<property name="Material" value="Mmetal_thin" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Texture" value="241" />
@@ -12905,6 +12904,7 @@ kind of free
 	</block>
 	<block id="1554" name="electricalBox01">
 		<property name="Extends" value="controlPanelBase01" />
+		<property name="Class" value="Valve, Mods" />
 		<property name="Model" value="Industrial/electrical_box01" param1="main_mesh" />
 	</block>
 	<block id="1555" name="asphaltCracked">
@@ -12927,6 +12927,7 @@ kind of free
 	<block id="1556" name="conduit01">
 		<property name="Extends" value="metalNoUpgradeMaster" />
 		<property name="Material" value="Mmetal_weak" />
+		<property name="Class" value="PowerLine, Mods" />
 		<property name="MaxDamage" value="500" />
 		<property name="Shape" value="New" />
 		<property name="Mesh" value="cutout" />
@@ -15560,7 +15561,7 @@ kind of free
 		<drop event="Fall" name="MechanicSupplies" count="1" prob="1" />
 	</block>
 	<block id="1485" name="scrapSteelPile">
-		<property name="Material" value="Msteel" />
+		<property name="Material" value="MsteelNoGlue" />
 		<property name="MaxDamage" value="1000" />
 		<property name="StabilitySupport" value="false" />
 		<property name="Shape" value="Ext3dModel" />
@@ -17256,7 +17257,6 @@ kind of free
 		<property name="MeshScale" value="2.4,2.4" />
 		<property name="MultiBlockDim" value="1,2,1" />
 		<property name="Collide" value="melee" />
-		<property name="doDamage" value="true" />
 		<property name="AllowSize" value="0,0,0" />
 		<property name="Tag" value="TreeTrunk" />
 		<property name="BigDecorationRadius" value="0" />

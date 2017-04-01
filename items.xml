@@ -3544,7 +3544,8 @@ Mesh files no longer used:
 		<property name="VehicleSlotType" value="wheel" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
-		<property name="Material" value="organic" />
+		<property name="Material" value="rubber" />
+		<property name="Weight" value="10" />
 		<property name="RepairTools" value="ScavengedParts" />
 		<property name="HoldType" value="45" />
 		<property name="Group" value="Resources" />
@@ -16225,12 +16226,13 @@ Mesh files no longer used:
 	</item>
 	<item id="1976" name="GunOil">
 		<property name="Extends" value="itemMaster" />
-		<property name="Material" value="leather" />
 		<property name="DescriptionKey" value="GunOilDesc" />
 		<property name="CraftingSkillGroup" value="Engineering" />
 	</item>
 	<item id="1977" name="MeltedRubber">
 		<property name="Extends" value="itemMaster" />
+		<property name="Material" value="rubber" />
+		<property name="Weight" value="5" />
 		<property name="DescriptionKey" value="MeltedRubberDesc" />
 		<property name="CraftingSkillGroup" value="Engineering" />
 	</item>
@@ -16252,6 +16254,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1981" name="stick">
 		<property name="Extends" value="itemMaster" />
+		<property name="Material" value="sticks" />
 		<property name="Stacknumber" value="5000" />
 		<property name="RepairAmount" value="10" />
 		<property name="FuelValue" value="1" />
@@ -16301,6 +16304,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1986" name="Plank">
 		<property name="Extends" value="itemMaster" />
+		<property name="Material" value="planks" />
 		<property name="Stacknumber" value="5000" />
 		<property name="FuelValue" value="5" />
 		<property name="RepairAmount" value="25" />
@@ -16310,7 +16314,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1987" name="AirCompressor">
 		<property name="Extends" value="itemMaster" />
-		<property name="Material" value="metal" />
+		<property name="Material" value="MelectricParts" />
 		<property name="Stacknumber" value="1" />
 		<property name="Weight" value="80" />
 		<property name="DescriptionKey" value="AirCompressorDesc" />
@@ -16450,11 +16454,13 @@ Mesh files no longer used:
 	<item id="1998" name="Alternator">
 		<property name="Extends" value="itemMaster" />
 		<property name="Material" value="MelectricParts" />
-		<property name="Weight" value="5" />
+		<property name="Weight" value="8" />
 		<property name="DescriptionKey" value="AlternatorDesc" />
 	</item>
 	<item id="1999" name="FanBelt">
 		<property name="Extends" value="itemMaster" />
+		<property name="Material" value="rubber" />
+		<property name="Weight" value="3" />
 		<property name="DescriptionKey" value="FanBeltDesc" />
 		<property name="CustomIcon" value="ui_game_symbol_FanBelt" />
 		<property name="CraftingSkillGroup" value="Engineering" />
@@ -16472,7 +16478,7 @@ Mesh files no longer used:
 		<property name="DropMeshfile" value="Items/Misc/car_battery" />
 		<property name="Meshfile" value="Items/Misc/car_battery" />
 		<property name="Material" value="MelectricParts" />
-		<property name="Weight" value="10" />
+		<property name="Weight" value="12" />
 		<property name="HoldType" value="21" />
 		<property name="DescriptionKey" value="BatteryTip" />
     </item>
@@ -17463,9 +17469,11 @@ Mesh files no longer used:
  			<property name="Blockname" value="smallGenerator" />
  		</property>
  	</item>
-	<item id="3004" name="ScrapRubber">
+	<item id="3004" name="scrapRubber">
         <property name="Extends" value="itemMaster" />
-		<property name="DescriptionKey" value="ScrapRubberDesc" />
+		<property name="Material" value="rubber" />
+		<property name="Weight" value="5" />
+		<property name="DescriptionKey" value="scrapRubberDesc" />
         <property name="CustomIcon" value="cobblestones" />
         <property name="CustomIconTint" value="232323" />
 	</item>

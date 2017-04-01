@@ -1919,8 +1919,8 @@
 	</entity_class>
 	<entity_class name="Michonne" extends="Maggi"><!--Melee Survivor-->
 		<property name="Archetype" value="Michonne" />
-		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="NPCmachete" />
-		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="NPCmachete" />
+		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="katanamichonne" />
+		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="katanamichonne" />
 		<property name="HandItem" value="NPCmachete" />
 	</entity_class>
 	<entity_class name="Rosita" extends="Maggi"><!--Melee Survivor-->
