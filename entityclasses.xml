@@ -93,7 +93,7 @@
 		<!--property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" /-->
 		<!-- General entity properties -->
 		<property name="MaxHealth" value="100" />
-		<property name="MaxViewAngle" value="150" />
+		<property name="MaxViewAngle" value="180" />
 		<property name="HandItem" value="handZombie" />
 		<property name="Weight" value="70" />
 		<property name="Immunity" value="sickness;disease;bleeding;wellness" />
@@ -1526,6 +1526,7 @@
 		<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
 		<property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntitySurvivor" />
 		<property name="LootListOnDeath" value="72" />
+		<property name="ExperienceGain" value="150" />
 	</entity_class>
 	<entity_class name="banditLeader" extends="banditMelee">
 		<property name="Archetype" value="BanditLeader" />
@@ -1546,6 +1547,7 @@
 		<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
 		<property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntitySurvivor" />
 		<property name="LootListOnDeath" value="72" />
+		<property name="ExperienceGain" value="200" />
 	</entity_class>
 	<!-- JZMOD ADDED ZOMBIE WALK VARIATIONS -->
 	<!-- Climbers-->

@@ -488,7 +488,6 @@
 		<entity name="feral5" />
 		<entity name="feral6" />
 		<entity name="feral7" />
-		<entity name="ZombieBrute" />
 	</entitygroup>
 	<entitygroup name="ZombiesWastelandNight2">
 		<entity name="Dummy" prob="3" />
@@ -929,7 +928,7 @@
 		<entity name="ZombieChicken" />
 	</entitygroup>
 	<entitygroup name="CrocGrp">
-		<entity name="Dummy" prob="1" />
+		<entity name="Dummy" prob="0.75" />
 		<entity name="crocodile" prob="1" />
 	</entitygroup>
 	<entitygroup name="RadZoneAnimalGrp">
@@ -1074,13 +1073,13 @@
 		<entity name="Rosita" prob="0.15" />
 		<entity name="Rick" prob="0.15" />
         <entity name="Abraham" prob="0.15" />
-        <entity name="BanditWarLeader" prob="0.1" />
-		<entity name="BanditDreadLeader" prob="0.1" />
-		<entity name="BanditTheMakerLeader" prob="0.1" />
-		<entity name="BanditFamineLeader" prob="0.1" />
-		<entity name="BanditDragonLeader" prob="0.1" />
-		<entity name="BanditDeathLeader" prob="0.1" />
-		<entity name="BanditPestilenceLeader" prob="0.1" />
+        <entity name="BanditWarLeader" prob="0.2" />
+		<entity name="BanditDreadLeader" prob="0.2" />
+		<entity name="BanditTheMakerLeader" prob="0.2" />
+		<entity name="BanditFamineLeader" prob="0.2" />
+		<entity name="BanditDragonLeader" prob="0.2" />
+		<entity name="BanditDeathLeader" prob="0.2" />
+		<entity name="BanditPestilenceLeader" prob="0.2" />
 	</entitygroup>
 	<entitygroup name="SupplyCrates_General">
 		<entity name="sc_General" />
