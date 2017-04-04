@@ -737,7 +737,7 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="block" blockname="rockResource" prob="0.025" rotatemax="3" />
 					<decoration type="block" blockname="rockResource02" prob="0.025" rotatemax="3" />
 					<decoration type="block" blockname="forestFlower" prob="0.2" />
-					<decoration type="block" blockname="strawberryPlant" prob="0.06" />
+					<decoration type="block" blockname="strawberryPlant" prob="0.03" />
 					<decoration type="block" blockname="treePlainsGrassDiagonal" prob="0.07" />
 					<decoration type="block" blockname="treeForestGrassDiagonal" prob="0.65" />
 					<decoration type="block" blockname="lootPlains" prob="0.00025" />

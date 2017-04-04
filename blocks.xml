@@ -4616,7 +4616,7 @@ kind of free
 		<property name="DescriptionKey" value="furnitureGroupDesc" />
 		<property name="CanPickup" value="true" />
 		<property class="RepairItems">
- +			<property name="leather" value="2" />
+			<property name="leather" value="2" />
 			<property name="cottonPlant" value="10" />
 			<property name="mechanicalParts" value="2" />
 			<property name="forgedIron" value="3" />
@@ -4825,9 +4825,8 @@ kind of free
 		<property name="LootList" value="25" />
 		<property name="MaxDamage" value="100" />
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
-		<drop event="Destroy" count="0" prob="1" />
 		<drop event="Harvest" name="feather" count="1,3" prob=".35" />
-		<drop event="Harvest" name="feather" count="2" prob=".6" tool_category="Disassemble" />
+		<drop event="Harvest" name="feather" count="2" prob=".6" />
 		<drop event="Destroy" name="PlantFibers" count="2,8" />
 	</block>
 	<block id="543" name="concreteCNRRoundTop">
@@ -5684,19 +5683,16 @@ kind of free
 		<!-- disassemble value -->
 	</block>
 	<block id="625" name="schoolDesk">
-		<property name="Material" value="furniture" />
+		<property name="Material" value="Mmetal_weak" />
 		<property name="StabilitySupport" value="false" />
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
 		<property name="Texture" value="282" />
 		<property name="Model" value="Furniture/school_desk" param1="main_mesh" />
-		<property class="RepairItems">
-			<property name="scrapIron" value="10" />
-		</property>
 		<drop event="Harvest" name="shortMetalPipe" count="2,4" tool_category="Disassemble" />
 		<drop event="Harvest" name="scrapIron" count="10,20" tool_category="Disassemble" />
 		<drop event="Harvest" name="scrapPlastics" count="2" prob=".5" tool_category="Disassemble" />
-		<drop event="Destroy" name="scrapIron" count="10,15" prob="0.5" />
+		<drop event="Destroy" name="scrapIron" count="10,15" prob="1" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="0.95" />
 	</block>
 	<block id="626" name="cntLockers">
@@ -9282,7 +9278,7 @@ kind of free
 		<property name="Class" value="Loot" />
 		<property name="Material" value="Mmetal_thin" />
 		<property name="Texture" value="346,345,341,345,262,345" />
-		<property name="LootList" value="3" />
+		<property name="LootList" value="5" />
 		<drop event="Harvest" name="scrapCable" count="1" tool_category="Disassemble" />
 		<drop event="Harvest" name="shortMetalPipe" count="2" tool_category="Disassemble" />
 		<drop event="Harvest" name="scrapIron" count="25,50" tool_category="Disassemble" />

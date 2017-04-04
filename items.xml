@@ -287,8 +287,8 @@ Mesh files no longer used:
 			<property name="Sound_start" value="Weapons/Melee/Torch/torch_swoosh" />
 			<property name="Stamina_usage" value="8" />
 			<property name="Buff" value="burning" />
-			<property name="Buff_chance" value="0.1" />
-			<property name="DamageBonus.head" value="5" />
+			<property name="Buff_chance" value="0.25" />
+			<property name="DamageBonus.head" value="2" />
 			<property name="DamageBonus.glass" value="25" />
 			<property name="DamageBonus.wood" value="10" />
 			<property name="ActionExp" value="0" />
@@ -3051,6 +3051,7 @@ Mesh files no longer used:
 	</item>
 	<item id="212" name="partsPistol_parts">
 		<property name="Extends" value="partsMaster" />
+		<property name="Material" value="MmechanicalParts" />
 		<property name="DescriptionKey" value="partsPistolGroupDesc" />
 		<property name="PartType" value="Pump" />
 		<property name="Weight" value="10" />
@@ -3096,6 +3097,7 @@ Mesh files no longer used:
 	</item>
 	<item id="218" name="parts44Magnum_parts">
 		<property name="Extends" value="partsMaster" />
+		<property name="Material" value="MmechanicalParts" />
 		<property name="DescriptionKey" value="parts44MagnumGroupDesc" />
 		<property name="PartType" value="Pump" />
 		<property name="Weight" value="10" />
@@ -3143,6 +3145,7 @@ Mesh files no longer used:
 	</item>
 	<item id="224" name="partsPumpShotgun_parts">
 		<property name="Extends" value="partsMaster" />
+		<property name="Material" value="MmechanicalParts" />
 		<property name="DescriptionKey" value="commonShotgunPartsGroupDesc" />
 		<property name="PartType" value="Pump" />
 		<property name="Weight" value="15" />
@@ -3210,6 +3213,7 @@ Mesh files no longer used:
 	</item>
 	<item id="232" name="SubMachine_parts">
 		<property name="Extends" value="partsMaster" />
+		<property name="Material" value="MmechanicalParts" />
 		<property name="CustomIcon" value="parts44Magnum_parts" />
 		<property name="DescriptionKey" value="partsMP5GroupDesc" />
 		<property name="PartType" value="Pump" />
@@ -3258,6 +3262,7 @@ Mesh files no longer used:
 	</item>
 	<item id="238" name="AdvAssault_parts">
 		<property name="Extends" value="partsMaster" />
+		<property name="Material" value="MmechanicalParts" />
 		<property name="DescriptionKey" value="AdvAssaultGroupDesc" />
         <property name="CustomIcon" value="partsAK47_parts" />
 		<property name="PartType" value="Pump" />
@@ -3308,6 +3313,7 @@ Mesh files no longer used:
 	</item>
 	<item id="244" name="partsHuntingRifle_parts">
 		<property name="Extends" value="partsMaster" />
+		<property name="Material" value="MmechanicalParts" />
 		<property name="CustomIcon" value="partsPistol_parts" />
 		<property name="DescriptionKey" value="partsHuntingRifleGroupDesc" />
 		<property name="PartType" value="Pump" />
@@ -3353,6 +3359,7 @@ Mesh files no longer used:
 	</item>
 	<item id="250" name="partsSniperRifle_parts">
 		<property name="Extends" value="partsMaster" />
+		<property name="Material" value="MmechanicalParts" />
 		<property name="CustomIcon" value="partsPistol_parts" />
 		<property name="DescriptionKey" value="partsSniperRifleGroupDesc" />
 		<property name="PartType" value="Pump" />
@@ -3400,6 +3407,7 @@ Mesh files no longer used:
 	</item>
 	<item id="256" name="partsRocketLauncher_parts">
 		<property name="Extends" value="partsMaster" />
+		<property name="Material" value="MmechanicalParts" />
 		<property name="DescriptionKey" value="partsRocketLauncherGroupDesc" />
 		<property name="PartType" value="Pump" />
 		<property name="Weight" value="20" />
@@ -3435,6 +3443,7 @@ Mesh files no longer used:
 	</item>
 	<item id="261" name="partsChainsaw_parts">
 		<property name="Extends" value="partsMaster" />
+		<property name="Material" value="MmechanicalParts" />
 		<property name="CustomIcon" value="partsAuger_parts" />
 		<property name="PartType" value="Stock" />
 		<property name="Weight" value="10" />
@@ -3460,6 +3469,7 @@ Mesh files no longer used:
 	</item>
 	<item id="265" name="partsAuger_parts">
 		<property name="Extends" value="partsMaster" />
+		<property name="Material" value="MmechanicalParts" />
 		<property name="PartType" value="Stock" />
 		<property name="Weight" value="10" />
 		<property class="Attributes">
@@ -3620,9 +3630,10 @@ Mesh files no longer used:
 	</item>
 	<item id="278" name="partsNailgun_parts">
 		<property name="Extends" value="partsMaster" />
+		<property name="Material" value="MmechanicalParts" />
 		<property name="DescriptionKey" value="partsNailgunGroupDesc" />
 		<property name="PartType" value="Pump" />
-		<property name="Material" value="metal" />
+		<property name="Material" value="MmechanicalParts" />
 		<property name="Weight" value="10" />
 		<property name="RepairTools" value="ScavengedParts" />
 		<property class="Attributes">
@@ -3635,9 +3646,9 @@ Mesh files no longer used:
 		<property name="Extends" value="partsMaster" />
 		<property name="DescriptionKey" value="partsNailgunGroupDesc" />
 		<property name="PartType" value="Barrel" />
-		<property name="Material" value="lead" />
+		<property name="Material" value="MelectricParts" />
 		<property name="RepairTools" value="NeedsRecharging" />
-		<property name="Weight" value="15" />
+		<property name="Weight" value="10" />
 		<property class="Attributes">
 			<property name="DegradationMax" value="1000,4000" />
 		</property>
@@ -4051,7 +4062,7 @@ Mesh files no longer used:
 	<item id="380" name="scrapHelmet">
 		<!-- scrapArmor -->
 		<property name="Extends" value="scrapBoots" />
-		<property name="FuelValue" value="8" />
+		<property name="FuelValue" value="2" />
 		<property name="EquipSlot" value="Head" />
 		<property class="UMA">
 			<property name="Mesh" value="armor_scrapmetal_helmet" />
@@ -6171,13 +6182,13 @@ Mesh files no longer used:
 		<property name="EconomicValue" value="200" />
 		<property class="Action0">
 			<property name="Gain_health" value="50" />
-			<property name="Sound_start" value="UseActions/player_firstAidKit" />
+			<property name="Sound_start" value="UseActions/player_bandage" />
 			<property name="Debuff" value="burning,bearTrap,bleeding,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2,severeWound,dirtyBandage3,InfectedWound,dirtyBandage4" />
 			<property name="Buff" value="firstAidLarge" />
 		</property>
 		<property class="Action1">
 			<property name="Gain_health" value="50" />
-			<property name="Sound_start" value="UseActions/player_firstAidKit" />
+			<property name="Sound_start" value="UseActions/player_bandage" />
 			<property name="Debuff" value="burning,bearTrap,bleeding,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2,severeWound,dirtyBandage3,InfectedWound,dirtyBandage4" />
 			<property name="Buff" value="firstAidLarge" />
 		</property>
@@ -8597,7 +8608,7 @@ Mesh files no longer used:
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="HoldType" value="45" />
-		<property name="Material" value="metal" />
+		<property name="Material" value="MmechanicalParts" />
 		<property name="Weight" value="5" />
 		<property name="Stacknumber" value="500" />
 		<!-- STK resource -->
@@ -8854,7 +8865,7 @@ Mesh files no longer used:
 	<item id="1359" name="ScavengedParts">
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
-		<property name="Material" value="metal" />
+		<property name="Material" value="MmechanicalParts" />
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="50" />
 		<!-- STK repairKit -->
@@ -9709,6 +9720,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1505" name="Crossbow_Parts">
 		<property name="Extends" value="partsMaster" />
+		<property name="Material" value="MmechanicalParts" />
 		<property name="DescriptionKey" value="Crossbow_PartsDesc" />
 		<property name="CustomIcon" value="parts44Magnum_parts" />
 		<property name="PartType" value="Pump" />
@@ -9779,6 +9791,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1512" name="CarbonCrossbow_Parts">
 		<property name="Extends" value="Crossbow_Parts" />
+		<property name="Material" value="MmechanicalParts" />
 		<property name="CustomIcon" value="parts44Magnum_parts" />
 		<property class="Attributes">
 			<property name="DegradationMax" value="100,1000" />
@@ -10075,6 +10088,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1528" name="Revolver_parts">
 		<property name="Extends" value="partsMaster" />
+		<property name="Material" value="MmechanicalParts" />
 		<property name="DescriptionKey" value="RevolverPartsDesc" />
         <property name="CustomIcon" value="parts44Magnum_parts" />
         <property name="CustomIconTint" value="424041" />
@@ -10393,6 +10407,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1554" name="partsDoubleBarrel_parts">
 		<property name="Extends" value="partsMaster" />
+		<property name="Material" value="MmechanicalParts" />
 		<property name="CustomIcon" value="partsPumpShotgun_parts" />
 		<property name="DescriptionKey" value="commonShotgunPartsGroupDesc" />
 		<property name="PartType" value="Pump" />
@@ -10450,6 +10465,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1558" name="USAS_parts">
 		<property name="Extends" value="partsMaster" />
+		<property name="Material" value="MmechanicalParts" />
 		<property name="PartType" value="Pump" />
 		<property name="DescriptionKey" value="USASPartsDesc" />
 		<property name="CustomIcon" value="partsAK47_parts" />
@@ -10671,6 +10687,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1574" name="assaultRifle_parts">
 		<property name="Extends" value="AdvAssault_parts" />
+		<property name="Material" value="MmechanicalParts" />
 		<property name="DescriptionKey" value="partsAK47GroupDesc" />
 	</item>
 	<item id="1575" name="AK12_receiver">
@@ -10942,6 +10959,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1600" name="MachineGun_parts">
 		<property name="Extends" value="partsMaster" />
+		<property name="Material" value="MmechanicalParts" />
         <property name="CustomIcon" value="partsAK47_parts" />
 		<property name="DescriptionKey" value="lsatPartsGroupDesc" />
 		<property name="PartType" value="Pump" />
@@ -11180,6 +11198,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1617" name="grenadeLauncher_parts">
 		<property name="Extends" value="partsMaster" />
+		<property name="Material" value="MmechanicalParts" />
 		<property name="PartType" value="Pump" />
         <property name="CustomIcon" value="MP443Parts" />
 		<property name="Weight" value="50" />
@@ -12928,6 +12947,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1677" name="CompactDriver_parts">
 		<property name="Extends" value="partsNailgun_parts" />
+		<property name="Material" value="MmechanicalParts" />
         <property name="CustomIcon" value="partsNailgun_parts" />
 		<property name="DescriptionKey" value="partsNailgunGroupDesc" />
 		<property class="Attributes">
@@ -14443,7 +14463,7 @@ Mesh files no longer used:
 		<property name="Extends" value="firstAidKit" />
 		<property class="Action1">
 			<property name="Debuff" value="burning,bearTrap,bleeding,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2,severeWound,dirtyBandage3,InfectedWound,dirtyBandage4" />
-			<property name="Buff" value="firstAidLarge,splint" />
+			<property name="Buff" value="Large1stAidKit,splint" />
 			<property name="Create_item" value="DeadBattery" />
 		</property>
 	</item>
@@ -16080,7 +16100,7 @@ Mesh files no longer used:
 		<property name="Degradation" value="99999" param1="true" />
 		<property class="Action0">
 			<property name="Range" value="1.75" />
-			<property name="DamageEntity" value="20" />
+			<property name="DamageEntity" value="50,75" />
 			<property name="DamageBlock" value="3000" />
 			<property name="Buff" value="bleeding,scratch,stunned" />
 			<property name="Buff_chance" value="0.2,1,0.4" />

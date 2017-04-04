@@ -1654,7 +1654,7 @@
 			</module>
 			<module name="clampOutput" type="ClampOutput">
 				<property name="sourceModule" value="scaleBiasOutput" />
-				<property name="bounds" value="-28,255"/>
+				<property name="bounds" value="-28,162"/>
 			</module>
 			
 			<output module="clampOutput" />

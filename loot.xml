@@ -369,6 +369,48 @@
 			</qualitytemplate>
 		</lootqualitytemplate>
 	</lootqualitytemplates>
+
+<lootqualitytemplates>
+	<lootqualitytemplate name="trashTemplate">
+		<qualitytemplate level="0,.16" default_quality="1,100">
+			<loot quality="301,600" prob=".005"/>
+			<loot quality="201,300" prob=".025"/>
+			<loot quality="101,200" prob=".075"/>
+			<loot quality="1,100"   prob="1"/>
+		</qualitytemplate>
+		<qualitytemplate level=".16,.32" default_quality="101,200">
+			<loot quality="301,600" prob=".007"/>
+			<loot quality="201,300" prob=".003"/>
+			<loot quality="101,200" prob=".1"/>
+			<loot quality="1,200"   prob="1"/>
+		</qualitytemplate>
+		<qualitytemplate level=".32,.48" default_quality="201,300">
+			<loot quality="301,600" prob=".01"/>
+			<loot quality="201,300" prob=".04"/>
+			<loot quality="101,200" prob=".1"/>
+			<loot quality="1,300"   prob="1"/>
+		</qualitytemplate>
+		<qualitytemplate level=".48,.64" default_quality="301,400">
+			<loot quality="501,600" prob=".015"/>
+			<loot quality="401,500" prob=".05"/>
+			<loot quality="301,400" prob=".125"/>
+			<loot quality="1,300"   prob=".75"/>
+		</qualitytemplate>
+		<qualitytemplate level=".64,.80" default_quality="401,500">
+			<loot quality="501,600" prob=".025"/>
+			<loot quality="401,500" prob=".1"/>
+			<loot quality="301,400" prob=".125"/>
+			<loot quality="1,300"   prob=".5"/>
+		</qualitytemplate>
+		<qualitytemplate level=".80,1" default_quality="501,600">
+			<loot quality="501,600" prob=".05"/>
+			<loot quality="401,500" prob=".125"/>
+			<loot quality="301,400" prob=".125"/>
+			<loot quality="1,300"   prob=".4"/>
+		</qualitytemplate>
+	</lootqualitytemplate>
+</lootqualitytemplates>
+
 	<lootgroup name="empty" count="1" >
 		<item name="cobweb" prob="1" count="0" />
 		<item name="cobweb" prob="0.1" count="1" />
@@ -852,7 +894,6 @@
 		<item name="CarrotSeed" prob="0.4" />
 		<item name="aloeSeed" prob="0.4" />
 		<item name="potatoSeed" prob="0.5" />
-		<item name="coffeeBeans" prob="0.5" />
 		<item name="cornSeed" prob="0.5" />
 		<item name="blueberrySeed" prob="0.5" />
 		<item name="AppleSeed" prob="0.5" />
@@ -892,7 +933,7 @@
 		<item name="SteakKnife" prob="0.1" />
 		<item group="cannedfood" prob="0.3" />
 		<item group="seeds" prob="0.08" />
-		<item name="bottledWater" prob="0.15" />
+		<item name="bottledRiverWater" prob="0.15" />
 		<item name="emptyJar" count="1" prob="0.3" />
 		<item name="cornMeal" prob="0.2" />
 		<item name="CarrotCake" count="1" prob="0.08" />
@@ -1223,10 +1264,18 @@
 		<item name="animalHidePoncho" 			count="1" 		prob="1"/>
 	</lootgroup>
 
+	<lootgroup name="clothingJackets">
+		<item name="jacketWhite"/>
+		<item name="jacketBlack"/>
+		<item name="jacketLetter"/>
+	</lootgroup>
+
+
 	<lootgroup name="clothingCoats">
-		<item group="clothingPuffercoats"     	count="1" 		prob="40"/>
-		<item group="clothingDusters"     		count="1" 		prob="35"/>
+		<item group="clothingPuffercoats"     	count="1" 		prob="30"/>
+		<item group="clothingDusters"     		count="1" 		prob="25"/>
 		<item group="clothingPonchos"     		count="1" 		prob="25"/>
+		<item group="clothingJackets"			count="1"		prob="25"/>
 	</lootgroup>
 
 		<!-- Clothing Face -->
@@ -1918,6 +1967,7 @@
 		<item name="ScavengedParts" count="1,4" prob="0.1" />
 		<item name="woodFrameBlock" count="10,30" prob="0.1" />
 		<item name="rebarFrameBlock" count="10,30" prob="0.1" />
+		<item name="concreteMix" count="100,200" prob="0.1" />
 		<item name="wood" count="50,250" prob="0.1" />
 		<item name="workAnvil" count="1" prob="0.1" />
 		<item name="ironDoor1_v1" prob="0.1" />
@@ -1933,14 +1983,14 @@
 		<item name="scrapPlastics" count="1,8" prob="0.4" />
 	</lootgroup>
 	<lootgroup name="rareMedicine" count="1">
-		<item name="firstAidKit" prob="0.4" />
+		<item name="firstAidKit" prob="0.6" />
 		<item name="beaker" prob="0.06" />
 		<item name="antibiotics" prob="0.35" />
 		<item name="SutureKit" prob="0.6" />
 		<item name="AntivirialMeds" prob="0.75" />
 		<item name="bloodDrawKit" prob="0.4" />
 		<item name="workMortarAndPestle" prob="0.1" />
-		<item name="Large1stAidKit" prob="0.5" />
+		<item name="Large1stAidKit" prob="0.4" />
 		<item name="MixedChemicals" prob="0.5" />
 	</lootgroup>
 	<lootgroup name="medicine" count="1">
@@ -1957,7 +2007,7 @@
 		<item name="PurificationTablets" count="1,2" prob="0.2" />
 		<item name="PainKillerShot" count="1,4" prob="0.03" />
 		<item name="StimulantShot" count="1,4" prob="0.03" />
-		<item name="scrapPlastics" count="1,8" prob="0.1"/>
+		<item name="scrapPlastics" count="2,6" prob="0.1"/>
 	</lootgroup>
 	<lootgroup name="sportingGoods" count="1">
 		<item name="SharpeningStone" prob="0.2" />
@@ -2018,6 +2068,7 @@
 		<item group="ammoSmall" count="1,2" prob="0.5" />
 		<item group="ammoBig" count="1" prob="0.001" />
 		<item group="melee" prob="0.2" />
+		<item group="medicine" prob="0.3" />
 		<item group="clothingGeneral" prob="0.5" />
 		<item group="sportingGoods" prob="0.6" />
 		<item group="junk" prob="0.25" />
@@ -2051,6 +2102,7 @@
 		<item group="cupboard" count="1,3" />
 		<item group="cannedfood" count="1,3" />
 		<item group="beverages" count="1,3" />
+		<item name="bottledWater" count="1,8" />
 	</lootgroup>
 	<lootgroup name="airdropMedicine" count="all">
 		<item name="painkillers" count="1,3" />
@@ -2429,23 +2481,23 @@
 		<item name="GoreBlock1BonesPrefab" prob="0.1" />
 	</lootgroup>
 	<!-- lootcontainer 1 misc storage, cardboard boxes-->
-	<lootcontainer id="1" count="1,2" size="5,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" open_time="5">
+	<lootcontainer id="1" count="1,2" size="5,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="baseTemplate" open_time="5">
 		<item group="junk" prob="1" />
 		<item name="book" prob="0.25" />
 		<item name="paper" prob="0.5" />
 		<item group="empty" prob="1" />
 	</lootcontainer>
 	<!-- lootcontainer 2 garbage-->
-	<lootcontainer id="2" count="1,2" size="5,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="5">
+	<lootcontainer id="2" count="1,2" size="5,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="trashTemplate" open_time="5">
 		<item group="junk" />
 		<item group="empty" />
 	</lootcontainer>
 	<!-- lootcontainer 3 canned or dry food cupboard door open sound-->
-	<lootcontainer id="3" count="0,2" size="5,4" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard" open_time="5">
+	<lootcontainer id="3" count="0,2" size="5,4" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard" loot_quality_template="baseTemplate" open_time="5">
 		<item group="cupboard" />
 	</lootcontainer>
 	<!-- lootcontainer 4 frozen or refridgerated food, spoiled food -->
-	<lootcontainer id="4" count="0,1" size="6,4" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" open_time="5">
+	<lootcontainer id="4" count="0,1" size="6,4" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="baseTemplate" open_time="5">
 		<item group="coldfood" prob="0.7" />
 		<item group="rottenFood" prob="0.5" />
 		<item name="bottledWater" count="1" prob="0.3" />
@@ -2462,50 +2514,49 @@
 		<item group="rottenFood" prob="0.6" />
 	</lootcontainer>
 	<!-- lootcontainer 6 night stands and dressers, pistol, ammo, magazines, books -->
-	<lootcontainer id="6" count="0,2" size="4,3" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" open_time="5">
+	<lootcontainer id="6" count="0,2" size="4,3" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" loot_quality_template="baseTemplate" open_time="5">
 		<item group="clothingGeneral" prob="0.5" />
 		<item group="trophyGroup" prob="0.3" />
 		<item group="ammoSmall" prob="0.5" />
-		<item group="ammoBig" prob="0.001" />
 		<item name="book" count="1,2" prob="0.4" />
 		<item name="SewingNeedle" count="1" prob="0.2" />
 		<item group="medicine" prob="0.4" />
 		<item name="candleStick" prob="0.2" />
 		<item group="TierOneBooks" prob="0.05" />
+		<item group="handgun+ammo" prob="0.05" />
 		<item group="MonthlyMagazines" prob="0.1" />
         <item group="WeeklyMagazines" prob="0.2" />
 	</lootcontainer>
 	<!-- lootcontainer 7 medicine cabinets -->
-	<lootcontainer id="7" count="1,2" size="4,2" sound_open="UseActions/open_medicine_cabinet" sound_close="UseActions/close_medicine_cabinet" open_time="5">
+	<lootcontainer id="7" count="1,2" size="4,2" sound_open="UseActions/open_medicine_cabinet" sound_close="UseActions/close_medicine_cabinet" loot_quality_template="baseTemplate" open_time="5">
 		<item group="medicine" />
-		<item group="empty" prob="0.25" />
+		<item name="brokenGlass" count="5,15" prob="0.25" />
 	</lootcontainer>
 	<!-- lootcontainer 8 kitchen cupboards (lower), cleaning chemicals, plates, silverware, pots and pans -->
-	<lootcontainer id="8" count="0,2" size="4,3" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard" open_time="5">
+	<lootcontainer id="8" count="0,2" size="4,3" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard" loot_quality_template="baseTemplate" open_time="5">
 		<item name="cookingPot" count="1" prob="0.2" />
 		<item name="FryingPan" count="1" prob="0.15" />
 		<item name="emptyJar" count="1,2" prob="0.4" />
 		<item name="canEmpty" count="1,2" prob="0.35" />
 		<item group="cupboard" count="1,2" prob="0.3" />
-		<item name="coffeeBeans" count="1,4" prob="0.3" />
+		<item name="bucket" count="1,4" prob="0.3" />
 		<item name="clawHammer" count="1" prob="0.15" quality="1,300" />
 		<item name="wrench" count="1" quality="1,300" prob="0.1" />
-		<item name="scrapLead" count="1,8" prob="0.75" />
+		<item name="scrapLead" count="5,10" prob="0.75" />
 		<item name="scrapIron" count="1,8" prob="0.6" />
-		<item name="scrapPlastics" count="1,8" prob="0.5"/>
+		<item name="scrapPlastics" count="2,6" prob="0.5"/>
 		<item name="grainAlcohol" prob="0.05" count="1,2" />
 	</lootcontainer>
 	<!-- lootcontainer 9 backpack, place where people stash things, -->
-	<lootcontainer id="9" count="0,3" size="4,2" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="5">
+	<lootcontainer id="9" count="1,3" size="5,3" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="baseTemplate" open_time="5">
 		<item group="backpacks" />
-		<item group="empty" prob="0.2" />
 	</lootcontainer>
 	<!-- lootcontainer 10 empty, storage containers the player crafts-->
-	<lootcontainer id="10" count="0,1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	<lootcontainer id="10" count="0" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="baseTemplate" >
 		<item name="cobweb" count="1,2" />
 	</lootcontainer>
 	<!-- lootcontainer 11 safes, weapon caches rare good loot -->
-	<lootcontainer id="11" count="1,3" size="4,3" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="30">
+	<lootcontainer id="11" count="1,3" size="5,4" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" loot_quality_template="treasureTemplate" open_time="30">
 		<item group="commonWeaponParts" prob="0.5" />
 		<item group="smallCommonWeaponParts" prob="0.5" />
 		<item group="MonthlyMagazines" prob="0.1" />
@@ -2516,11 +2567,11 @@
 		<item group="empty" prob="0.2" />
 		<item group="trophyGroup" prob="0.3"/>
 		<item group="rareOres" prob="0.05" />
-		<item name="oldCash" count="100,500" prob="0.5"/>
+		<item name="oldCash" count="50,100" prob="0.5"/>
 		<item group="handgun+ammo" prob="0.1" />
 	</lootcontainer>
 	<!-- lootcontainer 14 misc metal container mailbox-->
-	<lootcontainer id="14" count="1,2" size="4,2" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox" open_time="3">
+	<lootcontainer id="14" count="1,2" size="4,2" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox" loot_quality_template="baseTemplate" open_time="3">
 		<item group="empty" prob="0.75" />
 		<item name="paper" count="1,10" />
 		<item name="book" prob="0.8" />
@@ -2530,31 +2581,34 @@
 		<item name="pipeBomb" count="1,2" prob="0.1" />
 	</lootcontainer>
 	<!-- lootcontainer 15 generic zombie loot-->
-	<lootcontainer id="15" count="1,2" size="4,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" destroy_on_close="false">
+	<lootcontainer id="15" count="1,2" size="4,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate" destroy_on_close="false">
 		<item group="junk" prob="1" />
 		<item group="clothingGeneral" prob="0.25" />
-		<item group="rottenFood" prob="0.062" />
 		<item group="questChallenge" count="1" prob="0.0105" />
 		<item group="treasureMaps" count="1" prob="0.0105" />
 		<!-- total 2% for a quest thing -->
 	</lootcontainer>
 	<!-- lootcontainer 16 metal garbage can-->
-	<lootcontainer id="16" count="0,2" size="4,3" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan" open_time="5">
+	<lootcontainer id="16" count="0,3" size="4,3" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan" loot_quality_template="trashTemplate" open_time="5">
 		<item group="garbage" />
 	</lootcontainer>
 	<!-- lootcontainer 17 zombie cop-->
-	<lootcontainer id="17" count="1,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage">
+	<lootcontainer id="17" count="1,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="baseTemplate">
+		<item group="handgun+ammo" prob="0.1" />
+		<item group="shotgun+ammo" prob="0.05" />
 		<item group="rottenFood" count="1,5" prob="0.5"/>
 		<item group="ammoSmall" prob="0.5" />
 		<item group="books" prob="0.08" />
 		<item name="NightStick" prob="0.15" />
 		<item name="weaponRepairKit" prob="0.1" />
-        <item group="MonthlyMagazines" prob="0.1" />
+		<item name="militaryVest" prob="0.2"/>
+		<item name="militaryFiber" count="3,6" prob="0.04"/>
+		<item group="MonthlyMagazines" prob="0.1" />
         <item group="WeeklyMagazines" prob="0.2" />
-		<item name="militaryFiber" count="1,4" prob="0.04" />
+		<item name="scrapBrass" count="5" prob="0.5" />
 	</lootcontainer>
 	<!-- lootcontainer 19 cars-->
-	<lootcontainer id="19" count="1,3" size="7,4" buff_chance="0.1" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="5">
+	<lootcontainer id="19" count="1,3" size="7,4" buff_chance="0.1" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" loot_quality_template="baseTemplate" open_time="5">
 		<item group="automotive+tools+junk" />
 		<item group="deadBody" prob="0.1" />
 		<item group="rifle+ammo" prob="0.001" />
@@ -2562,18 +2616,18 @@
 		<item group="empty" prob="0.5" />
 	</lootcontainer>
 	<!-- lootcontainer 20 air conditioners-->
-	<lootcontainer id="20" count="0,2" size="4,3" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox" open_time="5">
+	<lootcontainer id="20" count="0,2" size="4,3" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox" loot_quality_template="baseTemplate" open_time="5">
 		<item group="metalpipe" />
 	</lootcontainer>
 	<!-- lootcontainer 21 medical supplies dead nurse-->
-	<lootcontainer id="21" count="1,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
-		<item group="medicine" prob="0.5" />
-		<item group="junk" count="0,1" prob="0.5" />
+	<lootcontainer id="21" count="0,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+		<item group="medicine" />
+		<item group="junk" count="1" prob="0.5" />
+		<item name="oldCash" count="1,20" prob="0.5" />
 		<item name="hazmatGloves" prob="0.05" />
-		<item name="beaker" prob="0.01" />
 	</lootcontainer>
 	<!-- lootcontainer 22 garage stuff, tools, etc -->
-	<lootcontainer id="22" count="1,3" size="4,3" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" open_time="5">
+	<lootcontainer id="22" count="1,3" size="4,3" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" open_time="5" loot_quality_template="baseTemplate">
 		<item name="book" prob="0.2" />
 		<item group="junk" prob="0.3" />
 		<item group="automotive" prob="0.8" />
@@ -2586,11 +2640,11 @@
 	</lootcontainer>
 	<!-- 23 see below !!! -->
 	<!-- lootcontainer 24 hornets and hives - NOTE: Hornet corpses harvest now so should be redundant -->
-	<lootcontainer id="24" count="0,2" size="4,3" sound_open="UseActions/open_animal" sound_close="UseActions/close_animal">
+	<lootcontainer id="24" count="1,2" size="4,3" sound_open="UseActions/open_animal" sound_close="UseActions/close_animal" loot_quality_template="baseTemplate">
 		<item name="foodHoney" />
 	</lootcontainer>
 	<!-- lootcontainer 25 birds nest-->
-	<lootcontainer id="25" count="1,4" size="4,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="3">
+	<lootcontainer id="25" count="1,4" size="4,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="3" loot_quality_template="baseTemplate">
 		<item name="turd" count="1" prob="0.02" />
 		<item name="egg" count="1" prob="0.25" />
 		<item name="feather" count="1,4" prob="0.75" />
@@ -2605,7 +2659,7 @@
 	<!-- lootcontainer 32 Supply Crate Ranged weapons Day 5 -->
 	<!-- lootcontainer 33 Supply Crate Ranged weapons Day 7 -->
 	<!-- lootcontainer 34 Supply Crate General -->
-	<lootcontainer id="34" count="1" size="8,4" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
+	<lootcontainer id="34" count="1" size="8,4" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate" loot_quality_template="baseTemplate">
 		<item group="airdropMedicine" count="1,2" />
 		<item group="airdropfood" count="1,2" />
 		<item group="airdropGuns" count="1,2"/>
@@ -2614,44 +2668,46 @@
 	</lootcontainer>
 	<!-- lootcontainer 35 tree hollowed stump, place where people stash things, -->
 	<lootcontainer id="35" count="0,2" size="4,3" sound_open="UseActions/open_stump" sound_close="UseActions/close_stump" open_time="5">
-		<item group="sportingGoods" prob="0.6" />
 		<item group="survivalStash" count="1,2" prob="1.0" />
 		<item group="clothingColdWeather" prob="0.5" />
-		<item name="foodHoney" prob="0.2" />
 		<item group="cannedfood" prob="0.15" />
-		<item group="medicine" prob="0.1" />
-		<item name="bottledRiverWater" count="1,3" prob="0.15" />
-		<item name="flashlight02" prob="0.1" />
-		<item name="painkillers" prob="0.09" />
+		
+		<item name="foodHoney" />
 		<item name="mushrooms"/>
-		<item name="egg" count="1" prob="0.5"/>
+		<item name="egg" count="1,2" prob="0.5"/>
 		<item name="feather" count="3,9" prob="1.5"/>
 	</lootcontainer>
 	<!-- lootcontainer 36 suitcase -->
-	<lootcontainer id="36" count="0,2" size="4,3" sound_open="UseActions/open_suitcase" sound_close="UseActions/close_suitcase" open_time="5">
+	<lootcontainer id="36" count="0,2" size="4,3" sound_open="UseActions/open_suitcase" sound_close="UseActions/close_suitcase" open_time="5" loot_quality_template="baseTemplate" >
+		<item group="clothingGeneralRandomSet" count="1,2" prob="0.6" />
 		<item name="bottledWater" count="1" prob="0.15" />
 		<item group="cannedfood" prob="0.25" />
-		<item group="junk" prob="0.4" />
+		<item group="medicine" count="1,2" prob="0.2" />
 		<item name="flashlight02" prob="0.1" />
-		<item group="medicine" count="1,2" prob="0.1" />
-		<item group="clothingGeneralRandomSet" count="1,2" prob="0.6" />
+		<item name="cloth" count="2,4" prob="0.2"/>
+		<item name="oldCash" count="4,40" prob="0.2"/>
 		<item group="melee" prob="0.1" />
 		<item group="TierOneBooks" prob="0.07" />
+		<item group="handgun+ammo" prob="0.1" />
+		<item group="questChallenge" count="1" prob="0.3"/>
+		<item group="treasureMaps" count="1" prob="0.3"/> <!-- total 2.2% for a quest thing -->
 	</lootcontainer>
 	<!-- lootcontainer 37 corpses -->
-	<lootcontainer id="37" count="1,2" size="4,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="10">
+	<lootcontainer id="37" count="1,2" size="4,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate" open_time="10">
 		<item group="junk" prob="0.65" />
 		<item group="ammoSmall" count="1,2" prob="0.5" />
 		<item group="smallCommonWeaponParts" prob="0.5" />
 		<item group="magnumparts" prob="0.2" />
 		<item group="clothingGeneral" prob="0.3" />
+		<item group="armorBackpack" prob="0.1" />
+		<item name="oldCash" count="1,10" prob="0.25" />
 		<item group="questChallenge" count="1" prob="0.035" />
 		<item group="treasureMaps" count="1" prob="0.035" />
 		<item group="empty" prob="1" />
 		<!-- total 2.2% for a quest thing -->
 	</lootcontainer>
 	<!-- fat zombie loot -->
-	<lootcontainer id="38" count="0,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
+	<lootcontainer id="38" count="0,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 		<item name="bottledWater" count="1" prob="0.15" />
 		<item name="shamSandwich" prob="0.2" />
 		<item group="cannedfood" prob="0.05" />
@@ -2664,10 +2720,10 @@
         <item group="WeeklyMagazines" prob="0.2" />
         <item name="ProfessionPage" count="1,2" prob="0.5" />
 	</lootcontainer>
-	<!-- shotgun messiah -->
+	<!-- shotgun messiah UNUSED -->
 	<lootcontainer id="39" count="0,2" size="4,3" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest"></lootcontainer>
 	<!-- military munitions ammo box -->
-	<lootcontainer id="40" count="1,2" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="30" destroy_on_close="true">
+	<lootcontainer id="40" count="1,2" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="30" destroy_on_close="true" loot_quality_template="baseTemplate">
 		<item group="ammoBig" count="1,2" prob="0.01" />
 		<item group="militaryammo" count="2,4" prob="0.65" />
 		<item group="TierThreeBooks" prob="0.7" />
@@ -2676,11 +2732,11 @@
 		<item name="ProfessionPage" count="1" prob="0.45" />
 	</lootcontainer>
 	<!-- player dropped backpacks -->
-	<lootcontainer id="41" count="0,1" size="5,10" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1">
+	<lootcontainer id="41" count="0,1" size="5,10" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
 		<item name="cobweb" count="1,2" prob="0.01" />
 	</lootcontainer>
 	<!-- lootcontainer 42 gun safe -->
-	<lootcontainer id="42" count="1,2" size="8,8" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="30">
+	<lootcontainer id="42" count="1,2" size="8,8" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="30" loot_quality_template="baseTemplate">
 		<item group="ammoBig" count="1" prob="0.01" />
 		<item group="ammoSmall" count="2,4" prob="0.5" />
 		<item group="TierTwoBooks" prob="0.4" />
@@ -2692,7 +2748,7 @@
 		<item group="shotgun+ammo" prob="0.1" />
 	</lootcontainer>
 	<!-- lockers -->
-	<lootcontainer id="43" count="0,2" size="4,3" sound_open="UseActions/open_locker" sound_close="UseActions/close_locker" open_time="5">
+	<lootcontainer id="43" count="0,2" size="4,3" sound_open="UseActions/open_locker" sound_close="UseActions/close_locker" open_time="5" loot_quality_template="baseTemplate">
 		<item group="clothingGeneral" prob="1"/>
 		<item group="ammoSmall" count="1,3" prob="0.5" />
 		<item group="ammoBig" count="1" prob="0.01" />
@@ -2707,10 +2763,10 @@
         <item group="WeeklyMagazines" prob="0.2" />
 	</lootcontainer>
 	<!-- file cabinet -->
-	<lootcontainer id="44" count="1,3" size="4,3" sound_open="UseActions/open_file_cabinet" sound_close="UseActions/close_file_cabinet" open_time="5">
+	<lootcontainer id="44" count="1,3" size="4,3" sound_open="UseActions/open_file_cabinet" sound_close="UseActions/close_file_cabinet" open_time="5" loot_quality_template="baseTemplate">
 		<item group="ammoBig" prob="0.01" />
 		<item group="TierOneBooks" prob="0.1" />
-		<item name="paper" count="5,10" prob="1" />
+		<item name="paper" count="10,25" prob="1" />
 		<item name="painkillers" prob="0.08" />
 		<item name="book" count="1,4" prob="0.5" />
         <item group="MonthlyMagazines" prob="0.1" />
@@ -2719,13 +2775,13 @@
 		<item group="empty" prob="0.75" />
 	</lootcontainer>
 	<!-- cooler loot -->
-	<lootcontainer id="45" count="0,2" size="4,3" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" open_time="5">
+	<lootcontainer id="45" count="0,2" size="4,3" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" open_time="5" loot_quality_template="baseTemplate">
 		<item group="cupboard" prob="0.3" />
 		<item group="coldfood" prob="0.5" />
 		<item group="beverages" prob="0.3" />
 	</lootcontainer>
 	<!-- military truck -->
-	<lootcontainer id="46" count="1,4" size="8,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="45" destroy_on_close="false">
+	<lootcontainer id="46" count="1,4" size="8,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="45" destroy_on_close="false" loot_quality_template="treasureTemplate">
 		<item group="ammoBig" count="1" prob="0.55" />
 		<item group="militaryammo" count="2,4" prob="0.65" />
 		<item group="TierThreeBooks" prob="0.7" />
@@ -2738,7 +2794,7 @@
 		<item group="deadBody" prob="0.01" />
 	</lootcontainer>
 	<!-- Police Car -->
-	<lootcontainer id="47" count="1,4" size="8,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="15" destroy_on_close="false">
+	<lootcontainer id="47" count="1,4" size="8,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="15" destroy_on_close="false" loot_quality_template="baseTemplate">
 		<item group="smallCommonWeaponParts" prob="0.15" />
 		<item group="TierOneBooks" prob="0.04" />
 		<item group="smallUncommonWeaponParts" prob="0.05" />
@@ -2752,9 +2808,8 @@
 		<item group="shotgun+ammo" prob="0.05" />
 		<item group="deadBody" prob="0.01" />
 	</lootcontainer>
-	<!-- 47 free-->
 	<!-- lootcontainer 48 purse -->
-	<lootcontainer id="48" count="0,2" size="4,3" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="3">
+	<lootcontainer id="48" count="1,3" size="4,2" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="3" loot_quality_template="baseTemplate">
 		<item group="junk" prob="0.25" />
 		<item group="TierOneBooks" prob="0.04" />
 		<item name="book" prob="0.05" />
@@ -2768,7 +2823,7 @@
 		<item name="casinoCoin" count="10,50" prob="0.01" />
 	</lootcontainer>
 	<!-- bookcase -->
-	<lootcontainer id="49" count="1,2" size="4,3" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" open_time="3">
+	<lootcontainer id="49" count="1,2" size="4,3" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" open_time="3" loot_quality_template="baseTemplate">
 		<item group="TierOneBooks" prob="0.5" />
 		<item group="books" prob="0.05" />
 		<item name="book" prob="0.5" />
@@ -2776,7 +2831,7 @@
         <item group="WeeklyMagazines" prob="0.2" />
 	</lootcontainer>
 	<!-- shotgun Messiah -->
-	<lootcontainer id="50" count="1,3" size="4,4" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate" open_time="10">
+	<lootcontainer id="50" count="1,3" size="4,4" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate" open_time="10" loot_quality_template="baseTemplate">
 		<item group="militaryammo" count="2,4" prob="0.3" />
 		<item group="militaryWeaponParts" prob="0.1" />
 		<item group="sportingGoods" prob="0.1" />
@@ -2794,22 +2849,22 @@
 		<item name="GunOil" count="5,20" prob="0.5" />
 	</lootcontainer>
 	<!-- pop n pills -->
-	<lootcontainer id="51" count="0,4" size="4,4" sound_open="UseActions/open_pill_case" sound_close="UseActions/close_pill_case" open_time="5">
+	<lootcontainer id="51" count="0,4" size="4,4" sound_open="UseActions/open_pill_case" sound_close="UseActions/close_pill_case" open_time="5" loot_quality_template="baseTemplate">
 		<item group="medicine" count="1,2" />
 		<item name="scrapPlastics" count="1,8" prob=".15" />
 		<item group="empty" />
 	</lootcontainer>
 	<!-- beer cooler -->
-	<lootcontainer id="52" count="0,2" size="4,4" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" open_time="5">
+	<lootcontainer id="52" count="0,2" size="4,4" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" open_time="5" loot_quality_template="baseTemplate">
 		<item group="beverages" count="0,2" />
 		<item name="grainAlcohol" prob="0.25" count="1,2" />
 	</lootcontainer>
 	<!-- working stiffs -->
-	<lootcontainer id="53" count="1,2" size="4,4" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate" open_time="10">
+	<lootcontainer id="53" count="1,2" size="4,4" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate" open_time="10" loot_quality_template="baseTemplate">
 		<item group="workingStiffs" />
 	</lootcontainer>
 	<!-- shopping cart-->
-	<lootcontainer id="54" count="0,1" size="4,4" sound_open="UseActions/open_shopping_cart" sound_close="UseActions/close_shopping_cart" open_time="3">
+	<lootcontainer id="54" count="0,1" size="4,4" sound_open="UseActions/open_shopping_cart" sound_close="UseActions/close_shopping_cart" open_time="3" loot_quality_template="baseTemplate">
 		<item group="cupboard" prob="0.5" />
 		<item group="beverages" prob="0.5" />
 		<item name="cigarette" count="1,4" prob="0.1" />
@@ -2817,14 +2872,14 @@
 		<item name="scrapPlastics" count="1,8" prob="0.15" />
 	</lootcontainer>
 	<!-- cash register-->
-	<lootcontainer id="55" count="1,5" size="4,4" sound_open="UseActions/open_cash_register" sound_close="UseActions/close_cash_register">
-		<item name="oldCash" count="1,10" prob="0.5" />
-		<item name="paper" count="1,5" prob="0.5" />
-		<item name="casinoCoin" count="10,50" prob="0.01" />
+	<lootcontainer id="55" count="1,5" size="4,4" sound_open="UseActions/open_cash_register" sound_close="UseActions/close_cash_register" loot_quality_template="baseTemplate">
+		<item name="oldCash" count="3,13" prob="0.5" />
+		<item name="paper" count="5,10" prob="0.5" />
+		<item name="casinoCoin" count="6,18" prob="0.01" />
 		<item group="empty" />
 	</lootcontainer>
 	<!-- Apache Artifact Chest -->
-	<lootcontainer id="56" count="1,3" size="4,4" sound_open="UseActions/open_apache_artifact_chest" sound_close="UseActions/close_apache_artifact_chest" open_time="10">
+	<lootcontainer id="56" count="1,3" size="4,4" sound_open="UseActions/open_apache_artifact_chest" sound_close="UseActions/close_apache_artifact_chest" open_time="10" loot_quality_template="treasureTemplate">
 		<item name="steelArrow" count="4,12" prob="0.4" />
 		<item name="ironArrow" count="4,12" prob="0.4" />
 		<item name="woodenBow" count="1" prob="0.4" quality="200,500" />
@@ -2832,18 +2887,18 @@
 		<item name="tazasStoneaxe" count="1" prob="0.1" quality="300,600" />
 	</lootcontainer>
 	<!-- miners chest -->
-	<lootcontainer id="57" count="1,2" size="4,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="10">
+	<lootcontainer id="57" count="1,2" size="4,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="10" loot_quality_template="baseTemplate">
 		<item group="minerLoot" count="1,2" />
 		<item group="tools" prob="0.5" />
 		<item name="pickaxeIron" count="1" prob="0.1" />
 	</lootcontainer>
 	<!-- shopping basket -->
-	<lootcontainer id="58" count="0,2" size="4,4" sound_open="UseActions/open_shopping_basket" sound_close="UseActions/close_shopping_basket" open_time="3">
+	<lootcontainer id="58" count="0,2" size="4,4" sound_open="UseActions/open_shopping_basket" sound_close="UseActions/close_shopping_basket" open_time="3" loot_quality_template="baseTemplate">
 		<item group="cupboard" prob="0.5" />
 		<item group="beverages" prob="0.5" />
 	</lootcontainer>
 	<!-- Shamway Cardboard Loot-->
-	<lootcontainer id="59" count="1,3" size="4,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" open_time="10">
+	<lootcontainer id="59" count="1,3" size="4,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" open_time="10" loot_quality_template="baseTemplate">
 		<item group="rottenFood" count="1,3" prob="1" />
 		<item name="canHam" count="1,3" prob="0.2" />
 		<item group="cupboard" count="1,2" prob="0.8" />
@@ -2856,15 +2911,15 @@
 		<item group="empty" />
 	</lootcontainer>
 	<!-- Bookstore bookcase -->
-	<lootcontainer id="60" count="1,3" size="4,2" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" open_time="3">
+	<lootcontainer id="60" count="1,3" size="4,2" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" open_time="3" loot_quality_template="baseTemplate">
 		<item group="TierOneBooks" prob="0.5" />
 		<item name="book" prob="0.8" />
 		<item group="books" prob="0.05" />
         <item group="MonthlyMagazines" prob="0.3" />
         <item group="WeeklyMagazines" prob="0.4" />
 	</lootcontainer>
-	<!-- feral loot -->
-	<lootcontainer id="61" count="1,3" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
+	<!-- feral zombie loot -->
+	<lootcontainer id="61" count="1,3" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 		<item group="militaryWeaponParts" prob="0.1" />
 		<item group="smallUncommonWeaponParts" prob="0.1" />
 		<item group="junk" prob="0.3" />
@@ -2874,17 +2929,17 @@
 		<item group="empty" prob="0.2" />
 	</lootcontainer>
 	<!-- minibike storage -->
-	<lootcontainer id="62" count="0,1" size="3,6" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket">
+	<lootcontainer id="62" count="0,1" size="3,6" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="baseTemplate">
 		<item name="cobweb" count="0" prob="0.01" />
 	</lootcontainer>
 	<!-- mountain man loot -->
-	<lootcontainer id="63" count="0,2" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="10">
+	<lootcontainer id="63" count="0,2" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="10" loot_quality_template="baseTemplate">
 		<item group="rareOres" prob="0.05" />
 		<item name="fireaxeIron" count="1" prob="0.2" />
 		<item name="herbalAntibiotics" count="1,3" prob="0.5" />
 	</lootcontainer>
 	<!-- gas pump loot -->
-	<lootcontainer id="64" count="30,600" size="5,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="30">
+	<lootcontainer id="64" count="30,600" size="5,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="30" loot_quality_template="baseTemplate">
 		<item group="gasPumps" count="1" />
 	</lootcontainer>
 	<!-- lootcontainer zombieMaleHazmat/zombieFemaleHazmat -->
@@ -2892,26 +2947,29 @@
 		<item group="armorHazmat" count="1" />
 		<item group="rareMedicine" prob="0.2" />
 		<item name="grainAlcohol" count="1,4" prob=".2" />
-		<item name="scrapPlastics" count="1,5" prob=".3" />
-		<item name="paper" count="1,6" prob="0.3" />
-		<item name="cloth" count="1,4" prob="0.3" />
+		<item name="scrapPlastics" count="2,6" prob=".3" />
+		<item name="paper" count="5,10" prob="0.3" />
+		<item name="cloth" count="2,4" prob="0.3" />
 		<item name="ductTape" count="1,3" prob="0.25" />
 		<item group="books" />
 		<item group="questChallenge" count="1" prob="0.05" />
 		<item group="treasureMaps" count="1" prob="0.06" />
+		<item group="handgun+ammo" prob="0.02" />
 		<item group="junk" prob="0.7" />
 	</lootcontainer>
 	<!-- lootcontainer lumberjack zombie loot-->
-	<lootcontainer id="66" count="0,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
-		<item group="tools" prob="0.6" />
-		<item group="clothingColdWeather" prob="0.7" />
+	<lootcontainer id="66" count="0,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 		<item group="lumberjacks" prob="0.5" />
+		<item group="clothingColdWeather" prob="0.7" />
+		<item group="tools" prob="0.6" />
 		<item group="rareOres" prob="0.02" />
 	</lootcontainer>
-	<lootcontainer id="67" count="0,2" size="2,2" sound_open="UseActions/open_toilet" sound_close="UseActions/close_toilet">
+	<!-- toilet loot-->
+	<lootcontainer id="67" count="0,2" size="2,2" sound_open="UseActions/open_toilet" sound_close="UseActions/close_toilet" loot_quality_template="baseTemplate">
 		<item group="toiletLoot" count="0,1" />
 	</lootcontainer>
-	<lootcontainer id="68" count="0,3" size="8,4" sound_open="UseActions/open_dumpster" sound_close="UseActions/close_dumpster">
+	<!-- dumpster loot-->
+	<lootcontainer id="68" count="0,3" size="8,4" sound_open="UseActions/open_dumpster" sound_close="UseActions/close_dumpster" loot_quality_template="baseTemplate">
 		<item group="junk" count="1,2" />
 		<item group="rottenFood" count="1,2" prob="0.08" />
 		<item group="deadBody" prob="0.01" />
@@ -2940,6 +2998,7 @@
 	<!-- lootcontainer 72 bandit ranged -->
 	<lootcontainer id="72" count="0,3" size="7,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 		<item group="banditsGeneral" />
+		<item group="handgun+ammo" count="1" prob="0.7" />
 	</lootcontainer>
 	<!-- lootcontainer 73 ZombieSoldier loot -->
 	<lootcontainer id="73" count="1,3" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
@@ -2962,7 +3021,7 @@
 	</lootcontainer>
 	<!-- lootcontainer 76 cntFurnaceDrawer -->
 	<lootcontainer id="76" count="0,1" size="5,3" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="baseTemplate">
-		<item name="coal" count="2,8" prob="1" />
+		<item name="coal" count="2,12" prob="1" />
 		<item name="femur" count="1,2" prob="0.1" />
 	</lootcontainer>
 	<!-- lootcontainer 77 cntGreenDrawer -->
@@ -2984,9 +3043,9 @@
 	<!-- lootcontainer 80 ZombieSkateboarder -->
 	<lootcontainer id="80" count="0,3" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 		<item group="junk" prob="2" />
-		<item name="hoodedSweatshirtWhite" prob="1" />
-		<item name="blackDenimPants" prob="1" />
-		<item name="runningShoes" prob="1" />
+		<item name="hoodedSweatshirtWhite" prob="0.5" />
+		<item name="blackDenimPants" prob="0.5" />
+		<item name="runningShoes" prob="0.5" />
 		<item name="mechanicalParts" count="1,3" prob="1" />
 		<item name="facialPiercings" prob="0.2"/>
 		<item group="questChallenge" count="1" prob="0.02" />
@@ -2998,6 +3057,7 @@
 		<item group="junk" prob="10" />
 		<item group="magnumparts" prob="2" />
 		<item group="huntingRifleWeaponParts" prob="2" />
+		<item group="rifle+ammo" prob="1" />
 		<item name="dynamite" count="1,3" prob="1" />
 		<item group="cowboyHatAll" prob="1" />
 		<item group="bandanaAll" prob="1" />
@@ -3009,29 +3069,35 @@
 		<item group="rareOres" prob="1" />
 		<item name="grainAlcohol" count="1,3" prob="0.7" />
 		<item group="cannedfood" count="1,2" prob="1" />
-		<item name="bottledWater" count="1,3" prob="1" />
+		<item name="bottledRiverWater" count="1,3" prob="1" />
 		<item name="oldCash" count="2,15" prob="1" />
 		<item group="treasureMaps" count="1" prob="1" />
 	</lootcontainer>
 	<!-- lootcontainer 82 ZombieMiner -->
 	<lootcontainer id="82" count="1,3" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
-		<item group="junk" prob="1" />
+		<item group="junk" prob="0.75" />
+		<item group="clothingGeneral" prob="0.25" />
 		<item group="minerLoot" />
 	</lootcontainer>
 	<!-- lootcontainer 83 ZombieBiker -->
-	<lootcontainer id="83" count="1,3" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
-		<item group="junk" prob="2" />
-		<item name="swatHelmet" />
-		<item name="gothicPants" />
-		<item name="gothBootsBlack" />
-		<item name="beer" prob="3" />
-		<item name="grainAlcohol" />
-		<item name="mead" prob="0.2" />
+<lootcontainer id="83" count="0,3" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+		<item group="junk" prob="2"/>
+		<item name="swatHelmet" prob=".5"/>
+		<item name="gothicPants" prob=".5"/>
+		<item name="gothBootsBlack" prob=".5"/>
 		<item name="shades" prob=".1" />
 		<item name="shadesBlack" prob=".5" />
+		<item name="facialPiercings" prob=".2"/>
+		<item name="bandanaBlack" prob=".5"/>
+		<item name="beer" prob="3"/>
+		<item name="grainAlcohol"/>
+		<item name="oldCash" count="1,15"/>
+		<item name="casinoCoin" count="4,12"/>
 		<item name="antibiotics" />
 		<item name="painkillers" />
 		<item group="commonWeaponParts" prob="0.5" />
+		<item group="pistol+ammo" prob="0.1"/>
+		<item group="shotgun+ammo" prob="0.1"/>
 		<item group="tools" prob="0.1" />
 		<item name="clubIron" />
 		<item name="clubBarbed" prob="0.6" />
@@ -3039,25 +3105,25 @@
 		<item name="huntingKnife" count="1" quality="1,100" prob="0.9" />
 		<item name="machete" prob="0.8" />
 		<item name="firstAidKit" />
-		<item group="automotiveMinibike" prob="0.3" />
-		<item name="facialPiercings" prob="0.2"/>
-		<item name="bandanaBlack"/>
+		<item group="automotiveMinibike" prob="0.6" />
 	</lootcontainer>
 	<!-- lootcontainer 84 ZombieStripper -->
-	<lootcontainer id="84" count="1,4" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+	<lootcontainer id="84" count="0,3" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 		<item group="junk" prob="2" />
+		<item name="oldCash" count="4,45" prob="2"/>
+		<item name="casinoCoin" count="10,30"/>
+		<item name="cloth" count="1"/>
 		<item name="scrapPlastics" count="2" prob=".3" />
 		<item name="bloodDrawKit" prob=".3" />
 		<item group="drugs" />
 		<item name="vitamins" prob="0.5" />
 		<item name="herbalAntibiotics" prob="0.5" />
 		<item name="feather" count="5,25" />
-		<item name="oldCash" count="5,20" prob="0.75" />
 	</lootcontainer>
 	<!-- lootcontainer 85 ZombieFarmer -->
-	<lootcontainer id="85" count="1,3" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+	<lootcontainer id="85" count="0,3" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 		<item name="plantFiberHat" quality="1,100" count="1" prob="1" />
-		<item name="overalls" prob="1"/>
+		<item name="overalls" prob="0.5"/>
 		<item group="junk" prob="2" />
 		<item group="tools" prob="1" />
 		<item group="farmCrops" prob="1" />
@@ -3117,7 +3183,7 @@
 		<item name="cobweb" count="1,2" />
 	</lootcontainer>
 	<!-- FISHING -->
-	<lootcontainer id="108" count="1,2" size="4,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="baseTemplate" destroy_on_close="true">
+	<lootcontainer id="108" count="1,2" size="4,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="trashTemplate" destroy_on_close="true">
 		<item group="junk" />
 		<item name="minibikeWheels" count="1" prob="0.05" />
 		<item group="deadBody" prob=".02" />
@@ -3129,7 +3195,7 @@
 		<item name="cobweb" count="1,2" />
 	</lootcontainer>
 	<!-- Bike N A Box loot  -->
-	<lootcontainer id="111" count="1" size="3,3" destroy_on_close="true" open_time="8" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	<lootcontainer id="111" count="1" size="3,3" destroy_on_close="true" open_time="8" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="treasureTemplate">
 		<item group="BikeNABox" count="1" />
 	</lootcontainer>
 
@@ -3277,4 +3343,29 @@
 		<item group="smallUncommonWeaponParts" prob="0.09" />
 	</lootcontainer>
 	<!--END JZMOD-->
+	
+	<!-- lootcontainer 86 ZombieLibrarian -->
+	<lootcontainer id="229" count="0,3" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+		<item name="book" />
+		<item group="books" prob="0.25" />
+		<item name="nerdGlasses" prob="0.1" />
+	</lootcontainer>
+
+	<!-- lootcontainer 87 ZombieBandit -->
+	<lootcontainer id="230" count="0,3" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+		<item group="armorBandit" prob="0.2"/>
+		<item name="painkillers"/>
+		<item name="scrapPlastics" count="2" prob=".3"/>
+		<item name="oldCash" count="4,45" prob="2"/>
+		<item name="casinoCoin" count="10,30"/>
+		<item group="melee" />
+	</lootcontainer>
+
+	<!-- lootcontainer 88 ZombieCannibal -->
+	<lootcontainer id="231" count="0,3" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+		<item group="bluntmelee" prob="0.75" />
+		<item group="bladedmelee" prob="0.35" />
+		<item name="rawMeat" count="3,4"/>
+		<item name="boneShiv" prob="1"/>
+	</lootcontainer>
 </lootcontainers>

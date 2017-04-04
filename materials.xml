@@ -830,7 +830,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="stepsound" value="stone" />
 		<property name="stability_glue" value="1" />
 		<property name="Mass" type="int" value="1" />
-		<property name="MaxDamage" value="1000" />
+		<property name="MaxDamage" value="2500" />
 	</material>
 	<material id="Mcobblestone">
 		<property name="damage_category" value="stone" />
@@ -906,6 +906,18 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="explosionresistance" value="0" />
 		<property name="stepsound" value="metal" />
 		<property name="lightopacity" value="4" />
+		<property name="stability_glue" value="16" />
+		<property name="Mass" type="int" value="4" />
+		<property name="MaxDamage" value="250" />
+	</material>
+	<material id="MmechanicalParts">
+		<property name="damage_category" value="metal" />
+		<property name="surface_category" value="metal" />
+		<property name="forge_category" value="mechanicalParts" />
+		<property name="Hardness" type="float" value="1" />
+		<property name="explosionresistance" value="0" />
+		<property name="stepsound" value="metal" />
+		<property name="lightopacity" value="5" />
 		<property name="stability_glue" value="16" />
 		<property name="Mass" type="int" value="4" />
 		<property name="MaxDamage" value="250" />

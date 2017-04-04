@@ -470,7 +470,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 		<modify id="0" stat="stamina" amount="2" rate="1" />
 	</buff>
 	<!--JZMOD Dumped Drink On Head-->
-	<buff id="wetHead" duration="120t" name_key="Wet Head" type="staminaup" description_key="You dumped a drink on your head" tooltip_key="Ahh that feels good" icon="ui_game_symbol_water" stack="extend">
+	<buff id="wetHead" duration="120t" name_key="Wet Head" type="coretemp" description_key="You dumped a drink on your head" tooltip_key="Ahh that feels good" icon="ui_game_symbol_water" stack="extend">
 		<modify id="1" stat="coretemp" modifyValue="-15" />
 	</buff>
 	<!--JZMOD SCUBA GEAR-->
