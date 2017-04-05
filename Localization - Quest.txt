@@ -380,7 +380,7 @@ challenge_Ranger2_offer,,,,"Not very complex but a sharp stick in the eye will t
 challenge_Ranger2_subtitle,,,,"Park Rangers Quest-Wood Spear",,,,
 challenge_Ranger3_offer,,,,"They might not kill the zombies but they sure slow them down Craft some wooden spikes to help keep you safe. You will need to finish upgrading them with a tool and sticks once placed.",,,,
 challenge_Ranger3_subtitle,,,,"Park Rangers Quest-Wooden Spikes",,,,
-challenge_Ranger4_offer,,,,"Some times sharpe sticks dont cut it. Craft a bear trap to catch bigger game.",,,,
+challenge_Ranger4_offer,,,,"Some times sharp sticks dont cut it. Craft a bear trap to catch bigger game.",,,,
 challenge_Ranger4_subtitle,,,,"Park Rangers Quest-Bear Trap",,,,
 challenge_Ranger5_offer,,,,"You picked up a few things from a botanist that used to run experiments in the park. See if you can still craft that herbal Antibiotics it might come in handy.",,,,
 challenge_Ranger5_subtitle,,,,"Park Rangers Quest-Herbal Antibiotics",,,,
@@ -402,23 +402,6 @@ challenge_Scientist4_offer,,,,"Build up your supply of Gun Powder. You'll need i
 challenge_Scientist4_subtitle,,,,"Scientists Quest-Gun Powder",,,,
 challenge_Scientist5_offer,,,,"The world might of ended but the need for Chemist didnt. Craft up these chemical.",,,,
 challenge_Scientist5_subtitle,,,,"Scientists Quest-Refining",,,,
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+quest_getpaid,,,,"Get Paid!",,,,
+quest_getpaid_subtitle,,,,"Collect $500",,,,
+quest_getpaid_description,,,,"As long as you're still alive, there is no sense letting all this money lie around. Collect $500, and maybe you can find somewhere to spend it.",,,,

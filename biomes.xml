@@ -1190,7 +1190,7 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="block" blockname="driftwood2" prob="0.0019" rotatemax="3" />
 					<decoration type="block" blockname="smallSugarcanePlant" prob="0.04" rotatemax="3" />
 					<decoration type="block" blockname="plantedBamboo3Harvest" prob="0.009" rotatemax="3" />
-					<decoration type="block" blockname="waterPlant" prob="0.08" rotatemax="3" />
+					<decoration type="block" blockname="waterPlant" prob="0.06" rotatemax="3" />
 					<decoration type="block" blockname="sugarcanePlant" prob="0.03" rotatemax="3" />
 					<decoration type="block" blockname="treeCactus04" prob="0.0025" rotatemax="3" />
 					<decoration type="block" blockname="treeCactus05" prob="0.0025" rotatemax="3" />
@@ -1241,7 +1241,7 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="block" blockname="driftwood2" prob="0.0019" rotatemax="3" />
 					<decoration type="block" blockname="smallSugarcanePlant" prob="0.02" rotatemax="3" />
 					<decoration type="block" blockname="plantedBamboo3Harvest" prob="0.15" rotatemax="3" />
-					<decoration type="block" blockname="waterPlant" prob="0.06" rotatemax="3" />
+					<decoration type="block" blockname="waterPlant" prob="0.04" rotatemax="3" />
 					<decoration type="block" blockname="sugarcanePlant" prob="0.03" rotatemax="3" />
 					<decoration type="block" blockname="treeTallGrassDiagonal" prob="0.50" />
 				</decorations>
@@ -1301,7 +1301,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="smallSugarcanePlant" prob="0.05" rotatemax="3" />
 				<decoration type="block" blockname="plantedBamboo3Harvest" prob="0.009" rotatemax="3" />
 				<decoration type="block" blockname="sugarcanePlant" prob="0.02" rotatemax="3" />
-				<decoration type="block" blockname="waterPlant" prob="0.05" rotatemax="3" />
+				<decoration type="block" blockname="waterPlant" prob="0.03" rotatemax="3" />
 				<decoration type="block" blockname="cinderBlocks01" prob=".0002" rotatemax="7" />
 				<decoration type="block" blockname="treeMountainPineDry" prob="0.005" rotatemax="7" />
 				<decoration type="block" blockname="treeDeadShrub" prob="0.005" rotatemax="7" />

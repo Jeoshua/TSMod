@@ -1680,7 +1680,7 @@
 			<module name="biomeOutput" type="ScaleBiasOutput" >
 				<property name="sourceModule" value="biomeDither" />
 				<property name="scale" value="0.45" /> <!-- raise this for more contrasted biomes, lower for more "temperate" biomes-->
-				<property name="bias" value="0.4675" /> <!-- raise this for more "hot" biomes, lower for more "cold" biomes -->
+				<property name="bias" value="0.4475" /> <!-- raise this for more "hot" biomes, lower for more "cold" biomes -->
 			</module>
 
 			<module name="clampOutput" type="ClampOutput">
@@ -1746,7 +1746,7 @@
 		
 
 		<biome_spawn_rule name="city">
-			<terrain_generator range="128,138" />
+			<terrain_generator range="128,135" />
 		</biome_spawn_rule>
 		
 		<biome_spawn_rule name="wasteland">
@@ -1770,7 +1770,7 @@
 		</biome_spawn_rule>
 		
 		<biome_spawn_rule name="snow">
-			<terrain_generator range="138,255" />
+			<terrain_generator range="135,255" />
 		</biome_spawn_rule>
 		
 	</biome_spawn_rules>

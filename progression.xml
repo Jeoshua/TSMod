@@ -578,8 +578,17 @@
 			<recipe name="concreteMix" unlock_level="1" />
 		</perk>
 		<perk name="Cement" icon="cement1" description_key="Learn to craft cement in the forge" title_key="Cement" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="tools">
-			<requirement perk_level="1" required_player_level="25" />
+			<requirement perk_level="1" required_player_level="1" />
+			<requirement perk_level="1" required_skill_name="Primitive Crafting" required_skill_level="25" />
 			<recipe name="cement" unlock_level="1" />
+			<recipe name="brickBlock"  unlock_level="1" />
+			<recipe name="brickCNRFull"  unlock_level="1" />
+			<recipe name="brickCNRInside"  unlock_level="1" />
+			<recipe name="brickCNRRamp"  unlock_level="1" />
+			<recipe name="brickPaversBlock"  unlock_level="1" />
+			<recipe name="brickPaversStairs25"  unlock_level="1" />
+			<recipe name="brickPlate"  unlock_level="1" />
+			<recipe name="brickRamp" unlock_level="1" />
 		</perk>
 		<perk name="Cobblestones" icon="cobblestones" description_key="Learn to craft cobblestones" title_key="Cobblestones" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="tools">
 			<requirement perk_level="1" required_player_level="1" />

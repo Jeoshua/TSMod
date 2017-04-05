@@ -42,8 +42,6 @@ Forge weight: We have auto-scaling based on resources IF there is a recipe for t
 you should rename white smokestack to match the round metal corner I made
 then add recipes for those white/red/green metals
 -->
-<!-- When using "Extends", keep in mind that the block also inherits any upgrade / downgrade properties. (see XML.txt) Forge weight: We have auto-scaling based on resources IF there is a recipe for the block.  Gazz -->
-<!-- No longer used textures:  (delete?) 378 404 405 406 432 433 [17:40:15] Joel Huenink: I replaced quite a few blocks yesterday that were duplicates, however at the end I just renamed a few with the last work duplicate in their name to get past the bugs so we could bake atlases again [17:40:33] Joel Huenink: so you might bring those up to me again at some point [17:40:39] Joel Huenink: in the next 2 weeks you should rename white smokestack to match the round metal corner I made then add recipes for those white/red/green metals -->
 <blocks>
 	<block id="0" name="air">
 		<property name="Material" value="air" />
@@ -228,9 +226,9 @@ then add recipes for those white/red/green metals
 		<property class="RepairItems">
 			<property name="clayLump" value="40" />
 		</property>
-		<drop event="Harvest" name="clayLump" count="20" />
-		<drop event="Destroy" name="clayLump" count="20" prob="1.0" />
-		<drop event="Fall" name="clayLump" count="40" prob="0.5" stick_chance="0" />
+		<drop event="Harvest" name="clayLump" count="10" />
+		<drop event="Destroy" name="clayLump" count="10" prob="1.0" />
+		<drop event="Fall" name="clayLump" count="20" prob="0.5" stick_chance="0" />
 		<drop event="Fall" name="clay" count="1" prob="0.75" stick_chance="0.95" />
 		<property name="CanMobsSpawnOn" value="true" />
 		<property name="Map.Color" value="107,78,57" />
@@ -481,8 +479,8 @@ then add recipes for those white/red/green metals
 		<property name="Mesh" value="terrain" />
 		<property name="Texture" value="34" />
 		<property name="DropScale" value="2" />
-		<drop event="Destroy" name="coal" count="20" />
-		<drop event="Harvest" name="coal" count="20" />
+		<drop event="Destroy" name="coal" count="10" />
+		<drop event="Harvest" name="coal" count="10" />
 		<drop event="Fall" name="coalOre" count="1" prob=".5" stick_chance="0.95" />
 		<property name="CanMobsSpawnOn" value="true" />
 	</block>
@@ -550,8 +548,9 @@ then add recipes for those white/red/green metals
 		<drop event="Fall" name="dirtFragment" count="20" prob="0.187" stick_chance="0" />
 	</block>
 	<block id="32" name="woodDebris">
-		<property name="Material" value="wood" />
-		<property name="MaxDamage" value="30" />
+		<property name="Material" value="sticks" />
+		<property name="MaxDamage" value="250" />
+		<property name="Weight" value="10" />
 		<property name="FuelValue" value="30" />
 		<property name="Shape" value="Terrain" />
 		<property name="Mesh" value="terrain" />
@@ -860,7 +859,7 @@ then add recipes for those white/red/green metals
 	<block id="127" name="redWoodMaster">
 		<property name="Group" value="Building" />
 		<property name="DescriptionKey" value="woodFrameGroupDesc" />
-		<property name="Material" value="wood" />
+		<property name="Material" value="wood+wood" />
 		<property name="MaxDamage" value="3000" />
 		<property name="Texture" value="214" />
 		<property name="FuelValue" value="120" />
@@ -1306,11 +1305,12 @@ then add recipes for those white/red/green metals
 		<property name="LightOpacity" value="0" />
 		<property name="Group" value="Building" />
 		<property name="DescriptionKey" value="woodFrameGroupDesc" />
-		<property name="Material" value="wood_weak" />
+		<property name="Material" value="planks" />
 		<property name="Shape" value="CubeCutoutBackFaces" />
 		<property name="Mesh" value="cutout" />
 		<property name="Texture" value="381" />
-        <property name="MaxDamage" value="50" />
+        <property name="MaxDamage" value="100" />
+		<property name="Weight" value="20" />
 		<property name="IsDeveloper" value="true" />
 		<property name="Collide" value="movement,melee,rocket" />
 		<!-- -rocket -->
@@ -4816,7 +4816,7 @@ kind of free
 	<!--ID 541 Free -->
 	<block id="542" name="cntBirdnest">
 		<property name="Class" value="Loot" />
-		<property name="Material" value="wood_weak" />
+		<property name="Material" value="sticks" />
 		<property name="StabilitySupport" value="false" />
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
@@ -5168,6 +5168,7 @@ kind of free
 	</block>
 	<block id="570" name="treeMaple6m">
 		<property name="Extends" value="treeMaster" />
+		<property name="MaxDamage" value="1000" />
 		<property name="Model" value="Entities/Trees/Maple20Prefab" />
 		<property name="ModelOffset" value="0,-0.3,0" />
 		<property name="MultiBlockDim" value="1,5,1" />
@@ -5179,7 +5180,6 @@ kind of free
 	</block>
 	<block id="571" name="treeMaple13m">
 		<property name="Extends" value="treeMaster" />
-		<property name="Material" value="treeWoodMedium" />
 		<property name="Model" value="Entities/Trees/Maple30Prefab" />
 		<property name="ModelOffset" value="0,-0.3,0" />
 		<property name="MultiBlockDim" value="1,7,1" />
@@ -14158,7 +14158,7 @@ kind of free
 		<property name="LootList" value="10" />
 		<property name="Texture" value="422" />
 	</block>
-	<!--<block id="67" name="StorageSack">
+	<block id="67" name="StorageSack">
 		<property name="Extends" value="cntStorageHealthInsecure" />
 		<property name="Material" value="cloth" />
 		<property name="Shape" value="ModelEntity" />
@@ -14179,7 +14179,7 @@ kind of free
         <drop event="Harvest" name="doorKnob" count="0" prob="1" tool_category="Disassemble" />
 		<drop event="Destroy" name="cloth" count="2,10" prob="1" />
 		<drop event="Fall" name="woodDebris" count="0" prob="1" stick_chance="1" />
-	</block>-->
+	</block>
 	<!--JZMOD BLOCKS-->
 	<block id="68" name="BonesPrefab">
 		<property name="Material" value="organic" />
@@ -17174,13 +17174,13 @@ kind of free
 		<drop event="Destroy" name="scrapIron" count="1" prob="1.0" />
 		<drop event="Fall" name="scrapIron" count="1" prob="1.0" />
 	</block>
-	<!--<block id="1752" name="ammoDrop">
+	<block id="1752" name="ammoDrop">
 		<property name="Class" value="Loot" />
 		<property name="LootList" value="50" />
 		<property name="Material" value="metal" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#hflnew?ammunationBagSmall" />
-	</block>-->
+	</block>
 	<block id="1774" name="MedicalBox">
 		<property name="Material" value="metal" />
 		<property name="Shape" value="ModelEntity" />

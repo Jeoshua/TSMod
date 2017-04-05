@@ -51,7 +51,7 @@ Alternative settings for custom quest creation:
 		<reward type="Quest" id="quest_BasicSurvival21" />
 		<reward type="Exp" value="200" />
 		<reward type="ShowTip" value="skillPointTip" stage="aftercomplete" />
-		<reward type="Quest" id="quest_whiteRiverCitizen1" stage="aftercomplete"/>
+		<reward type="Quest" id="quest_getpaid" stage="aftercomplete"/>
 		<reward type="SkillPoints" value="10" />
 	</quest>
 	<!-- Basic Survival 2 - Craft Fiber Rope /> -->
@@ -117,7 +117,6 @@ Alternative settings for custom quest creation:
 	</quest>
 	<!-- Basic Survival 10 - Craft Bed Roll /> -->
 	<quest id="quest_BasicSurvival10" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival10" subtitle_key="quest_BasicSurvival10_subtitle" description_key="quest_BasicSurvival10_description" icon="ui_game_symbol_map_bed" category_key="Quest">
-		<objective type="FetchKeep" id="cloth" value="10" />
 		<objective type="Craft" id="bedroll" value="1" />
 		<objective type="BlockPlace" id="bedroll" value="1" />
 		<reward type="Exp" value="200" />
@@ -205,6 +204,10 @@ Alternative settings for custom quest creation:
 		<objective type="FetchKeep" id="leather" value="4" />
 		<reward type="Exp" value="200" />
 		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="quest_getpaid" group_name_key="quest_getpaid" name_key="quest_getpaid" subtitle_key="quest_getpaid_subtitle" description_key="quest_getpaid_description" icon="ui_game_symbol_money" category_key="Quest">
+		<objective type="FetchKeep" id="oldCash" value="500" />
+		<reward type="Quest" id="quest_WhiteRiverCitizen1" />
 	</quest>
 	<!-- White River Citizen 1 - Journey to Settlement -->
 	<quest id="quest_whiteRiverCitizen1" group_name_key="quest_WhiteRiverCitizen" name_key="quest_WhiteRiverCitizen1" subtitle_key="quest_WhiteRiverCitizen1_subtitle" description_key="quest_WhiteRiverCitizen1_description" icon="ui_game_symbol_map_trader" category_key="Quest">

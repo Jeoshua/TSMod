@@ -365,8 +365,9 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item group="weeklyMags" prob="0.1" />
 		</trader_item_group>
 		<trader_item_group name="SuperRareBooks" count="1">
-			<item name="ak47Schematic" count="1" prob="0.4" />
-			<item name="smgSchematics" count="1" prob="0.4" />
+			<item name="AssaultRifleSchematics" count="1" prob="0.4" />
+			<item name="AdvAssaultRifleSchematics" count="1" prob="0.4" />
+			<item name="SubMachineGunSchematics" count="1" prob="0.4" />
 			<item name="theEnforcerMagazine" count="1" prob="0.5" />
 			<item name="pumpShotgunSchematic" count="1" prob="0.7" />
 			<item name="sniperRifleSchematic" count="1" prob="0.4" />

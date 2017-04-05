@@ -419,7 +419,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<buff id="eatFood_19_Trigger" duration="1" actions="increment(CTRfood, 19, 0, 0, 1)" />
 	<buff id="eatFood_20_Trigger" duration="1" actions="increment(CTRfood, 20, 0, 0, 1)" />
 	<buff id="eatFood_26_Trigger" duration="1" actions="increment(CTRfood, 26, 0, 0, 1)" />
-	<buff id="metabolizeFoodBuff" buffif="CTRfood > 0" debuffif="CTRfood lequal 0" actions="increment(CTRfood, -1, 1, 0, 0);min(CTRfood, 0)"/>
+	<buff id="metabolizeFoodBuff" buffif="CTRfood > 0" debuffif="CTRfood lequal 0" actions="increment(CTRfood, -1, 5t, 0, 0);min(CTRfood, 0)"/>
 	<buff id="fullBuff" mutex="bleeding" buffif="CTRfood > 0" debuffif="CTRfood lequal 0" icon="ui_game_symbol_natural_healing" name_key="fullBuff" description_key="fullBuffDesc" tooltip_key="fullBuffTooltip">
 		<modify id="0" stat="health" amount="1" rate="1" />
 	</buff>
@@ -454,7 +454,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<buff id="stuffed12" duration="1" actions="increment(stuffed, 12, 0, 0, 1)" />
 	<buff id="stuffed16" duration="1" actions="increment(stuffed, 16, 0, 0, 1)" />
 	<buff id="stuffed18" duration="1" actions="increment(stuffed, 18, 0, 0, 1)" />
-	<buff id="stuffedFade" buffif="stuffed greater 0" debuffif="stuffed less 1" actions="increment(stuffed, -2, 100t, 0, 0);min(stuffed, 0)" />
+	<buff id="stuffedFade" buffif="stuffed greater 0" debuffif="stuffed less 1" actions="increment(stuffed, -1, 50t, 0, 0);min(stuffed, 0)" />
 	<buff id="overStuffed" name_key="OverStuffed" buffif="stuffed gequal 80" debuffif="stuffed lequal 79" type="speedmodifier" description_key="You have gorged yourself to the point you can barely move" tooltip_key="Your stuffed" icon="stuffed">
 		<modify id="0" stat="speedmodifier" mulValue="0.4" />
 	</buff>

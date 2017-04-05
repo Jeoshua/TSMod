@@ -1191,11 +1191,12 @@ Mesh files no longer used:
 			<property name="DamageBlock" value="1" />
 			<property name="Stamina_usage" value="3" />
 			<property name="DamageBonus.head" value="2" />
-			<property name="DamageBonus.organic" value="5" />
-			<property name="DamageBonus.metal" value="0" />
+			<property name="DamageBonus.organic" value="3" />
+			<property name="DamageBonus.earth" value="3" />
+			<property name="DamageBonus.metal" value="0.5" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="Buff" value="criticalBlunt,headshotMelee1" />
-			<property name="Buff_chance" value="0.05,0.25" />
+			<property name="Buff_chance" value="0.05,0.2" />
 			<property name="ToolCategory.Farm" value="1" />
 		</property>
 		<property class="Action1">
@@ -1888,7 +1889,7 @@ Mesh files no longer used:
 		<property class="Attributes">
 			<property name="EntityDamage" value="4,8" />
 			<property name="BlockDamage" value="10,50" />
-			<property name="DegradationMax" value="50,600" />
+			<property name="DegradationMax" value="100,600" />
 			<property name="DegradationRate" value="5,1" />
 		</property>
 		<property name="Group" value="Tools/Traps,Basics" />
@@ -9500,7 +9501,7 @@ Mesh files no longer used:
 	<item id="1435" name="casinoCoin">
 		<property name="Meshfile" value="Items/Misc/casino_coinPrefab" />
 		<property name="Material" value="brass" />
-		<property name="Weight" value="5" />
+		<property name="Weight" value="2" />
 		<property name="HoldType" value="21" />
 		<property name="Stacknumber" value="20000" />
 		<!-- STK resource -->
@@ -11488,7 +11489,7 @@ Mesh files no longer used:
 		<property class="Attributes">
 			<property name="EntityDamage" value="3,9" />
 			<property name="BlockDamage" value="1,3" />
-			<property name="DegradationMax" value="25,150" />
+			<property name="DegradationMax" value="50,150" />
 			<property name="DegradationRate" value="10,1" />
 			<property name="DismembermentBaseChance" value="0,0.01" />
 			<property name="DismembermentBonus" value="0,0.00001" />

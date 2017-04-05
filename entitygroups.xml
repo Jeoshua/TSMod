@@ -165,7 +165,6 @@
 		<entity name="Joe7" />
 		
 		<entity name="ZombieFemaleFatUMA" prob="0.5"/>
-		<entity name="ZombieSoldier" prob="0.2"/>
 		<entity name="ZombieUtilityWorker" prob="0.5"/>
 		<entity name="ZombieMiner" prob="0.5"/>
 		<entity name="ZombieFootballPlayer" prob="0.3"/>
@@ -173,10 +172,7 @@
 		<entity name="ZombieCheerleader" prob="0.5"/>
 		<entity name="zombieOldTimer" prob="0.5"/>
 		<entity name="ZombieBiker" prob="0.5"/>
-		<entity name="ZombieFarmer" prob="0.5"/>  
-		<entity name="ZombieStripper" prob="0.5"/>
-   		<entity name="zombieMaleHazmat" prob="0.5"/>
-		<entity name="zombieFemaleHazmat" prob="0.5"/>
+		<entity name="ZombieFarmer" prob="0.5"/>
 		<entity name="ZombieMaleUMA" prob="0.5"/>
 		<entity name="ZombieFemaleUMA" prob="0.5"/>
 
@@ -185,7 +181,6 @@
 		<entity name="ZombieTrucker" prob="0.5"/>
 		<entity name="ZombieKenny" prob="0.5"/>
 		<entity name="ZombieTallman" prob="0.2"/>
-		<entity name="ZombieRavager" prob="0.3"/>
 		<entity name="ZombieNerd" prob="0.5"/>
 		<entity name="ZombieOfficeGirl" prob="0.5"/>
 		<entity name="ZombieInmate" prob="0.5"/>
@@ -223,22 +218,12 @@
 		<entity name="ZombieOldMan" prob="0.5"/>
 		<entity name="ZombieCripple" prob="0.5"/>
 		<entity name="ZombieCpl" prob="0.2"/>
-		<entity name="ZombieClown" prob="0.5"/>
 		<entity name="ZombieFiend" prob="0.5"/>
 		<entity name="ZombieVagrant" prob="0.5"/>
-		<entity name="ZombieBanditRaider" prob="0.5"/>
-		<entity name="ZombieBanditLooter" prob="0.5"/>
-		<entity name="ZombieBanditSavage" prob="0.5"/>
-		<entity name="ZombieBanditKiller" prob="0.5"/>
 		<entity name="ZombieBodyBuilder" prob="0.5"/>
-		<entity name="ZombieMarkHazmat" prob="0.5"/>
-		<entity name="ZombieMitchHazmat" prob="0.5"/>
 		<entity name="TrailerParkZombie" prob="0.5"/>
 		<entity name="ZombieHunter" prob="0.5"/>
-		<entity name="ZombieReaper" prob="0.5"/>		
 		<entity name="ZombieBanditSentry" prob="0.5"/>
-		<entity name="ZombieCannibalMale" prob="0.5"/>
-		<entity name="ZombieCannibalFemale" prob="0.5"/>
 		<entity name="ZombieHermit" prob="0.5"/>
 		<entity name="ZombieFrank" prob="0.5"/>
 		<entity name="ZombieFreak" prob="0.5"/>
@@ -333,8 +318,6 @@
 		<entity name="ZombieBiker" prob="0.5"/>
 		<entity name="ZombieFarmer" prob="0.5"/>  
 		<entity name="ZombieStripper" prob="0.5"/>
-   		<entity name="zombieMaleHazmat" prob="0.5"/>
-		<entity name="zombieFemaleHazmat" prob="0.5"/>
 		<entity name="ZombieMaleUMA" prob="0.5"/>
 		<entity name="ZombieFemaleUMA" prob="0.5"/>
 
@@ -383,23 +366,14 @@
 		<entity name="ZombieRioter" prob="0.5"/>
 		<entity name="ZombieRocker" prob="0.5"/>
 		<entity name="ZombieFemaleRocker" prob="0.5"/>
-		<entity name="ZombieSueHazmat" prob="0.5"/>
-		<entity name="ZombieClaireHazmat" prob="0.5"/>
 		<entity name="ZombieOldLady" prob="0.5"/>
 		<entity name="ZombieEvilGranny" prob="0.5"/>
 		<entity name="ZombieOldMan" prob="0.5"/>
 		<entity name="ZombieCripple" prob="0.5"/>
 		<entity name="ZombieCpl" prob="0.2"/>
-		<entity name="ZombieClown" prob="0.5"/>
 		<entity name="ZombieFiend" prob="0.5"/>
 		<entity name="ZombieVagrant" prob="0.5"/>
-		<entity name="ZombieBanditRaider" prob="0.5"/>
-		<entity name="ZombieBanditLooter" prob="0.5"/>
-		<entity name="ZombieBanditSavage" prob="0.5"/>
-		<entity name="ZombieBanditKiller" prob="0.5"/>
 		<entity name="ZombieBodyBuilder" prob="0.5"/>
-		<entity name="ZombieMarkHazmat" prob="0.5"/>
-		<entity name="ZombieMitchHazmat" prob="0.5"/>
 		<entity name="TrailerParkZombie" prob="0.5"/>
 		<entity name="ZombieHunter" prob="0.5"/>
 		<entity name="ZombieReaper" prob="0.5"/>
