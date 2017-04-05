@@ -20,16 +20,16 @@
 	</biome>
 	<!-- Gravestown & Perishton-->
 	<biome name="city_wasteland">
-		<spawn maxcount="5" respawndelay="1" time="Day" entitygroup="ZombiesAll" />
+		<spawn maxcount="4" respawndelay="1" time="Day" entitygroup="ZombiesAll" />
 		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="ZombiesBoss" />
-		<spawn maxcount="6" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
+		<spawn maxcount="4" respawndelay="0" time="Night" entitygroup="ZombiesWastelandNight" />
 		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="RadZoneAnimalGrp" spawnDeadChance="0" />
 		<spawn maxcount="1" respawndelay="7" time="Any" entitygroup="AnimalsSmall" spawndeadchance="0.9" />
         <spawn maxcount="1" respawndelay="20" time="Any" entitygroup="ArmedSurvivorGroup" />
     </biome>
 	<!-- Random gen city-->
 	<biome name="wasteland_hub">
-		<spawn maxcount="5" respawndelay="0" time="Day" entitygroup="ZombiesWasteland" />
+		<spawn maxcount="4" respawndelay="1" time="Day" entitygroup="ZombiesWasteland" />
 		<spawn maxcount="5" respawndelay="0" time="Night" entitygroup="ZombiesWastelandNight" />
 		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="ZombiesBoss" />
 		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="RadZoneAnimalGrp" spawndeadchance="0.1" />
@@ -80,7 +80,7 @@
         <spawn maxcount="1" respawndelay="20" time="Any" entitygroup="ArmedSurvivorGroup" />
     </biome>
 	<biome name="snow">
-		<spawn maxcount="3" respawndelay="3" time="Any" entitygroup="SnowZombies" />
+		<spawn maxcount="2" respawndelay="3" time="Any" entitygroup="SnowZombies" />
 		<spawn maxcount="2" respawndelay="3" time="Night" entitygroup="SnowZombies" />
 		<spawn maxcount="2" respawndelay="3" time="Night" entitygroup="ZombiesNight" />
 		<spawn maxcount="1" respawndelay="14" time="Any" entitygroup="AnimalsSnow" spawndeadchance="0.05" />

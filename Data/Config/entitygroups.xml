@@ -1501,13 +1501,13 @@
 		<entity name="snowzombie" prob="0.3" />
 		<entity name="ZombieLumberjack" prob="0.8"/>
 		<entity name="ZombieSeryphSnow" prob="0.5"/>
-		<entity name="ZombieHermit" prob="0.8"/>
+		<entity name="ZombieHermit" prob="0.3"/>
 		<entity name="ZombieBeth" prob="0.5"/>
 		<entity name="ZombieCur" prob="0.5"/>
 		<entity name="ZombieHugh" prob="0.5"/>
-		<entity name="ZombieHunter" prob="0.8"/>
+		<entity name="ZombieHunter" prob="0.5"/>
 		<entity name="ZombiePsycho" prob="0.5"/>
-		<entity name="ZombieHunter2" prob="0.8"/>
+		<entity name="ZombieHunter2" prob="0.5"/>
 		<entity name="ZombieFrozen" prob="1"/>
 		<entity name="SnowZombieLarry" prob="1"/>
 		<entity name="SnowZombieSarah" prob="1"/>
