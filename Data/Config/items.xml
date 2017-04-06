@@ -13631,10 +13631,10 @@ Mesh files no longer used:
 		<property name="CustomIcon" value="blockbook" />
 		<property name="Group" value="Books" />
 	</item>
-	<item id="1736" name="Wielder Book">
+	<item id="1736" name="Welder Book">
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
-			<property name="Recipes_to_learn" value="Wielder" />
+			<property name="Recipes_to_learn" value="Welder" />
 		</property>
 		<property name="CustomIcon" value="Advanced Wielding" />
 		<property name="DescriptionKey" value="SkillBookDesc" />
@@ -16392,12 +16392,12 @@ Mesh files no longer used:
 		<property name="DescriptionKey" value="LeatherNeedleDesc" />
 		<property name="CraftingSkillGroup" value="Miscellaneous Crafting" />
 	</item>
-	<item id="1992" name="Wielder">
+	<item id="1992" name="Welder">
 		<property name="Extends" value="itemMaster" />
 		<property name="Material" value="metal" />
 		<property name="Stacknumber" value="1" />
 		<property name="Weight" value="60" />
-		<property name="DescriptionKey" value="WielderDesc" />
+		<property name="DescriptionKey" value="WelderDesc" />
 		<property name="CraftingSkillGroup" value="Engineering" />
 	</item>
 	<item id="1993" name="FryingPan">

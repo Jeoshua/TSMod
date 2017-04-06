@@ -1021,7 +1021,7 @@
 			<recipe name="ironHelmet" unlock_level="1" />
 			<recipe name="ironLegArmor" unlock_level="1" />
 		</perk>
-		<perk name="Steel Armor" icon="SteelChestArmor" description_key="Learn to craft Steel Armor on the armor table using a Wielder." title_key="Steel Armor" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="clothing">
+		<perk name="Steel Armor" icon="SteelChestArmor" description_key="Learn to craft Steel Armor on the armor table using a Welder." title_key="Steel Armor" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="clothing">
 			<requirement perk_level="1" required_skill_name="Armor Smithing" required_skill_level="1" />
 			<requirement perk_level="1" required_player_level="50" />
 			<recipe name="SteelGauntlets" unlock_level="1" />
@@ -1315,13 +1315,13 @@
 			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="3" />
 			<recipe name="doorKnob" unlock_level="1" />
 		</perk>
-		<perk name="Scrap Iron Gates" icon="ironDoor1_v1" description_key="Learn to craft Iron Doors on the metal working bench using a Wielder" title_key="Iron Gates" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="crafting">
+		<perk name="Scrap Iron Gates" icon="ironDoor1_v1" description_key="Learn to craft Iron Doors on the metal working bench using a Welder" title_key="Iron Gates" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="crafting">
 			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="5" />
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="Scrap_Iron_Gate_2x3" unlock_level="1" />
 			<recipe name="Scrap_Iron_Gate_3x2" unlock_level="1" />
 		</perk>
-		<perk name="Scrap Iron Shutters" icon="ironDoor1_v1" description_key="Learn to craft Iron Doors on the metal working bench using a Wielder" title_key="Iron Shutters" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="crafting">
+		<perk name="Scrap Iron Shutters" icon="ironDoor1_v1" description_key="Learn to craft Iron Doors on the metal working bench using a Welder" title_key="Iron Shutters" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="crafting">
 			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="5" />
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="Scrap_Iron_Shutters" unlock_level="1" />
@@ -1358,7 +1358,7 @@
 			<recipe name="metalTrussingBlock" unlock_level="1" />
 			<recipe name="metalTrussingRamp" unlock_level="1" />
 		</perk>
-		<perk name="Concrete Draw Bridge" icon="MetalTrussing" description_key="Learn to craft a concrete draw bridge on the metal working bench using the Wielder" title_key="Concrete Draw Bridge" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
+		<perk name="Concrete Draw Bridge" icon="MetalTrussing" description_key="Learn to craft a concrete draw bridge on the metal working bench using the Welder" title_key="Concrete Draw Bridge" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
 			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="45" />
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="drawBridge" unlock_level="1" />
@@ -1366,7 +1366,7 @@
         <perk name="MethaneProducer" icon="biogasDigester" description_key="Learn to craft a Methane gas producer on the metal working bench and use it to craft methane gas bombs." title_key="Methane Gas Bombs" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
 			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="45" />
 			<requirement perk_level="1" required_player_level="25" />
-			<recipe name="biogasDigester" unlock_level="1" />
+			<recipe name="workBiogasDigester" unlock_level="1" />
             <recipe name="gasTankEmpty" unlock_level="1" />
 		</perk>
         <perk name="Small Elevator" icon="MetalTrussing" description_key="Learn to craft a small elevator on the metal working bench using a Compact Driver" title_key="Small Elevator" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
@@ -1451,18 +1451,18 @@
 			<requirement perk_level="1" required_player_level="60" />
 			<recipe name="garageDoorRolling" unlock_level="1" />
 		</perk>
-		<perk name="Steel Vault Door" icon="VaultDoor01" description_key="Learn to craft Steel Vault Doors on the metal working bench using the Wielder" title_key="Steel Vault Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
+		<perk name="Steel Vault Door" icon="VaultDoor01" description_key="Learn to craft Steel Vault Doors on the metal working bench using the Welder" title_key="Steel Vault Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
 			<requirement perk_level="1" required_skill_name="Master Craftsman" required_skill_level="3" />
 			<requirement perk_level="1" required_player_level="75" />
 			<recipe name="vaultDoor01" unlock_level="1" />
 		</perk>
-		<!--<perk name="Steel Gun Safe" icon="GunSafe" description_key="Learn to craft The Steel Gun Safe on the metal work bench using the Wielder. these are the strongest secure storage container you can make" title_key="Steel Gun Safe" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
+		<!--<perk name="Steel Gun Safe" icon="GunSafe" description_key="Learn to craft The Steel Gun Safe on the metal work bench using the Welder. these are the strongest secure storage container you can make" title_key="Steel Gun Safe" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
 			<requirement perk_level="1" required_skill_name="Master Craftsman" required_skill_level="5" />
 			<requirement perk_level="1" required_player_level="60" />
 			<recipe name="cntSteelGunSafe" unlock_level="1" />
 			<recipe name="cntSteelGunSafeB" unlock_level="1" />
 		</perk>-->
-        <perk name="LargeGenerator" icon="bigGenerator" description_key="Learn to craft a Large Generator on the metal working bench using the Wielder. Use it to power traps, lights and work benches more effeicently." title_key="Large Generator" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="crafting">
+        <perk name="LargeGenerator" icon="bigGenerator" description_key="Learn to craft a Large Generator on the metal working bench using the Welder. Use it to power traps, lights and work benches more effeicently." title_key="Large Generator" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="crafting">
 			<requirement perk_level="1" required_skill_name="Master Craftsman" required_skill_level="5" />
 			<requirement perk_level="1" required_player_level="75" />
 			<recipe name="bigGenerator" unlock_level="1" />

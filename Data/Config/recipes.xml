@@ -1213,7 +1213,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="mechanicalParts" count="1" />
 		<ingredient name="doorKnob" count="1" />
 	</recipe>
-	<recipe name="keystoneSteel" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="60" craft_exp_gain="100">
+	<recipe name="keystoneSteel" count="1" craft_area="workMetalWorkBench" craft_tool="Welder" craft_time="60" craft_exp_gain="100">
 		<ingredient name="forgedSteel" count="10" />
 		<ingredient name="forgedIron" count="10" />
 		<ingredient name="radiated" count="10" />
@@ -1668,19 +1668,19 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="scrapIronFrameBlock" count="1" />
 		<ingredient name="scrapIron" count="25" />
 	</recipe>
-	<recipe name="greenMetalRamp" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="5" craft_exp_gain="5">
+	<recipe name="greenMetalRamp" count="1" craft_area="workMetalWorkBench" craft_tool="Welder" craft_time="5" craft_exp_gain="5">
 		<ingredient name="scrapIronFrameBlock" count="1" />
 	</recipe>
-	<recipe name="greenMetalBlock" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="5" craft_exp_gain="5">
+	<recipe name="greenMetalBlock" count="1" craft_area="workMetalWorkBench" craft_tool="Welder" craft_time="5" craft_exp_gain="5">
 		<ingredient name="scrapIronFrameBlock" count="1" />
 	</recipe>
-	<recipe name="greenMetalCNRFull" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="5" craft_exp_gain="5">
+	<recipe name="greenMetalCNRFull" count="1" craft_area="workMetalWorkBench" craft_tool="Welder" craft_time="5" craft_exp_gain="5">
 		<ingredient name="scrapIronFrameBlock" count="1" />
 	</recipe>
-	<recipe name="greenMetalWedge" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="5" craft_exp_gain="5">
+	<recipe name="greenMetalWedge" count="1" craft_area="workMetalWorkBench" craft_tool="Welder" craft_time="5" craft_exp_gain="5">
 		<ingredient name="scrapIronFrameBlock" count="1" />
 	</recipe>
-	<recipe name="greenMetalWedgeTip" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="5" craft_exp_gain="5">
+	<recipe name="greenMetalWedgeTip" count="1" craft_area="workMetalWorkBench" craft_tool="Welder" craft_time="5" craft_exp_gain="5">
 		<ingredient name="scrapIronFrameBlock" count="1" />
 	</recipe>
 	<recipe name="secureDoorWooden" count="1" craft_time="10" craft_exp_gain="10">
@@ -1810,13 +1810,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="SetUpASpikeTrap" count="1" craft_time="15" craft_exp_gain="5">
 		<ingredient name="stick" count="10" />
 	</recipe>
-	<recipe name="vaultDoor01" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="20" craft_exp_gain="100">
+	<recipe name="vaultDoor01" count="1" craft_area="workMetalWorkBench" craft_tool="Welder" craft_time="20" craft_exp_gain="100">
 		<ingredient name="forgedSteel" count="12" />
 		<ingredient name="spring" count="4" />
 		<ingredient name="NutAndBolt" count="10" />
 		<ingredient name="mechanicalParts" count="2" />
 	</recipe>
-	<recipe name="vaultHatch_v1" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="20" craft_exp_gain="100">
+	<recipe name="vaultHatch_v1" count="1" craft_area="workMetalWorkBench" craft_tool="Welder" craft_time="20" craft_exp_gain="100">
 		<ingredient name="forgedSteel" count="12" />
 		<ingredient name="spring" count="4" />
 		<ingredient name="mechanicalParts" count="1" />
@@ -2217,7 +2217,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="ductTape" count="4" />
 		<ingredient name="spring" count="2" />
 	</recipe>
-	<recipe name="bigGenerator" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="300" craft_exp_gain="250">
+	<recipe name="bigGenerator" count="1" craft_area="workMetalWorkBench" craft_tool="Welder" craft_time="300" craft_exp_gain="250">
 		<ingredient name="bigGeneratorFrame" count="1" />
 		<ingredient name="smallEngine" count="4" />
 		<ingredient name="forgedIron" count="100" />
@@ -2226,7 +2226,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="electronicParts" count="15" />
 		<ingredient name="electricParts" count="10" />
 	</recipe>
-	<recipe name="bigGeneratorFrame" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="300" craft_exp_gain="50">
+	<recipe name="bigGeneratorFrame" count="1" craft_area="workMetalWorkBench" craft_tool="Welder" craft_time="300" craft_exp_gain="50">
 		<ingredient name="NutAndBolt" count="50" />
 		<ingredient name="forgedIron" count="100" />
 		<ingredient name="scrapBrass" count="25" />
@@ -2471,7 +2471,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="clubSpiked" count="1" />
 		<ingredient name="shortSteelPipe" count="10" />
 	</recipe>
-	<!--<recipe name="cntSteelGunSafe" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="30" craft_exp_gain="50">
+	<!--<recipe name="cntSteelGunSafe" count="1" craft_area="workMetalWorkBench" craft_tool="Welder" craft_time="30" craft_exp_gain="50">
 		<ingredient name="forgedSteel" count="20" />
 		<ingredient name="spring" count="5" />
 		<ingredient name="mechanicalParts" count="5" />
@@ -2649,7 +2649,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="partsDoubleBarrel_barrel" count="1" />
 		<ingredient name="partsPumpShotgun_stock" count="1" />
 	</recipe>
-	<recipe name="drawBridge" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="300" craft_exp_gain="500">
+	<recipe name="drawBridge" count="1" craft_area="workMetalWorkBench" craft_tool="Welder" craft_time="300" craft_exp_gain="500">
 		<ingredient name="forgedIron" count="100" />
 		<ingredient name="Plank" count="2000" />
 		<ingredient name="spring" count="20" />
@@ -2674,7 +2674,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="ElectricianProfession" count="1" craft_area="workResearchDesk" craft_time="30" craft_exp_gain="1000">
 		<ingredient name="ProfessionPage" count="20" />
 	</recipe>
-	<recipe name="electricParts" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="5" craft_exp_gain="5">
+	<recipe name="electricParts" count="1" craft_area="workMetalWorkBench" craft_tool="Welder" craft_time="5" craft_exp_gain="5">
 		<ingredient name="scrapLead" count="5" />
 		<ingredient name="scrapPlastics" count="2" />
 		<ingredient name="goldNugget" count="1" />
@@ -2690,7 +2690,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
         <ingredient name="ductTape" count="3" />
 		<ingredient name="MeltedRubber" count="3" />
 	</recipe>
-	<recipe name="electronicParts" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="5" craft_exp_gain="5">
+	<recipe name="electronicParts" count="1" craft_area="workMetalWorkBench" craft_tool="Welder" craft_time="5" craft_exp_gain="5">
 		<ingredient name="scrapLead" count="5" />
 		<ingredient name="scrapPlastics" count="2" />
 		<ingredient name="goldNugget" count="2" />
@@ -2715,7 +2715,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="Engineering2" count="1" craft_time="10" craft_exp_gain="1000">
 		<ingredient name="Engineering Monthly" count="1" />
 	</recipe>
-	<recipe name="Exhaust" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="30" craft_exp_gain="10">
+	<recipe name="Exhaust" count="1" craft_area="workMetalWorkBench" craft_tool="Welder" craft_time="30" craft_exp_gain="10">
 		<ingredient name="shortMetalPipe" count="12" />
 		<ingredient name="forgedIron" count="1" />
 		<ingredient name="scrapLead" count="5" />
@@ -3024,7 +3024,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
         <ingredient name="turd" count="2" />
         <ingredient name="rottingFlesh" count="10" />
 	</recipe>
-	<recipe name="gasTankEmpty" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="10" craft_exp_gain="10">
+	<recipe name="gasTankEmpty" count="1" craft_area="workMetalWorkBench" craft_tool="Welder" craft_time="10" craft_exp_gain="10">
 		<ingredient name="scrapLead" count="5" />
 		<ingredient name="scrapBrass" count="1" />
 		<ingredient name="tallow" count="1" />
@@ -3450,16 +3450,16 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="Metal WorkerProfession" count="1" craft_area="workResearchDesk" craft_time="30" craft_exp_gain="1000">
 		<ingredient name="ProfessionPage" count="20" />
 	</recipe>
-	<recipe name="metalPipeStraight" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="5" craft_exp_gain="5">
+	<recipe name="metalPipeStraight" count="1" craft_area="workMetalWorkBench" craft_tool="Welder" craft_time="5" craft_exp_gain="5">
 		<ingredient name="scrapIron" count="15" />
 	</recipe>
-	<recipe name="metalPipeCorner" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="5" craft_exp_gain="5">
+	<recipe name="metalPipeCorner" count="1" craft_area="workMetalWorkBench" craft_tool="Welder" craft_time="5" craft_exp_gain="5">
 		<ingredient name="scrapIron" count="15" />
 	</recipe>
-	<recipe name="metalPipeJoint" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="5" craft_exp_gain="5">
+	<recipe name="metalPipeJoint" count="1" craft_area="workMetalWorkBench" craft_tool="Welder" craft_time="5" craft_exp_gain="5">
 		<ingredient name="scrapIron" count="15" />
 	</recipe>
-	<recipe name="metalPipeFlange" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="5" craft_exp_gain="5">
+	<recipe name="metalPipeFlange" count="1" craft_area="workMetalWorkBench" craft_tool="Welder" craft_time="5" craft_exp_gain="5">
 		<ingredient name="scrapIron" count="15" />
 	</recipe>
 	<recipe name="MG4" count="1" craft_area="assembly">
@@ -3569,7 +3569,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="Park RangerProfession" count="1" craft_area="workResearchDesk" craft_time="30" craft_exp_gain="1000">
 		<ingredient name="ProfessionPage" count="20" />
 	</recipe>
-    <recipe name="partsAuger_bladeDiamond" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="300" craft_exp_gain="30">
+    <recipe name="partsAuger_bladeDiamond" count="1" craft_area="workMetalWorkBench" craft_tool="Welder" craft_time="300" craft_exp_gain="30">
 		<ingredient name="partsAuger_blade" count="1" />
 		<ingredient name="rawDiamond" count="100" />
 		<ingredient name="crushedSand" count="500" />
@@ -3796,14 +3796,14 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="NutAndBolt" count="4" />
 		<ingredient name="scrapHelmet" count="1" />
 	</recipe>
-	<recipe name="Scrap_Iron_Gate_2x3" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="10" craft_exp_gain="10">
+	<recipe name="Scrap_Iron_Gate_2x3" count="1" craft_area="workMetalWorkBench" craft_tool="Welder" craft_time="10" craft_exp_gain="10">
 		<ingredient name="forgedIron" count="50" />
 		<ingredient name="scrapLead" count="5" />
 		<ingredient name="mechanicalParts" count="1" />
 		<ingredient name="scrapBrass" count="10" />
 		<ingredient name="spring" count="2" />
 	</recipe>
-	<recipe name="Scrap_Iron_Gate_3x2" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="10" craft_exp_gain="10">
+	<recipe name="Scrap_Iron_Gate_3x2" count="1" craft_area="workMetalWorkBench" craft_tool="Welder" craft_time="10" craft_exp_gain="10">
 		<ingredient name="forgedIron" count="50" />
 		<ingredient name="scrapLead" count="5" />
 		<ingredient name="mechanicalParts" count="1" />
@@ -3816,7 +3816,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="NutAndBolt" count="10" />
 		<ingredient name="scrapCable" count="5" />
 	</recipe>
-	<recipe name="Scrap_Iron_Shutters2" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="10" craft_exp_gain="10">
+	<recipe name="Scrap_Iron_Shutters2" count="1" craft_area="workMetalWorkBench" craft_tool="Welder" craft_time="10" craft_exp_gain="10">
 		<ingredient name="forgedIron" count="50" />
 		<ingredient name="scrapLead" count="5" />
 		<ingredient name="mechanicalParts" count="1" />
@@ -4044,14 +4044,14 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="cloth" count="10" />
 		<ingredient name="FiberRope" count="4" />
 	</recipe>
-	<recipe name="SteelBoots" count="1" craft_area="workArmorTable" craft_tool="Wielder" craft_time="120" craft_exp_gain="100">
+	<recipe name="SteelBoots" count="1" craft_area="workArmorTable" craft_tool="Welder" craft_time="120" craft_exp_gain="100">
 		<ingredient name="forgedSteel" count="8" />
 		<ingredient name="FiberRope" count="6" />
 		<ingredient name="cloth" count="10" />
 		<ingredient name="glue" count="2" />
 		<ingredient name="MeltedRubber" count="2" />
 	</recipe>
-	<recipe name="SteelChestArmor" count="1" craft_area="workArmorTable" craft_tool="Wielder" craft_time="120" craft_exp_gain="100">
+	<recipe name="SteelChestArmor" count="1" craft_area="workArmorTable" craft_tool="Welder" craft_time="120" craft_exp_gain="100">
 		<ingredient name="forgedSteel" count="11" />
 		<ingredient name="leather" count="5" />
 		<ingredient name="ductTape" count="2" />
@@ -4060,13 +4060,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="unit_steel" count="100" />
 		<ingredient name="unit_clay" count="5" />
 	</recipe>
-	<recipe name="SteelGauntlets" count="1" craft_area="workArmorTable" craft_tool="Wielder" craft_time="120" craft_exp_gain="100">
+	<recipe name="SteelGauntlets" count="1" craft_area="workArmorTable" craft_tool="Welder" craft_time="120" craft_exp_gain="100">
 		<ingredient name="forgedSteel" count="6" />
 		<ingredient name="leather" count="6" />
 		<ingredient name="ductTape" count="1" />
 		<ingredient name="FiberRope" count="4" />
 	</recipe>
-	<recipe name="SteelHelmet" count="1" craft_area="workArmorTable" craft_tool="Wielder" craft_time="120" craft_exp_gain="100">
+	<recipe name="SteelHelmet" count="1" craft_area="workArmorTable" craft_tool="Welder" craft_time="120" craft_exp_gain="100">
 		<ingredient name="forgedSteel" count="6" />
 		<ingredient name="leather" count="3" />
 		<ingredient name="FiberRope" count="3" />
@@ -4079,7 +4079,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="NutAndBolt" count="4" />
 		<ingredient name="SteelHelmet" count="1" />
 	</recipe>
-	<recipe name="SteelLegArmor" count="1" craft_area="workArmorTable" craft_tool="Wielder" craft_time="120" craft_exp_gain="100">
+	<recipe name="SteelLegArmor" count="1" craft_area="workArmorTable" craft_tool="Welder" craft_time="120" craft_exp_gain="100">
 		<ingredient name="forgedSteel" count="15" />
 		<ingredient name="leather" count="10" />
 		<ingredient name="FiberRope" count="6" />
@@ -4278,7 +4278,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="TomatoSeed" count="2" craft_area="workSeedNursery" craft_time="60" craft_exp_gain="0">
 		<ingredient name="Tomato" count="1" />
 	</recipe>
-	<recipe name="trapFire" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="300" craft_exp_gain="25">
+	<recipe name="trapFire" count="1" craft_area="workMetalWorkBench" craft_tool="Welder" craft_time="300" craft_exp_gain="25">
 		<ingredient name="shortMetalPipe" count="6" />
 		<ingredient name="scrapLead" count="10" />
 		<ingredient name="electricParts" count="5" />
@@ -4296,7 +4296,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="stick" count="20" />
 		<ingredient name="SharpeningStone" count="1" />
 	</recipe>
-	<recipe name="trapSpike" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="300" craft_exp_gain="25">
+	<recipe name="trapSpike" count="1" craft_area="workMetalWorkBench" craft_tool="Welder" craft_time="300" craft_exp_gain="25">
 		<ingredient name="woodLogSpike1" count="6" />
 		<ingredient name="scrapLead" count="10" />
 		<ingredient name="electricParts" count="5" />
@@ -4413,7 +4413,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="WheatSeed" count="2" craft_area="workSeedNursery" craft_time="60" craft_exp_gain="0">
 		<ingredient name="Wheat" count="1" />
 	</recipe>
-	<recipe name="Wielder" count="1" craft_time="60" craft_area="workMetalWorkBench" craft_tool="wrench" craft_exp_gain="100">
+	<recipe name="Welder" count="1" craft_time="60" craft_area="workMetalWorkBench" craft_tool="wrench" craft_exp_gain="100">
 		<ingredient name="forgedIron" count="5" />
 		<ingredient name="electricParts" count="10" />
 		<ingredient name="NutAndBolt" count="10" />
@@ -4492,7 +4492,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="Exhaust" count="2" />
 		<ingredient name="mechanicalParts" count="2" />
 	</recipe>
-	<recipe name="workBulletPress" count="1" craft_area="workMetalWorkBench" craft_time="300" craft_tool="Wielder" craft_exp_gain="300">
+	<recipe name="workBulletPress" count="1" craft_area="workMetalWorkBench" craft_time="300" craft_tool="Welder" craft_exp_gain="300">
 		<ingredient name="shortSteelPipe" count="30" />
 		<ingredient name="electronicParts" count="15" />
 		<ingredient name="mechanicalParts" count="20" />

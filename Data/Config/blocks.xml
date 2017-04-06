@@ -16532,9 +16532,12 @@ kind of free
         <property name="DescriptionKey" value="bigGeneratorDesc" />
         <property name="CraftingSkillGroup" value="Master Craftsman" />
         <drop event="Harvest" name="scrapIron" count="25,50" prob="1" />
+        <drop event="Destroy" name="DieselGen" count="0" prob="1" tool_category="Dolly" />
         <drop event="Harvest" name="" count="0" prob="1" tool_category="Dolly" />
         <drop event="Destroy" name="BigGenerator" count="1" prob="1" tool_category="Dolly" />
+        <drop event="Harvest" name="" count="1" prob="1" tool_category="Disassemble" />
         <drop event="Destroy" name="scrapIron" count="25,50" prob="1" tool_category="Disassemble" />
+        <drop event="Harvest" name="scrapIron" count="50" prob="1" />
     </block>
 	<block id="1712" name="smallGenerator">
 		<property name="Extends" value="dieselGen" />
@@ -16549,9 +16552,12 @@ kind of free
 		<property name="CanPickup" value="true" />
 		<property name="DescriptionKey" value="smallGeneratorDesc" />
         <drop event="Harvest" name="scrapIron" count="10,25" prob="1" />
-        <drop event="Harvest" name="" count="1" prob="1" tool_category="Dolly" />
+        <drop event="Destroy" name="DieselGen" count="0" prob="1" tool_category="Dolly" />
+        <drop event="Harvest" name="" count="0" prob="1" tool_category="Dolly" />
         <drop event="Destroy" name="SmallGenerator" count="1" prob="1" tool_category="Dolly" />
+        <drop event="Harvest" name="" count="1" prob="1" tool_category="Disassemble" />
         <drop event="Destroy" name="scrapIron" count="10,25" prob="1" tool_category="Disassemble" />
+        <drop event="Destroy" name="scrapIron" count="20" prob="1" />
     </block>
 	<block id="1718" name="powerCeilingLight01">
 		<property name="Extends" value="ceilingLight01" />

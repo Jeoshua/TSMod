@@ -1923,7 +1923,7 @@
 			<label style="header.name" text="TOOLS" />
 		</panel>
 		<panel name="content" depth="0" pos="0,-46" backgroundcolor="[black]">
-			<grid name="inventory" rows="2" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="SewingNeedle,LeatherNeedle,clawHammer,workAnvil,Wielder" required_tools_only="true">
+			<grid name="inventory" rows="2" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="SewingNeedle,LeatherNeedle,clawHammer,workAnvil,Welder" required_tools_only="true">
 				<required_item_stack name="0" />
 			</grid>
 		</panel>
@@ -1945,7 +1945,7 @@
 			<label style="header.name" text="TOOLS" />
 		</panel>
 		<panel name="content" depth="0" pos="0,-46" backgroundcolor="[black]">
-			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="wrench,CompactDriver,Wielder" required_tools_only="true">
+			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="wrench,CompactDriver,Welder" required_tools_only="true">
 				<required_item_stack name="0" />
 			</grid>
 		</panel>

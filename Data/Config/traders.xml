@@ -380,7 +380,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="Duct Book" count="1" prob="0.7" />
 			<item name="Canning Food" count="1" prob="0.7" />
 			<item name="Holy Schnit thats good!" count="1" prob="0.7" />
-			<item name="Wielder Book" count="1" prob="0.7" />
+			<item name="Welder Book" count="1" prob="0.7" />
 			<item name="explodingCrossbowBoltSchematic" count="1" prob="0.3" />
 			<item name="augerSchematic" count="1" prob="0.2" />
 			<item group="monthlyMags" prob="0.1" />
