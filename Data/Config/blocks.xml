@@ -122,6 +122,7 @@ then add recipes for those white/red/green metals
 		</property>
 		<drop event="Harvest" name="earthworm" count="1" prob="0.25" />
 		<drop event="Harvest" name="dirtFragment" count="7" />
+		<drop event="Harvest" name="smallStone" count="3,5" prob="0.5" />
 		<drop event="Destroy" name="dirtFragment" count="3" />
 		<drop event="Fall" name="dirt" count="1" prob="0.75" stick_chance="0.95" />
 		<drop event="Fall" name="dirtFragment" count="20" prob="0.187" stick_chance="0" />
@@ -226,6 +227,7 @@ then add recipes for those white/red/green metals
 		<property class="RepairItems">
 			<property name="clayLump" value="40" />
 		</property>
+		<drop event="Harvest" name="smallStone" count="3,5" prob="0.25" />
 		<drop event="Harvest" name="clayLump" count="10" />
 		<drop event="Destroy" name="clayLump" count="10" prob="1.0" />
 		<drop event="Fall" name="clayLump" count="20" prob="0.5" stick_chance="0" />
@@ -273,7 +275,7 @@ then add recipes for those white/red/green metals
 			<property name="rockSmall" value="4" />
 		</property>
 		<drop event="Harvest" name="crushedSand" count="4" />
-		<drop event="Harvest" name="rockSmall" count="2" />
+		<drop event="Harvest" name="rockSmall" count="3,5" />
 		<drop event="Destroy" name="crushedSand" count="4" />
 		<drop event="Destroy" name="rockSmall" count="2" />
 		<drop event="Fall" name="crushedSand" count="8" prob=".5" stick_chance="0" />
@@ -443,6 +445,7 @@ then add recipes for those white/red/green metals
 		</property>
 		<drop event="Harvest" name="earthworm" count="1" prob="0.25" />
 		<drop event="Harvest" name="dirtFragment" count="7" />
+		<drop event="Harvest" name="smallStone" count="3,5" prob="0.5" />
 		<drop event="Destroy" name="dirtFragment" count="3" />
 		<drop event="Fall" name="forestGround" count="1" prob="0.75" stick_chance="0.95" />
 		<drop event="Fall" name="dirtFragment" count="20" prob="0.187" stick_chance="0" />
@@ -14861,7 +14864,7 @@ kind of free
 		<property name="TickRate" value="30" />
 		<property name="Material" value="MWWorkStation" />
 		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#metalBench?metalBench" />
+		<property name="Model" value="#Lathe?LathePrefab" />
 		<property name="CustomIcon" value="ui_game_symbol_MetalWorkBench" />
 		<property name="MultiBlockDim" value="2,1,1" />
 		<property name="HeatMapStrength" value="2" />
@@ -14873,7 +14876,7 @@ kind of free
 		</property>
 		<property name="Group" value="Building" />
 		<property class="Workstation">
-			<property name="Modules" value="tools,output,fuel" />
+			<property name="Modules" value="tools,output" />
 		</property>
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="" count="0" tool_category="Disassemble" />

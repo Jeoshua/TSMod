@@ -3970,6 +3970,7 @@
 
 	  <entity_class name="ZombieBodyBuilder" extends="zombieUMA">
 		<property name="Archetype" value="ZombieBodyBuilder"/>
+		<property name="HandItem" value="handStrongZombie" />
 	  </entity_class>
 
 	  <entity_class name="ZombieFrank" extends="zombieUMA">

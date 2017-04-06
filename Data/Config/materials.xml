@@ -181,7 +181,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="movement_factor" value="0.8" />
 	</material>
 	<material id="leaves">
-		<property name="damage_category" value="wood" />
+		<property name="damage_category" value="earth" />
 		<property name="surface_category" value="plant" />
 		<property name="particle_destroy_category" value="xt_leaves2" />
 		<property name="Hardness" type="float" value="1" />
@@ -305,7 +305,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="damage_category" value="earth" />
 		<property name="surface_category" value="earth" />
 		<property name="forge_category" value="stone" />
-		<property name="Hardness" type="float" value="1.5" />
+		<property name="Hardness" type="float" value="1.25" />
 		<property name="stepsound" value="gravel" />
 		<property name="fertile_level" value="1" />
 		<property name="stability_glue" value="4" />
@@ -360,7 +360,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="Mass" type="int" value="15" />
 		<property name="fertile_level" value="1" />
 		<property name="explosionresistance" value=".25" />
-		<property name="MaxDamage" value="2500" />
+		<property name="MaxDamage" value="3000" />
 	</material>
 	<material id="Mbedrock">
 		<property name="damage_category" value="stone" />
@@ -370,7 +370,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="stability_glue" value="110" />
 		<property name="Mass" type="int" value="15" />
 		<property name="fertile_level" value="1" />
-		<property name="MaxDamage" value="500000" />
+		<property name="MaxDamage" value="50000" />
 	</material>
 	<material id="coal">
 		<property name="damage_category" value="stone" />
@@ -498,7 +498,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<material id="Msandstone">
 		<property name="damage_category" value="earth" />
 		<property name="surface_category" value="earth" />
-		<property name="Hardness" type="float" value="1.5" />
+		<property name="Hardness" type="float" value="1.25" />
 		<property name="stepsound" value="sand" />
 		<property name="stability_glue" value="24" />
 		<property name="Mass" type="int" value="8" />
@@ -549,7 +549,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="MaxDamage" value="50" />
 	</material>
 	<material id="animalHide">
-		<property name="damage_category" value="organic" />
+		<property name="damage_category" value="cloth" />
 		<property name="surface_category" value="cloth" />
 		<property name="forge_category" value="animalHide" />
 		<property name="Hardness" type="float" value="1" />
@@ -559,7 +559,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="MaxDamage" value="20" />
 	</material>
 	<material id="leather">
-		<property name="damage_category" value="organic" />
+		<property name="damage_category" value="cloth" />
 		<property name="surface_category" value="cloth" />
 		<property name="forge_category" value="leather" />
 		<property name="Hardness" type="float" value="1" />
@@ -585,7 +585,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="Hardness" type="float" value="1.5" />
 		<property name="stepsound" value="wood" />
 		<property name="stability_glue" value="24" />
-		<property name="Mass" type="int" value="5" />
+		<property name="Mass" type="int" value="4" />
 		<property name="MaxDamage" value="2000" />
 	</material>
 	<material id="sticks">
@@ -605,7 +605,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="Hardness" type="float" value="1.25" />
 		<property name="stepsound" value="wood" />
 		<property name="stability_glue" value="18" />
-		<property name="Mass" type="int" value="5" />
+		<property name="Mass" type="int" value="4" />
 		<property name="MaxDamage" value="1000" />
 	</material>
 	<material id="wood_weak">
@@ -716,10 +716,10 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="lightopacity" value="4" />
 		<property name="stability_glue" value="6" />
 		<property name="Mass" type="int" value="1" />
-		<property name="MaxDamage" value="125" />
+		<property name="MaxDamage" value="50" />
 	</material>
 	<material id="MmilitaryFiber">
-		<property name="damage_category" value="cloth" />
+		<property name="damage_category" value="metal" />
 		<property name="surface_category" value="cloth" />
 		<property name="forge_category" value="militaryFiber" />
 		<property name="Hardness" type="float" value="1" />
@@ -729,13 +729,13 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="stability_glue" value="2" />
 		<property name="Mass" type="int" value="1" />
 		<property name="StabilitySupport" value="false" />
-		<property name="MaxDamage" value="250" />
+		<property name="MaxDamage" value="50" />
 	</material>
 	<material id="glass">
 		<property name="damage_category" value="glass" />
 		<property name="surface_category" value="glass" />
 		<property name="forge_category" value="glass" />
-		<property name="Hardness" type="float" value="5" />
+		<property name="Hardness" type="float" value="10" />
 		<property name="lightopacity" value="1" />
 		<property name="stepsound" value="metal" />
 		<property name="stability_glue" value="21" />
@@ -780,7 +780,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	</material>
 	<material id="furniture">
 		<property name="surface_category" value="cloth" />
-		<property name="damage_category" value="cloth" />
+		<property name="damage_category" value="wood" />
 		<property name="forge_category" value="wood" />
 		<property name="Hardness" type="float" value="1" />
 		<property name="stepsound" value="cloth" />
@@ -810,7 +810,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="MaxDamage" value="1000" />
 	</material>
 	<material id="MdroppedBackpack">
-		<property name="damage_category" value="cloth" />
+		<property name="damage_category" value="steel" />
 		<property name="surface_category" value="cloth" />
 		<property name="Hardness" type="float" value="1" />
 		<property name="explosionresistance" value="100" />
@@ -819,7 +819,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="stability_glue" value="320" />
 		<property name="Mass" type="int" value="1" />
 		<property name="StabilitySupport" value="false" />
-		<property name="MaxDamage" value="1000000" />
+		<property name="MaxDamage" value="1000" />
 	</material>
 	<material id="Mboulder">
 		<property name="damage_category" value="stone" />
