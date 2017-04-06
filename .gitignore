@@ -47,6 +47,8 @@ Temporary Items
 .apdisk
 
 # Files for 7 Days not to upload
+*.rar
+*.zip
 7DaysToDie.exe
 7DaysToDie_Data/Managed/Accessibility.dll
 7DaysToDie_Data/Managed/AmplifyMotion.dll
@@ -58,26 +60,27 @@ Temporary Items
 7DaysToDie_Data/Managed/ICSharpCode.SharpZipLib.dll
 7DaysToDie_Data/Managed/LitJson.dll
 7DaysToDie_Data/Managed/LogLibrary.dll
-7DaysToDie_Data/Managed/mscorlib.dll
 7DaysToDie_Data/Managed/Mods.*.dll
 7DaysToDie_Data/Managed/Mono.*
 7DaysToDie_Data/Managed/NSpeex.*
 7DaysToDie_Data/Managed/ProfileAttribute.dll
 7DaysToDie_Data/Managed/System.*
-7DaysToDie_Data/Managed/libnoise.dll
 7DaysToDie_Data/Managed/Unity*
+7DaysToDie_Data/Managed/libnoise.dll
+7DaysToDie_Data/Managed/mscorlib.dll
 7DaysToDie_Data/Mono/*
 7DaysToDie_Data/Plugins/*
 7DaysToDie_Data/Resources/*
 7DaysToDie_Data/globalgamemanagers*
 7DaysToDie_Data/level*
+7DaysToDie_Data/output_log*
 7DaysToDie_Data/resources*
 7DaysToDie_Data/sharedassets*
-7DaysToDie_Data/output_log*
 7DaysToDie_EAC.exe
 7dLauncher.exe
 ArchSrc/*
 Data/Bundles/*
+Data/Config/rwgmixer.*.xml
 Data/Prefabs/aa_all_loot.tts
 Data/Prefabs/aa_all_loot.xml
 Data/Prefabs/aa_builder_roof_01.tts
@@ -1874,10 +1877,14 @@ Data/Prefabs/xvanilla_water_tower_01.tts
 Data/Prefabs/xvanilla_water_tower_01.xml
 Data/Prefabs/xvanilla_water_tower_02.tts
 Data/Prefabs/xvanilla_water_tower_02.xml
+Data/TexturesUI/Download Them
 Data/Worlds/Navezgane/*
 Data/Worlds/Random Gen/*
 EasyAntiCheat/*
+ItemIcons/*
 Launcher/*
+Mods/SDX/*.png
+Mods/SDX/*.unity3d
 Mods/SDX/ItemIcons/10mmFireBullet.png
 Mods/SDX/ItemIcons/2HandedSword.png
 Mods/SDX/ItemIcons/2HandedSword1.png
@@ -2659,24 +2666,18 @@ Mods/SDX/Resources/uzi.unity3d
 Mods/SDX/Resources/vehiclesdeco.unity3d
 Mods/SDX/Resources/watertank.unity3d
 Mods/SDX/Resources/weaponAttach.unity3d
-Mods/SDX/*.unity3d
-Mods/SDX/*.png
-ItemIcons/*
-_CommonRedist/*
-SweetFX*
 Src*
-*.zip
+SweetFX*
 X64_*
+_CommonRedist/*
+d3d9.dll
+dxgi.dll
 installscript.vdf
+log.log
 logo.ico
-Data/Config/rwgmixer.*.xml
 player*
 serverconfig.xml
 startdedicated.bat
 steam*
 tier0*
 vstdlib_s*
-d3d9.dll
-dxgi.dll
-log.log
-Data/TexturesUI/Download Them

@@ -1441,7 +1441,7 @@
 			<recipe name="forgedFrame" unlock_level="1" />
 			<recipe name="forgedRampFrame" unlock_level="1" />
 		</perk>
-		<perk name="Steel Vault Hatch" icon="vaultHatch" description_key="Learn to craft steel Vault Hatches on the metal working bench using the wielder" title_key="Steel Vault Hatch" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
+		<perk name="Steel Vault Hatch" icon="vaultHatch" description_key="Learn to craft steel Vault Hatches on the metal working bench using the welder" title_key="Steel Vault Hatch" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
 			<requirement perk_level="1" required_skill_name="Master Craftsman" required_skill_level="2" />
 			<requirement perk_level="1" required_player_level="70" />
 			<recipe name="vaultHatch_v1" unlock_level="1" />
@@ -1456,12 +1456,6 @@
 			<requirement perk_level="1" required_player_level="75" />
 			<recipe name="vaultDoor01" unlock_level="1" />
 		</perk>
-		<!--<perk name="Steel Gun Safe" icon="GunSafe" description_key="Learn to craft The Steel Gun Safe on the metal work bench using the Welder. these are the strongest secure storage container you can make" title_key="Steel Gun Safe" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
-			<requirement perk_level="1" required_skill_name="Master Craftsman" required_skill_level="5" />
-			<requirement perk_level="1" required_player_level="60" />
-			<recipe name="cntSteelGunSafe" unlock_level="1" />
-			<recipe name="cntSteelGunSafeB" unlock_level="1" />
-		</perk>-->
         <perk name="LargeGenerator" icon="bigGenerator" description_key="Learn to craft a Large Generator on the metal working bench using the Welder. Use it to power traps, lights and work benches more effeicently." title_key="Large Generator" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="crafting">
 			<requirement perk_level="1" required_skill_name="Master Craftsman" required_skill_level="5" />
 			<requirement perk_level="1" required_player_level="75" />

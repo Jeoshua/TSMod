@@ -2471,12 +2471,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="clubSpiked" count="1" />
 		<ingredient name="shortSteelPipe" count="10" />
 	</recipe>
-	<!--<recipe name="cntSteelGunSafe" count="1" craft_area="workMetalWorkBench" craft_tool="Welder" craft_time="30" craft_exp_gain="50">
-		<ingredient name="forgedSteel" count="20" />
-		<ingredient name="spring" count="5" />
-		<ingredient name="mechanicalParts" count="5" />
-		<ingredient name="NutAndBolt" count="10" />
-	</recipe>-->
 	<recipe name="coal" count="1" craft_area="workBlastFurnace" material_based="true" craft_time="1" craft_exp_gain="0">
 		<ingredient name="unit_coal" count="5" />
 	</recipe>

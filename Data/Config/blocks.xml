@@ -14003,53 +14003,7 @@ kind of free
 	</block>
 	<!--JZMOD ADDED-->
 	<!--JZMOD LOOT CONTAINERS-->
-	<!--<block id="17" name="cntSteelGunSafe">
-		<property name="Extends" value="cntGunSafe" />
-		<property name="CustomIcon" value="ui_game_symbol_SteelGunSafe" />
-		<property name="Material" value="Msteel" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#hk?WeaponWorkbenchPrefab" />
-		<property name="ModelOffset" value="0,0.2,0" />
-		<property name="LootList" value="10" />
-		<property name="DowngradeBlock" value="cntSteelGunSafeInsecure" />
-		<property class="RepairItems">
-			<property name="forgedSteel" value="15" />
-		</property>
-		<drop event="Fall" name="scrapMetalPile" count="0" prob="1" stick_chance="0.95" />
-		<drop event="Fall" name="scrapSteelPile" count="1" prob=".75" stick_chance="0.95" />
-	</block>
-	<block id="21" name="cntSteelGunSafeInsecure">
-		<property name="Extends" value="cntGunSafeInsecure" />
-		<property name="CustomIcon" value="cntGunSafe" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#hk?WeaponWorkbenchPrefab" />
-		<property name="ModelOffset" value="0,0.2,0" />
-		<property name="Material" value="Msteel" />
-		<property name="LootList" value="10" />
-		<property class="RepairItems">
-			<property name="forgedSteel" value="15" />
-		</property>
-		<drop event="Destroy" name="scrapIron" count="0" prob="1" />
-		<drop event="Fall" name="scrapMetalPile" count="0" prob="1" stick_chance="0.95" />
-		<drop event="Destroy" name="scrapSteel" count="5,20" prob="1" />
-		<drop event="Fall" name="scrapSteelPile" count="1" prob=".75" stick_chance="0.95" />
-	</block>
-	<block id="2017" name="cntSteelGunSafeInsecure">
-		<property name="Extends" value="cntGunSafeInsecure" />
-		<property name="CustomIcon" value="ui_game_symbol_SteelGunSafe" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#weaponworkbench?WeaponWorkbenchPrefabV" />
-		<property name="ModelOffset" value="0,0.2,0" />
-		<property name="Material" value="Msteel" />
-		<property name="LootList" value="10" />
-		<property class="RepairItems">
-			<property name="forgedSteel" value="15" />
-		</property>
-		<drop event="Destroy" name="scrapIron" count="0" prob="1" />
-		<drop event="Fall" name="scrapMetalPile" count="0" prob="1" stick_chance="0.95" />
-		<drop event="Destroy" name="scrapSteel" count="5,20" prob="1" />
-		<drop event="Fall" name="scrapSteelPile" count="1" prob=".75" stick_chance="0.95" />
-	</block>-->
+	<!-- 17, 21, 2017 free -->
 	<block id="36" name="SecureStorageChest">
 		<property name="Extends" value="cntSecureStorageChest" />
 		<property name="LootList" value="10" />
@@ -16774,6 +16728,7 @@ kind of free
 		<property name="Model" value="#GarageDoorNew1?GarageDoorNew1Prefab" />
 		<property name="CustomIcon" value="ui_game_symbol_garageDoorRolling" />
         <property name="OpenSound" value="open_garagedoor" />
+        <property name="CloseSound" value="open_garagedoor" />
 		<drop event="Harvest" name="scrapSteel" count="25" />
 		<drop event="Destroy" name="scrapSteel" count="10" prob="1" />
 		<drop event="Fall" name="scrapSteelPile" count="1" prob="1.0" stick_chance=".75" />
