@@ -856,7 +856,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="unit_clay" count="5" />
 	</recipe>
 	<recipe name="cornBread" count="1" craft_area="workStove" craft_tool="cookingGrill" craft_time="10" craft_exp_gain="0">
-		<ingredient name="cornMeal" count="1" />
+		<ingredient name="cornMeal" count="2" />
 		<ingredient name="animalFat" count="1"/>
 	</recipe>
 	<recipe name="cornMeal" count="1" craft_area="workStoneMill" craft_time="5" craft_exp_gain="4">
