@@ -2,7 +2,7 @@
 	<world ruleset="vanilla" />
 	<!-- rwgmixer for COMPOPACK 24 (by Magoli)  - Current Alpha: A15 stable   -->
 	<rulesets>
-		<ruleset name="vanilla" cell_cache_size="8" cell_size="1800" cell_offset="0.382" generation_distance="3500" terrain_generator="vanilla">
+		<ruleset name="vanilla" cell_cache_size="8" cell_size="1800" cell_offset="0.382" generation_distance="4000" terrain_generator="vanilla">
 			<cell_rule name="wastelandHub" position="0,0" />
 			<cell_rule name="wastelandCity" prob="0.3" />
 			<cell_rule name="lowDensity" prob="0.4" />
@@ -1682,11 +1682,11 @@
 			</module>
 
 			<module name="HillBase" type="FastBillow" no_seed="true">
-				<property name="frequency" value="0.0045"/>
+				<property name="frequency" value="0.00045"/>
 			</module>
 			<module name="HillScaled" type="ScaleBiasOutput">
 				<property name="sourceModule" value="HillBase"/>
-				<property name="scale" value="0.30"/>
+				<property name="scale" value="0.20"/>
 				<property name="bias" value="-0.8"/>
 			</module>
 			<module name="Hill" type="FastTurbulence">
@@ -1697,7 +1697,7 @@
 			</module>
 			<module name="HillOutput" type="ClampOutput">
 				<property name="sourceModule" value="Hill"/>
-				<property name="bounds" value="0,180"/>
+				<property name="bounds" value="0,185"/>
 			</module>
 			
 			<module name="MntBase" type="FastBillow" no_seed="true">
@@ -1705,7 +1705,7 @@
 			</module>
 			<module name="MntScaled" type="ScaleBiasOutput">
 				<property name="sourceModule" value="MntBase"/>
-				<property name="scale" value="0.75"/>
+				<property name="scale" value="0.85"/>
 				<property name="bias" value="-0.8"/>
 			</module>
 			<module name="Mnt" type="FastTurbulence">
@@ -1798,7 +1798,7 @@
 				<property name="sourceModule1" value="Combined"/>
 				<property name="sourceModule2" value="RiverScaled"/>
 				<property name="bounds" value="-100,0.03"/>
-				<property name="edgeFalloff" value="0.25"/>
+				<property name="edgeFalloff" value="0.45"/>
 			</module>
 		
 			<module name="scaleBiasOutput" type="ScaleBiasOutput">
@@ -1808,7 +1808,7 @@
 			</module>
 			<module name="clampOutput" type="ClampOutput">
 				<property name="sourceModule" value="scaleBiasOutput"/>
-				<property name="bounds" value="-28,160"/>
+				<property name="bounds" value="-14,160"/>
 			</module>
 			
 			<output module="clampOutput"/>
@@ -1821,7 +1821,7 @@
 		<biome_generator name="vanilla">
 		
 			<module name="biomeBase" type="FastNoise" >
-				<property name="frequency" value="0.0006375" /> <!-- lower for larger & fewer biomes, higher for smaller & more biomes -->
+				<property name="frequency" value="0.0006875" /> <!-- lower for larger & fewer biomes, higher for smaller & more biomes -->
 			</module>
 			
 			<module name="biomeDither" type="Turbulence">
@@ -1833,8 +1833,8 @@
 
 			<module name="biomeOutput" type="ScaleBiasOutput" >
 				<property name="sourceModule" value="biomeDither" />
-				<property name="scale" value="0.45" /> <!-- raise this for more contrasted biomes, lower for more "temperate" biomes-->
-				<property name="bias" value="0.4475" /> <!-- raise this for more "hot" biomes, lower for more "cold" biomes -->
+				<property name="scale" value="0.5" /> <!-- raise this for more contrasted biomes, lower for more "temperate" biomes-->
+				<property name="bias" value="0.4875" /> <!-- raise this for more "hot" biomes, lower for more "cold" biomes -->
 			</module>
 
 			<module name="clampOutput" type="ClampOutput">
@@ -1850,22 +1850,32 @@
 	
 	<biome_spawn_rules>
 		
+		<!-- Fallthrough catchers -->
+		<biome_generator name="burnt_forest">
+			<distance_from_center range="0,3000" />
+		</biome_generator>
+		
 		<!-- 0,0.05 snow -->
 		
 		<!-- 0.05,0.125 city (snow forest) -->
 		
-		<biome_spawn_rule name="pine_forest">
-			<biome_generator range="0.12,0.245"/>
-		</biome_spawn_rule>
 		
+		
+		<biome_spawn_rule name="plains">
+			<biome_generator range="0.425,0.65" />
+		</biome_spawn_rule>
+
+		<biome_spawn_rule name="water">
+			<terrain_generator range="-2,2"/>
+		</biome_spawn_rule>
+
 		<biome_spawn_rule name="forest">
 			<biome_generator range="0.245,0.425"/>
 		</biome_spawn_rule>
-		
-		<biome_spawn_rule name="plains">
-			<biome_generator range="0.425,0.60"/>
-		</biome_spawn_rule>
 
+		<biome_spawn_rule name="pine_forest">
+			<biome_generator range="0.12,0.245"/>
+		</biome_spawn_rule>
 		
 		<!-- 0.60,0.775 desert -->
 		
@@ -1874,21 +1884,11 @@
 		<!-- 0.925,1.0 wasteland_hub -->
 		
 		<!-- terrain_generator range in game elevation appears to be x - 28 -->
-		<biome_spawn_rule name="pine_forest">
-			<terrain_generator range="120,128" />
-		</biome_spawn_rule>
 		
-		<biome_spawn_rule name="water">
-			<terrain_generator range="-2,2"/>
-		</biome_spawn_rule>
 		
 		<biome_spawn_rule name="city">
 			<biome_generator range="0.06,0.12"/>
-		</biome_spawn_rule>
-
-		<biome_spawn_rule name="wasteland_hub">
-			<biome_generator range="0.925,0.98"/>
-		</biome_spawn_rule>		
+		</biome_spawn_rule>	
 
 		<biome_spawn_rule name="snow">
 			<biome_generator range="0.02,0.06"/>
@@ -1897,26 +1897,21 @@
 		<biome_spawn_rule name="wasteland_hub">
 			<distance_from_center range="0,500" />
 		</biome_spawn_rule>
-		
 
 		<biome_spawn_rule name="city">
-			<terrain_generator range="128,135" />
-		</biome_spawn_rule>
-		
-		<biome_spawn_rule name="wasteland">
-			<distance_from_center range="3000,3500" />
-		</biome_spawn_rule>
-
-		<biome_spawn_rule name="desert">
-			<biome_generator range="0.60,0.775"/>
-		</biome_spawn_rule>
-		
-		<biome_spawn_rule name="wasteland">
-			<biome_generator range="0.775,0.925"/>
+			<terrain_generator range="100,125" />
 		</biome_spawn_rule>
 		
 		<biome_spawn_rule name="radiated">
-			<biome_generator range="0.98,1" />
+			<distance_from_center range="3000,4000" />
+		</biome_spawn_rule>
+
+		<biome_spawn_rule name="desert">
+			<biome_generator range="0.65,0.85"/>
+		</biome_spawn_rule>
+		
+		<biome_spawn_rule name="wasteland">
+			<biome_generator range="0.85,0.975"/>
 		</biome_spawn_rule>
 		
 		<biome_spawn_rule name="city_wasteland">
@@ -1924,7 +1919,7 @@
 		</biome_spawn_rule>
 		
 		<biome_spawn_rule name="snow">
-			<terrain_generator range="135,255" />
+			<terrain_generator range="125,168" />
 		</biome_spawn_rule>
 		
 		<!-- Water Table Visualization -->

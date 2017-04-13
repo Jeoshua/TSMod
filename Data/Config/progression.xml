@@ -135,14 +135,14 @@
 				<multiply skill_level="80,90" value="0.8,0.775" />
 				<multiply skill_level="90,100" value="0.775,0.75" />
 			</effect>
-			<effect name="LootQuality">
-				<add skill_level="1,5" value="1,8" />
-				<add skill_level="5,11" value="8,14" />
-				<add skill_level="11,19" value="14,19" />
-				<add skill_level="19,32" value="19,26" />
-				<add skill_level="32,49" value="26,34" />
-				<add skill_level="49,70" value="34,41" />
-				<add skill_level="70,100" value="41,50" />
+			<effect name="HarvestCount">
+				<multiply skill_level="1,5" value="1,1.08" />
+				<multiply skill_level="5,11" value="1.8,1.14" />
+				<multiply skill_level="11,19" value="1.14,1.19" />
+				<multiply skill_level="19,32" value="1.19,1.26" />
+				<multiply skill_level="32,49" value="1.26,1.34" />
+				<multiply skill_level="49,70" value="1.34,1.41" />
+				<multiply skill_level="70,100" value="1.41,1.50" />
 			</effect>
 		</player_skill>
 		<perk name="Fast Eddie" icon="loot_sack" description_key="fastEddieDesc" title_key="fastEddie" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" always_fire="true" group="scavenging">

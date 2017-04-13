@@ -2279,6 +2279,7 @@
 	</entity_class>
 	<entity_class name="Moe2" extends="zombieMoe">
 		<property name="WalkType" value="2" />
+		<property name="DamageCategory" value="wood" />
 		<property name="WanderSpeed" value="0.06" />
 		<property name="ApproachSpeed" value="0.18" />
 		<property name="NightWanderSpeed" value="0.07" />
@@ -2368,6 +2369,7 @@
 	</entity_class>
 	<entity_class name="Moe3" extends="zombieMoe">
 		<property name="WalkType" value="3" />
+		<property name="DamageCategory" value="metal" />
 		<property name="WanderSpeed" value="0.08" />
 		<property name="ApproachSpeed" value="0.34" />
 		<property name="NightWanderSpeed" value="0.08" />

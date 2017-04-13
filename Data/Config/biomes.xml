@@ -1911,7 +1911,7 @@ If you do not declare them, the decorations of the main biome are used.
 			<terrain class="Wasteland" />
 		</biome>
 		<!-- ============================================================ FOREST WASTELAND BIOME ============================================================ -->
-		<biome name="burnt_forest" biomemapcolor="#424242">
+		<biome name="burnt_forest" biomemapcolor="#ba00ff">
 			<weather>
 				<Temperature min="0" max="20" prob="1" />
 				<Fog min="0" max="0" prob="1" />

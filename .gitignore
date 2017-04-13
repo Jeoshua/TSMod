@@ -2666,8 +2666,10 @@ Mods/SDX/Resources/uzi.unity3d
 Mods/SDX/Resources/vehiclesdeco.unity3d
 Mods/SDX/Resources/watertank.unity3d
 Mods/SDX/Resources/weaponAttach.unity3d
+Saves/*
 Src*
 SweetFX*
+TempMods*
 X64_*
 _CommonRedist/*
 d3d9.dll
